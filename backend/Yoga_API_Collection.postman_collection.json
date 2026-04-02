@@ -1,0 +1,668 @@
+{
+  "info": {
+    "_postman_id": "yoga-recommendations",
+    "name": "NutriFusion Yoga Recommendation Engine",
+    "description": "API endpoints for personalized yoga pose recommendations based on health frameworks (Ayurveda, Unani, TCM, Modern)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Get Auth Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.environment.set('auth_token', jsonData.token);",
+                  "    pm.environment.set('user_id', jsonData.user._id);",
+                  "    console.log('Token saved:', jsonData.token.substring(0, 20) + '...');",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/login",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Yoga - Public Endpoints",
+      "item": [
+        {
+          "name": "Get All Yoga Poses",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/poses",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "poses"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Poses by Difficulty",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/poses?difficulty=beginner",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "poses"
+              ],
+              "query": [
+                {
+                  "key": "difficulty",
+                  "value": "beginner"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Poses by Duration",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/poses?minDuration=120&maxDuration=300",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "poses"
+              ],
+              "query": [
+                {
+                  "key": "minDuration",
+                  "value": "120"
+                },
+                {
+                  "key": "maxDuration",
+                  "value": "300"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Specific Pose Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/pose/warrior_i",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "pose",
+                "warrior_i"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Pose - Child's Pose",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/pose/child_pose",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "pose",
+                "child_pose"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Pose - Downward Dog",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/pose/downward_dog",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "pose",
+                "downward_dog"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Pose - Lotus Pose",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/pose/lotus_pose",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "pose",
+                "lotus_pose"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Yoga - Protected Endpoints",
+      "item": [
+        {
+          "name": "Get Personalized Recommendations",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/recommendations?topN=10",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "recommendations"
+              ],
+              "query": [
+                {
+                  "key": "topN",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Recommendations - Top 5",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/recommendations?topN=5",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "recommendations"
+              ],
+              "query": [
+                {
+                  "key": "topN",
+                  "value": "5"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Session Recommendation",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/session-recommendation?sessionType=mixed&durationMinutes=30",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "session-recommendation"
+              ],
+              "query": [
+                {
+                  "key": "sessionType",
+                  "value": "mixed"
+                },
+                {
+                  "key": "durationMinutes",
+                  "value": "30"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Calming Session (20 mins)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/session-recommendation?sessionType=calming&durationMinutes=20",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "session-recommendation"
+              ],
+              "query": [
+                {
+                  "key": "sessionType",
+                  "value": "calming"
+                },
+                {
+                  "key": "durationMinutes",
+                  "value": "20"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Energizing Session (45 mins)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/session-recommendation?sessionType=energizing&durationMinutes=45",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "session-recommendation"
+              ],
+              "query": [
+                {
+                  "key": "sessionType",
+                  "value": "energizing"
+                },
+                {
+                  "key": "durationMinutes",
+                  "value": "45"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Yoga Statistics",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/stats?days=30",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "stats"
+              ],
+              "query": [
+                {
+                  "key": "days",
+                  "value": "30"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Rate a Pose",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"poseId\": \"warrior_i\",\n  \"rating\": 5,\n  \"feedback\": \"Excellent pose for building strength and confidence\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/yoga/rate-pose",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "rate-pose"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Rate Pose - Child's Pose (5 stars)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"poseId\": \"child_pose\",\n  \"rating\": 5,\n  \"feedback\": \"Perfect for stress relief and hip opening\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/yoga/rate-pose",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "rate-pose"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Rate Pose - Downward Dog (4 stars)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"poseId\": \"downward_dog\",\n  \"rating\": 4,\n  \"feedback\": \"Great full-body stretch but hard on my wrists\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/yoga/rate-pose",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "rate-pose"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "item": [
+        {
+          "name": "Test: All Beginner Poses",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/poses?difficulty=beginner",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "poses"
+              ],
+              "query": [
+                {
+                  "key": "difficulty",
+                  "value": "beginner"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Test: All Intermediate Poses",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/poses?difficulty=intermediate",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "poses"
+              ],
+              "query": [
+                {
+                  "key": "difficulty",
+                  "value": "intermediate"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Test: All Advanced Poses",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/poses?difficulty=advanced",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "poses"
+              ],
+              "query": [
+                {
+                  "key": "difficulty",
+                  "value": "advanced"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Test: Short Poses (< 2 mins)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/poses?minDuration=0&maxDuration=120",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "poses"
+              ],
+              "query": [
+                {
+                  "key": "minDuration",
+                  "value": "0"
+                },
+                {
+                  "key": "maxDuration",
+                  "value": "120"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Test: Long Poses (> 8 mins)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/yoga/poses?minDuration=480",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "yoga",
+                "poses"
+              ],
+              "query": [
+                {
+                  "key": "minDuration",
+                  "value": "480"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Variables Setup",
+      "item": [
+        {
+          "name": "Set Base URL",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "pm.environment.set('base_url', 'http://localhost:5000');"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000",
+      "type": "string"
+    },
+    {
+      "key": "auth_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "user_id",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

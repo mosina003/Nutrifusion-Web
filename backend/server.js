@@ -1,0 +1,121 @@
+// Load environment variables FIRST before anything else
+require('dotenv').config();
+console.log('🔧 Environment loaded - GROQ_API_KEY present:', !!process.env.GROQ_API_KEY);
+if (process.env.GROQ_API_KEY) {
+  console.log('🔑 GROQ_API_KEY starts with:', process.env.GROQ_API_KEY.substring(0, 7));
+  console.log('🔑 GROQ_API_KEY length:', process.env.GROQ_API_KEY.length);
+}
+
+const express = require('express');
+const cors = require('cors');
+const connectDB = require('./config/database');
+
+// Load all models
+require('./models');
+
+const app = express();
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Connect to MongoDB
+connectDB();
+
+// Import routes
+const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/users');
+const practitionerRoutes = require('./routes/practitioners');
+const healthProfileRoutes = require('./routes/healthProfiles');
+const foodRoutes = require('./routes/foods');
+const recipeRoutes = require('./routes/recipes');
+const dietPlanRoutes = require('./routes/dietPlans');
+const recommendationRoutes = require('./routes/recommendations');
+const assessmentRoutes = require('./routes/assessments');
+const dashboardRoutes = require('./routes/dashboard');
+const mealCompletionRoutes = require('./routes/mealCompletions');
+const activitiesRoutes = require('./routes/activities');
+const yogaRoutes = require('./routes/yoga');
+const exercisesRoutes = require('./routes/exercises');
+const breathingRoutes = require('./routes/breathing');
+const acupressureRoutes = require('./routes/acupressure');
+
+// Basic route
+app.get('/', (req, res) => {
+  res.json({
+    message: '🥗 NutriFusion API Server',
+    version: '1.0.0',
+    status: 'running',
+    endpoints: {
+      auth: '/api/auth',
+      users: '/api/users',
+      practitioners: '/api/practitioners',
+      healthProfiles: '/api/health-profiles',
+      foods: '/api/foods',
+      recipes: '/api/recipes',
+      dietPlans: '/api/diet-plans',
+      recommendations: '/api/recommendations',
+      assessments: '/api/assessments',
+      dashboard: '/api/dashboard',
+      activities: '/api/activities',
+      yoga: '/api/yoga',
+      exercises: '/api/exercises',
+      breathing: '/api/breathing',
+      acupressure: '/api/acupressure-points'
+    }
+  });
+});
+
+// Health check route
+app.get('/health', (req, res) => {
+  res.json({
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime()
+  });
+});
+
+// API Routes
+app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/practitioners', practitionerRoutes);
+app.use('/api/health-profiles', healthProfileRoutes);
+app.use('/api/foods', foodRoutes);
+app.use('/api/recipes', recipeRoutes);
+app.use('/api/diet-plans', dietPlanRoutes);
+app.use('/api/recommendations', recommendationRoutes);
+app.use('/api/assessments', assessmentRoutes);
+app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/meal-completions', mealCompletionRoutes);
+app.use('/api/activities', activitiesRoutes);
+app.use('/api/yoga', yogaRoutes);
+app.use('/api/exercises', exercisesRoutes);
+app.use('/api/breathing', breathingRoutes);
+app.use('/api', acupressureRoutes);
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({
+    success: false,
+    message: 'Something went wrong!',
+    error: process.env.NODE_ENV === 'development' ? err.message : undefined
+  });
+});
+
+// 404 handler
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    message: 'Route not found'
+  });
+});
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`\n🚀 Server is running on port ${PORT}`);
+  console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`🌐 API URL: http://localhost:${PORT}\n`);
+});

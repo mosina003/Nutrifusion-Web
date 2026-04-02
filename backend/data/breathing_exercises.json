@@ -1,0 +1,524 @@
+[
+  {
+    "id": "nadi_shodhana",
+    "name": "Nadi Shodhana",
+    "displayName": "Nadi Shodhana (Alternate Nostril Breathing)",
+    "framework": "ayurveda",
+    "dosha": "vata",
+    "duration": "5-10 min",
+    "benefit": "Balancing & grounding",
+    "intensity": "low",
+    "instructions": [
+      "Sit comfortably with a straight spine",
+      "Close your right nostril with your thumb",
+      "Inhale slowly through the left nostril",
+      "Close left nostril, release right",
+      "Exhale through the right nostril",
+      "Inhale through the right, switch, exhale left",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "basic_pranayama",
+    "name": "Basic Pranayama",
+    "displayName": "Basic Pranayama",
+    "framework": "ayurveda",
+    "dosha": "vata",
+    "duration": "5-10 min",
+    "benefit": "Calming",
+    "intensity": "low",
+    "instructions": [
+      "Sit in a relaxed position",
+      "Inhale slowly through your nose",
+      "Expand your chest and abdomen",
+      "Exhale slowly through your nose",
+      "Keep breathing steady and natural",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "extended_exhale",
+    "name": "Extended Exhale",
+    "displayName": "Extended Exhale Breathing",
+    "framework": "ayurveda",
+    "dosha": "vata",
+    "duration": "5-10 min",
+    "benefit": "Relaxation",
+    "intensity": "low",
+    "instructions": [
+      "Sit comfortably",
+      "Inhale slowly for 4 seconds",
+      "Exhale slowly for 6–8 seconds",
+      "Keep exhale longer than inhale",
+      "Relax your shoulders",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "sitali_pranayama",
+    "name": "Sitali Pranayama",
+    "displayName": "Sitali Pranayama (Cooling Breath)",
+    "framework": "ayurveda",
+    "dosha": "pitta",
+    "duration": "5-7 min",
+    "benefit": "Cooling & calming",
+    "intensity": "low",
+    "instructions": [
+      "Sit comfortably",
+      "Roll your tongue into a tube (or purse lips)",
+      "Inhale through the rolled tongue",
+      "Close mouth",
+      "Exhale through the nose",
+      "Continue for 5–7 minutes"
+    ]
+  },
+  {
+    "id": "sitkari_breath",
+    "name": "Sitkari Breath",
+    "displayName": "Sitkari Breath",
+    "framework": "ayurveda",
+    "dosha": "pitta",
+    "duration": "4 min",
+    "benefit": "Heat reduction",
+    "intensity": "low",
+    "instructions": [
+      "Sit comfortably",
+      "Gently clench your teeth",
+      "Inhale through the gaps in teeth (hissing sound)",
+      "Close mouth",
+      "Exhale through nose",
+      "Repeat for 5–7 minutes"
+    ]
+  },
+  {
+    "id": "moon_breathing",
+    "name": "Moon Breathing",
+    "displayName": "Moon Breathing (Left Nostril)",
+    "framework": "ayurveda",
+    "dosha": "pitta",
+    "duration": "5-10 min",
+    "benefit": "Cooling",
+    "intensity": "low",
+    "instructions": [
+      "Sit comfortably",
+      "Close right nostril",
+      "Inhale through left nostril",
+      "Exhale through left nostril",
+      "Keep breath slow and calm",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "breath_of_fire",
+    "name": "Breath of Fire",
+    "displayName": "Breath of Fire (Kapalabhati)",
+    "framework": "ayurveda",
+    "dosha": "kapha",
+    "duration": "5 min",
+    "benefit": "Energizing & clearing",
+    "intensity": "high",
+    "instructions": [
+      "Sit upright",
+      "Take a deep inhale",
+      "Forcefully exhale through nose (quick bursts)",
+      "Let inhale happen naturally",
+      "Keep rhythm fast and steady",
+      "Practice for 1–3 minutes"
+    ]
+  },
+  {
+    "id": "sun_breathing",
+    "name": "Sun Breathing",
+    "displayName": "Sun Breathing (Right Nostril)",
+    "framework": "ayurveda",
+    "dosha": "kapha",
+    "duration": "5-10 min",
+    "benefit": "Warming & activation",
+    "intensity": "medium",
+    "instructions": [
+      "Sit comfortably",
+      "Close left nostril",
+      "Inhale through right nostril",
+      "Exhale through right nostril",
+      "Maintain steady rhythm",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "ujjayi_breath",
+    "name": "Ujjayi Breath",
+    "displayName": "Ujjayi Breath (Ocean Sound)",
+    "framework": "ayurveda",
+    "dosha": "kapha",
+    "duration": "5 min",
+    "benefit": "Energizing",
+    "intensity": "medium",
+    "instructions": [
+      "Sit comfortably",
+      "Inhale through nose while slightly constricting throat",
+      "Create soft ocean-like sound",
+      "Exhale through nose with same sound",
+      "Keep breath slow and deep",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "cooling_breath_technique",
+    "name": "Cooling Breath Technique",
+    "displayName": "Cooling Breath Technique",
+    "framework": "unani",
+    "mizaj": "Hot-Moist",
+    "duration": "5-10 min",
+    "benefit": "Temperature balance",
+    "intensity": "low",
+    "instructions": [
+      "Sit relaxed",
+      "Inhale slowly through mouth",
+      "Feel cool air entering",
+      "Exhale through nose",
+      "Keep breathing slow",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "relaxation_breathing",
+    "name": "Relaxation Breath",
+    "displayName": "Relaxation Breathing",
+    "framework": "unani",
+    "mizaj": "Hot-Moist",
+    "duration": "5-10 min",
+    "benefit": "Calming",
+    "intensity": "low",
+    "instructions": [
+      "Sit or lie down comfortably",
+      "Inhale slowly through nose",
+      "Exhale gently through nose",
+      "Focus on relaxing your body",
+      "Release tension with each breath",
+      "Continue for 10 minutes"
+    ]
+  },
+  {
+    "id": "balanced_breathing",
+    "name": "Balanced Breath",
+    "displayName": "Balanced Breathing",
+    "framework": "unani",
+    "mizaj": "Hot-Dry",
+    "duration": "5-10 min",
+    "benefit": "Moisture & cool",
+    "intensity": "low",
+    "instructions": [
+      "Sit upright",
+      "Inhale for 4 seconds",
+      "Exhale for 4 seconds",
+      "Keep inhale and exhale equal",
+      "Maintain steady rhythm",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Deep Breathing",
+    "displayName": "Deep Breathing",
+    "framework": "unani",
+    "mizaj": "Hot-Dry",
+    "duration": "5-10 min",
+    "benefit": "Moisture induction",
+    "intensity": "low",
+    "instructions": [
+      "Sit or lie down",
+      "Inhale deeply through nose",
+      "Expand abdomen fully",
+      "Exhale slowly",
+      "Empty lungs completely",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "warming_breath_technique",
+    "name": "Warming Breath Technique",
+    "displayName": "Warming Breath Technique",
+    "framework": "unani",
+    "mizaj": "Cold-Moist",
+    "duration": "5-7 min",
+    "benefit": "Heat generation",
+    "intensity": "medium",
+    "instructions": [
+      "Sit upright",
+      "Inhale deeply through nose",
+      "Hold for 2–3 seconds",
+      "Exhale slowly through nose",
+      "Focus on generating warmth",
+      "Continue for 5–7 minutes"
+    ]
+  },
+  {
+    "id": "activating_breathing",
+    "name": "Activating Breath",
+    "displayName": "Activating Breathing",
+    "framework": "unani",
+    "mizaj": "Cold-Moist",
+    "duration": "5 min",
+    "benefit": "Warmth",
+    "intensity": "medium",
+    "instructions": [
+      "Sit upright",
+      "Inhale quickly through nose",
+      "Exhale quickly through nose",
+      "Maintain moderate pace",
+      "Keep breaths controlled",
+      "Continue for 2–5 minutes"
+    ]
+  },
+  {
+    "id": "vigorous_breathing",
+    "name": "Vigorous Breath",
+    "displayName": "Vigorous Breathing",
+    "framework": "unani",
+    "mizaj": "Cold-Dry",
+    "duration": "5 min",
+    "benefit": "Warming & moisture",
+    "intensity": "high",
+    "instructions": [
+      "Sit upright",
+      "Inhale deeply",
+      "Exhale forcefully",
+      "Keep rhythm strong",
+      "Engage diaphragm",
+      "Continue for 1–3 minutes"
+    ]
+  },
+  {
+    "id": "dynamic_breathing",
+    "name": "Dynamic Breath",
+    "displayName": "Dynamic Breathing",
+    "framework": "unani",
+    "mizaj": "Cold-Dry",
+    "duration": "5 min",
+    "benefit": "Heat & energy",
+    "intensity": "high",
+    "instructions": [
+      "Sit upright",
+      "Alternate between slow and fast breathing",
+      "Inhale deeply, exhale quickly",
+      "Maintain rhythm",
+      "Stay aware of breath",
+      "Continue for 3–5 minutes"
+    ]
+  },
+  {
+    "id": "nourishing_breath",
+    "name": "Nourishing Breath",
+    "displayName": "Nourishing Breath",
+    "framework": "tcm",
+    "pattern": "yin-deficiency",
+    "duration": "8 min",
+    "benefit": "Yin restoration",
+    "intensity": "low",
+    "instructions": [
+      "Sit quietly",
+      "Inhale slowly through nose",
+      "Visualize energy entering body",
+      "Exhale gently",
+      "Keep breath soft and deep",
+      "Continue for 10 minutes"
+    ]
+  },
+  {
+    "id": "gentle_breathing",
+    "name": "Gentle Breathing",
+    "displayName": "Gentle Breathing",
+    "framework": "tcm",
+    "pattern": "yin-deficiency",
+    "duration": "6 min",
+    "benefit": "Yin nourishment",
+    "intensity": "low",
+    "instructions": [
+      "Sit comfortably",
+      "Inhale naturally",
+      "Exhale naturally",
+      "Keep breath light and effortless",
+      "Relax completely",
+      "Continue for 10 minutes"
+    ]
+  },
+  {
+    "id": "energizing_breath",
+    "name": "Energizing Breath",
+    "displayName": "Energizing Breath",
+    "framework": "tcm",
+    "pattern": "yang-deficiency",
+    "duration": "5 min",
+    "benefit": "Yang building",
+    "intensity": "high",
+    "instructions": [
+      "Sit upright",
+      "Inhale deeply and quickly",
+      "Exhale forcefully",
+      "Maintain steady pace",
+      "Feel energy rising",
+      "Continue for 2–5 minutes"
+    ]
+  },
+  {
+    "id": "vigorous_breathing_tcm",
+    "name": "Vigorous Breathing",
+    "displayName": "Vigorous Breathing (TCM)",
+    "framework": "tcm",
+    "pattern": "yang-deficiency",
+    "duration": "5 min",
+    "benefit": "Yang activation",
+    "intensity": "high",
+    "instructions": [
+      "Sit upright",
+      "Inhale strongly",
+      "Exhale strongly",
+      "Keep pace fast",
+      "Engage core muscles",
+      "Continue for 1–3 minutes"
+    ]
+  },
+  {
+    "id": "flowing_breath",
+    "name": "Flowing Breath",
+    "displayName": "Flowing Breath",
+    "framework": "tcm",
+    "pattern": "qi-stagnation",
+    "duration": "6 min",
+    "benefit": "Qi movement",
+    "intensity": "medium",
+    "instructions": [
+      "Sit relaxed",
+      "Inhale smoothly",
+      "Exhale smoothly",
+      "Keep breath continuous",
+      "Avoid pauses",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "rhythmic_breathing",
+    "name": "Rhythmic Breathing",
+    "displayName": "Rhythmic Breathing",
+    "framework": "tcm",
+    "pattern": "qi-stagnation",
+    "duration": "6 min",
+    "benefit": "Qi circulation",
+    "intensity": "medium",
+    "instructions": [
+      "Sit upright",
+      "Inhale for 4 seconds",
+      "Hold for 2 seconds",
+      "Exhale for 4 seconds",
+      "Repeat rhythm steadily",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "box_breathing",
+    "name": "Box Breathing",
+    "displayName": "Box Breathing",
+    "framework": "modern",
+    "category": "normal_weight",
+    "duration": "5-10 min",
+    "benefit": "Stress management",
+    "intensity": "low",
+    "instructions": [
+      "Sit upright",
+      "Inhale for 4 seconds",
+      "Hold for 4 seconds",
+      "Exhale for 4 seconds",
+      "Hold for 4 seconds",
+      "Repeat cycle for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "deep_breathing_modern",
+    "name": "Deep Breathing",
+    "displayName": "Deep Breathing (Modern)",
+    "framework": "modern",
+    "category": "normal_weight",
+    "duration": "5-10 min",
+    "benefit": "Relaxation",
+    "intensity": "low",
+    "instructions": [
+      "Sit or lie comfortably",
+      "Inhale deeply through nose",
+      "Expand belly fully",
+      "Exhale slowly",
+      "Relax body",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "energizing_breath_modern",
+    "name": "Energizing Breath",
+    "displayName": "Energizing Breath (Modern)",
+    "framework": "modern",
+    "category": "overweight",
+    "duration": "5 min",
+    "benefit": "Energy boost",
+    "intensity": "medium",
+    "instructions": [
+      "Sit upright",
+      "Inhale quickly",
+      "Exhale quickly",
+      "Maintain steady rhythm",
+      "Keep body active",
+      "Continue for 2–5 minutes"
+    ]
+  },
+  {
+    "id": "rhythmic_breathing_modern",
+    "name": "Rhythmic Breathing",
+    "displayName": "Rhythmic Breathing (Modern)",
+    "framework": "modern",
+    "category": "overweight",
+    "duration": "5 min",
+    "benefit": "Focus",
+    "intensity": "medium",
+    "instructions": [
+      "Sit comfortably",
+      "Inhale and exhale in equal rhythm",
+      "Keep pace steady",
+      "Focus on consistency",
+      "Continue for 5–10 minutes"
+    ]
+  },
+  {
+    "id": "gentle_breathing_modern",
+    "name": "Gentle Breathing",
+    "displayName": "Gentle Breathing (Modern)",
+    "framework": "modern",
+    "category": "underweight",
+    "duration": "5 min",
+    "benefit": "Calming",
+    "intensity": "low",
+    "instructions": [
+      "Sit or lie down",
+      "Breathe slowly and softly",
+      "Avoid force",
+      "Relax completely",
+      "Maintain natural rhythm",
+      "Continue for 10 minutes"
+    ]
+  },
+  {
+    "id": "extended_breathwork",
+    "name": "Extended Breathwork",
+    "displayName": "Extended Breathwork",
+    "framework": "modern",
+    "category": "underweight",
+    "duration": "6 min",
+    "benefit": "Relaxation",
+    "intensity": "low",
+    "instructions": [
+      "Sit comfortably",
+      "Inhale for 4 seconds",
+      "Exhale for 6–8 seconds",
+      "Gradually deepen breath",
+      "Keep body relaxed",
+      "Continue for 10 minutes"
+    ]
+  }
+]

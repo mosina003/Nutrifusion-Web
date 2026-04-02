@@ -1,0 +1,699 @@
+[
+  {
+    "id": "deep_diaphragmatic_breathing",
+    "name": "Deep Diaphragmatic Breathing",
+    "sanskritName": "Dirgha Pranayama",
+    "category": "core",
+    "difficulty": "beginner",
+    "duration": 600,
+    "cycleLength": 4,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 0,
+    "benefits": ["Deep oxygenation", "Anxiety relief", "Core activation"],
+    "contraindications": ["Severe anxiety", "Heart conditions"],
+    "instructions": [
+      "Sit upright in a comfortable position",
+      "Place one hand on chest, one on belly",
+      "Exhale completely through the mouth",
+      "Close your mouth and inhale through nose for count of 4",
+      "Feel your belly expand with breath",
+      "Exhale through mouth for count of 4",
+      "Repeat for 10 cycles",
+      "Build up to 15-20 cycles daily"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Deeply grounding and stabilizing" },
+          "pitta": { "score": 7, "reason": "Calming influence" },
+          "kapha": { "score": 6, "reason": "Gentle activation" }
+        },
+        "agni": { "low": 8, "normal": 7, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 8, "reason": "Cooling moisture" },
+          "hot_dry": { "score": 8, "reason": "Moisture inducing" },
+          "cold_moist": { "score": 6, "reason": "Neutral effect" },
+          "cold_dry": { "score": 5, "reason": "May feel limiting" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 8, "reason": "Deep yin nourishment" },
+          "yang_deficiency": { "score": 6, "reason": "Gently building yang" },
+          "qi_stagnation": { "score": 9, "reason": "Excellent qi circulation" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 2, "reason": "Minimal" },
+          "balance": { "score": 4, "reason": "Some stabilization" },
+          "relaxation": { "score": 10, "reason": "Perfect for anxiety relief" },
+          "cardio": { "score": 1, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "anulom_vilom",
+    "name": "Anulom Vilom",
+    "sanskritName": "Alternate Nostril Breathing",
+    "category": "core",
+    "difficulty": "intermediate",
+    "duration": 900,
+    "cycleLength": 4,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 0,
+    "benefits": ["Nadi cleansing", "Energy balance", "Mental clarity"],
+    "contraindications": ["Pregnancy", "Heart issues"],
+    "instructions": [
+      "Sit in comfortable meditation pose",
+      "Use Vishnu mudra with right hand",
+      "Close right nostril with thumb",
+      "Inhale through left nostril for count of 4",
+      "Close left nostril with ring finger",
+      "Open and exhale through right nostril for count of 4",
+      "Inhale through right nostril for count of 4",
+      "Continue alternating for 10-15 minutes"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Balancing and harmonizing" },
+          "pitta": { "score": 8, "reason": "Cooling left nostril effect" },
+          "kapha": { "score": 8, "reason": "Energizing alternation" }
+        },
+        "agni": { "low": 8, "normal": 8, "high": 7 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 9, "reason": "Perfect balancing" },
+          "hot_dry": { "score": 8, "reason": "Moisture and cooling" },
+          "cold_moist": { "score": 8, "reason": "Warming right side" },
+          "cold_dry": { "score": 7, "reason": "Balancing energy" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 9, "reason": "Yin-yang balancing" },
+          "yang_deficiency": { "score": 9, "reason": "Yang activation" },
+          "qi_stagnation": { "score": 10, "reason": "Excellent channel balancing" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 1, "reason": "None" },
+          "balance": { "score": 9, "reason": "Perfect balance training" },
+          "relaxation": { "score": 8, "reason": "Calming and centering" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "nadi_shodhana",
+    "name": "Nadi Shodhana",
+    "sanskritName": "Channel Cleansing Breath",
+    "category": "core",
+    "difficulty": "intermediate",
+    "duration": 1200,
+    "cycleLength": 4,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 4,
+    "benefits": ["Channel purification", "Toxin release", "Mental peace"],
+    "contraindications": ["Pregnancy", "High blood pressure"],
+    "instructions": [
+      "Sit in lotus or cross-legged position",
+      "Use Vishnu mudra with right hand",
+      "Close right nostril and inhale through left for count of 4",
+      "Close both nostrils and hold for count of 4",
+      "Open right nostril and exhale for count of 4",
+      "Inhale through right for count of 4",
+      "Close both and hold for count of 4",
+      "Exhale through left and repeat",
+      "Practice for 15-20 minutes"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Deep grounding and cleansing" },
+          "pitta": { "score": 8, "reason": "Cooling and purifying" },
+          "kapha": { "score": 7, "reason": "Gentle stimulation" }
+        },
+        "agni": { "low": 8, "normal": 7, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 9, "reason": "Deep cooling" },
+          "hot_dry": { "score": 8, "reason": "Moisture and cooling" },
+          "cold_moist": { "score": 7, "reason": "Some activation" },
+          "cold_dry": { "score": 6, "reason": "Mild warming" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 9, "reason": "Deep restoration" },
+          "yang_deficiency": { "score": 6, "reason": "Very gentle" },
+          "qi_stagnation": { "score": 9, "reason": "Channel cleansing" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 2, "reason": "Minimal" },
+          "balance": { "score": 8, "reason": "Mental balance" },
+          "relaxation": { "score": 9, "reason": "Deep peace" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "bhramari_breathing",
+    "name": "Bhramari Breathing",
+    "sanskritName": "Bee Breath",
+    "category": "calming",
+    "difficulty": "beginner",
+    "duration": 300,
+    "cycleLength": 4,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 0,
+    "benefits": ["Mental clarity", "Stress relief", "Vibration therapy"],
+    "contraindications": ["Ear infections", "Hearing sensitivity"],
+    "instructions": [
+      "Sit upright in comfortable position",
+      "Close your ears with thumbs or fingers",
+      "Inhale through nose",
+      "On exhale, hum like a bee",
+      "Maintain steady, continuous humming",
+      "Feel vibrations in head and body",
+      "Continue for 5-10 minutes",
+      "Practice 1-2 times daily"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Vibration is deeply grounding" },
+          "pitta": { "score": 9, "reason": "Cooling and calming" },
+          "kapha": { "score": 8, "reason": "Stimulating vibrations" }
+        },
+        "agni": { "low": 6, "normal": 6, "high": 5 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 9, "reason": "Cooling vibration" },
+          "hot_dry": { "score": 8, "reason": "Calming effect" },
+          "cold_moist": { "score": 7, "reason": "Gentle vibration" },
+          "cold_dry": { "score": 6, "reason": "Mild activation" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 8, "reason": "Calming vibration" },
+          "yang_deficiency": { "score": 7, "reason": "Gentle stimulation" },
+          "qi_stagnation": { "score": 9, "reason": "Vibration moves qi" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 1, "reason": "None" },
+          "balance": { "score": 7, "reason": "Mental focus" },
+          "relaxation": { "score": 9, "reason": "Excellent stress relief" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "ujjayi_breathing",
+    "name": "Ujjayi Breathing",
+    "sanskritName": "Ocean Breath",
+    "category": "core",
+    "difficulty": "intermediate",
+    "duration": 900,
+    "cycleLength": 4,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 0,
+    "benefits": ["Focus", "Throat strength", "Sound therapy"],
+    "contraindications": ["Throat inflammation", "Severe anxiety"],
+    "instructions": [
+      "Sit in upright position",
+      "Inhale through nose",
+      "On exhale, constrict throat slightly",
+      "Create ocean-like sound HAAAA",
+      "Sound should be audible",
+      "Maintain steady rhythm",
+      "Can practice for 10-20 minutes",
+      "Great during yoga practice"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 8, "reason": "Grounding with sound" },
+          "pitta": { "score": 7, "reason": "Moderate cooling" },
+          "kapha": { "score": 8, "reason": "Stimulating sound" }
+        },
+        "agni": { "low": 7, "normal": 6, "high": 5 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 7, "reason": "Cooling sound" },
+          "hot_dry": { "score": 7, "reason": "Balancing" },
+          "cold_moist": { "score": 7, "reason": "Neutral effect" },
+          "cold_dry": { "score": 6, "reason": "Mild movement" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 7, "reason": "Sound healing" },
+          "yang_deficiency": { "score": 7, "reason": "Gentle activation" },
+          "qi_stagnation": { "score": 8, "reason": "Sound moves qi" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 3, "reason": "Throat work" },
+          "balance": { "score": 8, "reason": "Great focus tool" },
+          "relaxation": { "score": 7, "reason": "Calming rhythm" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "kapalbhati",
+    "name": "Kapalbhati",
+    "sanskritName": "Skull Shining Breath",
+    "category": "heating",
+    "difficulty": "intermediate",
+    "duration": 300,
+    "cycleLength": 4,
+    "inhaleCount": 1,
+    "exhaleCount": 1,
+    "holdCount": 0,
+    "benefits": ["Mental clarity", "Energy boost", "Toxin removal"],
+    "contraindications": ["Pregnancy", "High blood pressure", "Heart issues", "Recent surgery"],
+    "instructions": [
+      "Sit upright in cross-legged position",
+      "Place hands on knees",
+      "Inhale passively through nose",
+      "Exhale forcefully through nose",
+      "Use abdominal muscles to push out breath",
+      "Keep inhalations passive",
+      "Start with 10 rapid exhalations",
+      "Rest and repeat 2-3 rounds"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 5, "reason": "Too intense for vata" },
+          "pitta": { "score": 5, "reason": "Intense heating" },
+          "kapha": { "score": 10, "reason": "Perfect activation" }
+        },
+        "agni": { "low": 10, "normal": 8, "high": 4 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 3, "reason": "Too much heat" },
+          "hot_dry": { "score": 8, "reason": "Strong alignment" },
+          "cold_moist": { "score": 10, "reason": "Powerful warming" },
+          "cold_dry": { "score": 9, "reason": "Intense activation" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 3, "reason": "Too intense" },
+          "yang_deficiency": { "score": 10, "reason": "Strong yang burst" },
+          "qi_stagnation": { "score": 10, "reason": "Explosive qi movement" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 7, "reason": "Core activation" },
+          "balance": { "score": 6, "reason": "Mental clarity" },
+          "relaxation": { "score": 1, "reason": "Too intense" },
+          "cardio": { "score": 5, "reason": "Some elevation" }
+        }
+      }
+    }
+  },
+  {
+    "id": "sheetali_pranayama",
+    "name": "Sheetali Pranayama",
+    "sanskritName": "Cooling Breath",
+    "category": "cooling",
+    "difficulty": "beginner",
+    "duration": 600,
+    "cycleLength": 4,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 0,
+    "benefits": ["Heat reduction", "Pitta calm", "Digestion support"],
+    "contraindications": ["Cold constitution", "Asthma"],
+    "instructions": [
+      "Sit comfortably in upright position",
+      "Stick tongue out slightly",
+      "Curl tongue edges to form tube",
+      "Inhale through tongue for count of 4",
+      "Close mouth and exhale through nose for count of 4",
+      "If you cannot curl tongue, use regular inhalation",
+      "Practice for 5-10 minutes",
+      "Best done in morning or when overheated"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 4, "reason": "Too cooling" },
+          "pitta": { "score": 10, "reason": "Perfect cooling" },
+          "kapha": { "score": 2, "reason": "Too much cooling" }
+        },
+        "agni": { "low": 3, "normal": 4, "high": 10 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 10, "reason": "Directly cooling" },
+          "hot_dry": { "score": 10, "reason": "Cooling and moisturizing" },
+          "cold_moist": { "score": 1, "reason": "Too much cooling" },
+          "cold_dry": { "score": 1, "reason": "Excessive cooling" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 10, "reason": "Deep yin cooling" },
+          "yang_deficiency": { "score": 1, "reason": "Too cooling" },
+          "qi_stagnation": { "score": 6, "reason": "Mild effect" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 0, "reason": "None" },
+          "balance": { "score": 5, "reason": "Some focus" },
+          "relaxation": { "score": 9, "reason": "Very cooling" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "surya_bhedana",
+    "name": "Surya Bhedana",
+    "sanskritName": "Right Nostril Heating Breath",
+    "category": "heating",
+    "difficulty": "intermediate",
+    "duration": 600,
+    "cycleLength": 4,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 0,
+    "benefits": ["Energy boost", "Digestion", "Heat generation"],
+    "contraindications": ["High blood pressure", "Heart issues"],
+    "instructions": [
+      "Sit upright in meditation position",
+      "Close left nostril with ring finger",
+      "Inhale through right nostril for count of 4",
+      "Close both nostrils and hold for count of 4",
+      "Exhale through left nostril for count of 4",
+      "Stay with left exhale, no right nostril use",
+      "Repeat for 5-10 minutes",
+      "Practice before noon for best results"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 7, "reason": "Warming grounding" },
+          "pitta": { "score": 3, "reason": "Too much heat" },
+          "kapha": { "score": 9, "reason": "Excellent activation" }
+        },
+        "agni": { "low": 9, "normal": 8, "high": 3 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 3, "reason": "Too much heat" },
+          "hot_dry": { "score": 8, "reason": "Strong alignment" },
+          "cold_moist": { "score": 9, "reason": "Strong warming" },
+          "cold_dry": { "score": 8, "reason": "Heating" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 3, "reason": "Too heating" },
+          "yang_deficiency": { "score": 9, "reason": "Yang activation" },
+          "qi_stagnation": { "score": 8, "reason": "Activates qi" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 2, "reason": "Minimal" },
+          "balance": { "score": 7, "reason": "Focus and energy" },
+          "relaxation": { "score": 2, "reason": "Energizing" },
+          "cardio": { "score": 5, "reason": "Some elevation" }
+        }
+      }
+    }
+  },
+  {
+    "id": "box_breathing",
+    "name": "Box Breathing",
+    "sanskritName": "Sama Vritti (4-4-4-4)",
+    "category": "modern",
+    "difficulty": "beginner",
+    "duration": 600,
+    "cycleLength": 16,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 4,
+    "benefits": ["Stress relief", "Focus", "Nervous system balance"],
+    "contraindications": [],
+    "instructions": [
+      "Sit upright in comfortable position",
+      "Exhale completely",
+      "Inhale for count of 4",
+      "Hold breath for count of 4",
+      "Exhale for count of 4",
+      "Hold empty for count of 4",
+      "Repeat 5-10 times",
+      "Excellent before stressful situations"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Perfect grounding" },
+          "pitta": { "score": 8, "reason": "Calming balance" },
+          "kapha": { "score": 7, "reason": "Stimulating rhythm" }
+        },
+        "agni": { "low": 7, "normal": 7, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 8, "reason": "Balancing" },
+          "hot_dry": { "score": 8, "reason": "Moisturizing" },
+          "cold_moist": { "score": 7, "reason": "Neutral" },
+          "cold_dry": { "score": 7, "reason": "Gentle" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 8, "reason": "Balancing" },
+          "yang_deficiency": { "score": 8, "reason": "Gentle activation" },
+          "qi_stagnation": { "score": 9, "reason": "Equal flow" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 2, "reason": "Minimal" },
+          "balance": { "score": 10, "reason": "Perfect nervous system balance" },
+          "relaxation": { "score": 9, "reason": "Stress relief" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "4_7_8_breathing",
+    "name": "4-7-8 Breathing",
+    "sanskritName": "Relaxation Breath",
+    "category": "modern",
+    "difficulty": "beginner",
+    "duration": 600,
+    "cycleLength": 19,
+    "inhaleCount": 4,
+    "exhaleCount": 8,
+    "holdCount": 7,
+    "benefits": ["Deep relaxation", "Sleep support", "Anxiety relief"],
+    "contraindications": ["Pregnancy", "High anxiety"],
+    "instructions": [
+      "Sit or lie down comfortably",
+      "Exhale completely through mouth",
+      "Close mouth and inhale through nose for count of 4",
+      "Hold breath for count of 7",
+      "Exhale completely through mouth for count of 8",
+      "Pause and repeat 4 times",
+      "Repeat 2x daily or before bed",
+      "Best for sleep and deep relaxation"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Deeply calming" },
+          "pitta": { "score": 9, "reason": "Cooling and settling" },
+          "kapha": { "score": 7, "reason": "Very gentle" }
+        },
+        "agni": { "low": 6, "normal": 5, "high": 4 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 9, "reason": "Cooling and relaxing" },
+          "hot_dry": { "score": 9, "reason": "Cooling and moisturizing" },
+          "cold_moist": { "score": 6, "reason": "May increase heaviness" },
+          "cold_dry": { "score": 5, "reason": "Too cooling" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 9, "reason": "Deep yin restoration" },
+          "yang_deficiency": { "score": 5, "reason": "Too cooling" },
+          "qi_stagnation": { "score": 8, "reason": "Settles qi" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 0, "reason": "None" },
+          "balance": { "score": 9, "reason": "Nervous system reset" },
+          "relaxation": { "score": 10, "reason": "Perfect for sleep" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "coherent_breathing",
+    "name": "Coherent Breathing",
+    "sanskritName": "5-5 Equal Breath",
+    "category": "modern",
+    "difficulty": "beginner",
+    "duration": 900,
+    "cycleLength": 10,
+    "inhaleCount": 5,
+    "exhaleCount": 5,
+    "holdCount": 0,
+    "benefits": ["HRV boost", "Calm focus", "Autonomic balance"],
+    "contraindications": [],
+    "instructions": [
+      "Sit comfortably upright",
+      "Inhale through nose for 5 seconds",
+      "Exhale through nose for 5 seconds",
+      "Continue steady rhythm",
+      "Can use metronome or music",
+      "Practice for 15-20 minutes",
+      "Daily practice optimal",
+      "About 6 cycles per minute"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Perfectly grounding" },
+          "pitta": { "score": 8, "reason": "Balancing" },
+          "kapha": { "score": 8, "reason": "Gently stimulating" }
+        },
+        "agni": { "low": 7, "normal": 7, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 8, "reason": "Gentle cooling" },
+          "hot_dry": { "score": 7, "reason": "Balancing" },
+          "cold_moist": { "score": 8, "reason": "Neutral effect" },
+          "cold_dry": { "score": 7, "reason": "Gentle" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 9, "reason": "Nourishing" },
+          "yang_deficiency": { "score": 8, "reason": "Gentle activation" },
+          "qi_stagnation": { "score": 9, "reason": "Harmonious flow" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 1, "reason": "Minimal" },
+          "balance": { "score": 10, "reason": "Perfect HRV optimization" },
+          "relaxation": { "score": 9, "reason": "Deep calm" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "sama_vritti",
+    "name": "Sama Vritti",
+    "sanskritName": "Equal Breathing",
+    "category": "focus",
+    "difficulty": "beginner",
+    "duration": 600,
+    "cycleLength": 8,
+    "inhaleCount": 4,
+    "exhaleCount": 4,
+    "holdCount": 0,
+    "benefits": ["Mental steadiness", "Concentration", "Inner balance"],
+    "contraindications": [],
+    "instructions": [
+      "Sit in comfortable meditation pose",
+      "Breathe in through nose for count of 4",
+      "Breathe out through nose for count of 4",
+      "Keep the breathing smooth and even",
+      "Eyes can be closed or gazing downward",
+      "Practice for 10 minutes",
+      "Best before study or focus work",
+      "Build up to longer practice"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Grounding and balancing" },
+          "pitta": { "score": 8, "reason": "Calming balance" },
+          "kapha": { "score": 7, "reason": "Gentle stimulation" }
+        },
+        "agni": { "low": 6, "normal": 6, "high": 5 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 8, "reason": "Balancing" },
+          "hot_dry": { "score": 8, "reason": "Moisturizing" },
+          "cold_moist": { "score": 7, "reason": "Neutral" },
+          "cold_dry": { "score": 7, "reason": "Gentle" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 8, "reason": "Balancing" },
+          "yang_deficiency": { "score": 8, "reason": "Gentle" },
+          "qi_stagnation": { "score": 9, "reason": "Equal flow" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 0, "reason": "None" },
+          "strength": { "score": 1, "reason": "Minimal" },
+          "balance": { "score": 10, "reason": "Perfect for focus" },
+          "relaxation": { "score": 8, "reason": "Calming" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,661 @@
+[
+  {
+    "id": "walking",
+    "name": "Walking",
+    "category": "cardio",
+    "subcategory": "low_impact",
+    "difficulty": "beginner",
+    "duration": 1800,
+    "caloriesBurn": 150,
+    "intensity": "low",
+    "benefits": ["Endurance", "Circulation", "Mild cardio"],
+    "contraindications": ["Severe knee pain", "Hip injury"],
+    "equipment": "none",
+    "instructions": [
+      "Stand upright with good posture",
+      "Swing arms naturally while walking",
+      "Keep pace steady and comfortable",
+      "Maintain consistent breathing",
+      "Walk for 20-30 minutes daily"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 8, "reason": "Grounding movement" },
+          "pitta": { "score": 7, "reason": "Moderate cooling action" },
+          "kapha": { "score": 6, "reason": "Needs more intensity" }
+        },
+        "agni": { "low": 7, "normal": 6, "high": 5 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 8, "reason": "Mild cooling" },
+          "hot_dry": { "score": 7, "reason": "Gentle movement" },
+          "cold_moist": { "score": 6, "reason": "Light activation" },
+          "cold_dry": { "score": 5, "reason": "May feel limited" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 7, "reason": "Gentle circulation" },
+          "yang_deficiency": { "score": 6, "reason": "Light movement" },
+          "qi_stagnation": { "score": 8, "reason": "Steadies qi flow" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 2, "reason": "Minimal" },
+          "strength": { "score": 1, "reason": "None" },
+          "balance": { "score": 3, "reason": "Light" },
+          "relaxation": { "score": 8, "reason": "Very calming" },
+          "cardio": { "score": 5, "reason": "Low-impact endurance" }
+        }
+      }
+    }
+  },
+  {
+    "id": "jogging",
+    "name": "Jogging",
+    "category": "cardio",
+    "subcategory": "moderate_intensity",
+    "difficulty": "intermediate",
+    "duration": 1200,
+    "caloriesBurn": 400,
+    "intensity": "moderate",
+    "benefits": ["Cardio", "Fat burn", "Endurance"],
+    "contraindications": ["Knee injury", "Joint pain", "Heart problems"],
+    "equipment": "none",
+    "instructions": [
+      "Warm up with 5 minutes of brisk walking",
+      "Increase pace to a comfortable jog",
+      "Keep arms relaxed, swing gently",
+      "Maintain rhythmic breathing",
+      "Jog for 20-30 minutes",
+      "Cool down with walking"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 6, "reason": "Grounding but intense" },
+          "pitta": { "score": 6, "reason": "Heat building" },
+          "kapha": { "score": 9, "reason": "Excellent activation" }
+        },
+        "agni": { "low": 9, "normal": 8, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 5, "reason": "Too much heat" },
+          "hot_dry": { "score": 7, "reason": "Aligned with heat" },
+          "cold_moist": { "score": 9, "reason": "Strong warming" },
+          "cold_dry": { "score": 8, "reason": "Heat generation" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 5, "reason": "Heat-generating" },
+          "yang_deficiency": { "score": 9, "reason": "Strong yang boost" },
+          "qi_stagnation": { "score": 9, "reason": "Dynamic qi mobilization" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 1, "reason": "None" },
+          "strength": { "score": 3, "reason": "Minimal" },
+          "balance": { "score": 4, "reason": "Light" },
+          "relaxation": { "score": 1, "reason": "High intensity" },
+          "cardio": { "score": 9, "reason": "Excellent cardio" }
+        }
+      }
+    }
+  },
+  {
+    "id": "cycling",
+    "name": "Cycling",
+    "category": "cardio",
+    "subcategory": "moderate_intensity",
+    "difficulty": "intermediate",
+    "duration": 1500,
+    "caloriesBurn": 500,
+    "intensity": "moderate",
+    "benefits": ["Leg strength", "Cardio", "Joint-friendly"],
+    "contraindications": ["Knee pain", "Hip issues"],
+    "equipment": "bicycle",
+    "instructions": [
+      "Adjust seat height to knee comfort",
+      "Warm up with easy pedaling",
+      "Increase cadence gradually",
+      "Maintain steady breathing",
+      "Cycle for 30-45 minutes",
+      "Cool down slowly"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 7, "reason": "Grounding with movement" },
+          "pitta": { "score": 6, "reason": "Moderate heating" },
+          "kapha": { "score": 8, "reason": "Stimulating" }
+        },
+        "agni": { "low": 8, "normal": 7, "high": 5 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 6, "reason": "Moderate warmth" },
+          "hot_dry": { "score": 7, "reason": "Aligned movement" },
+          "cold_moist": { "score": 8, "reason": "Warming" },
+          "cold_dry": { "score": 7, "reason": "Activating" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 6, "reason": "Moderate energy work" },
+          "yang_deficiency": { "score": 8, "reason": "Activating" },
+          "qi_stagnation": { "score": 9, "reason": "Excellent qi mobilization" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 2, "reason": "Minimal" },
+          "strength": { "score": 6, "reason": "Leg building" },
+          "balance": { "score": 5, "reason": "Stability work" },
+          "relaxation": { "score": 2, "reason": "Moderate intensity" },
+          "cardio": { "score": 9, "reason": "Excellent cardio" }
+        }
+      }
+    }
+  },
+  {
+    "id": "skipping_rope",
+    "name": "Skipping Rope",
+    "category": "cardio",
+    "subcategory": "high_intensity",
+    "difficulty": "intermediate",
+    "duration": 600,
+    "caloriesBurn": 600,
+    "intensity": "high",
+    "benefits": ["Cardio", "Coordination", "Fat burn"],
+    "contraindications": ["Joint problems", "Tendon injury"],
+    "equipment": "jump_rope",
+    "instructions": [
+      "Start with feet together",
+      "Swing rope overhead and jump",
+      "Keep elbows bent and close to body",
+      "Jump on the balls of feet",
+      "Start with 1-2 minute intervals",
+      "Rest between sets"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 5, "reason": "Too intense and scattered" },
+          "pitta": { "score": 6, "reason": "Aggravates heat" },
+          "kapha": { "score": 10, "reason": "Perfect activation" }
+        },
+        "agni": { "low": 10, "normal": 9, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 4, "reason": "Too much heat" },
+          "hot_dry": { "score": 8, "reason": "Strong alignment" },
+          "cold_moist": { "score": 10, "reason": "Excellent warming" },
+          "cold_dry": { "score": 9, "reason": "Strong activation" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 4, "reason": "Very intense" },
+          "yang_deficiency": { "score": 10, "reason": "Powerful yang activation" },
+          "qi_stagnation": { "score": 10, "reason": "Dynamic qi burst" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 1, "reason": "None" },
+          "strength": { "score": 5, "reason": "Some leg work" },
+          "balance": { "score": 6, "reason": "Coordination" },
+          "relaxation": { "score": 1, "reason": "Very intense" },
+          "cardio": { "score": 10, "reason": "Maximum cardio burst" }
+        }
+      }
+    }
+  },
+  {
+    "id": "push_ups",
+    "name": "Push-ups",
+    "category": "strength",
+    "subcategory": "upper_body",
+    "difficulty": "intermediate",
+    "duration": 600,
+    "caloriesBurn": 300,
+    "intensity": "high",
+    "benefits": ["Chest strength", "Arm power", "Core stability"],
+    "contraindications": ["Shoulder injury", "Wrist pain"],
+    "equipment": "none",
+    "instructions": [
+      "Start in plank position with hands shoulder-width apart",
+      "Lower body until chest nearly touches floor",
+      "Keep core tight and elbows at 45 degrees",
+      "Push back to starting position",
+      "Do 3 sets of 10-15 reps",
+      "Rest 60 seconds between sets"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 6, "reason": "Grounding but intense" },
+          "pitta": { "score": 7, "reason": "Building strength" },
+          "kapha": { "score": 9, "reason": "Excellent strengthening" }
+        },
+        "agni": { "low": 9, "normal": 8, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 5, "reason": "Too heating" },
+          "hot_dry": { "score": 8, "reason": "Strengthening heat" },
+          "cold_moist": { "score": 9, "reason": "Warming activation" },
+          "cold_dry": { "score": 8, "reason": "Strong action" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 5, "reason": "Too demanding" },
+          "yang_deficiency": { "score": 9, "reason": "Strong yang activation" },
+          "qi_stagnation": { "score": 9, "reason": "Dynamic energy mobilization" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 1, "reason": "None" },
+          "strength": { "score": 10, "reason": "Excellent upper body" },
+          "balance": { "score": 7, "reason": "Core engagement" },
+          "relaxation": { "score": 1, "reason": "High intensity" },
+          "cardio": { "score": 3, "reason": "Minimal" }
+        }
+      }
+    }
+  },
+  {
+    "id": "squats",
+    "name": "Squats",
+    "category": "strength",
+    "subcategory": "lower_body",
+    "difficulty": "intermediate",
+    "duration": 600,
+    "caloriesBurn": 350,
+    "intensity": "high",
+    "benefits": ["Leg strength", "Glute power", "Metabolic boost"],
+    "contraindications": ["Knee pain", "Lower back issues"],
+    "equipment": "none",
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Lower hips back and down as if sitting",
+      "Keep chest up and weight in heels",
+      "Thighs parallel to ground at bottom",
+      "Push through heels to stand",
+      "Do 3 sets of 12-15 reps"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 7, "reason": "Grounding strength work" },
+          "pitta": { "score": 8, "reason": "Controlled power" },
+          "kapha": { "score": 9, "reason": "Powerful activation" }
+        },
+        "agni": { "low": 9, "normal": 8, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 5, "reason": "Too much heat" },
+          "hot_dry": { "score": 8, "reason": "Strong alignment" },
+          "cold_moist": { "score": 9, "reason": "Warming power" },
+          "cold_dry": { "score": 8, "reason": "Activating" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 5, "reason": "Too demanding" },
+          "yang_deficiency": { "score": 9, "reason": "Strong yang activation" },
+          "qi_stagnation": { "score": 9, "reason": "Lower body qi mobilization" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 3, "reason": "Hip opening" },
+          "strength": { "score": 10, "reason": "Excellent lower body" },
+          "balance": { "score": 7, "reason": "Great stability" },
+          "relaxation": { "score": 1, "reason": "High intensity" },
+          "cardio": { "score": 4, "reason": "Some elevation" }
+        }
+      }
+    }
+  },
+  {
+    "id": "plank",
+    "name": "Plank",
+    "category": "core",
+    "subcategory": "stability",
+    "difficulty": "intermediate",
+    "duration": 300,
+    "caloriesBurn": 150,
+    "intensity": "high",
+    "benefits": ["Core strength", "Stability", "Posture"],
+    "contraindications": ["Wrist injury", "Lower back pain"],
+    "equipment": "none",
+    "instructions": [
+      "Start in push-up position",
+      "Align shoulders over wrists",
+      "Keep body in straight line",
+      "Engage core and glutes",
+      "Hold for 20-60 seconds",
+      "Rest and repeat 3 times"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 6, "reason": "Requires stability" },
+          "pitta": { "score": 8, "reason": "Building will" },
+          "kapha": { "score": 9, "reason": "Excellent core work" }
+        },
+        "agni": { "low": 9, "normal": 8, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 5, "reason": "Too intense" },
+          "hot_dry": { "score": 8, "reason": "Strong activation" },
+          "cold_moist": { "score": 9, "reason": "Warming" },
+          "cold_dry": { "score": 8, "reason": "Strong action" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 5, "reason": "Too demanding" },
+          "yang_deficiency": { "score": 9, "reason": "Yang activation" },
+          "qi_stagnation": { "score": 8, "reason": "Central qi mobilization" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 1, "reason": "None" },
+          "strength": { "score": 9, "reason": "Core focused" },
+          "balance": { "score": 9, "reason": "Excellent stability" },
+          "relaxation": { "score": 1, "reason": "Challenging" },
+          "cardio": { "score": 3, "reason": "Minimal" }
+        }
+      }
+    }
+  },
+  {
+    "id": "hamstring_stretch",
+    "name": "Hamstring Stretch",
+    "category": "flexibility",
+    "subcategory": "stretching",
+    "difficulty": "beginner",
+    "duration": 300,
+    "caloriesBurn": 20,
+    "intensity": "low",
+    "benefits": ["Flexibility", "Release tension", "Mobility"],
+    "contraindications": ["Severe hamstring injury"],
+    "equipment": "none",
+    "instructions": [
+      "Sit with legs extended",
+      "Fold forward from hips",
+      "Reach toward toes or use strap",
+      "Hold stretch for 30 seconds",
+      "Breathe deeply and relax",
+      "Repeat 2-3 times per leg"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 8, "reason": "Grounding opening" },
+          "pitta": { "score": 8, "reason": "Gentle cooling" },
+          "kapha": { "score": 6, "reason": "Too passive" }
+        },
+        "agni": { "low": 6, "normal": 5, "high": 8 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 8, "reason": "Cooling stretch" },
+          "hot_dry": { "score": 7, "reason": "Release" },
+          "cold_moist": { "score": 5, "reason": "May increase coldness" },
+          "cold_dry": { "score": 4, "reason": "Too passive" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 9, "reason": "Deep yin nourishment" },
+          "yang_deficiency": { "score": 4, "reason": "Too yin" },
+          "qi_stagnation": { "score": 7, "reason": "Leg qi release" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 10, "reason": "Hamstring specific" },
+          "strength": { "score": 0, "reason": "None" },
+          "balance": { "score": 2, "reason": "Minimal" },
+          "relaxation": { "score": 8, "reason": "Very calming" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  },
+  {
+    "id": "burpees",
+    "name": "Burpees",
+    "category": "hiit",
+    "subcategory": "full_body",
+    "difficulty": "advanced",
+    "duration": 300,
+    "caloriesBurn": 800,
+    "intensity": "extreme",
+    "benefits": ["Full body workout", "Cardio", "Strength"],
+    "contraindications": ["Heart issues", "Joint pain", "Low fitness"],
+    "equipment": "none",
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Squat down and place hands on ground",
+      "Jump feet back to plank position",
+      "Do a push-up",
+      "Jump feet back to squat position",
+      "Explode upward with jump",
+      "Do 3 sets of 10 reps"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 3, "reason": "Too intense and scattered" },
+          "pitta": { "score": 5, "reason": "Ignites fire" },
+          "kapha": { "score": 10, "reason": "Maximum activation" }
+        },
+        "agni": { "low": 10, "normal": 9, "high": 5 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 3, "reason": "Excessive heat" },
+          "hot_dry": { "score": 9, "reason": "Strong alignment" },
+          "cold_moist": { "score": 10, "reason": "Powerful warming" },
+          "cold_dry": { "score": 9, "reason": "Extreme activation" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 2, "reason": "Very depleting" },
+          "yang_deficiency": { "score": 10, "reason": "Powerful yang burst" },
+          "qi_stagnation": { "score": 10, "reason": "Extreme qi mobilization" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 2, "reason": "None" },
+          "strength": { "score": 9, "reason": "Full body" },
+          "balance": { "score": 7, "reason": "Dynamic stability" },
+          "relaxation": { "score": 0, "reason": "Maximum intensity" },
+          "cardio": { "score": 10, "reason": "Peak cardio" }
+        }
+      }
+    }
+  },
+  {
+    "id": "light_walking",
+    "name": "Light Walking",
+    "category": "recovery",
+    "subcategory": "low_impact",
+    "difficulty": "beginner",
+    "duration": 1800,
+    "caloriesBurn": 100,
+    "intensity": "very_low",
+    "benefits": ["Recovery", "Circulation", "Relaxation"],
+    "contraindications": [],
+    "equipment": "none",
+    "instructions": [
+      "Walk at gentle, comfortable pace",
+      "Let shoulders relax",
+      "Breathe naturally and deeply",
+      "Walk for 30 minutes or more",
+      "Ideal for active recovery days"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Deeply grounding" },
+          "pitta": { "score": 9, "reason": "Cooling and calming" },
+          "kapha": { "score": 7, "reason": "Gentle movement" }
+        },
+        "agni": { "low": 6, "normal": 5, "high": 4 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 9, "reason": "Cooling" },
+          "hot_dry": { "score": 8, "reason": "Calming" },
+          "cold_moist": { "score": 6, "reason": "Very gentle" },
+          "cold_dry": { "score": 5, "reason": "May feel limiting" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 9, "reason": "Deep yin restoration" },
+          "yang_deficiency": { "score": 5, "reason": "Very gentle" },
+          "qi_stagnation": { "score": 8, "reason": "Settles qi" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 1, "reason": "None" },
+          "strength": { "score": 0, "reason": "None" },
+          "balance": { "score": 2, "reason": "Minimal" },
+          "relaxation": { "score": 10, "reason": "Perfect recovery" },
+          "cardio": { "score": 3, "reason": "Very light" }
+        }
+      }
+    }
+  },
+  {
+    "id": "kettlebell_swings",
+    "name": "Kettlebell Swings",
+    "category": "functional",
+    "subcategory": "full_body",
+    "difficulty": "advanced",
+    "duration": 600,
+    "caloriesBurn": 400,
+    "intensity": "high",
+    "benefits": ["Posterior chain", "Power", "Cardio"],
+    "contraindications": ["Lower back injury", "Wrist weakness"],
+    "equipment": "kettlebell",
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Hold kettlebell with both hands",
+      "Hip hinge and swing between legs",
+      "Drive hips forward explosively",
+      "Swing to chest height",
+      "Do 3 sets of 15-20 swings"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 5, "reason": "Grounding but intense" },
+          "pitta": { "score": 7, "reason": "Building power" },
+          "kapha": { "score": 9, "reason": "Excellent activation" }
+        },
+        "agni": { "low": 9, "normal": 8, "high": 6 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 5, "reason": "Too much heat" },
+          "hot_dry": { "score": 8, "reason": "Strong alignment" },
+          "cold_moist": { "score": 9, "reason": "Warming power" },
+          "cold_dry": { "score": 8, "reason": "Activating" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 5, "reason": "Too demanding" },
+          "yang_deficiency": { "score": 9, "reason": "Yang activation" },
+          "qi_stagnation": { "score": 9, "reason": "Dynamic mobilization" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 2, "reason": "Minimal" },
+          "strength": { "score": 9, "reason": "Full body power" },
+          "balance": { "score": 8, "reason": "Posterior chain" },
+          "relaxation": { "score": 1, "reason": "High intensity" },
+          "cardio": { "score": 8, "reason": "Strong elevation" }
+        }
+      }
+    }
+  },
+  {
+    "id": "gentle_stretching",
+    "name": "Gentle Stretching",
+    "category": "recovery",
+    "subcategory": "mobility",
+    "difficulty": "beginner",
+    "duration": 900,
+    "caloriesBurn": 50,
+    "intensity": "very_low",
+    "benefits": ["Mobility", "Relaxation", "Recovery"],
+    "contraindications": [],
+    "equipment": "none",
+    "instructions": [
+      "Move slowly through major muscle groups",
+      "Hold each stretch 30-45 seconds",
+      "Breathe deeply and relax into stretch",
+      "Don't bounce or force",
+      "Focus on problem areas",
+      "Spend 15-20 minutes total"
+    ],
+    "framework": {
+      "ayurveda": {
+        "dosha": {
+          "vata": { "score": 9, "reason": "Calming and grounding" },
+          "pitta": { "score": 9, "reason": "Deeply cooling" },
+          "kapha": { "score": 8, "reason": "Gentle opening" }
+        },
+        "agni": { "low": 6, "normal": 5, "high": 4 }
+      },
+      "unani": {
+        "mizaj": {
+          "hot_moist": { "score": 9, "reason": "Cooling" },
+          "hot_dry": { "score": 8, "reason": "Gentle release" },
+          "cold_moist": { "score": 7, "reason": "Mild activation" },
+          "cold_dry": { "score": 6, "reason": "Light movement" }
+        }
+      },
+      "tcm": {
+        "pattern": {
+          "yin_deficiency": { "score": 9, "reason": "Deep yin nourishment" },
+          "yang_deficiency": { "score": 6, "reason": "Very gentle" },
+          "qi_stagnation": { "score": 8, "reason": "Gentle qi release" }
+        }
+      },
+      "modern": {
+        "goal": {
+          "flexibility": { "score": 9, "reason": "Excellent stretching" },
+          "strength": { "score": 0, "reason": "None" },
+          "balance": { "score": 2, "reason": "Minimal" },
+          "relaxation": { "score": 10, "reason": "Perfect recovery" },
+          "cardio": { "score": 0, "reason": "None" }
+        }
+      }
+    }
+  }
+]
