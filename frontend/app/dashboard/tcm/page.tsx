@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from 'react'
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { User, LogOut, Settings, CheckCircle2, X, Heart, Apple, Dumbbell, Flame } from 'lucide-react'
@@ -15,7 +16,7 @@ import { ProtectedRoute } from '@/components/ProtectedRoute'
 import { useAuth } from '@/context/AuthContext'
 import { useRouter } from 'next/navigation'
 
-export default function TCMDashboardPage() {
+function TCMDashboardContent() {
   const { user, logout } = useAuth()
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -246,5 +247,12 @@ export default function TCMDashboardPage() {
       <SettingsModal isOpen={showSettings} onClose={() => setShowSettings(false)} />
     </div>
     </ProtectedRoute>
+  )
+}
+export default function TCMDashboardPage() {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-600"></div></div>}>
+      <TCMDashboardContent />
+    </Suspense>
   )
 }
