@@ -139,55 +139,38 @@ export function SessionPlayer({ activities, sessionId, onSessionComplete }: Sess
     }
   }, [fetchDailyCompletion])
 
-  // Pre-load all yoga images on component mount for instant display
+  // Pre-load yoga images on component mount
   useEffect(() => {
-    const yogaPoseNames = [
-      'child\'s pose',
-      'half spinal twist',
-      'half lotus',
-      'seated twist',
-      'wheel pose',
-      'four-limbed staff',
-      'staff pose',
-      'eagle pose',
-      'crocodile pose',
-      'marichi\'s pose',
-      'dancer pose',
-      'boat pose',
-      'lotus pose',
-      'revolved triangle',
-      'side angle pose',
-      'seated forward bend',
-      'locust pose',
-      'corpse pose',
-      'easy pose',
-      'reclining bound angle',
-      'mountain pose',
-      'tree pose',
-      'triangle pose',
-      'chair pose',
-      'standing forward fold',
-      'vajrasana',
-      'warrior i',
-      'warrior ii',
-      'warrior iii',
-    ]
-
-    const cache: { [key: string]: boolean } = {}
+    const preLoadYogaImages = async () => {
+      try {
+        const response = await fetch('https://nutrifusion-backend.onrender.com/api/yoga/poses')
+        const data = await response.json()
+        
+        if (data.success && Array.isArray(data.poses)) {
+          const cache: { [key: string]: boolean } = {}
+          
+          // Pre-load all yoga images from the correct imagePath in database
+          data.poses.forEach((pose: any) => {
+            const img = new Image()
+            img.onload = () => {
+              cache[pose.id] = true
+            }
+            img.onerror = () => {
+              console.warn(`Failed to pre-load image for ${pose.name}: ${pose.imagePath}`)
+            }
+            if (pose.imagePath) {
+              img.src = pose.imagePath
+            }
+          })
+          
+          setYogaImageCache(cache)
+        }
+      } catch (error) {
+        console.error('Error pre-loading yoga images:', error)
+      }
+    }
     
-    // Pre-load all yoga images
-    yogaPoseNames.forEach((poseName) => {
-      const img = new Image()
-      img.onload = () => {
-        cache[poseName] = true
-      }
-      img.onerror = () => {
-        console.warn(`Failed to pre-load image for ${poseName}`)
-      }
-      img.src = `/Yoga&Exercises/${poseName}.png`
-    })
-
-    setYogaImageCache(cache)
+    preLoadYogaImages()
   }, [])
 
   // Clear yoga pose and breathing exercise data when activity index changes (before fetching new data)
