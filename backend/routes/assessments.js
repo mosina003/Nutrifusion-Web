@@ -12,6 +12,14 @@ const tcmDietPlanService = require('../services/intelligence/diet/tcmDietPlanSer
 const modernDietPlanService = require('../services/intelligence/diet/modernDietPlanService');
 
 /**
+ * Helper to get today's date at UTC midnight
+ */
+function getTodayUTCMidnight() {
+  const today = new Date();
+  return new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
+}
+
+/**
  * Transform modern assessment scores to clinical profile format for diet plan service
  * @param {Object} scores - Output from modern assessment engine
  * @param {Object} responses - Raw user responses
@@ -257,7 +265,7 @@ router.post('/submit', protect, async (req, res) => {
             status: 'Active',
             createdBy: userId,
             createdByModel: 'System',
-            validFrom: new Date(),
+            validFrom: getTodayUTCMidnight(),
             validTo: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days
             metadata: {
               sourceAssessmentId: assessment._id,
@@ -304,7 +312,7 @@ router.post('/submit', protect, async (req, res) => {
             status: 'Active',
             createdBy: userId,
             createdByModel: 'System',
-            validFrom: new Date(),
+            validFrom: getTodayUTCMidnight(),
             validTo: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days
             metadata: {
               sourceAssessmentId: assessment._id,
@@ -352,7 +360,7 @@ router.post('/submit', protect, async (req, res) => {
             status: 'Active',
             createdBy: userId,
             createdByModel: 'System',
-            validFrom: new Date(),
+            validFrom: getTodayUTCMidnight(),
             validTo: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days
             metadata: {
               sourceAssessmentId: assessment._id,
@@ -405,7 +413,7 @@ router.post('/submit', protect, async (req, res) => {
             status: 'Active',
             createdBy: userId,
             createdByModel: 'System',
-            validFrom: new Date(),
+            validFrom: getTodayUTCMidnight(),
             validTo: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days
             metadata: {
               sourceAssessmentId: assessment._id,

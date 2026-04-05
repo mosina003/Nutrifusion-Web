@@ -320,10 +320,11 @@ router.post('/regenerate-plan', protect, async (req, res) => {
       }
     );
 
-    // Create new diet plan
-    const validFrom = new Date();
-    const validTo = new Date();
-    validTo.setDate(validTo.getDate() + 7);
+    // Create new diet plan - use UTC midnight to match frontend
+    const today = new Date();
+    const validFrom = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
+    const validTo = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
+    validTo.setUTCDate(validTo.getUTCDate() + 7);
 
     const dietPlanDoc = new DietPlan({
       userId: req.user.id,
