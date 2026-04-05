@@ -1128,7 +1128,25 @@ router.get('/', protect, authorize('user'), async (req, res) => {
         date: todayString
       });
       
-      if (mealCompletions && mealCompletions.completedMeals.length > 0) {
+      console.log('🍽️ Meal completions query:', {
+        userId: userId,
+        todayString: todayString,
+        found: !!mealCompletions,
+        completedMealsCount: mealCompletions?.completedMeals?.length || 0,
+        completedMealsData: mealCompletions?.completedMeals
+      });
+      
+      if (mealCompletions && mealCompletions.completedMeals && mealCompletions.completedMeals.length > 0) {
+        // Standard meal calorie estimates (these come first before diet plan lookup)
+        const standardCalories = {
+          breakfast: 400,
+          lunch: 800,
+          dinner: 600,
+          snack: 200,
+          'pre-workout': 300,
+          'post-workout': 400
+        };
+        
         // Get the user's active diet plan to extract meal calories
         const activeDietPlan = await DietPlan.findOne({
           userId,
@@ -1137,48 +1155,40 @@ router.get('/', protect, authorize('user'), async (req, res) => {
           validTo: { $gte: new Date() }
         });
         
-        if (activeDietPlan && activeDietPlan.meals) {
-          // Create a map of meal types to aggregate calories
-          const mealCalories = {};
+        console.log('📋 Active diet plan:', {
+          found: !!activeDietPlan,
+          mealsCount: activeDietPlan?.meals?.length || 0
+        });
+        
+        let mealCalories = { ...standardCalories }; // Start with defaults
+        
+        if (activeDietPlan && activeDietPlan.meals && activeDietPlan.meals.length > 0) {
+          // Override with actual plan calories if available
           activeDietPlan.meals.forEach(meal => {
             const mealKey = meal.mealType.toLowerCase();
-            if (meal.recipeId && meal.portion) {
-              // Will be calculated from recipe nutrition
-              mealCalories[mealKey] = (mealCalories[mealKey] || 0) + (meal.portion * 300); // Avg 300 cal per portion as fallback
+            if (meal.nutrition && meal.nutrition.calories) {
+              mealCalories[mealKey] = meal.nutrition.calories;
             }
           });
-          
-          // Sum calories for completed meals
-          mealCompletions.completedMeals.forEach(completed => {
-            const mealKey = completed.mealType.toLowerCase();
-            // Use plan's meal calories or fallback to standard estimates
-            const standardCalories = {
-              breakfast: 400,
-              lunch: 800,
-              dinner: 600,
-              snack: 200,
-              'pre-workout': 300,
-              'post-workout': 400
-            };
-            caloriesConsumed += mealCalories[mealKey] || standardCalories[mealKey] || 0;
-          });
-        } else {
-          // Fallback: use standard meal calorie estimates
-          const standardCalories = {
-            breakfast: 400,
-            lunch: 800,
-            dinner: 600,
-            snack: 200,
-            'pre-workout': 300,
-            'post-workout': 400
-          };
-          mealCompletions.completedMeals.forEach(completed => {
-            caloriesConsumed += standardCalories[completed.mealType.toLowerCase()] || 0;
-          });
         }
+        
+        console.log('🔥 Meal calories map:', mealCalories);
+        
+        // Sum calories for completed meals
+        mealCompletions.completedMeals.forEach(completed => {
+          const mealKey = completed.mealType.toLowerCase();
+          const mealCals = mealCalories[mealKey] || standardCalories[mealKey] || 0;
+          console.log(`  ➕ ${mealKey}: ${mealCals} cal`);
+          caloriesConsumed += mealCals;
+        });
+        
+        console.log('✅ Total calories consumed:', caloriesConsumed);
+      } else {
+        console.log('ℹ️ No meal completions found for today');
       }
     } catch (err) {
       console.warn('⚠️ Error calculating consumed calories:', err.message);
+      console.error(err.stack);
       caloriesConsumed = 0;
     }
     
