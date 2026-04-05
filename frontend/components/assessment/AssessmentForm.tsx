@@ -303,6 +303,25 @@ export default function AssessmentForm({ framework, onBack, onComplete }: Assess
             </div>
           )
 
+        case 'text':
+          return (
+            <div className="space-y-2">
+              <Input
+                type="text"
+                value={currentResponse?.value || ''}
+                onChange={(e) => handleResponse(currentQuestion.id, { value: e.target.value })}
+                placeholder={currentQuestion.placeholder || `Enter ${currentQuestion.question.toLowerCase()}`}
+                maxLength={currentQuestion.validation?.maxLength || 500}
+                className="text-lg"
+              />
+              {currentQuestion.validation?.maxLength && (
+                <p className="text-sm text-muted-foreground">
+                  {(currentResponse?.value || '').length}/{currentQuestion.validation.maxLength} characters
+                </p>
+              )}
+            </div>
+          )
+
         default:
           return null
       }
