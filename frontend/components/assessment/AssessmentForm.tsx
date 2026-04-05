@@ -310,7 +310,7 @@ export default function AssessmentForm({ framework, onBack, onComplete }: Assess
                 type="text"
                 value={currentResponse?.value || ''}
                 onChange={(e) => handleResponse(currentQuestion.id, { value: e.target.value })}
-                placeholder={currentQuestion.placeholder || `Enter ${currentQuestion.question.toLowerCase()}`}
+                placeholder={`Enter ${currentQuestion.question.toLowerCase()}`}
                 maxLength={currentQuestion.validation?.maxLength || 500}
                 className="text-lg"
               />
