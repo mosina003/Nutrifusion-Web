@@ -172,9 +172,9 @@ export default function ActivitiesPage() {
                     <div className="flex items-center gap-2 flex-wrap">
                       {[...new Set(
                         session.activities
-                          .map((a) => a.category || '')
+                          .map((a: any) => a.category || '')
                           .filter(Boolean)
-                      )].map((category) => (
+                      ) as Set<string>].map((category) => (
                         <span
                           key={category}
                           className="inline-flex items-center gap-1 px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-full"
