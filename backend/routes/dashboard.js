@@ -1137,16 +1137,6 @@ router.get('/', protect, authorize('user'), async (req, res) => {
       });
       
       if (mealCompletions && mealCompletions.completedMeals && mealCompletions.completedMeals.length > 0) {
-        // Standard meal calorie estimates (these come first before diet plan lookup)
-        const standardCalories = {
-          breakfast: 400,
-          lunch: 800,
-          dinner: 600,
-          snack: 200,
-          'pre-workout': 300,
-          'post-workout': 400
-        };
-        
         // Get the user's active diet plan to extract meal calories
         const activeDietPlan = await DietPlan.findOne({
           userId,
@@ -1157,22 +1147,62 @@ router.get('/', protect, authorize('user'), async (req, res) => {
         
         console.log('📋 Active diet plan:', {
           found: !!activeDietPlan,
-          mealsCount: activeDietPlan?.meals?.length || 0
+          has7DayPlan: !!activeDietPlan?.['7_day_plan'],
+          has7DayPlanObj: !!activeDietPlan?.['7_day_plan']
         });
         
-        let mealCalories = { ...standardCalories }; // Start with defaults
+        // Standard meal calorie estimates for fallback
+        const standardCalories = {
+          breakfast: 400,
+          lunch: 800,
+          dinner: 600,
+          snack: 200,
+          'pre-workout': 300,
+          'post-workout': 400
+        };
         
-        if (activeDietPlan && activeDietPlan.meals && activeDietPlan.meals.length > 0) {
-          // Override with actual plan calories if available
-          activeDietPlan.meals.forEach(meal => {
-            const mealKey = meal.mealType.toLowerCase();
-            if (meal.nutrition && meal.nutrition.calories) {
-              mealCalories[mealKey] = meal.nutrition.calories;
+        let mealCalories = { ...standardCalories };
+        
+        // If we have a 7-day plan, try to extract actual meal calories
+        if (activeDietPlan && activeDietPlan['7_day_plan']) {
+          // Calculate which day of the plan we're on
+          const planStartDate = new Date(activeDietPlan.validFrom);
+          planStartDate.setHours(0, 0, 0, 0);
+          const daysDiff = Math.floor((today.getTime() - planStartDate.getTime()) / (1000 * 60 * 60 * 24));
+          const dayOfPlan = Math.min(Math.max(daysDiff + 1, 1), 7); // Clamp between 1 and 7
+          const dayKey = `day_${dayOfPlan}`;
+          
+          console.log('📅 Plan day calculation:', { planStartDate: planStartDate.toISOString(), today: today.toISOString(), daysDiff, dayOfPlan, dayKey });
+          
+          const todayPlanMeals = activeDietPlan['7_day_plan'][dayKey];
+          
+          if (todayPlanMeals) {
+            console.log('🍴 Today\'s plan meals:', {
+              hasBreakfast: !!todayPlanMeals.breakfast,
+              hasLunch: !!todayPlanMeals.lunch,
+              hasDinner: !!todayPlanMeals.dinner,
+              breakfastCount: todayPlanMeals.breakfast?.length || 0,
+              lunchCount: todayPlanMeals.lunch?.length || 0,
+              dinnerCount: todayPlanMeals.dinner?.length || 0
+            });
+            
+            // Calculate average calories per meal type from foods in plan
+            if (todayPlanMeals.breakfast && todayPlanMeals.breakfast.length > 0) {
+              // For breakfast, estimate ~25% of daily calories (typically 400-500 cal)
+              mealCalories.breakfast = Math.round(calorieTarget * 0.25) || 400;
             }
-          });
+            if (todayPlanMeals.lunch && todayPlanMeals.lunch.length > 0) {
+              // For lunch, estimate ~35% of daily calories (typically 700-900 cal)
+              mealCalories.lunch = Math.round(calorieTarget * 0.35) || 800;
+            }
+            if (todayPlanMeals.dinner && todayPlanMeals.dinner.length > 0) {
+              // For dinner, estimate ~30% of daily calories (typically 500-700 cal)
+              mealCalories.dinner = Math.round(calorieTarget * 0.30) || 600;
+            }
+          }
         }
         
-        console.log('🔥 Meal calories map:', mealCalories);
+        console.log('🔥 Final meal calories map:', mealCalories);
         
         // Sum calories for completed meals
         mealCompletions.completedMeals.forEach(completed => {
