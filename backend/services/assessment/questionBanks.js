@@ -1320,14 +1320,14 @@ module.exports = {
         section: 6,
         category: 'health_goals',
         question: 'My primary health goal is:',
-        type: 'single',
+        type: 'select',
         options: [
-          { text: 'Weight loss & detoxification', goal: 'weight_loss', value: 'weight_loss' },
-          { text: 'Weight gain & muscle building', goal: 'weight_gain', value: 'weight_gain' },
-          { text: 'Improve energy & vitality', goal: 'energy', value: 'energy' },
-          { text: 'Better digestion & metabolism', goal: 'digestion', value: 'digestion' },
-          { text: 'Mind clarity & focus', goal: 'mental_clarity', value: 'mental_clarity' },
-          { text: 'Recovery & longevity', goal: 'recovery', value: 'recovery' }
+          { label: 'Weight loss & detoxification', value: 'weight_loss' },
+          { label: 'Weight gain & muscle building', value: 'weight_gain' },
+          { label: 'Improve energy & vitality', value: 'energy' },
+          { label: 'Better digestion & metabolism', value: 'digestion' },
+          { label: 'Mind clarity & focus', value: 'mental_clarity' },
+          { label: 'Recovery & longevity', value: 'recovery' }
         ],
         required: true
       },

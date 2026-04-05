@@ -121,6 +121,14 @@ router.post('/toggle', protect, async (req, res) => {
   try {
     const { date, day, mealType, dietPlanId } = req.body;
 
+    console.log('🍽️ TOGGLE MEAL - Request:', {
+      userId: req.user.id,
+      date,
+      day,
+      mealType,
+      dietPlanId
+    });
+
     if (!date || !day || !mealType) {
       return res.status(400).json({
         success: false,
@@ -133,6 +141,8 @@ router.post('/toggle', protect, async (req, res) => {
       userId: req.user.id,
       date: date
     });
+
+    console.log('🍽️ TOGGLE MEAL - Found existing:', { found: !!completion, completedMeals: completion?.completedMeals?.length || 0 });
 
     if (!completion) {
       const completionData = {
@@ -148,6 +158,7 @@ router.post('/toggle', protect, async (req, res) => {
       }
       
       completion = new MealCompletion(completionData);
+      console.log('🍽️ TOGGLE MEAL - Created new');
     }
 
     // Check if meal is already completed
@@ -155,15 +166,19 @@ router.post('/toggle', protect, async (req, res) => {
       m => m.mealType === mealType.toLowerCase()
     );
 
+    console.log('🍽️ TOGGLE MEAL - Meal index:', { mealIndex, mealType: mealType.toLowerCase() });
+
     if (mealIndex > -1) {
       // Remove completion (unchecking)
       completion.completedMeals.splice(mealIndex, 1);
+      console.log('🍽️ TOGGLE MEAL - Removed meal');
     } else {
       // Add completion (checking)
       completion.completedMeals.push({
         mealType: mealType.toLowerCase(),
         completedAt: new Date()
       });
+      console.log('🍽️ TOGGLE MEAL - Added meal');
     }
 
     // Check if all meals are completed for the day
@@ -177,6 +192,11 @@ router.post('/toggle', protect, async (req, res) => {
     }
 
     await completion.save();
+
+    console.log('🍽️ TOGGLE MEAL - Saved:', {
+      completedMeals: completion.completedMeals,
+      dayCompleted: completion.dayCompleted
+    });
 
     res.json({
       success: true,
