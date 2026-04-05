@@ -28,7 +28,7 @@ function ActivitySessionContent() {
 
           // Note: In a real app, you'd have an endpoint to get session details
           // For now, we'll fetch recommendations again
-          const response = await fetch('http://localhost:5000/api/activities/recommendations', {
+          const response = await fetch('https://nutrifusion-backend.onrender.com/api/activities/recommendations', {
             headers: {
               'Authorization': `Bearer ${token}`,
               'Content-Type': 'application/json'
@@ -66,7 +66,7 @@ function ActivitySessionContent() {
 
     try {
       // Send completion data to API
-      const response = await fetch('http://localhost:5000/api/activities/complete-session', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/activities/complete-session', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

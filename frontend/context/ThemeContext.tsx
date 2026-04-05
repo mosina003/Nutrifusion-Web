@@ -37,7 +37,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       const token = getToken()
       if (token) {
         try {
-          const response = await fetch('http://localhost:5000/api/users/settings', {
+          const response = await fetch('https://nutrifusion-backend.onrender.com/api/users/settings', {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -78,7 +78,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     // Save to backend if user is authenticated
     const token = getToken()
     if (token) {
-      fetch('http://localhost:5000/api/users/settings', {
+      fetch('https://nutrifusion-backend.onrender.com/api/users/settings', {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,

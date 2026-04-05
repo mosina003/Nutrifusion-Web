@@ -25,7 +25,7 @@ export function YogaLifestyle() {
       }
 
       try {
-        const response = await fetch('http://localhost:5000/api/activities/recommendations', {
+        const response = await fetch('https://nutrifusion-backend.onrender.com/api/activities/recommendations', {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ export function YogaLifestyle() {
       ]
 
       // Start session via API
-      const response = await fetch('http://localhost:5000/api/activities/start-session', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/activities/start-session', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

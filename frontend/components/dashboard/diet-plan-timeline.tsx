@@ -77,7 +77,7 @@ interface MealCompletion {
   dayCompleted: boolean
 }
 
-const API_BASE_URL = 'http://localhost:5000'
+const API_BASE_URL = 'https://nutrifusion-backend.onrender.com'
 
 export function DietPlanTimeline() {
   const [dietPlan, setDietPlan] = useState<DietPlan | null>(null)

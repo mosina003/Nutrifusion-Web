@@ -91,7 +91,7 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
 
     try {
       setLoading(true)
-      const response = await fetch('http://localhost:5000/api/users/settings', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/users/settings', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -113,7 +113,7 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
 
     try {
       setLoading(true)
-      const response = await fetch('http://localhost:5000/api/users/settings', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/users/settings', {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -138,7 +138,7 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     if (!token) return
 
     try {
-      const response = await fetch('http://localhost:5000/api/users/export', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/users/export', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

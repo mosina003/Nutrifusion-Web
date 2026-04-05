@@ -2,7 +2,9 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { Bell, X, ExternalLink } from 'lucide-react'
-import { getToken } from '@/lib/api'
+import { getToken, API_BASE_URL } from '@/lib/api'
+
+const API_URL = 'https://nutrifusion-backend.onrender.com/api'
 
 interface Notification {
   id: string
@@ -29,7 +31,7 @@ export function NotificationsDropdown() {
 
     try {
       setLoading(true)
-      const response = await fetch('http://localhost:5000/api/dashboard/notifications', {
+      const response = await fetch(`${API_URL}/dashboard/notifications`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

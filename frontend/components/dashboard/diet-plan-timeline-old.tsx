@@ -102,7 +102,7 @@ export function DietPlanTimeline() {
       setLoading(true)
       setError(null)
       
-      const API_BASE_URL = 'http://localhost:5000'
+      const API_BASE_URL = 'https://nutrifusion-backend.onrender.com'
       const token = localStorage.getItem('nutrifusion_token')
       console.log('🔑 Token found:', !!token)
       

@@ -1,6 +1,7 @@
 /**
  * API Service Layer for NutriFusion Frontend
  * Handles all communication with the backend API
+ * FORCE REBUILD - April 5 2026
  */
 
 // API Configuration

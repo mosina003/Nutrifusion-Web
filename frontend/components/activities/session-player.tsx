@@ -84,7 +84,7 @@ export function SessionPlayer({ activities, sessionId, onSessionComplete }: Sess
   // Function to fetch daily completion status
   const fetchDailyCompletion = useCallback(async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/activities/daily-completion', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/activities/daily-completion', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
         },
@@ -110,7 +110,7 @@ export function SessionPlayer({ activities, sessionId, onSessionComplete }: Sess
         return
       }
       
-      const response = await fetch('http://localhost:5000/api/activities/complete', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/activities/complete', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -207,7 +207,7 @@ export function SessionPlayer({ activities, sessionId, onSessionComplete }: Sess
           // Backend now generates IDs with underscores and removes apostrophes already
           const normalizedId = currentActivity.id.replace(/^yoga-/, '')
           
-          const response = await fetch(`http://localhost:5000/api/yoga/pose/${normalizedId}`)
+          const response = await fetch(`https://nutrifusion-backend.onrender.com/api/yoga/pose/${normalizedId}`)
           const data = await response.json()
           if (data.success) {
             setYogaPose(data.pose)
@@ -236,7 +236,7 @@ export function SessionPlayer({ activities, sessionId, onSessionComplete }: Sess
           // Normalize the breathing exercise ID: remove 'breathing-' prefix
           const normalizedId = currentActivity.id.replace(/^breathing-/, '')
           
-          const response = await fetch(`http://localhost:5000/api/breathing/technique/${normalizedId}`)
+          const response = await fetch(`https://nutrifusion-backend.onrender.com/api/breathing/technique/${normalizedId}`)
           const data = await response.json()
           if (data.success) {
             setBreathingExercise(data.technique)

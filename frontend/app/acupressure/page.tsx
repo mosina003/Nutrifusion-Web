@@ -11,7 +11,7 @@ import { PointDetails } from '@/components/acupressure/point-details';
 import { SearchBar } from '@/components/acupressure/search-bar';
 import { TherapyGuide } from '@/components/acupressure/therapy-guide';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = 'https://nutrifusion-backend.onrender.com/api';
 
 export default function AcupressurePage() {
   const router = useRouter();

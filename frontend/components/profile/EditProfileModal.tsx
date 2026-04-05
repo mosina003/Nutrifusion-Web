@@ -73,7 +73,7 @@ export function EditProfileModal({ isOpen, onClose, currentData, onSave }: EditP
       const token = localStorage.getItem('nutrifusion_token')
       
       // Update basic user info
-      const userResponse = await fetch('http://localhost:5000/api/users/me', {
+      const userResponse = await fetch('https://nutrifusion-backend.onrender.com/api/users/me', {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -96,7 +96,7 @@ export function EditProfileModal({ isOpen, onClose, currentData, onSave }: EditP
       }
 
       // Update health profile
-      const healthResponse = await fetch('http://localhost:5000/api/health-profiles', {
+      const healthResponse = await fetch('https://nutrifusion-backend.onrender.com/api/health-profiles', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

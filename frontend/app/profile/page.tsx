@@ -117,7 +117,7 @@ export default function ProfilePage() {
         return
       }
 
-      const response = await fetch('http://localhost:5000/api/users/delete-account', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/users/delete-account', {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -153,7 +153,7 @@ export default function ProfilePage() {
         return
       }
 
-      const response = await fetch('http://localhost:5000/api/users/profile/complete', {
+      const response = await fetch('https://nutrifusion-backend.onrender.com/api/users/profile/complete', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'

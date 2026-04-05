@@ -20,7 +20,7 @@ export default function ActivitiesPage() {
 
       try {
         // Fetch stats
-        const statsResponse = await fetch('http://localhost:5000/api/activities/stats', {
+        const statsResponse = await fetch('https://nutrifusion-backend.onrender.com/api/activities/stats', {
           headers: {
             'Authorization': `Bearer ${token}`,
           }
@@ -32,7 +32,7 @@ export default function ActivitiesPage() {
         }
 
         // Fetch recent sessions
-        const sessionsResponse = await fetch('http://localhost:5000/api/activities/session-history?limit=5', {
+        const sessionsResponse = await fetch('https://nutrifusion-backend.onrender.com/api/activities/session-history?limit=5', {
           headers: {
             'Authorization': `Bearer ${token}`,
           }
