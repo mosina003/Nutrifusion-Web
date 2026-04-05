@@ -266,10 +266,22 @@ export function DietPlanTimeline() {
     const token = localStorage.getItem('nutrifusion_token')
     if (!token) return
 
+    // Use today's actual date instead of currentDayData.date to avoid timezone issues
+    const today = new Date()
+    today.setHours(0, 0, 0, 0)
+    const todayDateString = today.toISOString().split('T')[0]
+
+    console.log('📅 Toggle meal debug:', {
+      currentDay,
+      currentDayObject: currentDayData?.date,
+      calculatedToday: todayDateString,
+      mealType
+    })
+
     // Optimistic update
     const updatedCompletions = new Map(completions)
-    const existingCompletion = updatedCompletions.get(currentDayData.date) || {
-      date: currentDayData.date,
+    const existingCompletion = updatedCompletions.get(todayDateString) || {
+      date: todayDateString,
       day: currentDay,
       completedMeals: [],
       dayCompleted: false
@@ -289,7 +301,7 @@ export function DietPlanTimeline() {
     }
 
     existingCompletion.dayCompleted = existingCompletion.completedMeals.length === 3
-    updatedCompletions.set(currentDayData.date, existingCompletion)
+    updatedCompletions.set(todayDateString, existingCompletion)
     setCompletions(updatedCompletions)
 
     // API call
@@ -301,7 +313,7 @@ export function DietPlanTimeline() {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          date: currentDayData.date,
+          date: todayDateString,
           day: currentDay,
           mealType: mealType.toLowerCase(),
           dietPlanId: 'current'
