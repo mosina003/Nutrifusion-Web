@@ -1,0 +1,43 @@
+services:
+  # Backend Service
+  - type: web
+    name: nutrifusion-backend
+    runtime: node
+    plan: free  # Change to "standard" for paid tier
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        fromDatabase:
+          name: nutrifusion-db
+          property: connectionString
+      # Add your API keys below:
+      - key: GROQ_API_KEY
+        sync: false  # Set via Render dashboard for security
+      - key: GOOGLE_GENERATIVE_AI_API_KEY
+        sync: false
+
+  # Frontend Service
+  - type: web
+    name: nutrifusion-frontend
+    runtime: node
+    plan: free  # Change to "standard" for paid tier
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        value: https://nutrifusion-backend.onrender.com
+
+# Optional: Database (comment out if using MongoDB Atlas)
+# databases:
+#   - name: nutrifusion-db
+#     plan: free
+#     databaseUser: nutrifusion_user
