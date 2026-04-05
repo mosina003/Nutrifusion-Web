@@ -1,12 +1,13 @@
 'use client'
 
+import { Suspense } from 'react'
 import { useEffect, useState } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { SessionPlayer } from '@/components/activities/session-player'
 import { getToken } from '@/lib/api'
 import { ProtectedRoute } from '@/components/ProtectedRoute'
 
-export default function ActivitySessionPage() {
+function ActivitySessionContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const sessionId = searchParams.get('sessionId')
@@ -129,5 +130,20 @@ export default function ActivitySessionPage() {
         onSessionComplete={handleSessionComplete}
       />
     </ProtectedRoute>
+  )
+}
+
+export default function ActivitySessionPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-600 mx-auto mb-4" />
+          <p className="text-slate-600">Loading...</p>
+        </div>
+      </div>
+    }>
+      <ActivitySessionContent />
+    </Suspense>
   )
 }
