@@ -140,17 +140,28 @@ export function DietPlanTimeline() {
   const generateWeeklyPlan = () => {
     if (!planStartDate) return
 
+    // Use UTC dates to match backend exactly
     const today = new Date()
-    today.setHours(0, 0, 0, 0)
+    const todayUTC = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()))
+    const todayString = todayUTC.toISOString().split('T')[0]
+    
     const startDate = new Date(planStartDate)
-    startDate.setHours(0, 0, 0, 0)
+    const startDateUTC = new Date(Date.UTC(startDate.getUTCFullYear(), startDate.getUTCMonth(), startDate.getUTCDate()))
+    const startDateString = startDateUTC.toISOString().split('T')[0]
+    
+    console.log('📅 GenerateWeeklyPlan - Date calculation:', {
+      browserToday: today.toISOString(),
+      todayUTC: todayString,
+      planStart: planStartDate,
+      startDateUTC: startDateString
+    })
     
     const daysData: WeeklyPlanDay[] = []
 
     // Generate all 7 days starting from planStartDate
     for (let i = 0; i < 7; i++) {
-      const currentDate = new Date(startDate)
-      currentDate.setDate(startDate.getDate() + i)
+      const currentDate = new Date(startDateUTC)
+      currentDate.setUTCDate(startDateUTC.getUTCDate() + i)
       const dateString = currentDate.toISOString().split('T')[0]
 
       const dayKey = `day_${i + 1}`
@@ -161,7 +172,7 @@ export function DietPlanTimeline() {
         day: i + 1,
         date: dateString,
         weekday: currentDate.toLocaleDateString('en-US', { weekday: 'short' }),
-        dateNum: currentDate.getDate(),
+        dateNum: currentDate.getUTCDate(),
         meals: {
           breakfast: dayPlan?.breakfast || [],
           lunch: dayPlan?.lunch || [],
@@ -174,8 +185,16 @@ export function DietPlanTimeline() {
     setWeeklyPlan(daysData)
     
     // Calculate which day we're on in the current plan
-    const daysDiff = Math.floor((today.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))
+    const daysDiff = Math.floor((todayUTC.getTime() - startDateUTC.getTime()) / (1000 * 60 * 60 * 24))
     const calculatedDay = Math.min(Math.max(daysDiff + 1, 1), 7) // Clamp between 1 and 7
+    
+    console.log('📅 Day calculation:', {
+      daysDiff,
+      calculatedDay,
+      todayUTCMs: todayUTC.getTime(),
+      startDateUTCMs: startDateUTC.getTime()
+    })
+    
     setCurrentDay(calculatedDay)
   }
 
@@ -266,22 +285,23 @@ export function DietPlanTimeline() {
     const token = localStorage.getItem('nutrifusion_token')
     if (!token) return
 
-    // Use today's actual date instead of currentDayData.date to avoid timezone issues
+    // Use UTC date matching backend exactly
     const today = new Date()
-    today.setHours(0, 0, 0, 0)
-    const todayDateString = today.toISOString().split('T')[0]
+    const todayUTC = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()))
+    const todayDateString = todayUTC.toISOString().split('T')[0]
 
     console.log('📅 Toggle meal debug:', {
       currentDay,
       currentDayObject: currentDayData?.date,
       calculatedToday: todayDateString,
+      weeklyPlanDate: weeklyPlan[currentDay - 1]?.date,
       mealType
     })
 
-    // Optimistic update
+    // Optimistic update - use the date from weeklyPlan which is correctly calculated
     const updatedCompletions = new Map(completions)
-    const existingCompletion = updatedCompletions.get(todayDateString) || {
-      date: todayDateString,
+    const existingCompletion = updatedCompletions.get(currentDayData.date) || {
+      date: currentDayData.date,
       day: currentDay,
       completedMeals: [],
       dayCompleted: false
@@ -301,7 +321,7 @@ export function DietPlanTimeline() {
     }
 
     existingCompletion.dayCompleted = existingCompletion.completedMeals.length === 3
-    updatedCompletions.set(todayDateString, existingCompletion)
+    updatedCompletions.set(currentDayData.date, existingCompletion)
     setCompletions(updatedCompletions)
 
     // API call
@@ -313,7 +333,7 @@ export function DietPlanTimeline() {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          date: todayDateString,
+          date: currentDayData.date,
           day: currentDay,
           mealType: mealType.toLowerCase(),
           dietPlanId: 'current'
