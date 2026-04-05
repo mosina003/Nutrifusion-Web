@@ -1115,10 +1115,10 @@ router.get('/', protect, authorize('user'), async (req, res) => {
       calorieTarget = Math.round(user.weight * 24 * 1.5);
     }
     
-    // Calculate consumed calories from meal completions today
+    // Calculate consumed calories from meal completions today (using UTC to match frontend)
     const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const todayString = today.toISOString().split('T')[0];
+    const todayUTC = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
+    const todayString = todayUTC.toISOString().split('T')[0];
     
     let caloriesConsumed = 0;
     try {
@@ -1165,14 +1165,20 @@ router.get('/', protect, authorize('user'), async (req, res) => {
         
         // If we have a 7-day plan, try to extract actual meal calories
         if (activeDietPlan && activeDietPlan['7_day_plan']) {
-          // Calculate which day of the plan we're on
+          // Calculate which day of the plan we're on (using UTC to match frontend)
           const planStartDate = new Date(activeDietPlan.validFrom);
-          planStartDate.setHours(0, 0, 0, 0);
-          const daysDiff = Math.floor((today.getTime() - planStartDate.getTime()) / (1000 * 60 * 60 * 24));
+          const planStartDateUTC = new Date(Date.UTC(planStartDate.getUTCFullYear(), planStartDate.getUTCMonth(), planStartDate.getUTCDate()));
+          const daysDiff = Math.floor((todayUTC.getTime() - planStartDateUTC.getTime()) / (1000 * 60 * 60 * 24));
           const dayOfPlan = Math.min(Math.max(daysDiff + 1, 1), 7); // Clamp between 1 and 7
           const dayKey = `day_${dayOfPlan}`;
           
-          console.log('📅 Plan day calculation:', { planStartDate: planStartDate.toISOString(), today: today.toISOString(), daysDiff, dayOfPlan, dayKey });
+          console.log('📅 Plan day calculation (UTC):', { 
+            planStartDate: planStartDateUTC.toISOString().split('T')[0], 
+            todayUTC: todayString, 
+            daysDiff, 
+            dayOfPlan, 
+            dayKey 
+          });
           
           const todayPlanMeals = activeDietPlan['7_day_plan'][dayKey];
           
