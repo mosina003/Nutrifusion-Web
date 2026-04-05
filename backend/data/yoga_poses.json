@@ -5,7 +5,7 @@
     "sanskritName": "Balasana",
     "difficulty": "beginner",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/child's pose.png",
+    "imagePath": "/yoga-exercises/child's pose.png",
     "benefits": ["Stress relief", "Hip opening", "Back relaxation"],
     "contraindications": ["Knee injury", "High blood pressure"],
     "instructions": ["Start on your hands and knees", "Bring big toes together, knees wide", "Lower hips to heels", "Extend arms forward", "Rest forehead on mat", "Hold 1-3 minutes"]
@@ -16,7 +16,7 @@
     "sanskritName": "Ardha Matsyendrasana",
     "difficulty": "intermediate",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Ardha Matsyendrasana (Half Spinal Twist).png",
+    "imagePath": "/yoga-exercises/Ardha Matsyendrasana (Half Spinal Twist).png",
     "benefits": ["Spine mobility", "Digestion", "Detox"],
     "contraindications": ["Spine injury", "Pregnancy"],
     "instructions": ["Sit with legs extended", "Bend right knee, place foot on floor", "Wrap left arm around right knee", "Twist torso to the right", "Keep spine tall", "Hold 20-30 seconds each side"]
@@ -27,7 +27,7 @@
     "sanskritName": "Ardha Padmasana",
     "difficulty": "intermediate",
     "duration": 240,
-    "imagePath": "/Yoga&Exercises/Ardha Padmasana (Half Lotus Pose).png",
+    "imagePath": "/yoga-exercises/Ardha Padmasana (Half Lotus Pose).png",
     "benefits": ["Hip opening", "Meditation", "Flexibility"],
     "contraindications": ["Knee problems", "Hip issues"],
     "instructions": ["Sit with legs extended", "Bend right knee, place foot on left thigh", "Keep left leg extended or bent", "Sit tall with spine lengthened", "Place hands on knees", "Breathe deeply for 1-3 minutes"]
@@ -38,7 +38,7 @@
     "sanskritName": "Bharadvajasana",
     "difficulty": "beginner",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Bharadvajasana (Seated Twist).png",
+    "imagePath": "/yoga-exercises/Bharadvajasana (Seated Twist).png",
     "benefits": ["Spine rotation", "Digestion", "Detox"],
     "contraindications": ["Neck injury", "Spine issues"],
     "instructions": ["Sit with bent knees to left", "Place right hand behind you", "Wrap left arm across body", "Twist torso to right", "Keep spine tall", "Hold 20-30 seconds, repeat other side"]
@@ -49,7 +49,7 @@
     "sanskritName": "Chakrasana",
     "difficulty": "advanced",
     "duration": 240,
-    "imagePath": "/Yoga&Exercises/Chakrasana (Wheel Pose).png",
+    "imagePath": "/yoga-exercises/Chakrasana (Wheel Pose).png",
     "benefits": ["Back bending", "Opening", "Energizing"],
     "contraindications": ["Neck injury", "Lower back pain", "Pregnancy"],
     "instructions": ["Lie on back with knees bent", "Place hands by shoulders, palms down", "Press feet and hands into mat", "Lift hips and chest high", "Press shoulders toward each other", "Hold 20-30 seconds"]
@@ -60,7 +60,7 @@
     "sanskritName": "Chaturanga Dandasana",
     "difficulty": "intermediate",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Chaturanga Dandasana (Four-Limbed Staff Pose).png",
+    "imagePath": "/yoga-exercises/Chaturanga Dandasana (Four-Limbed Staff Pose).png",
     "benefits": ["Arm strength", "Core strength", "Stability"],
     "contraindications": ["Wrist injury", "Shoulder issues"],
     "instructions": ["Start in plank position", "Keep elbows close to ribs", "Lower body 2-3 inches off ground", "Keep elbows at 90 degrees", "Stay in straight line", "Hold 15-30 seconds"]
@@ -71,7 +71,7 @@
     "sanskritName": "Dandasana",
     "difficulty": "beginner",
     "duration": 120,
-    "imagePath": "/Yoga&Exercises/Dandasana (Staff Pose).png",
+    "imagePath": "/yoga-exercises/Dandasana (Staff Pose).png",
     "benefits": ["Grounding", "Posture", "Foundation"],
     "contraindications": ["Lower back pain"],
     "instructions": ["Sit with legs extended", "Keep spine tall and shoulders back", "Feet flexed, toes pointed forward", "Hands pressed beside hips", "Root down through sitting bones", "Hold 30 seconds to 1 minute"]
@@ -82,7 +82,7 @@
     "sanskritName": "Garudasana",
     "difficulty": "intermediate",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Garudasana (Eagle Pose).png",
+    "imagePath": "/yoga-exercises/Garudasana (Eagle Pose).png",
     "benefits": ["Balance", "Focus", "Shoulder opening"],
     "contraindications": ["Ankle injury", "Knee problems"],
     "instructions": ["Stand on right leg", "Wrap left leg around right thigh", "Wrap right arm under left at elbows", "Press palms together", "Square hips forward", "Hold 5-8 breaths each side"]
@@ -93,7 +93,7 @@
     "sanskritName": "Makarasana",
     "difficulty": "beginner",
     "duration": 240,
-    "imagePath": "/Yoga&Exercises/Makarasana (Crocodile Pose).png",
+    "imagePath": "/yoga-exercises/Makarasana (Crocodile Pose).png",
     "benefits": ["Relaxation", "Back extension", "Breathing"],
     "contraindications": ["Lower back injury"],
     "instructions": ["Lie on your belly", "Place forearms on mat, elbows under shoulders", "Interlock fingers or hands flat", "Relax your forehead on top", "Keep legs extended", "Hold 1-3 minutes"]
@@ -104,7 +104,7 @@
     "sanskritName": "Marichyasana",
     "difficulty": "intermediate",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Marichyasana (Marichi's Pose).png",
+    "imagePath": "/yoga-exercises/Marichyasana (Marichi's Pose).png",
     "benefits": ["Forward fold", "Hamstring stretch", "Digestion"],
     "contraindications": ["Lower back pain", "Hamstring injury"],
     "instructions": ["Sit with legs extended", "Bend right knee, foot flat on mat", "Wrap left arm around right knee", "Fold forward if comfortable", "Hold right knee gently", "Hold 1-2 minutes each side"]
@@ -115,7 +115,7 @@
     "sanskritName": "Natarajasana",
     "difficulty": "intermediate",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Natarajasana (Dancer Pose).png",
+    "imagePath": "/yoga-exercises/Natarajasana (Dancer Pose).png",
     "benefits": ["Balance", "Opening", "Focus"],
     "contraindications": ["Ankle injury", "Hip issues"],
     "instructions": ["Stand on right leg", "Bend left knee, grab left foot", "Pull foot toward buttock", "Extend right arm forward", "Lean torso forward slightly", "Hold 5-8 breaths each side"]
@@ -126,7 +126,7 @@
     "sanskritName": "Naukasana",
     "difficulty": "advanced",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Naukasana (Boat Pose).png",
+    "imagePath": "/yoga-exercises/Naukasana (Boat Pose).png",
     "benefits": ["Core strength", "Hip flexor", "Balance"],
     "contraindications": ["Neck problems", "Lower back issues"],
     "instructions": ["Sit with knees bent", "Lift feet off floor, shins parallel", "Lean back slightly", "Straighten arms forward", "Keep chest lifted", "Hold 15-30 seconds"]
@@ -137,7 +137,7 @@
     "sanskritName": "Padmasana",
     "difficulty": "advanced",
     "duration": 600,
-    "imagePath": "/Yoga&Exercises/Padmasana (Lotus Pose).png",
+    "imagePath": "/yoga-exercises/Padmasana (Lotus Pose).png",
     "benefits": ["Deep hip opening", "Meditation", "Energy circulation"],
     "contraindications": ["Knee problems", "Hip issues"],
     "instructions": ["Sit with legs extended", "Bend right knee, place foot on left thigh", "Bend left knee, place foot on right thigh", "Sit tall and centered", "Place hands on knees", "Breathe deeply for 5-10 minutes"]
@@ -148,7 +148,7 @@
     "sanskritName": "Parivrtta Trikonasana",
     "difficulty": "intermediate",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Parivrtta Trikonasana (Revolved Triangle Pose).png",
+    "imagePath": "/yoga-exercises/Parivrtta Trikonasana (Revolved Triangle Pose).png",
     "benefits": ["Spine twist", "Hamstring stretch", "Balance"],
     "contraindications": ["Lower back pain", "Hip issues"],
     "instructions": ["Step right foot forward", "Square hips forward", "Fold forward, twist from hips", "Place hands on ground", "Lengthen spine forward", "Hold 5-8 breaths each side"]
@@ -159,7 +159,7 @@
     "sanskritName": "Parsvakonasana",
     "difficulty": "intermediate",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Parsvakonasana (Side Angle Pose).png",
+    "imagePath": "/yoga-exercises/Parsvakonasana (Side Angle Pose).png",
     "benefits": ["Side stretch", "Hip opening", "Strengthening"],
     "contraindications": ["Ankle injury", "Shoulder issues"],
     "instructions": ["Step right foot forward", "Square hips forward", "Bend right knee", "Place right forearm on thigh", "Extend left arm overhead", "Hold 5-8 breaths each side"]
@@ -170,7 +170,7 @@
     "sanskritName": "Paschimottanasana",
     "difficulty": "intermediate",
     "duration": 240,
-    "imagePath": "/Yoga&Exercises/Paschimottanasana (Seated Forward Bend).png",
+    "imagePath": "/yoga-exercises/Paschimottanasana (Seated Forward Bend).png",
     "benefits": ["Spine stretch", "Hamstring stretch", "Calming"],
     "contraindications": ["Lower back pain", "Hamstring injury"],
     "instructions": ["Sit with legs extended", "Keep spine tall", "Fold forward from hips", "Let head and neck relax", "Don't force the stretch", "Hold 1-3 minutes"]
@@ -181,7 +181,7 @@
     "sanskritName": "Salabhasana",
     "difficulty": "beginner",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Salabhasana (Locust Pose).png",
+    "imagePath": "/yoga-exercises/Salabhasana (Locust Pose).png",
     "benefits": ["Back strength", "Chest opening", "Energizing"],
     "contraindications": ["Lower back pain", "Pregnancy"],
     "instructions": ["Lie on belly", "Arms at sides, palms up", "Keep legs parallel", "Press chest and arms up", "Keep neck neutral", "Hold 15-30 seconds"]
@@ -192,7 +192,7 @@
     "sanskritName": "Savasana",
     "difficulty": "beginner",
     "duration": 600,
-    "imagePath": "/Yoga&Exercises/Savasana (Corpse Pose).png",
+    "imagePath": "/yoga-exercises/Savasana (Corpse Pose).png",
     "benefits": ["Complete relaxation", "Integration", "Meditation"],
     "contraindications": [],
     "instructions": ["Lie flat on back", "Separate feet hip-width apart", "Arms at sides, palms up", "Relax entire body", "Close eyes gently", "Stay for 5-10 minutes"]
@@ -203,7 +203,7 @@
     "sanskritName": "Sukhasana",
     "difficulty": "beginner",
     "duration": 300,
-    "imagePath": "/Yoga&Exercises/Sukhasana (Easy Pose).png",
+    "imagePath": "/yoga-exercises/Sukhasana (Easy Pose).png",
     "benefits": ["Grounding", "Hip opening", "Meditation"],
     "contraindications": [],
     "instructions": ["Sit on floor", "Cross legs at shins", "Place knees apart", "Hands on knees or heart center", "Keep spine tall", "Sit for 5-10 minutes"]
@@ -214,7 +214,7 @@
     "sanskritName": "Supta Baddha Konasana",
     "difficulty": "intermediate",
     "duration": 300,
-    "imagePath": "/Yoga&Exercises/Supta Baddha Konasana (Reclining Bound Angle Pose).png",
+    "imagePath": "/yoga-exercises/Supta Baddha Konasana (Reclining Bound Angle Pose).png",
     "benefits": ["Hip opening", "Relaxation", "Chest opening"],
     "contraindications": ["Knee issues", "Pregnancy"],
     "instructions": ["Lie on back", "Bring soles of feet together", "Knees fall open to sides", "Place hands on belly or sides", "Relax shoulders away from ears", "Hold 3-5 minutes"]
@@ -225,7 +225,7 @@
     "sanskritName": "Tadasana",
     "difficulty": "beginner",
     "duration": 120,
-    "imagePath": "/Yoga&Exercises/Tadasana practice.png",
+    "imagePath": "/yoga-exercises/Tadasana practice.png",
     "benefits": ["Grounding", "Alignment", "Foundation"],
     "contraindications": [],
     "instructions": ["Stand with feet hip-width apart", "Ground all four corners of feet", "Engage thighs", "Lengthen spine", "Let arms hang at sides", "Hold 30 seconds to 1 minute"]
@@ -236,7 +236,7 @@
     "sanskritName": "Vrksasana",
     "difficulty": "beginner",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/tree pose.png",
+    "imagePath": "/yoga-exercises/tree pose.png",
     "benefits": ["Balance", "Focus", "Grounding"],
     "contraindications": ["Severe balance issues"],
     "instructions": ["Stand on left leg", "Shift weight to left foot", "Place right foot on inner left thigh", "Press foot into leg", "Bring hands to heart or overhead", "Hold 5-8 breaths each side"]
@@ -247,7 +247,7 @@
     "sanskritName": "Trikonasana",
     "difficulty": "beginner",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Trikonasana (Triangle Pose).png",
+    "imagePath": "/yoga-exercises/Trikonasana (Triangle Pose).png",
     "benefits": ["Side stretch", "Grounding", "Hip opening"],
     "contraindications": ["Neck issues", "High blood pressure"],
     "instructions": ["Stand with feet wide apart", "Turn right foot out 90 degrees", "Lean torso to right over front leg", "Place right hand on shin or block", "Extend left arm toward ceiling", "Hold 5-8 breaths each side"]
@@ -258,7 +258,7 @@
     "sanskritName": "Utkatasana",
     "difficulty": "intermediate",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Utkatasana (Chair Pose).png",
+    "imagePath": "/yoga-exercises/Utkatasana (Chair Pose).png",
     "benefits": ["Leg strength", "Glute activation", "Core strength"],
     "contraindications": ["Knee problems", "Lower back pain"],
     "instructions": ["Stand with feet hip-width apart", "Bend knees like sitting in chair", "Keep weight in heels", "Raise arms overhead", "Keep chest lifted", "Hold 20-30 seconds"]
@@ -269,7 +269,7 @@
     "sanskritName": "Uttanasana",
     "difficulty": "beginner",
     "duration": 240,
-    "imagePath": "/Yoga&Exercises/Uttanasana (Standing Forward Bend).png",
+    "imagePath": "/yoga-exercises/Uttanasana (Standing Forward Bend).png",
     "benefits": ["Hamstring stretch", "Spine release", "Calming"],
     "contraindications": ["Lower back pain", "Hamstring injury"],
     "instructions": ["Stand with feet hip-width apart", "Fold forward from hips", "Let head and neck relax", "Hands rest on legs or floor", "Don't force the stretch", "Hold 30 seconds to 1 minute"]
@@ -280,7 +280,7 @@
     "sanskritName": "Thunderbolt Pose",
     "difficulty": "beginner",
     "duration": 300,
-    "imagePath": "/Yoga&Exercises/Vajrasana pose.png",
+    "imagePath": "/yoga-exercises/Vajrasana pose.png",
     "benefits": ["Digestion", "Grounding", "Meditation"],
     "contraindications": ["Knee injury", "Ankle problems"],
     "instructions": ["Kneel on mat", "Bring toes together, knees together", "Lower hips to heels", "Hands on knees or thighs", "Keep spine tall", "Sit for 5-10 minutes"]
@@ -291,7 +291,7 @@
     "sanskritName": "Virabhadrasana I",
     "difficulty": "intermediate",
     "duration": 300,
-    "imagePath": "/Yoga&Exercises/Virabhadrasana I (Warrior I).png",
+    "imagePath": "/yoga-exercises/Virabhadrasana I (Warrior I).png",
     "benefits": ["Strengthening", "Balance", "Focus"],
     "contraindications": ["Knee problems", "Lower back issues"],
     "instructions": ["Step right foot forward", "Align heel with arch of left foot", "Square hips forward", "Bend front knee to 90 degrees", "Reach arms overhead", "Hold 5-8 breaths each side"]
@@ -302,7 +302,7 @@
     "sanskritName": "Virabhadrasana II",
     "difficulty": "intermediate",
     "duration": 300,
-    "imagePath": "/Yoga&Exercises/Virabhadrasana II (Warrior II).png",
+    "imagePath": "/yoga-exercises/Virabhadrasana II (Warrior II).png",
     "benefits": ["Leg strength", "Open hips", "Mental clarity"],
     "contraindications": ["Neck issues", "Ankle problems"],
     "instructions": ["Stand with feet wide apart", "Turn right foot out 90 degrees", "Bend right knee to 90 degrees", "Extend arms to shoulder height", "Gaze over right fingertips", "Hold 5-8 breaths each side"]
@@ -313,7 +313,7 @@
     "sanskritName": "Virabhadrasana III",
     "difficulty": "advanced",
     "duration": 180,
-    "imagePath": "/Yoga&Exercises/Virabhadrasana III (Warrior III).png",
+    "imagePath": "/yoga-exercises/Virabhadrasana III (Warrior III).png",
     "benefits": ["Balance", "Leg strength", "Focus"],
     "contraindications": ["Ankle injury", "Lower back pain"],
     "instructions": ["Stand on right leg", "Lean torso forward", "Extend left leg behind you", "Keep hips level and square", "Arms can be at sides or extended", "Hold 5-8 breaths each side"]
