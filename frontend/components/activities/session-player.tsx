@@ -184,7 +184,7 @@ export function SessionPlayer({ activities, sessionId, onSessionComplete }: Sess
       img.onerror = () => {
         console.warn(`Failed to pre-load image for ${poseName}`)
       }
-      img.src = `/images/yoga/${poseName}.png`
+      img.src = `/Yoga&Exercises/${poseName}.png`
     })
 
     setYogaImageCache(cache)
