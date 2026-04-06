@@ -463,7 +463,7 @@ function generateStrictDailyMealPlan(condition) {
 
   const hasInvalidColdCombo = (meal) => {
     return meal.some(name => allFoods.find(f => (f.food_name === name || f.name === name) &&
-      f.tcm_properties?.thermal_nature?.toLowerCase() === 'cold'));
+      f.thermal_nature?.toLowerCase() === 'cold'));
   };
 
   if (hasInvalidColdCombo(breakfast.meal)) {
@@ -476,7 +476,7 @@ function generateStrictDailyMealPlan(condition) {
   // Check for excessive hot mixing
   const countHotFoods = (meal) => {
     return meal.filter(name => allFoods.find(f => (f.food_name === name || f.name === name) &&
-      f.tcm_properties?.thermal_nature?.toLowerCase() === 'hot')).length;
+      f.thermal_nature?.toLowerCase() === 'hot')).length;
   };
 
   if (countHotFoods(breakfast.meal) > 2 || countHotFoods(lunch.meal) > 2 || countHotFoods(dinner.meal) > 1) {
@@ -561,40 +561,45 @@ const generateWeeklyPlan = (rankedFoods, userAssessment) => {
   const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
   for (let day = 1; day <= 7; day++) {
-    // Generate daily plan
-    const dailyPlan = generateStrictDailyMealPlan(condition);
-    
-    // Reformat to match Ayurveda weekly plan structure
-    if (dailyPlan && dailyPlan.mealPlan) {
-      const dayPlan = {
-        day: day,
-        day_name: dayNames[(day - 1) % 7],
-        meals: [
-          {
-            meal_type: 'Breakfast',
-            foods: dailyPlan.mealPlan.breakfast.meal,
-            timing: 'Morning (7-9 AM)'
-          },
-          {
-            meal_type: 'Lunch',
-            foods: dailyPlan.mealPlan.lunch.meal,
-            timing: 'Midday (12-1 PM)'
-          },
-          {
-            meal_type: 'Dinner',
-            foods: dailyPlan.mealPlan.dinner.meal,
-            timing: 'Evening (6-7 PM)'
-          }
-        ],
-        guidelines: [
-          'Maintain warm foods throughout the day',
-          'Avoid cold/raw foods',
-          'Balance thermal natures',
-          'Yin/Yang balance consideration',
-          'Respect digestive capacity'
-        ]
-      };
-      weeklyPlan.push(dayPlan);
+    try {
+      // Generate daily plan
+      const dailyPlan = generateStrictDailyMealPlan(condition);
+      
+      // Reformat to match Ayurveda weekly plan structure
+      if (dailyPlan && dailyPlan.mealPlan) {
+        const dayPlan = {
+          day: day,
+          day_name: dayNames[(day - 1) % 7],
+          meals: [
+            {
+              meal_type: 'Breakfast',
+              foods: dailyPlan.mealPlan.breakfast.meal,
+              timing: 'Morning (7-9 AM)'
+            },
+            {
+              meal_type: 'Lunch',
+              foods: dailyPlan.mealPlan.lunch.meal,
+              timing: 'Midday (12-1 PM)'
+            },
+            {
+              meal_type: 'Dinner',
+              foods: dailyPlan.mealPlan.dinner.meal,
+              timing: 'Evening (6-7 PM)'
+            }
+          ],
+          guidelines: [
+            'Maintain warm foods throughout the day',
+            'Avoid cold/raw foods',
+            'Balance thermal natures',
+            'Yin/Yang balance consideration',
+            'Respect digestive capacity'
+          ]
+        };
+        weeklyPlan.push(dayPlan);
+      }
+    } catch (error) {
+      console.error(`⚠️ Error generating meal for day ${day}:`, error.message);
+      // Continue to next day instead of crashing
     }
   }
 
