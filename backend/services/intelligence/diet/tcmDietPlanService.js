@@ -62,9 +62,9 @@ class TCMDietPlanService {
           console.log(`  📅 Day ${dayNum}: B=${breakfast?.foods?.length || 0}, L=${lunch?.foods?.length || 0}, D=${dinner?.foods?.length || 0}`);
           
           sevenDayPlanObject[`day_${dayNum}`] = {
-            breakfast: breakfast?.foods || [],
-            lunch: lunch?.foods || [],
-            dinner: dinner?.foods || []
+            breakfast: breakfast ? breakfast.foods.map(f => f.food?.name || f.name || 'Unknown') : [],
+            lunch: lunch ? lunch.foods.map(f => f.food?.name || f.name || 'Unknown') : [],
+            dinner: dinner ? dinner.foods.map(f => f.food?.name || f.name || 'Unknown') : []
           };
         });
         console.log('✅ Converted to object:', Object.keys(sevenDayPlanObject));

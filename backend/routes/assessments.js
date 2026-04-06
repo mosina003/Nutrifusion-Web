@@ -580,9 +580,13 @@ router.post('/submit', protect, async (req, res) => {
           );
           console.log('✅ Modern diet plan generated successfully');
           
-          // Convert to DietPlan schema (same format as Ayurveda now)
-          const meals = convertSevenDayPlanToMeals(dietPlanData['7_day_plan']);
+          // Convert to DietPlan schema (Modern-specific with snacks and nutrition metadata)
+          const meals = convertSevenDayPlanToMeals(dietPlanData['7_day_plan'], 'modern');
           console.log('🍽️ Converted meals count:', meals.length);
+          
+          // Extract daily targets from first day for metadata (all days should have same daily targets)
+          const firstDayData = dietPlanData['7_day_plan']['day_1'];
+          const dailyTargets = firstDayData?.daily_targets || {};
           
           const dietPlan = new DietPlan({
             userId,
@@ -597,6 +601,8 @@ router.post('/submit', protect, async (req, res) => {
                 avoidFoods: dietPlanData.avoidFoods || [],
                 metabolic_risk_level: result.scores.metabolic_risk_level,
                 bmi: dietPlanData.user_profile?.bmi,
+                bmr: dietPlanData.user_profile?.bmr,
+                tdee: dietPlanData.user_profile?.tdee,
                 sourceAssessmentId: assessment._id
               }
             }],
@@ -607,13 +613,29 @@ router.post('/submit', protect, async (req, res) => {
             validTo: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days
             metadata: {
               sourceAssessmentId: assessment._id,
-              generatedAt: new Date()
+              generatedAt: new Date(),
+              // Save daily targets for all 7 days
+              daily_targets: dailyTargets,
+              // Save total estimated calories per day
+              daily_calories_estimated: firstDayData?.total_calories_estimated,
+              // Save user profile info
+              user_profile: dietPlanData.user_profile || {},
+              // Save all 7-day plan structure with daily targets for reference
+              sevenDayPlanData: Object.keys(dietPlanData['7_day_plan']).reduce((acc, dayKey) => {
+                const dayData = dietPlanData['7_day_plan'][dayKey];
+                acc[dayKey] = {
+                  daily_targets: dayData.daily_targets,
+                  total_calories_estimated: dayData.total_calories_estimated
+                };
+                return acc;
+              }, {})
             }
           });
 
           await dietPlan.save();
           dietPlanId = dietPlan._id;
           console.log('✅ Modern diet plan saved to DietPlan collection:', dietPlanId);
+          console.log('📊 Saved meals:', meals.length, '| Daily targets:', dailyTargets);
         } catch (dietPlanError) {
           console.error('⚠️  Modern diet plan generation/save failed:', dietPlanError.message);
           console.error('Error details:', dietPlanError);
@@ -1055,7 +1077,7 @@ router.get('/stats/summary', protect, async (req, res) => {
 /**
  * Helper function: Convert 7_day_plan format to meals array for DietPlan schema
  */
-function convertSevenDayPlanToMeals(sevenDayPlan) {
+function convertSevenDayPlanToMeals(sevenDayPlan, planType = 'ayurveda') {
   const meals = [];
   
   if (!sevenDayPlan) {
@@ -1079,6 +1101,21 @@ function convertSevenDayPlanToMeals(sevenDayPlan) {
       });
     }
 
+    // Morning Snack (only for Modern)
+    if (planType === 'modern' && dayData.snacks && dayData.snacks.length > 0) {
+      // Find snacks that are for morning slot (typically first half)
+      const morningSnacks = dayData.snacks.slice(0, Math.ceil(dayData.snacks.length / 2));
+      if (morningSnacks.length > 0) {
+        meals.push({
+          day: day,
+          mealType: 'Snack',
+          foods: morningSnacks,
+          timing: '10:00 AM - 11:00 AM',
+          notes: 'Morning snack'
+        });
+      }
+    }
+
     // Lunch
     if (dayData.lunch && dayData.lunch.length > 0) {
       meals.push({
@@ -1088,6 +1125,21 @@ function convertSevenDayPlanToMeals(sevenDayPlan) {
         timing: '12:00 PM - 1:00 PM',
         notes: 'Main meal of the day'
       });
+    }
+
+    // Afternoon Snack (only for Modern)
+    if (planType === 'modern' && dayData.snacks && dayData.snacks.length > 0) {
+      // Find snacks that are for afternoon slot (typically second half)
+      const afternoonSnacks = dayData.snacks.slice(Math.ceil(dayData.snacks.length / 2));
+      if (afternoonSnacks.length > 0) {
+        meals.push({
+          day: day,
+          mealType: 'Snack',
+          foods: afternoonSnacks,
+          timing: '3:00 PM - 4:00 PM',
+          notes: 'Afternoon snack'
+        });
+      }
     }
 
     // Dinner
