@@ -49,7 +49,9 @@ class UnaniDietPlanService {
       return {
         '7_day_plan': sevenDayPlanObject,
         top_ranked_foods: mealPlan.top_ranked_foods,
-        reasoning_summary: mealPlan.reasoning_summary,
+        reasoning_summary: typeof mealPlan.reasoning_summary === 'object'
+          ? `Unani Analysis: Primary Mizaj - ${mealPlan.reasoning_summary.primary_mizaj}, Secondary Mizaj - ${mealPlan.reasoning_summary.secondary_mizaj}, Digestive Strength - ${mealPlan.reasoning_summary.digestive_strength}. Key Principles: ${mealPlan.reasoning_summary.key_principles?.join(', ')}`
+          : mealPlan.reasoning_summary,
         user_profile: {
           primary_mizaj: userAssessment.primary_mizaj,
           secondary_mizaj: userAssessment.secondary_mizaj,

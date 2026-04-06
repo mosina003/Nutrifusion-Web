@@ -59,7 +59,9 @@ class TCMDietPlanService {
       return {
         '7_day_plan': sevenDayPlanObject,
         top_ranked_foods: mealPlan.top_ranked_foods,
-        reasoning_summary: mealPlan.reasoning_summary,
+        reasoning_summary: typeof mealPlan.reasoning_summary === 'object' 
+          ? `TCM Analysis: Thermal Pattern - ${mealPlan.reasoning_summary.thermal_pattern}, Digestive Strength - ${mealPlan.reasoning_summary.digestive_strength}. Key Principles: ${mealPlan.reasoning_summary.key_principles?.join(', ')}`
+          : mealPlan.reasoning_summary,
         user_profile: {
           primary_pattern: userAssessment.primary_pattern,
           secondary_pattern: userAssessment.secondary_pattern,
