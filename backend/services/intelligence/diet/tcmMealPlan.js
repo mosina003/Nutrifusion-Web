@@ -192,7 +192,7 @@ function generateStrictBreakfast(allFoods, condition) {
     breakfastFoods = allFoods.filter(f => 
       f && 
       f.meal_type?.map(m => m?.toLowerCase()).includes('breakfast') &&
-      !(f.thermal_nature?.toLowerCase() === 'cold')
+      !(f.tcm_properties?.thermal_nature?.toLowerCase() === 'cold')
     );
   }
   
@@ -205,7 +205,7 @@ function generateStrictBreakfast(allFoods, condition) {
   if (yangDeficiency) {
     // Yang deficiency → warming foods
     const warmingFoods = breakfastFoods.filter(f =>
-      f.thermal_nature?.toLowerCase() === 'warm' && f.category?.toLowerCase() === 'grain'
+      f.tcm_properties?.thermal_nature?.toLowerCase() === 'warm' && f.category?.toLowerCase() === 'grain'
     );
     mainDish = warmingFoods[Math.floor(Math.random() * warmingFoods.length)];
   } else if (yinDeficiency && excessHeat) {
@@ -272,7 +272,7 @@ function generateStrictLunch(allFoods, condition) {
     lunchFoods = allFoods.filter(f => 
       f && 
       f.meal_type?.map(m => m?.toLowerCase()).includes('lunch') &&
-      !(f.thermal_nature?.toLowerCase() === 'cold')
+      !(f.tcm_properties?.thermal_nature?.toLowerCase() === 'cold')
     );
   }
 
@@ -363,7 +363,7 @@ function generateStrictDinner(allFoods, condition) {
     dinnerFoods = allFoods.filter(f => 
       f && 
       f.meal_type?.map(m => m?.toLowerCase()).includes('dinner') &&
-      (f.thermal_nature?.toLowerCase() === 'warm' || f.thermal_nature?.toLowerCase() === 'neutral')
+      (f.tcm_properties?.thermal_nature?.toLowerCase() === 'warm' || f.tcm_properties?.thermal_nature?.toLowerCase() === 'neutral')
     );
   }
 
