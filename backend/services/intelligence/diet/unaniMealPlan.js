@@ -246,10 +246,20 @@ function isTemperamentBalanced(meal, allFoods) {
 function generateStrictBreakfast(allFoods, userType) {
   console.log('  🌅 Generating breakfast (Light & Digestible)...');
 
-  const breakfastFoods = allFoods.filter(f => canUseInBreakfast(f, userType));
+  let breakfastFoods = allFoods.filter(f => canUseInBreakfast(f, userType));
+
+  // FALLBACK: If no suitable foods found, relax filter
+  if (breakfastFoods.length === 0) {
+    console.warn('⚠️ No breakfast foods found with strict filters. Relaxing filter...');
+    breakfastFoods = allFoods.filter(f => 
+      f && 
+      f.meal_type?.map(m => m?.toLowerCase()).includes('breakfast') &&
+      (!f.added_heat || f.added_heat === false)
+    );
+  }
 
   if (breakfastFoods.length === 0) {
-    throw new Error('INVALID: No suitable breakfast foods found');
+    throw new Error('INVALID: No suitable breakfast foods found after all filters');
   }
 
   // Select light main dish
@@ -292,10 +302,20 @@ function generateStrictBreakfast(allFoods, userType) {
 function generateStrictLunch(allFoods, userType) {
   console.log('  🍽️  Generating lunch (Balanced & Main Meal)...');
 
-  const lunchFoods = allFoods.filter(f => canUseInLunch(f, userType));
+  let lunchFoods = allFoods.filter(f => canUseInLunch(f, userType));
+
+  // FALLBACK: If not enough foods found, relax filter
+  if (lunchFoods.length < 3) {
+    console.warn('⚠️ Not enough lunch foods found with strict filters. Relaxing filter...');
+    lunchFoods = allFoods.filter(f => 
+      f && 
+      f.meal_type?.map(m => m?.toLowerCase()).includes('lunch') &&
+      (!f.added_heat || f.added_heat === false)
+    );
+  }
 
   if (lunchFoods.length < 3) {
-    throw new Error('INVALID: Not enough lunch foods found');
+    throw new Error('INVALID: Not enough lunch foods found after all filters');
   }
 
   const meal = [];
@@ -350,10 +370,20 @@ function generateStrictLunch(allFoods, userType) {
 function generateStrictDinner(allFoods, userType) {
   console.log('  🌙 Generating dinner (Light & Soothing)...');
 
-  const dinnerFoods = allFoods.filter(f => canUseInDinner(f, userType));
+  let dinnerFoods = allFoods.filter(f => canUseInDinner(f, userType));
+
+  // FALLBACK: If no suitable foods found, relax filter
+  if (dinnerFoods.length === 0) {
+    console.warn('⚠️ No dinner foods found with strict filters. Relaxing filter...');
+    dinnerFoods = allFoods.filter(f => 
+      f && 
+      f.meal_type?.map(m => m?.toLowerCase()).includes('dinner') &&
+      (!f.added_heat || f.added_heat === false)
+    );
+  }
 
   if (dinnerFoods.length === 0) {
-    throw new Error('INVALID: No suitable dinner foods found');
+    throw new Error('INVALID: No suitable dinner foods found after all filters');
   }
 
   // Select easily digestible main

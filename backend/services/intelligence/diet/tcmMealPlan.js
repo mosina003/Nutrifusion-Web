@@ -261,13 +261,23 @@ function generateStrictLunch(allFoods, condition) {
   const { yinDeficiency, yangDeficiency, excessHeat, excessCold } = condition;
   
   // Filter: NO fried, NO very-heavy
-  const lunchFoods = allFoods.filter(f => 
+  let lunchFoods = allFoods.filter(f => 
     canUseInLunch(f, condition) &&
     !(f.guna && (f.guna.includes('fried') || f.guna.includes('very-heavy')))
   );
 
+  // FALLBACK: If not enough foods found, relax guna filter
   if (lunchFoods.length < 3) {
-    throw new Error('INVALID: Not enough lunch foods found');
+    console.warn('⚠️ Not enough lunch foods found with strict guna filters. Relaxing filter...');
+    lunchFoods = allFoods.filter(f => 
+      f && 
+      f.meal_type?.map(m => m?.toLowerCase()).includes('lunch') &&
+      !(f.thermal_nature?.toLowerCase() === 'cold')
+    );
+  }
+
+  if (lunchFoods.length < 3) {
+    throw new Error('INVALID: Not enough lunch foods found after all filters');
   }
 
   const meal = [];
@@ -342,13 +352,23 @@ function generateStrictDinner(allFoods, condition) {
   const { yinDeficiency, yangDeficiency } = condition;
   
   // Filter: VERY STRICT - NO heavy/fried/oily
-  const dinnerFoods = allFoods.filter(f => 
+  let dinnerFoods = allFoods.filter(f => 
     canUseInDinner(f, condition) &&
     !(f.guna && (f.guna.includes('fried') || f.guna.includes('heavy') || f.guna.includes('oily') || f.guna.includes('very-heavy')))
   );
 
+  // FALLBACK: If no suitable foods found, relax guna filter
   if (dinnerFoods.length === 0) {
-    throw new Error('INVALID: No suitable dinner foods found');
+    console.warn('⚠️ No dinner foods found with strict guna filters. Relaxing filter...');
+    dinnerFoods = allFoods.filter(f => 
+      f && 
+      f.meal_type?.map(m => m?.toLowerCase()).includes('dinner') &&
+      (f.thermal_nature?.toLowerCase() === 'warm' || f.thermal_nature?.toLowerCase() === 'neutral')
+    );
+  }
+
+  if (dinnerFoods.length === 0) {
+    throw new Error('INVALID: No suitable dinner foods found after all filters');
   }
 
   // Prefer warm for dinner to support digestion
