@@ -27,10 +27,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         setIsDark(false)
         applyDarkMode(false)
       } else {
-        // Check system preference
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-        setIsDark(prefersDark)
-        applyDarkMode(prefersDark)
+        // Default to light mode
+        setIsDark(false)
+        applyDarkMode(false)
       }
 
       // Then fetch from user settings
