@@ -77,6 +77,62 @@ const calculateDoshaBalance = async (meals) => {
 };
 
 /**
+ * Transform weekly plan data to DietPlan meals array format
+ * Handles both Ayurveda-style (day_1, day_2) and TCM-style (array) formats
+ */
+const transformWeeklyPlanToMeals = (weeklyPlanData) => {
+  const meals = [];
+  
+  if (!weeklyPlanData) return meals;
+
+  // Check if it's object format (Ayurveda/Unani style: { day_1: {...}, day_2: {...} })
+  if (typeof weeklyPlanData === 'object' && !Array.isArray(weeklyPlanData)) {
+    Object.entries(weeklyPlanData).forEach(([dayKey, dayData]) => {
+      // Extract day number from "day_1", "day_2", etc.
+      const dayMatch = dayKey.match(/day_(\d+)/);
+      const dayNumber = dayMatch ? parseInt(dayMatch[1]) : 1;
+      
+      // Handle both { breakfast: [...], lunch: [...], dinner: [...] } format
+      const mealTimings = {
+        breakfast: { timing: 'Morning (7-9 AM)', mealType: 'Breakfast' },
+        lunch: { timing: 'Midday (12-1 PM)', mealType: 'Lunch' },
+        dinner: { timing: 'Evening (6-7 PM)', mealType: 'Dinner' }
+      };
+      
+      Object.entries(mealTimings).forEach(([mealKey, { timing, mealType }]) => {
+        if (dayData[mealKey]) {
+          meals.push({
+            day: dayNumber,
+            mealType: mealType,
+            foods: Array.isArray(dayData[mealKey]) ? dayData[mealKey] : [dayData[mealKey]],
+            timing: timing
+          });
+        }
+      });
+    });
+  }
+  // Check if it's array format (TCM style newer: array of day objects)
+  else if (Array.isArray(weeklyPlanData)) {
+    weeklyPlanData.forEach((dayPlan, index) => {
+      const dayNumber = dayPlan.day || (index + 1);
+      
+      if (dayPlan.meals && Array.isArray(dayPlan.meals)) {
+        dayPlan.meals.forEach(mealObj => {
+          meals.push({
+            day: dayNumber,
+            mealType: mealObj.meal_type || mealObj.mealType || 'Meal',
+            foods: mealObj.foods || [],
+            timing: mealObj.timing || ''
+          });
+        });
+      }
+    });
+  }
+  
+  return meals;
+};
+
+/**
  * @route   POST /api/diet-plans
  * @desc    Create diet plan (Practitioner: Editor/Approver)
  * @access  Private/Practitioner
@@ -557,7 +613,7 @@ router.post(
         userId,
         planName: `Unani Diet Plan - ${assessmentResult.primary_mizaj || 'Balanced'}`,
         planType: 'unani',
-        meals: dietPlanData.weeklyPlan || [],
+        meals: transformWeeklyPlanToMeals(dietPlanData['7_day_plan']),
         rulesApplied: [
           {
             framework: 'unani',
@@ -911,26 +967,38 @@ router.post(
 
       // Save to database if userId provided
       if (userId) {
-        const newDietPlan = new DietPlan({
+        const newDietPlan = await DietPlan.create({
           userId,
-          framework: 'tcm',
-          assessmentSnapshot: {
-            primary_pattern: assessmentResult.primary_pattern,
-            secondary_pattern: assessmentResult.secondary_pattern,
-            cold_heat: assessmentResult.cold_heat,
-            severity: assessmentResult.severity
-          },
-          meals: [], // Can be populated from 7_day_plan if needed
+          planName: `TCM Diet Plan - ${assessmentResult.primary_pattern || 'Balanced'}`,
+          planType: 'tcm',
+          meals: transformWeeklyPlanToMeals(dietPlan['7_day_plan']),
+          rulesApplied: [
+            {
+              framework: 'tcm',
+              details: {
+                primary_pattern: assessmentResult.primary_pattern,
+                secondary_pattern: assessmentResult.secondary_pattern,
+                cold_heat: assessmentResult.cold_heat,
+                severity: assessmentResult.severity
+              }
+            }
+          ],
+          status: 'Draft',
           createdBy: req.user._id,
-          createdAt: new Date()
+          createdByModel: 'Practitioner',
+          validFrom: new Date(),
+          validTo: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
         });
 
-        await newDietPlan.save();
-
-        console.log(`✅ TCM Diet plan saved for user ${userId}`);
+        await newDietPlan.populate('userId', 'name email');
+        console.log(`✅ TCM Diet plan created with ID: ${newDietPlan._id} for user ${userId}`);
       }
 
-      res.status(200).json(dietPlan);
+      res.status(200).json({
+        success: true,
+        message: 'TCM diet plan generated successfully',
+        data: dietPlan
+      });
     } catch (error) {
       console.error('TCM diet plan generation error:', error);
       res.status(500).json({
