@@ -6,6 +6,9 @@
 PORT=5000
 NODE_ENV=production
 
+# Authentication
+JWT_SECRET=your_jwt_secret_key_here_change_in_production
+
 # Database
 MONGODB_URI=mongodb+srv://your_username:your_password@cluster.mongodb.net/nutrifusion?retryWrites=true&w=majority
 

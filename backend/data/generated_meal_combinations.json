@@ -1,0 +1,105 @@
+{
+  "breakfast": [
+    {
+      "main": "Idli",
+      "side": "Mango",
+      "beverage": "Coconut Water",
+      "rationale": "Fermented, easily digestible, probiotic benefits + High vitamin C, vitamin A, antioxidants. Natural electrolytes, potassium-rich, hydration"
+    },
+    {
+      "main": "Dosa",
+      "side": "Banana",
+      "beverage": "Coffee",
+      "rationale": "Fermented, provides energy, moderate fat + Potassium-rich, energy boost, digestive health. Antioxidants, caffeine, mental alertness"
+    },
+    {
+      "main": "Upma",
+      "side": "Spinach",
+      "beverage": "Tea",
+      "rationale": "Nutrient-rich breakfast, moderate fiber + Very high iron, vitamin K, folate, antioxidants. Antioxidants, polyphenols, catechins, heart-healthy"
+    },
+    {
+      "main": "Poha",
+      "side": "Sprout Salad",
+      "beverage": "Coffee",
+      "rationale": "Light, easy to digest, iron-rich + Raw, enzyme-rich, vitamin C, detoxifying. Antioxidants, caffeine, mental alertness"
+    },
+    {
+      "main": "Paratha",
+      "side": "Carrot",
+      "beverage": "Coconut Water",
+      "rationale": "High energy, high fat, best for active individuals + High beta-carotene, vitamin A, eye health. Natural electrolytes, potassium-rich, hydration"
+    }
+  ],
+  "lunch": [
+    {
+      "grain": "Idli",
+      "protein": "Dal Tadka",
+      "vegetable": "Tomato",
+      "digestive": "Dal Tadka",
+      "rationale": "Complete meal: Idli (carbs) + Dal Tadka (protein) + Tomato (fiber) + Dal Tadka (digestion support)"
+    },
+    {
+      "grain": "Dosa",
+      "protein": "Hummus",
+      "vegetable": "Tomato",
+      "digestive": "Dal Tadka",
+      "rationale": "Complete meal: Dosa (carbs) + Hummus (protein) + Tomato (fiber) + Dal Tadka (digestion support)"
+    },
+    {
+      "grain": "Paratha",
+      "protein": "Dal Tadka",
+      "vegetable": "Onion",
+      "digestive": "Dal Tadka",
+      "rationale": "Complete meal: Paratha (carbs) + Dal Tadka (protein) + Onion (fiber) + Dal Tadka (digestion support)"
+    },
+    {
+      "grain": "Pongal",
+      "protein": "Grilled Chicken",
+      "vegetable": "Tomato",
+      "digestive": "Dal Tadka",
+      "rationale": "Complete meal: Pongal (carbs) + Grilled Chicken (protein) + Tomato (fiber) + Dal Tadka (digestion support)"
+    },
+    {
+      "grain": "Biryani",
+      "protein": "Falafel",
+      "vegetable": "Carrot",
+      "digestive": "Dal Tadka",
+      "rationale": "Complete meal: Biryani (carbs) + Falafel (protein) + Carrot (fiber) + Dal Tadka (digestion support)"
+    }
+  ],
+  "dinner": [
+    {
+      "main": "Idli",
+      "side": "Spinach",
+      "rationale": "Light dinner: Fermented, easily digestible, probiotic benefits with Spinach for fiber"
+    },
+    {
+      "main": "Chapati",
+      "side": "Tomato",
+      "rationale": "Light dinner: High fiber, whole grain, low sodium with Tomato for fiber"
+    },
+    {
+      "main": "Dal Tadka",
+      "side": "Onion",
+      "rationale": "Light dinner: High protein, high fiber, blood sugar control with Onion for fiber"
+    },
+    {
+      "main": "Chole",
+      "side": "Carrot",
+      "rationale": "Light dinner: High protein, high fiber, weight management with Carrot for fiber"
+    },
+    {
+      "main": "Rajma",
+      "side": "Tomato",
+      "rationale": "Light dinner: Kidney beans, low fat, high protein, heart-healthy with Tomato for fiber"
+    }
+  ],
+  "metadata": {
+    "total_foods": 49,
+    "generated_at": "2026-04-06T05:10:22.664Z",
+    "breakfast_count": 5,
+    "lunch_count": 5,
+    "dinner_count": 5
+  }
+}

@@ -1,0 +1,599 @@
+{
+  "frameworks": {
+    "ayurveda": {
+      "system": "Dosha (Vata/Pitta/Kapha)",
+      "user_constitution": {
+        "vata": 0.6,
+        "pitta": 0.3,
+        "kapha": 0.1
+      },
+      "dominant": "vata",
+      "meals": {
+        "breakfast": [
+          {
+            "meal": [
+              "Idli",
+              "Mango",
+              "Coconut Water"
+            ],
+            "reason": "Idli (cooling) + Mango + Coconut Water - balances vata. Ama potential: low",
+            "score": 46
+          },
+          {
+            "meal": [
+              "Dosa",
+              "Banana",
+              "Coffee"
+            ],
+            "reason": "Dosa (heating) + Banana + Coffee - balances vata. Ama potential: medium",
+            "score": 12
+          },
+          {
+            "meal": [
+              "Upma",
+              "Spinach",
+              "Tea"
+            ],
+            "reason": "Upma (heating) + Spinach + Tea - balances vata. Ama potential: medium",
+            "score": 15
+          },
+          {
+            "meal": [
+              "Poha",
+              "Sprout Salad",
+              "Coffee"
+            ],
+            "reason": "Poha (cooling) + Sprout Salad + Coffee - balances vata. Ama potential: low",
+            "score": -2
+          },
+          {
+            "meal": [
+              "Paratha",
+              "Carrot",
+              "Coconut Water"
+            ],
+            "reason": "Paratha (heating) + Carrot + Coconut Water - balances vata. Ama potential: high",
+            "score": 36
+          }
+        ],
+        "lunch": [
+          {
+            "meal": [
+              "Idli",
+              "Dal Tadka",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Idli (cooling) + Dal Tadka provides balanced digestion for vata-dominant constitution",
+            "score": 5
+          },
+          {
+            "meal": [
+              "Dosa",
+              "Hummus",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Dosa (heating) + Hummus provides balanced digestion for vata-dominant constitution",
+            "score": 16
+          },
+          {
+            "meal": [
+              "Paratha",
+              "Dal Tadka",
+              "Onion",
+              "Dal Tadka"
+            ],
+            "reason": "Paratha (heating) + Dal Tadka provides balanced digestion for vata-dominant constitution",
+            "score": 40
+          },
+          {
+            "meal": [
+              "Pongal",
+              "Grilled Chicken",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Pongal (heating) + Grilled Chicken provides balanced digestion for vata-dominant constitution",
+            "score": 41
+          },
+          {
+            "meal": [
+              "Biryani",
+              "Falafel",
+              "Carrot",
+              "Dal Tadka"
+            ],
+            "reason": "Biryani (heating) + Falafel provides balanced digestion for vata-dominant constitution",
+            "score": 37
+          }
+        ],
+        "dinner": [
+          {
+            "meal": [
+              "Idli",
+              "Spinach"
+            ],
+            "reason": "Light dinner: Idli (cooling) reduces vata aggravation before sleep",
+            "score": 5
+          },
+          {
+            "meal": [
+              "Chapati",
+              "Tomato"
+            ],
+            "reason": "Light dinner: Chapati (heating) reduces vata aggravation before sleep",
+            "score": -4
+          },
+          {
+            "meal": [
+              "Dal Tadka",
+              "Onion"
+            ],
+            "reason": "Light dinner: Dal Tadka (heating) reduces vata aggravation before sleep",
+            "score": 15
+          },
+          {
+            "meal": [
+              "Rajma",
+              "Tomato"
+            ],
+            "reason": "Light dinner: Rajma (heating) reduces vata aggravation before sleep",
+            "score": -2
+          }
+        ]
+      }
+    },
+    "unani": {
+      "system": "Humors (Dam/Safra/Balgham/Sauda)",
+      "user_constitution": {
+        "dam": 0.25,
+        "safra": 0.25,
+        "balgham": 0.25,
+        "sauda": 0.25
+      },
+      "dominant": "sauda",
+      "meals": {
+        "breakfast": [
+          {
+            "meal": [
+              "Idli",
+              "Mango",
+              "Coconut Water"
+            ],
+            "reason": "Idli (1H-2C) + Mango reduces excess sauda. Digestion: easy",
+            "score": 26
+          },
+          {
+            "meal": [
+              "Upma",
+              "Spinach",
+              "Tea"
+            ],
+            "reason": "Upma (2H-0C) + Spinach reduces excess sauda. Digestion: moderate",
+            "score": 10
+          },
+          {
+            "meal": [
+              "Poha",
+              "Sprout Salad",
+              "Coffee"
+            ],
+            "reason": "Poha (1H-1C) + Sprout Salad reduces excess sauda. Digestion: easy",
+            "score": 3
+          },
+          {
+            "meal": [
+              "Paratha",
+              "Carrot",
+              "Coconut Water"
+            ],
+            "reason": "Paratha (3H-0C) + Carrot reduces excess sauda. Digestion: hard",
+            "score": 38
+          }
+        ],
+        "lunch": [
+          {
+            "meal": [
+              "Idli",
+              "Dal Tadka",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Complete meal: Idli + Dal Tadka balances sauda excess. Organ affinity: stomach",
+            "score": 30
+          },
+          {
+            "meal": [
+              "Dosa",
+              "Hummus",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Complete meal: Dosa + Hummus balances sauda excess. Organ affinity: stomach",
+            "score": 23
+          },
+          {
+            "meal": [
+              "Paratha",
+              "Dal Tadka",
+              "Onion",
+              "Dal Tadka"
+            ],
+            "reason": "Complete meal: Paratha + Dal Tadka balances sauda excess. Organ affinity: stomach",
+            "score": 18
+          },
+          {
+            "meal": [
+              "Pongal",
+              "Grilled Chicken",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Complete meal: Pongal + Grilled Chicken balances sauda excess. Organ affinity: stomach",
+            "score": 37
+          },
+          {
+            "meal": [
+              "Biryani",
+              "Falafel",
+              "Carrot",
+              "Dal Tadka"
+            ],
+            "reason": "Complete meal: Biryani + Falafel balances sauda excess. Organ affinity: stomach",
+            "score": 19
+          }
+        ],
+        "dinner": [
+          {
+            "meal": [
+              "Idli",
+              "Spinach"
+            ],
+            "reason": "Easy to digest: Idli + Spinach - mild sauda reducing action. Temperament: 1H",
+            "score": 20
+          },
+          {
+            "meal": [
+              "Chapati",
+              "Tomato"
+            ],
+            "reason": "Easy to digest: Chapati + Tomato - mild sauda reducing action. Temperament: 2H",
+            "score": 19
+          },
+          {
+            "meal": [
+              "Dal Tadka",
+              "Onion"
+            ],
+            "reason": "Easy to digest: Dal Tadka + Onion - mild sauda reducing action. Temperament: 3H",
+            "score": 12
+          },
+          {
+            "meal": [
+              "Chole",
+              "Carrot"
+            ],
+            "reason": "Easy to digest: Chole + Carrot - mild sauda reducing action. Temperament: 3H",
+            "score": 23
+          },
+          {
+            "meal": [
+              "Rajma",
+              "Tomato"
+            ],
+            "reason": "Easy to digest: Rajma + Tomato - mild sauda reducing action. Temperament: 2H",
+            "score": 13
+          }
+        ]
+      }
+    },
+    "tcm": {
+      "system": "Patterns (Qi/Heat/Dampness/Blood)",
+      "user_constitution": {
+        "qi_deficiency": 0.4,
+        "heat": 0.3,
+        "dampness": 0.3
+      },
+      "dominant": "qi_deficiency",
+      "meals": {
+        "breakfast": [
+          {
+            "meal": [
+              "Idli",
+              "Mango",
+              "Coconut Water"
+            ],
+            "reason": "Idli (neutral, tonifies) + Mango supports qi_deficiency pattern healing. Meridian: Spleen",
+            "score": 38
+          },
+          {
+            "meal": [
+              "Dosa",
+              "Banana",
+              "Coffee"
+            ],
+            "reason": "Dosa (warm, tonifies) + Banana supports qi_deficiency pattern healing. Meridian: Spleen",
+            "score": 46
+          },
+          {
+            "meal": [
+              "Upma",
+              "Spinach",
+              "Tea"
+            ],
+            "reason": "Upma (warm, tonifies) + Spinach supports qi_deficiency pattern healing. Meridian: Spleen",
+            "score": 23
+          },
+          {
+            "meal": [
+              "Poha",
+              "Sprout Salad",
+              "Coffee"
+            ],
+            "reason": "Poha (neutral, tonifies) + Sprout Salad supports qi_deficiency pattern healing. Meridian: Spleen",
+            "score": 38
+          },
+          {
+            "meal": [
+              "Paratha",
+              "Carrot",
+              "Coconut Water"
+            ],
+            "reason": "Paratha (warm, tonifies) + Carrot supports qi_deficiency pattern healing. Meridian: Spleen",
+            "score": 38
+          }
+        ],
+        "lunch": [
+          {
+            "meal": [
+              "Idli",
+              "Dal Tadka",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Idli (tonifies) + Dal Tadka fortifies qi_deficiency deficiency. Element: Earth",
+            "score": 38
+          },
+          {
+            "meal": [
+              "Dosa",
+              "Hummus",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Dosa (tonifies) + Hummus fortifies qi_deficiency deficiency. Element: Earth",
+            "score": 38
+          },
+          {
+            "meal": [
+              "Paratha",
+              "Dal Tadka",
+              "Onion",
+              "Dal Tadka"
+            ],
+            "reason": "Paratha (tonifies) + Dal Tadka fortifies qi_deficiency deficiency. Element: Earth",
+            "score": 54
+          },
+          {
+            "meal": [
+              "Pongal",
+              "Grilled Chicken",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Pongal (tonifies) + Grilled Chicken fortifies qi_deficiency deficiency. Element: Earth",
+            "score": 46
+          },
+          {
+            "meal": [
+              "Biryani",
+              "Falafel",
+              "Carrot",
+              "Dal Tadka"
+            ],
+            "reason": "Biryani (tonifies) + Falafel fortifies qi_deficiency deficiency. Element: Earth",
+            "score": 61
+          }
+        ],
+        "dinner": [
+          {
+            "meal": [
+              "Idli",
+              "Spinach"
+            ],
+            "reason": "Light dinner (neutral) supports qi_deficiency healing during sleep",
+            "score": 15
+          },
+          {
+            "meal": [
+              "Chapati",
+              "Tomato"
+            ],
+            "reason": "Light dinner (neutral) supports qi_deficiency healing during sleep",
+            "score": 15
+          },
+          {
+            "meal": [
+              "Dal Tadka",
+              "Onion"
+            ],
+            "reason": "Light dinner (warm) supports qi_deficiency healing during sleep",
+            "score": 31
+          },
+          {
+            "meal": [
+              "Chole",
+              "Carrot"
+            ],
+            "reason": "Light dinner (warm) supports qi_deficiency healing during sleep",
+            "score": 38
+          },
+          {
+            "meal": [
+              "Rajma",
+              "Tomato"
+            ],
+            "reason": "Light dinner (warm) supports qi_deficiency healing during sleep",
+            "score": 23
+          }
+        ]
+      }
+    },
+    "modern": {
+      "system": "Nutritional Science",
+      "user_constitution": {
+        "constitution": "vata-like",
+        "needs": [
+          "digestion",
+          "energy"
+        ]
+      },
+      "dominant": "vata-like",
+      "meals": {
+        "breakfast": [
+          {
+            "meal": [
+              "Idli",
+              "Mango",
+              "Coconut Water"
+            ],
+            "reason": "Idli (130cal, 4g protein) + Mango optimized for vata-like needs. Health boost: Digestive issues 2",
+            "score": 17
+          },
+          {
+            "meal": [
+              "Dosa",
+              "Banana",
+              "Coffee"
+            ],
+            "reason": "Dosa (184cal, 5g protein) + Banana optimized for vata-like needs. Health boost: Digestive issues 1",
+            "score": 22
+          },
+          {
+            "meal": [
+              "Upma",
+              "Spinach",
+              "Tea"
+            ],
+            "reason": "Upma (220cal, 6g protein) + Spinach optimized for vata-like needs. Health boost: Digestive issues 1",
+            "score": 22
+          },
+          {
+            "meal": [
+              "Poha",
+              "Sprout Salad",
+              "Coffee"
+            ],
+            "reason": "Poha (180cal, 4g protein) + Sprout Salad optimized for vata-like needs. Health boost: Digestive issues 2",
+            "score": 30
+          },
+          {
+            "meal": [
+              "Paratha",
+              "Carrot",
+              "Coconut Water"
+            ],
+            "reason": "Paratha (320cal, 7g protein) + Carrot optimized for vata-like needs. Health boost: Digestive issues 0",
+            "score": 19
+          }
+        ],
+        "lunch": [
+          {
+            "meal": [
+              "Idli",
+              "Dal Tadka",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Balanced nutrition: Idli (carbs) + Dal Tadka (9g protein, 4g fat) + Tomato (fiber). Macros optimized for vata-like",
+            "score": 28
+          },
+          {
+            "meal": [
+              "Dosa",
+              "Hummus",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Balanced nutrition: Dosa (carbs) + Hummus (8g protein, 9g fat) + Tomato (fiber). Macros optimized for vata-like",
+            "score": 25
+          },
+          {
+            "meal": [
+              "Paratha",
+              "Dal Tadka",
+              "Onion",
+              "Dal Tadka"
+            ],
+            "reason": "Balanced nutrition: Paratha (carbs) + Dal Tadka (9g protein, 4g fat) + Onion (fiber). Macros optimized for vata-like",
+            "score": 22
+          },
+          {
+            "meal": [
+              "Pongal",
+              "Grilled Chicken",
+              "Tomato",
+              "Dal Tadka"
+            ],
+            "reason": "Balanced nutrition: Pongal (carbs) + Grilled Chicken (31g protein, 3.6g fat) + Tomato (fiber). Macros optimized for vata-like",
+            "score": 25
+          },
+          {
+            "meal": [
+              "Biryani",
+              "Falafel",
+              "Carrot",
+              "Dal Tadka"
+            ],
+            "reason": "Balanced nutrition: Biryani (carbs) + Falafel (13g protein, 17g fat) + Carrot (fiber). Macros optimized for vata-like",
+            "score": 31
+          }
+        ],
+        "dinner": [
+          {
+            "meal": [
+              "Idli",
+              "Spinach"
+            ],
+            "reason": "Light dinner (130cal, 1g fat) supports sleep quality and digestion. Glycemic index: 70",
+            "score": 22
+          },
+          {
+            "meal": [
+              "Chapati",
+              "Tomato"
+            ],
+            "reason": "Light dinner (297cal, 3g fat) supports sleep quality and digestion. Glycemic index: 62",
+            "score": 25
+          },
+          {
+            "meal": [
+              "Dal Tadka",
+              "Onion"
+            ],
+            "reason": "Light dinner (150cal, 4g fat) supports sleep quality and digestion. Glycemic index: 30",
+            "score": 17
+          },
+          {
+            "meal": [
+              "Chole",
+              "Carrot"
+            ],
+            "reason": "Light dinner (164cal, 3g fat) supports sleep quality and digestion. Glycemic index: 28",
+            "score": 33
+          },
+          {
+            "meal": [
+              "Rajma",
+              "Tomato"
+            ],
+            "reason": "Light dinner (140cal, 1g fat) supports sleep quality and digestion. Glycemic index: 29",
+            "score": 12
+          }
+        ]
+      }
+    }
+  },
+  "generated_at": "2026-04-06T05:22:43.407Z"
+}

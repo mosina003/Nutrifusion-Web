@@ -113,7 +113,7 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
 
     try {
       setLoading(true)
-      const response = await fetch('https://nutrifusion-backend.onrender.com/api/users/settings', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users/settings`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,

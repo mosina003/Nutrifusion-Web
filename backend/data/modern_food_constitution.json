@@ -12,7 +12,9 @@
     "micronutrients": {"iron": 1.2, "calcium": 10, "sodium": 120, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": -1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Fermented, easily digestible, probiotic benefits"
+    "therapeutic_use": "Fermented, easily digestible, probiotic benefits",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Dosa",
@@ -27,7 +29,9 @@
     "micronutrients": {"iron": 1.5, "calcium": 15, "sodium": 150, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": -1, "hypertension": -1, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Fermented, provides energy, moderate fat"
+    "therapeutic_use": "Fermented, provides energy, moderate fat",
+    "meal_type": ["breakfast", "lunch"],
+    "role": "main"
   },
   {
     "food_name": "Upma",
@@ -42,7 +46,9 @@
     "micronutrients": {"iron": 2, "calcium": 20, "sodium": 300, "vitamin_c": 2, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": -2, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Nutrient-rich breakfast, moderate fiber"
+    "therapeutic_use": "Nutrient-rich breakfast, moderate fiber",
+    "meal_type": ["breakfast"],
+    "role": "main"
   },
   {
     "food_name": "Poha",
@@ -57,7 +63,9 @@
     "micronutrients": {"iron": 1.8, "calcium": 18, "sodium": 250, "vitamin_c": 6, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": -1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Light, easy to digest, iron-rich"
+    "therapeutic_use": "Light, easy to digest, iron-rich",
+    "meal_type": ["breakfast"],
+    "role": "main"
   },
   {
     "food_name": "Paratha",
@@ -72,7 +80,9 @@
     "micronutrients": {"iron": 2.5, "calcium": 20, "sodium": 350, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": -1, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "contains_gluten",
-    "therapeutic_use": "High energy, high fat, best for active individuals"
+    "therapeutic_use": "High energy, high fat, best for active individuals",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Pongal",
@@ -87,7 +97,9 @@
     "micronutrients": {"iron": 1.6, "calcium": 25, "sodium": 280, "vitamin_c": 1, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": -1, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Comfort food, balanced nutrition"
+    "therapeutic_use": "Comfort food, balanced nutrition",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Biryani",
@@ -102,7 +114,9 @@
     "micronutrients": {"iron": 2.2, "calcium": 20, "sodium": 450, "vitamin_c": 2, "vitamin_b12": 0.4},
     "health_conditions": {"diabetes": 0, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": -1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Complete meal, high protein, festive dish"
+    "therapeutic_use": "Complete meal, high protein, festive dish",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Fried Rice",
@@ -117,7 +131,9 @@
     "micronutrients": {"iron": 1.8, "calcium": 18, "sodium": 500, "vitamin_c": 3, "vitamin_b12": 0},
     "health_conditions": {"diabetes": -1, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Quick energy, high sodium"
+    "therapeutic_use": "Quick energy, high sodium",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Oatmeal",
@@ -132,7 +148,9 @@
     "micronutrients": {"iron": 0.9, "calcium": 8, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 1, "heart_disease": 2, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Heart-healthy, lowers cholesterol, high fiber"
+    "therapeutic_use": "Heart-healthy, lowers cholesterol, high fiber",
+    "meal_type": ["breakfast"],
+    "role": "main"
   },
   {
     "food_name": "Bread Toast",
@@ -147,7 +165,9 @@
     "micronutrients": {"iron": 3.6, "calcium": 100, "sodium": 490, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": -1, "hypertension": -2, "heart_disease": 0, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "contains_gluten",
-    "therapeutic_use": "Quick breakfast, fortified with vitamins"
+    "therapeutic_use": "Quick breakfast, fortified with vitamins",
+    "meal_type": ["breakfast"],
+    "role": "main"
   },
   {
     "food_name": "Chapati",
@@ -162,7 +182,9 @@
     "micronutrients": {"iron": 3.5, "calcium": 34, "sodium": 5, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 1, "hypertension": 2, "heart_disease": 1, "digestive_issues": 2, "inflammation": 0},
     "allergen_info": "contains_gluten",
-    "therapeutic_use": "High fiber, whole grain, low sodium"
+    "therapeutic_use": "High fiber, whole grain, low sodium",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Cornflakes",
@@ -177,7 +199,9 @@
     "micronutrients": {"iron": 8, "calcium": 10, "sodium": 729, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": -2, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Fortified with iron, high sugar, processed"
+    "therapeutic_use": "Fortified with iron, high sugar, processed",
+    "meal_type": ["breakfast"],
+    "role": "main"
   },
   {
     "food_name": "Dal Tadka",
@@ -192,7 +216,9 @@
     "micronutrients": {"iron": 2.7, "calcium": 40, "sodium": 350, "vitamin_c": 3, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 0, "heart_disease": 2, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "High protein, high fiber, blood sugar control"
+    "therapeutic_use": "High protein, high fiber, blood sugar control",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Chole",
@@ -207,7 +233,9 @@
     "micronutrients": {"iron": 2.9, "calcium": 49, "sodium": 300, "vitamin_c": 4, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 0, "heart_disease": 2, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "High protein, high fiber, weight management"
+    "therapeutic_use": "High protein, high fiber, weight management",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Rajma",
@@ -222,7 +250,9 @@
     "micronutrients": {"iron": 2.9, "calcium": 28, "sodium": 5, "vitamin_c": 2, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Kidney beans, low fat, high protein, heart-healthy"
+    "therapeutic_use": "Kidney beans, low fat, high protein, heart-healthy",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Hummus",
@@ -237,7 +267,9 @@
     "micronutrients": {"iron": 2.4, "calcium": 49, "sodium": 240, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 1, "heart_disease": 2, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Very low GI, healthy fats, Mediterranean diet"
+    "therapeutic_use": "Very low GI, healthy fats, Mediterranean diet",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Sprout Salad",
@@ -252,7 +284,9 @@
     "micronutrients": {"iron": 2, "calcium": 30, "sodium": 6, "vitamin_c": 13, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Raw, enzyme-rich, vitamin C, detoxifying"
+    "therapeutic_use": "Raw, enzyme-rich, vitamin C, detoxifying",
+    "meal_type": ["breakfast", "lunch"],
+    "role": "side"
   },
   {
     "food_name": "Paneer Butter Masala",
@@ -267,7 +301,9 @@
     "micronutrients": {"iron": 0.5, "calcium": 208, "sodium": 450, "vitamin_c": 3, "vitamin_b12": 1.2},
     "health_conditions": {"diabetes": 0, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": -1},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "High calcium, high fat, rich and creamy"
+    "therapeutic_use": "High calcium, high fat, rich and creamy",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Curd",
@@ -282,7 +318,9 @@
     "micronutrients": {"iron": 0.1, "calcium": 121, "sodium": 46, "vitamin_c": 0, "vitamin_b12": 0.5},
     "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Probiotic, gut health, calcium source"
+    "therapeutic_use": "Probiotic, gut health, calcium source",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Cheese Sandwich",
@@ -297,7 +335,9 @@
     "micronutrients": {"iron": 2.5, "calcium": 250, "sodium": 600, "vitamin_c": 1, "vitamin_b12": 1.1},
     "health_conditions": {"diabetes": -1, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "contains_dairy_gluten",
-    "therapeutic_use": "High calcium, high protein, processed"
+    "therapeutic_use": "High calcium, high protein, processed",
+    "meal_type": ["breakfast", "lunch"],
+    "role": "main"
   },
   {
     "food_name": "Chicken Curry",
@@ -312,7 +352,9 @@
     "micronutrients": {"iron": 1.3, "calcium": 20, "sodium": 350, "vitamin_c": 3, "vitamin_b12": 0.6},
     "health_conditions": {"diabetes": 1, "hypertension": -1, "heart_disease": 0, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "High protein, muscle building, B vitamins"
+    "therapeutic_use": "High protein, muscle building, B vitamins",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Fish Fry",
@@ -327,7 +369,9 @@
     "micronutrients": {"iron": 1, "calcium": 15, "sodium": 400, "vitamin_c": 2, "vitamin_b12": 2.5},
     "health_conditions": {"diabetes": 0, "hypertension": -2, "heart_disease": -1, "digestive_issues": -1, "inflammation": -1},
     "allergen_info": "fish",
-    "therapeutic_use": "Omega-3 fatty acids, but deep fried (high fat)"
+    "therapeutic_use": "Omega-3 fatty acids, but deep fried (high fat)",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Egg Omelette",
@@ -342,7 +386,9 @@
     "micronutrients": {"iron": 1.8, "calcium": 50, "sodium": 155, "vitamin_c": 0, "vitamin_b12": 1.1},
     "health_conditions": {"diabetes": 1, "hypertension": 0, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "eggs",
-    "therapeutic_use": "Complete protein, choline, vitamin B12"
+    "therapeutic_use": "Complete protein, choline, vitamin B12",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Grilled Chicken",
@@ -357,7 +403,9 @@
     "micronutrients": {"iron": 1, "calcium": 15, "sodium": 74, "vitamin_c": 0, "vitamin_b12": 0.3},
     "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "Very high protein, low fat, muscle building"
+    "therapeutic_use": "Very high protein, low fat, muscle building",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Apple",
@@ -372,7 +420,9 @@
     "micronutrients": {"iron": 0.1, "calcium": 6, "sodium": 1, "vitamin_c": 4.6, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 2, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "Fiber-rich, antioxidants, pectin for gut health"
+    "therapeutic_use": "Fiber-rich, antioxidants, pectin for gut health",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Mango",
@@ -387,7 +437,9 @@
     "micronutrients": {"iron": 0.2, "calcium": 11, "sodium": 1, "vitamin_c": 36, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": 1, "heart_disease": 1, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "High vitamin C, vitamin A, antioxidants"
+    "therapeutic_use": "High vitamin C, vitamin A, antioxidants",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Banana",
@@ -402,7 +454,9 @@
     "micronutrients": {"iron": 0.3, "calcium": 5, "sodium": 1, "vitamin_c": 8.7, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": 2, "heart_disease": 1, "digestive_issues": 2, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "Potassium-rich, energy boost, digestive health"
+    "therapeutic_use": "Potassium-rich, energy boost, digestive health",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Orange Juice",
@@ -417,7 +471,9 @@
     "micronutrients": {"iron": 0.2, "calcium": 11, "sodium": 1, "vitamin_c": 50, "vitamin_b12": 0},
     "health_conditions": {"diabetes": -1, "hypertension": 1, "heart_disease": 1, "digestive_issues": 0, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "Very high vitamin C, immune support, fresh juice"
+    "therapeutic_use": "Very high vitamin C, immune support, fresh juice",
+    "meal_type": ["breakfast"],
+    "role": "beverage"
   },
   {
     "food_name": "Tea",
@@ -432,7 +488,9 @@
     "micronutrients": {"iron": 0, "calcium": 3, "sodium": 1, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 2, "digestive_issues": 0, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Antioxidants, polyphenols, catechins, heart-healthy"
+    "therapeutic_use": "Antioxidants, polyphenols, catechins, heart-healthy",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "beverage"
   },
   {
     "food_name": "Coffee",
@@ -447,7 +505,9 @@
     "micronutrients": {"iron": 0, "calcium": 2, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 1, "hypertension": -1, "heart_disease": 1, "digestive_issues": -1, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "Antioxidants, caffeine, mental alertness"
+    "therapeutic_use": "Antioxidants, caffeine, mental alertness",
+    "meal_type": ["breakfast"],
+    "role": "beverage"
   },
   {
     "food_name": "Lassi",
@@ -462,7 +522,9 @@
     "micronutrients": {"iron": 0.1, "calcium": 150, "sodium": 50, "vitamin_c": 1, "vitamin_b12": 0.4},
     "health_conditions": {"diabetes": 0, "hypertension": 1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Probiotic beverage, calcium, cooling"
+    "therapeutic_use": "Probiotic beverage, calcium, cooling",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "beverage"
   },
   {
     "food_name": "Coconut Water",
@@ -477,7 +539,9 @@
     "micronutrients": {"iron": 0.3, "calcium": 24, "sodium": 105, "vitamin_c": 2.4, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 1, "hypertension": 2, "heart_disease": 1, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "Natural electrolytes, potassium-rich, hydration"
+    "therapeutic_use": "Natural electrolytes, potassium-rich, hydration",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "beverage"
   },
   {
     "food_name": "Carrot",
@@ -492,7 +556,9 @@
     "micronutrients": {"iron": 0.3, "calcium": 33, "sodium": 69, "vitamin_c": 6, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 2, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "High beta-carotene, vitamin A, eye health"
+    "therapeutic_use": "High beta-carotene, vitamin A, eye health",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Spinach",
@@ -507,7 +573,9 @@
     "micronutrients": {"iron": 2.7, "calcium": 99, "sodium": 79, "vitamin_c": 28, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Very high iron, vitamin K, folate, antioxidants"
+    "therapeutic_use": "Very high iron, vitamin K, folate, antioxidants",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Potato",
@@ -522,7 +590,9 @@
     "micronutrients": {"iron": 0.8, "calcium": 12, "sodium": 6, "vitamin_c": 19, "vitamin_b12": 0},
     "health_conditions": {"diabetes": -1, "hypertension": 1, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "Potassium-rich, vitamin C, energy source"
+    "therapeutic_use": "Potassium-rich, vitamin C, energy source",
+    "meal_type": ["lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Tomato",
@@ -537,7 +607,9 @@
     "micronutrients": {"iron": 0.3, "calcium": 10, "sodium": 5, "vitamin_c": 14, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Lycopene, antioxidants, heart health"
+    "therapeutic_use": "Lycopene, antioxidants, heart health",
+    "meal_type": ["lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Onion",
@@ -552,7 +624,9 @@
     "micronutrients": {"iron": 0.2, "calcium": 23, "sodium": 4, "vitamin_c": 7.4, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Quercetin, anti-inflammatory, blood sugar control"
+    "therapeutic_use": "Quercetin, anti-inflammatory, blood sugar control",
+    "meal_type": ["lunch", "dinner"],
+    "role": "side"
   },
   {
     "food_name": "Cumin",
@@ -567,7 +641,9 @@
     "micronutrients": {"iron": 66, "calcium": 931, "sodium": 168, "vitamin_c": 7.7, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Extremely high iron, digestive aid, metabolism boost"
+    "therapeutic_use": "Extremely high iron, digestive aid, metabolism boost",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "seasoning"
   },
   {
     "food_name": "Turmeric",
@@ -582,7 +658,9 @@
     "micronutrients": {"iron": 41, "calcium": 183, "sodium": 38, "vitamin_c": 0.7, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 1, "heart_disease": 2, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Curcumin, powerful anti-inflammatory, antioxidant"
+    "therapeutic_use": "Curcumin, powerful anti-inflammatory, antioxidant",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "seasoning"
   },
   {
     "food_name": "Black Pepper",
@@ -597,7 +675,9 @@
     "micronutrients": {"iron": 9.7, "calcium": 443, "sodium": 20, "vitamin_c": 21, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Piperine, enhances nutrient absorption, metabolism"
+    "therapeutic_use": "Piperine, enhances nutrient absorption, metabolism",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "seasoning"
   },
   {
     "food_name": "Olive Oil",
@@ -612,7 +692,9 @@
     "micronutrients": {"iron": 0.6, "calcium": 1, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 1, "hypertension": 2, "heart_disease": 2, "digestive_issues": 0, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Monounsaturated fats, heart-healthy, Mediterranean diet"
+    "therapeutic_use": "Monounsaturated fats, heart-healthy, Mediterranean diet",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "cooking_aid"
   },
   {
     "food_name": "Coconut Oil",
@@ -627,7 +709,9 @@
     "micronutrients": {"iron": 0, "calcium": 0, "sodium": 0, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": 0, "heart_disease": -1, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "Medium-chain triglycerides, antimicrobial"
+    "therapeutic_use": "Medium-chain triglycerides, antimicrobial",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "cooking_aid"
   },
   {
     "food_name": "Butter",
@@ -642,7 +726,9 @@
     "micronutrients": {"iron": 0, "calcium": 24, "sodium": 11, "vitamin_c": 0, "vitamin_b12": 0.17},
     "health_conditions": {"diabetes": 0, "hypertension": 0, "heart_disease": -1, "digestive_issues": 0, "inflammation": -1},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Saturated fat, vitamin A, use in moderation"
+    "therapeutic_use": "Saturated fat, vitamin A, use in moderation",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "cooking_aid"
   },
   {
     "food_name": "Ghee",
@@ -657,7 +743,9 @@
     "micronutrients": {"iron": 0, "calcium": 4, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0.4},
     "health_conditions": {"diabetes": 0, "hypertension": 0, "heart_disease": -1, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Clarified butter, butyric acid, high smoke point"
+    "therapeutic_use": "Clarified butter, butyric acid, high smoke point",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "cooking_aid"
   },
   {
     "food_name": "Milk",
@@ -672,7 +760,9 @@
     "micronutrients": {"iron": 0, "calcium": 125, "sodium": 44, "vitamin_c": 0, "vitamin_b12": 0.4},
     "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Complete protein, calcium, vitamin D, bone health"
+    "therapeutic_use": "Complete protein, calcium, vitamin D, bone health",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "beverage"
   },
   {
     "food_name": "Tofu",
@@ -687,7 +777,9 @@
     "micronutrients": {"iron": 5.4, "calcium": 350, "sodium": 7, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "soy",
-    "therapeutic_use": "Plant protein, very high calcium, isoflavones"
+    "therapeutic_use": "Plant protein, very high calcium, isoflavones",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Falafel",
@@ -702,7 +794,9 @@
     "micronutrients": {"iron": 3.4, "calcium": 90, "sodium": 294, "vitamin_c": 2, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": -1, "heart_disease": 0, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Plant protein, but deep fried (high fat)"
+    "therapeutic_use": "Plant protein, but deep fried (high fat)",
+    "meal_type": ["breakfast", "lunch", "dinner"],
+    "role": "main"
   },
   {
     "food_name": "Pasta",
@@ -717,7 +811,9 @@
     "micronutrients": {"iron": 1.3, "calcium": 7, "sodium": 6, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": 0, "hypertension": 2, "heart_disease": 1, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "contains_gluten",
-    "therapeutic_use": "Moderate GI, energy source, choose whole grain"
+    "therapeutic_use": "Moderate GI, energy source, choose whole grain",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   },
 
   {
@@ -733,6 +829,8 @@
     "micronutrients": {"iron": 0.2, "calcium": 3, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0},
     "health_conditions": {"diabetes": -1, "hypertension": 2, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Refined rice, quick energy, low fiber"
+    "therapeutic_use": "Refined rice, quick energy, low fiber",
+    "meal_type": ["lunch", "dinner"],
+    "role": "main"
   }
 ]
