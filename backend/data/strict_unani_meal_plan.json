@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-04-06T06:26:06.237Z",
+  "userTemperament": {
+    "type": "balghami",
+    "label": "Balghami (Cold + Moist)",
+    "qualities": {
+      "hot": false,
+      "cold": true,
+      "dry": false,
+      "moist": true,
+      "label": "Balghami (Cold + Moist)"
+    }
+  },
+  "mealPlan": {
+    "breakfast": {
+      "meal": [
+        "Dal Khichdi with Ghee"
+      ],
+      "reason": [
+        "Light main: Dal Khichdi with Ghee (Lubricates intestines and aids digestion)"
+      ]
+    },
+    "lunch": {
+      "meal": [
+        "Vegetable Dal Khichdi (No Ghee)",
+        "Vegetable Lentil Stew",
+        "Tomato"
+      ],
+      "reason": [
+        "Grain: Vegetable Dal Khichdi (No Ghee) (primary nourishment)",
+        "Protein: Vegetable Lentil Stew (strength and tissue building)",
+        "Vegetable: Tomato (digestive aid and vitality)"
+      ]
+    },
+    "dinner": {
+      "meal": [
+        "Lemon Rice",
+        "Vegetable Khichdi"
+      ],
+      "reason": [
+        "Main: Lemon Rice (Stimulates digestion and reduces phlegm)",
+        "Light support: Vegetable Khichdi"
+      ]
+    }
+  },
+  "rulesValidated": [
+    "No heavy dinner (digestibility ≤ 2)",
+    "No same temperament overload",
+    "Balanced meal composition",
+    "Breakfast light and digestible",
+    "Lunch heaviest and most nutritious",
+    "Dinner light and soothing",
+    "Max 3-4 items per meal",
+    "Temperament-specific food exclusions applied"
+  ]
+}

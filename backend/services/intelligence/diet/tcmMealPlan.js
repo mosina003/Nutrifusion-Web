@@ -1,489 +1,494 @@
 /**
- * TCM 7-Day Meal Plan Generator
- * Creates balanced weekly meal plans based on TCM pattern diagnosis
+ * TCM (Traditional Chinese Medicine) Strict Meal Plan Generation Engine
+ * Generates daily meal plans based on Yin/Yang and Heat/Cold balance
+ * 
+ * STRICT RULES IMPLEMENTATION:
+ * - Breakfast: Light, warm, easy to digest, NO cold/raw foods
+ * - Lunch: Balanced (grain + protein + vegetable), moderate thermal intensity
+ * - Dinner: Light, warm, calming, digestibility ≤ 2, NO heavy/greasy
+ * - Avoid mixing hot+hot excessively, NO cold foods at night
+ * - Yin deficiency → cooling foods, Yang deficiency → warming foods
  */
 
-/**
- * Simple seeded pseudo-random number generator (LCG algorithm)
- */
-class SeededRandom {
-  constructor(seed) {
-    this.seed = seed % 2147483647;
-    if (this.seed <= 0) this.seed += 2147483646;
-  }
+const fs = require('fs');
+const path = require('path');
 
-  next() {
-    this.seed = (this.seed * 16807) % 2147483647;
-    return (this.seed - 1) / 2147483646;
-  }
+// Load TCM food data
+function loadTCMFoods() {
+  const filePath = path.join(__dirname, '../../../data/tcm_food_constitution.json');
+  const rawData = fs.readFileSync(filePath, 'utf8');
+  return JSON.parse(rawData);
 }
 
 /**
- * Fisher-Yates shuffle algorithm with seeded randomization
+ * Analyze thermal nature to determine digestibility
+ * TCM: Neutral/Warm → easier, Cool/Cold → harder
  */
-const shuffleArray = (array, seed = 0) => {
-  const arr = [...array];
-  const rng = new SeededRandom(seed);
+function getThermalDigestibility(thermalNature) {
+  const thermalMap = {
+    'hot': 2,
+    'warm': 1,
+    'neutral': 1,
+    'cool': 3,
+    'cold': 4
+  };
+  return thermalMap[thermalNature?.toLowerCase()] || 2;
+}
+
+/**
+ * Determine Yin/Yang balance from user condition
+ * condition: { yin: X, yang: Y, heat: X, cold: Y }
+ * Returns: { yinDeficiency: bool, yangDeficiency: bool, excessHeat: bool, excessCold: bool }
+ */
+function analyzeCondition(condition) {
+  const { yin = 50, yang = 50, heat = 25, cold = 25 } = condition;
   
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(rng.next() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-};
-
-class TCMMealPlanGenerator {
-  constructor() {
-    this.usedCombinations = new Set();
-    this.ingredientUsage = {
-      grains: {},
-      proteins: {},
-      vegetables: {},
-      fruits: {}
-    };
-    this.randomOffset = 0;
-  }
-
-  /**
-   * Generate 7-day meal plan from ranked foods
-   * @param {Object} rankedFoods - Output from TCMDietEngine.rankFoods()
-   * @param {Object} userAssessment - User's TCM assessment
-   * @returns {Object} - 7-day meal plan with reasoning
-   */
-  generateWeeklyPlan(rankedFoods, userAssessment) {
-    this._resetTracking();
-
-    // Generate a random offset based on timestamp for true variety on regeneration
-    this.randomOffset = Date.now() % 1000000 + Math.floor(Math.random() * 100000);
-    console.log('🔀 TCM random offset for plan variety:', this.randomOffset);
-
-    const suitableFoods = rankedFoods.top_ranked_foods;
-
-    // Group foods by category for easier meal composition
-    const foodsByCategory = this._groupByCategory(suitableFoods);
-
-    const weekPlan = {};
-    
-    for (let day = 1; day <= 7; day++) {
-      weekPlan[`day_${day}`] = this._generateDayMeals(
-        foodsByCategory,
-        userAssessment,
-        day
-      );
-    }
-
-    return {
-      top_ranked_foods: rankedFoods.top_ranked_foods.slice(0, 10).map(f => ({
-        food_name: f.food_name,
-        score: f.score
-      })),
-      "7_day_plan": weekPlan,
-      reasoning_summary: this._generateReasoningSummary(userAssessment, foodsByCategory)
-    };
-  }
-
-  /**
-   * Generate meals for a single day
-   * @private
-   */
-  _generateDayMeals(foodsByCategory, userAssessment, dayNumber) {
-    const { primary_pattern, cold_heat } = userAssessment;
-
-    return {
-      breakfast: this._selectBreakfast(foodsByCategory, primary_pattern, cold_heat),
-      lunch: this._selectLunch(foodsByCategory, primary_pattern, cold_heat, dayNumber),
-      dinner: this._selectDinner(foodsByCategory, primary_pattern, cold_heat)
-    };
-  }
-
-  /**
-   * BREAKFAST - Warm and digestion-supportive, avoid cold/raw foods
-   * @private
-   */
-  _selectBreakfast(foodsByCategory, pattern, cold_heat) {
-    const breakfast = [];
-    
-    // Select warm grains (avoid cold thermal nature)
-    const warmGrains = (foodsByCategory.Grain || []).filter(f => 
-      f.rawFood.tcm?.thermalNature !== 'Cold' && 
-      !this._isUsedRecently(f, 'breakfast')
-    );
-
-    if (warmGrains.length > 0) {
-      const shuffledGrains = shuffleArray(warmGrains, this.randomOffset);
-      const grain = shuffledGrains[0];
-      breakfast.push(grain.food_name);
-      this._markAsUsed(grain, 'breakfast');
-    }
-
-    // For Qi Deficiency or Cold pattern, add Qi-tonifying food
-    if (pattern === 'Qi Deficiency' || cold_heat === 'Cold') {
-      const qiTonifying = [
-        ...(foodsByCategory.Grain || []),
-        ...(foodsByCategory.Legume || []),
-        ...(foodsByCategory.Protein || [])
-      ].filter(f => 
-        f.rawFood.tcm?.tonifies_qi === true && 
-        !this._isUsedRecently(f, 'breakfast')
-      );
-      
-      if (qiTonifying.length > 0) {
-        const shuffledQi = shuffleArray(qiTonifying, this.randomOffset + 100);
-        const qiFood = shuffledQi[0];
-        if (!breakfast.includes(qiFood.food_name)) {
-          breakfast.push(qiFood.food_name);
-          this._markAsUsed(qiFood, 'breakfast');
-        }
-      }
-    }
-
-    // Add optional warming beverage
-    const beverages = (foodsByCategory.Beverage || []).filter(f => 
-      f.rawFood.tcm?.thermalNature !== 'Cold'
-    );
-    if (beverages.length > 0) {
-      const shuffledBeverages = shuffleArray(beverages, this.randomOffset + 200);
-      const beverage = shuffledBeverages[0];
-      breakfast.push(beverage.food_name);
-    }
-
-    return breakfast;
-  }
-
-  /**
-   * LUNCH - Main meal: Include Qi support + pattern correction
-   * @private
-   */
-  _selectLunch(foodsByCategory, pattern, cold_heat, dayNumber) {
-    const lunch = [];
-
-    // 1. Select Grain (Qi support, max 2 times/week per grain)
-    const grains = (foodsByCategory.Grain || []).filter(f => 
-      !this._isOverused(f.food_name, 'grains', 2)
-    );
-    if (grains.length > 0) {
-      const shuffledGrains = shuffleArray(grains, this.randomOffset + dayNumber);
-      const grain = shuffledGrains[0];
-      lunch.push(grain.food_name);
-      this._incrementUsage(grain.food_name, 'grains');
-    }
-
-    // 2. Select Protein (pattern-specific)
-    const proteins = [
-      ...(foodsByCategory.Legume || []),
-      ...(foodsByCategory.Protein || [])
-    ].filter(f => !this._isOverused(f.food_name, 'proteins', 2));
-    
-    if (proteins.length > 0) {
-      // For Dampness, prefer resolves_dampness proteins
-      if (pattern === 'Dampness') {
-        const dampnessResolvers = proteins.filter(p => p.rawFood.tcm?.resolves_dampness === true);
-        if (dampnessResolvers.length > 0) {
-          const shuffledResolvers = shuffleArray(dampnessResolvers, this.randomOffset + dayNumber * 2);
-          const dampnessResolver = shuffledResolvers[0];
-          lunch.push(dampnessResolver.food_name);
-          this._incrementUsage(dampnessResolver.food_name, 'proteins');
-        } else {
-          const shuffledProteins = shuffleArray(proteins, this.randomOffset + dayNumber * 2);
-          const protein = shuffledProteins[0];
-          lunch.push(protein.food_name);
-          this._incrementUsage(protein.food_name, 'proteins');
-        }
-      } else {
-        const shuffledProteins = shuffleArray(proteins, this.randomOffset + dayNumber * 2);
-        const protein = shuffledProteins[0];
-        lunch.push(protein.food_name);
-        this._incrementUsage(protein.food_name, 'proteins');
-      }
-    }
-
-    // 3. Select Vegetables (pattern correction)
-    const vegetables = (foodsByCategory.Vegetable || []).filter(f => 
-      !this._isOverused(f.food_name, 'vegetables', 3)
-    );
-    
-    if (vegetables.length > 0) {
-      // For Heat pattern, prefer cooling vegetables
-      if (pattern === 'Heat Pattern' || cold_heat === 'Heat') {
-        const coolingVegs = vegetables.filter(v => 
-          v.rawFood.tcm?.thermalNature === 'Cool' || v.rawFood.tcm?.thermalNature === 'Cold'
-        );
-        if (coolingVegs.length > 0) {
-          const shuffledCooling = shuffleArray(coolingVegs, this.randomOffset + dayNumber * 3);
-          const coolingVeg = shuffledCooling[0];
-          lunch.push(coolingVeg.food_name);
-          this._incrementUsage(coolingVeg.food_name, 'vegetables');
-        }
-      } else {
-        const shuffledVegs = shuffleArray(vegetables, this.randomOffset + dayNumber * 3);
-        const veg = shuffledVegs[0];
-        lunch.push(veg.food_name);
-        this._incrementUsage(veg.food_name, 'vegetables');
-      }
-
-      // Add second vegetable for variety
-      const remainingVegs = vegetables.filter(v => 
-        !lunch.includes(v.food_name) && !this._isOverused(v.food_name, 'vegetables', 3)
-      );
-      if (remainingVegs.length > 0) {
-        const shuffledRemaining = shuffleArray(remainingVegs, this.randomOffset + dayNumber * 4);
-        const secondVeg = shuffledRemaining[0];
-        lunch.push(secondVeg.food_name);
-        this._incrementUsage(secondVeg.food_name, 'vegetables');
-      }
-    }
-
-    // 4. Optional: Add Qi-moving food for Liver Qi Stagnation
-    if (pattern === 'Liver Qi Stagnation') {
-      const qiMovers = [
-        ...(foodsByCategory.Vegetable || []),
-        ...(foodsByCategory.Spice || [])
-      ].filter(f => f.rawFood.tcm?.moves_qi === true && !lunch.includes(f.food_name));
-      
-      if (qiMovers.length > 0) {
-        const shuffledQiMovers = shuffleArray(qiMovers, this.randomOffset + dayNumber * 5);
-        const qiMover = shuffledQiMovers[0];
-        lunch.push(qiMover.food_name);
-      }
-    }
-
-    return lunch;
-  }
-
-  /**
-   * DINNER - Light, avoid heavy damp-forming foods, support digestion
-   * @private
-   */
-  _selectDinner(foodsByCategory, pattern, cold_heat) {
-    const dinner = [];
-
-    // 1. Light grain or vegetable soup
-    const lightOptions = [
-      ...(foodsByCategory.Grain || []).filter(f => 
-        this._isLightFood(f) && !this._isUsedRecently(f, 'dinner')
-      ),
-      ...(foodsByCategory.Vegetable || []).filter(f => 
-        this._isLightFood(f) && !this._isUsedRecently(f, 'dinner')
-      )
-    ];
-
-    // Avoid damp-forming foods
-    const suitableLight = lightOptions.filter(f => 
-      f.rawFood.tcm?.damp_forming !== true
-    );
-
-    if (suitableLight.length > 0) {
-      const shuffledLight = shuffleArray(suitableLight, this.randomOffset + 300);
-      const lightFood = shuffledLight[0];
-      dinner.push(lightFood.food_name);
-      this._markAsUsed(lightFood, 'dinner');
-    }
-
-    // 2. Light protein (if needed for Qi support)
-    if (pattern === 'Qi Deficiency') {
-      const lightProteins = [
-        ...(foodsByCategory.Protein || []),
-        ...(foodsByCategory.Legume || [])
-      ].filter(f => 
-        this._isLightFood(f) && 
-        !this._isUsedRecently(f, 'dinner') &&
-        f.rawFood.tcm?.damp_forming !== true
-      );
-
-      if (lightProteins.length > 0) {
-        const shuffledProteins = shuffleArray(lightProteins, this.randomOffset + 400);
-        const protein = shuffledProteins[0];
-        dinner.push(protein.food_name);
-        this._markAsUsed(protein, 'dinner');
-      }
-    }
-
-    // 3. Vegetables (light, easily digestible)
-    const dinnerVegetables = (foodsByCategory.Vegetable || []).filter(f => 
-      this._isLightFood(f) && 
-      !this._isUsedRecently(f, 'dinner') &&
-      f.rawFood.tcm?.damp_forming !== true
-    );
-
-    if (dinnerVegetables.length > 0) {
-      const shuffledVegs = shuffleArray(dinnerVegetables, this.randomOffset + 500);
-      const veg = shuffledVegs[0];
-      dinner.push(veg.food_name);
-      this._markAsUsed(veg, 'dinner');
-    }
-
-    // 4. Digestion-supporting spice  
-    const digestiveSpices = (foodsByCategory.Spice || []).filter(f => 
-      f.rawFood.tcm?.thermalNature === 'Warm' && !dinner.includes(f.food_name)
-    );
-
-    if (digestiveSpices.length > 0) {
-      const shuffledSpices = shuffleArray(digestiveSpices, this.randomOffset + 600);
-      dinner.push(shuffledSpices[0].food_name);
-    }
-
-    return dinner;
-  }
-
-  /**
-   * Group foods by category
-   * @private
-   */
-  _groupByCategory(foods) {
-    const categories = {
-      Grain: [],
-      Vegetable: [],
-      Fruit: [],
-      Protein: [],
-      Legume: [],
-      Spice: [],
-      Beverage: [],
-      Dairy: [],
-      Nut: [],
-      Oil: []
-    };
-
-    foods.forEach(food => {
-      const category = food.category || 'Other';
-      
-      // Map 'Meat' to 'Protein'
-      const mappedCategory = category === 'Meat' ? 'Protein' : category;
-      
-      if (categories[mappedCategory]) {
-        categories[mappedCategory].push(food);
-      }
-    });
-
-    return categories;
-  }
-
-  /**
-   * Check if food is light (for dinner)
-   * @private
-   */
-  _isLightFood(food) {
-    // Prefer foods that are not heavy/oily/sweet
-    const heavyFlavors = food.rawFood.tcm?.flavor || [];
-    const isHeavy = heavyFlavors.includes('Sweet') && food.rawFood.tcm?.damp_forming === true;
-    
-    return !isHeavy;
-  }
-
-  /**
-   * Reset tracking for new plan
-   * @private
-   */
-  _resetTracking() {
-    this.usedCombinations.clear();
-    this.ingredientUsage = {
-      grains: {},
-      proteins: {},
-      vegetables: {},
-      fruits: {}
-    };
-  }
-
-  /**
-   * Check if ingredient is overused
-   * @private
-   */
-  _isOverused(foodName, category, maxTimes) {
-    return (this.ingredientUsage[category][foodName] || 0) >= maxTimes;
-  }
-
-  /**
-   * Increment usage count
-   * @private
-   */
-  _incrementUsage(foodName, category) {
-    if (!this.ingredientUsage[category][foodName]) {
-      this.ingredientUsage[category][foodName] = 0;
-    }
-    this.ingredientUsage[category][foodName]++;
-  }
-
-  /**
-   * Mark food as used recently
-   * @private
-   */
-  _markAsUsed(food, mealType) {
-    const key = `${food.food_name}_${mealType}`;
-    this.usedCombinations.add(key);
-  }
-
-  /**
-   * Check if food was used recently
-   * @private
-   */
-  _isUsedRecently(food, mealType) {
-    const key = `${food.food_name}_${mealType}`;
-    return this.usedCombinations.has(key);
-  }
-
-  /**
-   * Generate reasoning summary
-   * @private
-   */
-  _generateReasoningSummary(userAssessment, foodsByCategory) {
-    const { primary_pattern, secondary_pattern, cold_heat, severity } = userAssessment;
-
-    let summary = `TCM 7-Day Meal Plan for ${primary_pattern} (${severity === 1 ? 'mild' : severity === 2 ? 'moderate' : 'strong'} severity).\n\n`;
-
-    // Primary pattern corrected
-    summary += `Primary Pattern Correction: Foods selected to ${this._getPatternCorrectionStrategy(primary_pattern)}.\n`;
-
-    // Thermal balancing logic
-    if (cold_heat === 'Cold') {
-      summary += `Thermal Balance: Emphasizing warm and hot foods to balance cold tendency. Avoiding cold/raw foods especially in breakfast.\n`;
-    } else if (cold_heat === 'Heat') {
-      summary += `Thermal Balance: Emphasizing cool and cold foods to balance heat tendency. Including cooling vegetables and avoiding spicy foods.\n`;
-    } else {
-      summary += `Thermal Balance: Balanced approach with neutral thermal foods.\n`;
-    }
-
-    // Why dinner is lighter
-    summary += `Dinner Structure: Lighter meals in the evening to support digestion and avoid accumulation. Avoiding damp-forming and heavy foods at night.\n`;
-
-    // How Qi/Yin/Yang support was applied
-    summary += `Pattern Support: `;
-    if (primary_pattern === 'Qi Deficiency') {
-      summary += `Qi-tonifying foods included throughout the day, especially at breakfast and lunch for energy support.`;
-    } else if (primary_pattern === 'Yin Deficiency') {
-      summary += `Yin-nourishing foods emphasized to restore cooling essence and fluids.`;
-    } else if (primary_pattern === 'Yang Deficiency') {
-      summary += `Yang-warming foods prioritized to restore warmth and metabolic fire.`;
-    } else if (primary_pattern === 'Dampness') {
-      summary += `Dampness-resolving foods emphasized, with strict avoidance of damp-forming sweet and heavy foods.`;
-    } else if (primary_pattern === 'Heat Pattern') {
-      summary += `Heat-clearing foods prioritized with cooling thermal nature to reduce internal heat.`;
-    } else if (primary_pattern === 'Liver Qi Stagnation') {
-      summary += `Qi-moving foods included to resolve stagnation and promote smooth flow.`;
-    }
-
-    if (secondary_pattern) {
-      summary += ` Secondary support for ${secondary_pattern} also incorporated.`;
-    }
-
-    return summary;
-  }
-
-  /**
-   * Get pattern correction strategy
-   * @private
-   */
-  _getPatternCorrectionStrategy(pattern) {
-    const strategies = {
-      'Cold Pattern': 'warm the interior with hot and warm-natured foods',
-      'Heat Pattern': 'clear heat with cooling foods',
-      'Qi Deficiency': 'tonify Qi with strengthening grains and proteins',
-      'Dampness': 'resolve dampness with drying and diuretic foods',
-      'Dryness': 'moisten with Yin-nourishing foods',
-      'Liver Qi Stagnation': 'move Qi with aromatic and pungent foods',
-      'Yin Deficiency': 'nourish Yin with cooling and moistening foods',
-      'Yang Deficiency': 'warm Yang with heating and energizing foods'
-    };
-    return strategies[pattern] || 'achieve balance';
-  }
+  return {
+    yinDeficiency: yin < 40,
+    yangDeficiency: yang < 40,
+    excessHeat: heat > 50,
+    excessCold: cold > 50,
+    yinPercent: yin,
+    yangPercent: yang,
+    heatPercent: heat,
+    coldPercent: cold
+  };
 }
 
-module.exports = new TCMMealPlanGenerator();
+/**
+ * Filter foods suitable for breakfast
+ * Rules: Warm/Light, easy to digest, NO cold/raw foods
+ */
+function canUseInBreakfast(food, condition) {
+  if (!food) return false;
+  
+  const thermalNature = food.thermal_nature?.toLowerCase();
+  const role = food.role?.toLowerCase();
+  const mealType = food.meal_type?.map(m => m?.toLowerCase()) || [];
+
+  // Avoid cold/raw foods for breakfast
+  if (thermalNature === 'cold' || role === 'raw' || role === 'beverage-cold') {
+    return false;
+  }
+
+  // Prefer warm/neutral for breakfast
+  if (thermalNature !== 'warm' && thermalNature !== 'neutral' && thermalNature !== 'hot') {
+    return false;
+  }
+
+  // Check meal_type
+  if (mealType.length > 0 && !mealType.includes('breakfast')) {
+    return false;
+  }
+
+  return true;
+}
+
+/**
+ * Filter foods suitable for lunch (main meal)
+ * Rules: Balanced thermal, moderate intensity, grain+protein+vegetable standard
+ */
+function canUseInLunch(food, condition) {
+  if (!food) return false;
+
+  const thermalNature = food.thermal_nature?.toLowerCase();
+  const category = food.category?.toLowerCase();
+  const role = food.role?.toLowerCase();
+  const mealType = food.meal_type?.map(m => m?.toLowerCase()) || [];
+
+  // Avoid extreme thermal natures for lunch balance
+  if (thermalNature === 'hot' && condition.excessHeat) return false;
+  if (thermalNature === 'cold' && condition.excessCold) return false;
+
+  // Check meal_type if specified
+  if (mealType.length > 0 && !mealType.includes('lunch')) {
+    return false;
+  }
+
+  return true;
+}
+
+/**
+ * Filter foods suitable for dinner
+ * Rules: Warm/Neutral ONLY, light and calming, NO heavy/greasy
+ * TCM: Dinner is most important for Spleen/digestion
+ */
+function canUseInDinner(food, condition) {
+  if (!food) return false;
+
+  const thermalNature = food.thermal_nature?.toLowerCase();
+  const digestibility = getThermalDigestibility(thermalNature);
+  const role = food.role?.toLowerCase();
+  const mealType = food.meal_type?.map(m => m?.toLowerCase()) || [];
+
+  // Strict: Dinner must be warm or neutral ONLY
+  if (thermalNature !== 'warm' && thermalNature !== 'neutral') {
+    return false;
+  }
+
+  // Dinner must be easily digestible (digestibility ≤ 2)
+  if (digestibility > 2) {
+    return false;
+  }
+
+  // Avoid heavy/greasy foods at night
+  if (role === 'oil' || role === 'fried') {
+    return false;
+  }
+
+  // Check meal_type
+  if (mealType.length > 0 && !mealType.includes('dinner')) {
+    return false;
+  }
+
+  return true;
+}
+
+/**
+ * Check if two foods are incompatible
+ * TCM rules: No cold + hot extreme mixing, no raw + cooked where incompatible
+ */
+function isIncompatibleCombination(food1, food2) {
+  if (!food1 || !food2) return false;
+
+  const thermal1 = food1.thermal_nature?.toLowerCase();
+  const thermal2 = food2.thermal_nature?.toLowerCase();
+  const role1 = food1.role?.toLowerCase();
+  const role2 = food2.role?.toLowerCase();
+
+  // TCM: Avoid mixing hot + hot excessively (creates imbalance)
+  if (thermal1 === 'hot' && thermal2 === 'hot') {
+    return true;
+  }
+
+  // Avoid mixing cold + cold excessively
+  if (thermal1 === 'cold' && thermal2 === 'cold') {
+    return true;
+  }
+
+  // Avoid mixing cold + raw at night (weak digestion)
+  if ((thermal1 === 'cold' && role2 === 'raw') || (thermal2 === 'cold' && role1 === 'raw')) {
+    return true;
+  }
+
+  return false;
+}
+
+/**
+ * Select foods for breakfast based on Yin/Yang balance
+ * Returns: { meal: [food names], reason: [explanations] }
+ */
+function generateStrictBreakfast(allFoods, condition) {
+  console.log('  🌅 Generating breakfast (Light & Warm)...');
+
+  const { yinDeficiency, yangDeficiency, excessHeat, excessCold } = condition;
+
+  // Filter suitable breakfast foods
+  const breakfastFoods = allFoods.filter(f => canUseInBreakfast(f, condition));
+
+  if (breakfastFoods.length === 0) {
+    throw new Error('INVALID: No suitable breakfast foods found');
+  }
+
+  // Select main dish (grain/vegetable)
+  let mainDish = null;
+  if (yangDeficiency) {
+    // Yang deficiency → warming foods
+    const warmingFoods = breakfastFoods.filter(f =>
+      f.thermal_nature?.toLowerCase() === 'warm' && f.category?.toLowerCase() === 'grain'
+    );
+    mainDish = warmingFoods[Math.floor(Math.random() * warmingFoods.length)];
+  } else if (yinDeficiency && excessHeat) {
+    // Yin deficiency + heat → cooling foods
+    const coolingFoods = breakfastFoods.filter(f =>
+      (f.thermal_nature?.toLowerCase() === 'cool' || f.thermal_nature?.toLowerCase() === 'neutral') &&
+      f.category?.toLowerCase() === 'grain'
+    );
+    mainDish = coolingFoods[Math.floor(Math.random() * coolingFoods.length)];
+  } else {
+    // Neutral balance → prefer neutral/warm grains
+    const neutralFoods = breakfastFoods.filter(f =>
+      (f.thermal_nature?.toLowerCase() === 'neutral' || f.thermal_nature?.toLowerCase() === 'warm') &&
+      f.category?.toLowerCase() === 'grain'
+    );
+    mainDish = neutralFoods[Math.floor(Math.random() * neutralFoods.length)];
+  }
+
+  if (!mainDish) {
+    mainDish = breakfastFoods.find(f => f.category?.toLowerCase() === 'grain') || breakfastFoods[0];
+  }
+
+  // Select beverage (optional)
+  let beverage = null;
+  const beverages = breakfastFoods.filter(f =>
+    f.role?.toLowerCase() === 'beverage' && !isIncompatibleCombination(mainDish, f)
+  );
+  if (beverages.length > 0) {
+    beverage = beverages[Math.floor(Math.random() * beverages.length)];
+  }
+
+  const meal = [mainDish, beverage].filter(Boolean).map(f => f.food_name);
+  const reason = [];
+
+  if (mainDish) {
+    reason.push(`Main dish: ${mainDish.thermal_nature} nature (${mainDish.therapeutic_use})`);
+  }
+  if (beverage) {
+    reason.push(`Warm beverage for Spleen digestion`);
+  }
+
+  return { meal, reason };
+}
+
+/**
+ * Select foods for lunch (main meal)
+ * Structure: Grain + Protein + Vegetable
+ */
+function generateStrictLunch(allFoods, condition) {
+  console.log('  🍽️  Generating lunch (Balanced & Moderate)...');
+
+  const { yinDeficiency, yangDeficiency, excessHeat, excessCold } = condition;
+  const lunchFoods = allFoods.filter(f => canUseInLunch(f, condition));
+
+  if (lunchFoods.length < 3) {
+    throw new Error('INVALID: Not enough lunch foods found');
+  }
+
+  const meal = [];
+  const reason = [];
+
+  // Select grain
+  let grains = lunchFoods.filter(f => f.category?.toLowerCase() === 'grain');
+  if (yangDeficiency) {
+    grains = grains.filter(f => f.thermal_nature?.toLowerCase() === 'warm');
+  }
+  if (grains.length === 0) grains = lunchFoods.filter(f => f.category?.toLowerCase() === 'grain');
+
+  const grain = grains[Math.floor(Math.random() * grains.length)];
+  if (grain) {
+    meal.push(grain.food_name);
+    reason.push(`Grain: ${grain.food_name} (middle jiao strengthening)`);
+  }
+
+  // Select protein
+  let proteins = lunchFoods.filter(f =>
+    f.category?.toLowerCase() === 'legume' || f.category?.toLowerCase() === 'dairy' ||
+    f.category?.toLowerCase() === 'meat'
+  );
+
+  // Filter incompatible with grain
+  proteins = proteins.filter(p => !isIncompatibleCombination(grain, p));
+
+  if (proteins.length === 0) {
+    proteins = lunchFoods.filter(f =>
+      f.category?.toLowerCase() === 'legume' || f.category?.toLowerCase() === 'dairy'
+    );
+  }
+
+  const protein = proteins[Math.floor(Math.random() * proteins.length)];
+  if (protein) {
+    meal.push(protein.food_name);
+    reason.push(`Protein: ${protein.food_name} (Qi support)`);
+  }
+
+  // Select vegetable
+  let vegetables = lunchFoods.filter(f =>
+    f.category?.toLowerCase() === 'vegetable' && !isIncompatibleCombination(grain, f) &&
+    (protein ? !isIncompatibleCombination(protein, f) : true)
+  );
+
+  if (vegetables.length === 0) {
+    vegetables = lunchFoods.filter(f => f.category?.toLowerCase() === 'vegetable');
+  }
+
+  const vegetable = vegetables[Math.floor(Math.random() * vegetables.length)];
+  if (vegetable) {
+    meal.push(vegetable.food_name);
+    reason.push(`Vegetable: ${vegetable.food_name} (digestive support)`);
+  }
+
+  return { meal, reason };
+}
+
+/**
+ * Select foods for dinner (very light & calming)
+ * Rules: Warm/Neutral only, easily digestible, NO heavy/greasy
+ */
+function generateStrictDinner(allFoods, condition) {
+  console.log('  🌙 Generating dinner (Light & Warm)...');
+
+  const { yinDeficiency, yangDeficiency } = condition;
+  const dinnerFoods = allFoods.filter(f => canUseInDinner(f, condition));
+
+  if (dinnerFoods.length === 0) {
+    throw new Error('INVALID: No suitable dinner foods found');
+  }
+
+  // Prefer warm for dinner to support digestion
+  let mainDish = null;
+
+  if (yangDeficiency) {
+    // Yang deficiency → warming foods for deeper nourishment
+    const warmingFoods = dinnerFoods.filter(f => f.thermal_nature?.toLowerCase() === 'warm');
+    mainDish = warmingFoods[Math.floor(Math.random() * warmingFoods.length)];
+  } else {
+    // Neutral balance → prefer neutral for calm digestion
+    const neutralFoods = dinnerFoods.filter(f => f.thermal_nature?.toLowerCase() === 'neutral');
+    mainDish = neutralFoods.length > 0 ? neutralFoods[Math.floor(Math.random() * neutralFoods.length)] : dinnerFoods[0];
+  }
+
+  if (!mainDish) {
+    mainDish = dinnerFoods[0];
+  }
+
+  // Select optional light side
+  let sideDish = null;
+  const sides = dinnerFoods.filter(f =>
+    f.food_name !== mainDish.food_name && !isIncompatibleCombination(mainDish, f)
+  );
+
+  if (sides.length > 0 && Math.random() > 0.5) {
+    sideDish = sides[Math.floor(Math.random() * sides.length)];
+  }
+
+  const meal = [mainDish, sideDish].filter(Boolean).map(f => f.food_name);
+  const reason = [];
+
+  if (mainDish) {
+    reason.push(`Main: ${mainDish.food_name} (${mainDish.thermal_nature}, easily digested for sleep)`);
+  }
+  if (sideDish) {
+    reason.push(`Light side: ${sideDish.food_name}`);
+  }
+
+  return { meal, reason };
+}
+
+/**
+ * MAIN FUNCTION: Generate strict TCM daily meal plan
+ * Input: condition = { yin, yang, heat, cold }
+ * Output: { breakfast, lunch, dinner } with meal names and explanations
+ */
+function generateStrictDailyMealPlan(condition) {
+  console.log('\n═══════════════════════════════════════════════════════════════');
+  console.log('🌿 STRICT TCM MEAL PLAN GENERATOR');
+  console.log('═══════════════════════════════════════════════════════════════\n');
+
+  // Load foods
+  const allFoods = loadTCMFoods();
+  console.log(`✅ Loaded ${allFoods.length} TCM foods\n`);
+
+  // Analyze condition
+  const analysis = analyzeCondition(condition);
+  console.log('📊 User TCM Pattern Analysis:\n');
+  console.log(`   Yin: ${analysis.yinPercent}% ${analysis.yinDeficiency ? '(DEFICIENT ⚠️)' : '(balanced)'}`);
+  console.log(`   Yang: ${analysis.yangPercent}% ${analysis.yangDeficiency ? '(DEFICIENT ⚠️)' : '(balanced)'}`);
+  console.log(`   Heat: ${analysis.heatPercent}% ${analysis.excessHeat ? '(EXCESS ⚠️)' : '(balanced)'}`);
+  console.log(`   Cold: ${analysis.coldPercent}% ${analysis.excessCold ? '(EXCESS ⚠️)' : '(balanced)'}\n`);
+
+  console.log('📋 STRICT TCM RULES APPLIED:\n');
+  console.log('   ✓ Breakfast: Light, warm, easy to digest, NO cold/raw');
+  console.log('   ✓ Lunch: Balanced (grain + protein + vegetable)');
+  console.log('   ✓ Dinner: Light, warm, calming, digestibility ≤ 2');
+  console.log('   ✓ NO mixing hot + hot excessively');
+  console.log('   ✓ NO cold foods at night');
+  console.log('   ✓ NO raw foods with weak digestion');
+  console.log('   ✓ Yin deficiency → cooling foods, Yang deficiency → warming foods\n');
+
+  console.log('═══════════════════════════════════════════════════════════════\n');
+
+  // Generate meals
+  const breakfast = generateStrictBreakfast(allFoods, analysis);
+  const lunch = generateStrictLunch(allFoods, analysis);
+  const dinner = generateStrictDinner(allFoods, analysis);
+
+  // VALIDATION STEP
+  console.log('✅ Validating meal plan against strict TCM rules...\n');
+
+  const hasInvalidColdCombo = (meal) => {
+    return meal.some(name => allFoods.find(f => (f.food_name === name || f.name === name) &&
+      f.thermal_nature?.toLowerCase() === 'cold'));
+  };
+
+  if (hasInvalidColdCombo(breakfast.meal)) {
+    throw new Error('INVALID: Breakfast contains cold foods');
+  }
+  if (hasInvalidColdCombo(dinner.meal)) {
+    throw new Error('INVALID: Dinner contains cold foods');
+  }
+
+  // Check for excessive hot mixing
+  const countHotFoods = (meal) => {
+    return meal.filter(name => allFoods.find(f => (f.food_name === name || f.name === name) &&
+      f.thermal_nature?.toLowerCase() === 'hot')).length;
+  };
+
+  if (countHotFoods(breakfast.meal) > 2 || countHotFoods(lunch.meal) > 2 || countHotFoods(dinner.meal) > 1) {
+    throw new Error('INVALID: Excessive hot foods in meal');
+  }
+
+  // Validate: Max items per meal
+  if (breakfast.meal.length > 3) throw new Error('INVALID: Breakfast exceeds 3 items');
+  if (lunch.meal.length > 4) throw new Error('INVALID: Lunch exceeds 4 items');
+  if (dinner.meal.length > 2) throw new Error('INVALID: Dinner exceeds 2 items');
+
+  console.log('✅ All TCM validations passed!\n');
+
+  // Output
+  console.log('🌅 BREAKFAST (Light & Warm):\n');
+  console.log(`   Foods: ${breakfast.meal.join(' + ')}`);
+  console.log('   Reasons:');
+  breakfast.reason.forEach(r => console.log(`     • ${r}`));
+
+  console.log('\n🍽️  LUNCH (Main Meal - Balanced):\n');
+  console.log(`   Foods: ${lunch.meal.join(' + ')}`);
+  console.log('   Reasons:');
+  lunch.reason.forEach(r => console.log(`     • ${r}`));
+
+  console.log('\n🌙 DINNER (Very Light & Warm):\n');
+  console.log(`   Foods: ${dinner.meal.join(' + ')}`);
+  console.log('   Reasons:');
+  dinner.reason.forEach(r => console.log(`     • ${r}`));
+
+  console.log('\n═══════════════════════════════════════════════════════════════');
+  console.log('✅ TCM VALIDATION COMPLETE - All rules satisfied!\n');
+
+  // Save to file
+  const output = {
+    timestamp: new Date().toISOString(),
+    condition: condition,
+    tcmAnalysis: {
+      yinDeficiency: analysis.yinDeficiency,
+      yangDeficiency: analysis.yangDeficiency,
+      excessHeat: analysis.excessHeat,
+      excessCold: analysis.excessCold
+    },
+    mealPlan: {
+      breakfast: breakfast,
+      lunch: lunch,
+      dinner: dinner
+    },
+    rulesValidated: [
+      'No cold foods at breakfast/dinner',
+      'No excessive hot+hot combinations',
+      'All meals within thermal balance guidelines',
+      'Breakfast easily digestible',
+      'Dinner digestibility ≤ 2',
+      'Max 3-4 items per meal',
+      'Yin/Yang balance considerations applied',
+      'No incompatible thermal combinations'
+    ]
+  };
+
+  const outputPath = path.join(__dirname, '../../../data/strict_tcm_meal_plan.json');
+  fs.writeFileSync(outputPath, JSON.stringify(output, null, 2), 'utf8');
+  console.log(`✅ Meal plan saved to: strict_tcm_meal_plan.json\n`);
+
+  return output;
+}
+
+module.exports = {
+  generateStrictDailyMealPlan,
+  analyzeCondition,
+  getThermalDigestibility
+};

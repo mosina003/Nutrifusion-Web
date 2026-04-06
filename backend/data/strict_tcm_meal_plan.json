@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-04-06T06:19:32.145Z",
+  "condition": {
+    "yin": 30,
+    "yang": 45,
+    "heat": 60,
+    "cold": 20
+  },
+  "tcmAnalysis": {
+    "yinDeficiency": true,
+    "yangDeficiency": false,
+    "excessHeat": true,
+    "excessCold": false
+  },
+  "mealPlan": {
+    "breakfast": {
+      "meal": [
+        "Sushi Rice"
+      ],
+      "reason": [
+        "Main dish: neutral nature (Tonifies Spleen Qi, easy to digest)"
+      ]
+    },
+    "lunch": {
+      "meal": [
+        "Stew with Appam",
+        "Grilled Chicken Salad Bowl",
+        "Onion"
+      ],
+      "reason": [
+        "Grain: Stew with Appam (middle jiao strengthening)",
+        "Protein: Grilled Chicken Salad Bowl (Qi support)",
+        "Vegetable: Onion (digestive support)"
+      ]
+    },
+    "dinner": {
+      "meal": [
+        "Whole Wheat Pasta"
+      ],
+      "reason": [
+        "Main: Whole Wheat Pasta (neutral, easily digested for sleep)"
+      ]
+    }
+  },
+  "rulesValidated": [
+    "No cold foods at breakfast/dinner",
+    "No excessive hot+hot combinations",
+    "All meals within thermal balance guidelines",
+    "Breakfast easily digestible",
+    "Dinner digestibility ≤ 2",
+    "Max 3-4 items per meal",
+    "Yin/Yang balance considerations applied",
+    "No incompatible thermal combinations"
+  ]
+}

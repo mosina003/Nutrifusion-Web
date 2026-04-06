@@ -316,6 +316,281 @@ const generateDinner = (categorizedFoods, dominantDosha, agni, usedIngredients, 
 };
 
 /**
+ * STRICT AYURVEDIC MEAL PLAN GENERATOR
+ * 
+ * Generates daily meals following STRICT Ayurvedic rules:
+ * - Breakfast: LIGHT (digestibility ≤ 3), NO heavy/fried, NO high ama
+ * - Lunch: MAIN meal (grain+protein+vegetable), balanced
+ * - Dinner: VERY LIGHT (digestibility ≤ 2), NO high ama, NO fried
+ * - NO fruit+cooked combinations, NO duplicate carbs, NO dairy+meat
+ * - All meals 3-4 items max
+ * 
+ * @param {Object} prakritiData - { vata: X, pitta: Y, kapha: Z } from assessment
+ * @param {Array} allFoods - All Ayurveda food items from JSON
+ * @returns {Object} { breakfast: {meal, reason}, lunch: {meal, reason}, dinner: {meal, reason} }
+ */
+const generateStrictDailyMealPlan = (prakritiData, allFoods) => {
+  if (!prakritiData || !allFoods) {
+    throw new Error('Prakriti data and all foods are required');
+  }
+
+  // Identify dominant dosha
+  const { vata = 0, pitta = 0, kapha = 0 } = prakritiData;
+  const doshas = [
+    { type: 'vata', score: vata },
+    { type: 'pitta', score: pitta },
+    { type: 'kapha', score: kapha }
+  ].sort((a, b) => b.score - a.score);
+  
+  const dominantDosha = doshas[0].type;
+  console.log(`🧬 Dominant Dosha: ${dominantDosha.toUpperCase()} (V:${vata} P:${pitta} K:${kapha})`);
+
+  /**
+   * Filter helper: Check if food can be used in specific meal
+   */
+  const canUseInBreakfast = (food) => {
+    if (!food) return false;
+    const digestibility = food.digestibility_score || 3;
+    const ama = food.ama_forming_potential || 'low';
+    
+    // Rule: digestibility_score ≤ 3
+    if (digestibility > 3) return false;
+    
+    // Rule: NO high ama foods at breakfast
+    if (ama === 'high') return false;
+    
+    // Don't exclude Heavy guna for breakfast (many breakfast foods are naturally heavier)
+    // Just avoid very oily foods
+    const guna = food.guna || [];
+    if (guna.includes('oily') && digestibility > 3) return false;
+    
+    return true;
+  };
+
+  const canUseInDinner = (food) => {
+    if (!food) return false;
+    const digestibility = food.digestibility_score || 3;
+    const ama = food.ama_forming_potential || 'low';
+    
+    // Rule: digestibility_score ≤ 2 (VERY STRICT for dinner)
+    if (digestibility > 2) return false;
+    
+    // Rule: NO high ama foods at dinner
+    if (ama === 'high') return false;
+    
+    // Rule: NO fried, heavy, oily
+    const guna = food.guna || [];
+    if (guna.includes('heavy') || guna.includes('oily')) return false;
+    
+    return true;
+  };
+
+  const canUseInLunch = (food) => {
+    if (!food) return false;
+    // Lunch can include moderate foods, less strict
+    return true;
+  };
+
+  /**
+   * Check if food has incompatible properties
+   */
+  const isIncompatibleCombination = (existingFoods, newFood) => {
+    const fruitsInMeal = existingFoods.some(f => f.category === 'fruit');
+    const cookedInMeal = existingFoods.some(f => f.guna && f.guna.includes('cooked'));
+    const dairyInMeal = existingFoods.some(f => f.category === 'dairy');
+    const meatInMeal = existingFoods.some(f => f.category === 'meat');
+
+    // Rule: NEVER combine fruit with cooked meals
+    if (fruitsInMeal && cookedInMeal && newFood.category !== 'fruit') {
+      return true;
+    }
+    if (newFood.category === 'fruit' && cookedInMeal) {
+      return true;
+    }
+
+    // Rule: NEVER combine dairy with meat
+    if (dairyInMeal && newFood.category === 'meat') return true;
+    if (meatInMeal && newFood.category === 'dairy') return true;
+
+    return false;
+  };
+
+  /**
+   * Generate STRICT Breakfast (max 3 items: main + beverage)
+   */
+  const generateStrictBreakfast = () => {
+    // Filter for breakfast-suitable foods
+    const breakfastFoods = allFoods.filter(canUseInBreakfast);
+    
+    if (breakfastFoods.length === 0) {
+      throw new Error('No suitable breakfast foods found');
+    }
+
+    // Group by role
+    const mains = breakfastFoods.filter(f => f.role === 'main' || f.category === 'grain');
+    const beverages = breakfastFoods.filter(f => f.category === 'beverage');
+
+    // Select 1 main + 1 beverage
+    const meal = [];
+    const reasons = [];
+
+    if (mains.length > 0) {
+      const mainFood = mains[Math.floor(Math.random() * mains.length)];
+      meal.push(mainFood.food_name || mainFood.name);
+      reasons.push(`Light, easy-to-digest main (digestibility score ${mainFood.digestibility_score || 1})`);
+    }
+
+    if (beverages.length > 0) {
+      const beverage = beverages[Math.floor(Math.random() * beverages.length)];
+      meal.push(beverage.food_name || beverage.name);
+      reasons.push('Warm beverage for digestion');
+    }
+
+    // Validation
+    if (meal.length < 1) throw new Error('Failed to generate breakfast');
+    if (meal.length > 3) throw new Error('Breakfast exceeds 3 items');
+
+    return { meal, reason: reasons };
+  };
+
+  /**
+   * Generate STRICT Lunch (exactly: 1 grain + 1 protein + 1 vegetable)
+   */
+  const generateStrictLunch = () => {
+    const lunchFoods = allFoods.filter(canUseInLunch);
+
+    // Group by category
+    const grains = lunchFoods.filter(f => f.category === 'grain');
+    const proteins = lunchFoods.filter(f => ['legume', 'dairy', 'meat', 'nut'].includes(f.category));
+    const vegetables = lunchFoods.filter(f => f.category === 'vegetable');
+
+    const meal = [];
+    const reasons = [];
+
+    // Rule: NO duplicate carbs - select exactly 1 grain
+    if (grains.length > 0) {
+      const grain = grains[Math.floor(Math.random() * grains.length)];
+      meal.push(grain.food_name || grain.name);
+
+      // Dosha-specific selection
+      if (dominantDosha === 'vata') {
+        reasons.push('Warm, grounding grain to balance Vata');
+      } else if (dominantDosha === 'pitta') {
+        reasons.push('Cooling grain to balance Pitta');
+      } else {
+        reasons.push('Light grain to balance Kapha');
+      }
+    }
+
+    // Rule: exactly 1 protein
+    if (proteins.length > 0) {
+      // Filter by dosha
+      let selectedProteins = proteins;
+      if (dominantDosha === 'kapha') {
+        selectedProteins = proteins.filter(p => p.category !== 'dairy'); // Kapha avoid dairy
+      } else if (dominantDosha === 'pitta') {
+        selectedProteins = proteins.filter(p => p.category !== 'meat'); // Pitta avoid meat (heating)
+      }
+
+      if (selectedProteins.length === 0) selectedProteins = proteins;
+      
+      const protein = selectedProteins[Math.floor(Math.random() * selectedProteins.length)];
+      meal.push(protein.food_name || protein.name);
+      reasons.push(`${protein.category} protein for strength`);
+    }
+
+    // Rule: exactly 1 vegetable
+    if (vegetables.length > 0) {
+      const vegetable = vegetables[Math.floor(Math.random() * vegetables.length)];
+      meal.push(vegetable.food_name || vegetable.name);
+      reasons.push('Cooked vegetable for nutrition');
+    }
+
+    // Validation
+    if (meal.length < 3) throw new Error('Lunch requires grain + protein + vegetable');
+    if (meal.length > 4) throw new Error('Lunch exceeds 4 items');
+
+    return { meal, reason: reasons };
+  };
+
+  /**
+   * Generate STRICT Dinner (max 2 items: very light main + optional side)
+   */
+  const generateStrictDinner = () => {
+    const dinnerFoods = allFoods.filter(canUseInDinner);
+
+    if (dinnerFoods.length === 0) {
+      throw new Error('No suitable dinner foods found (too strict filtering)');
+    }
+
+    // Prefer very light items
+    const veryLight = dinnerFoods.filter(f => (f.digestibility_score || 0) <= 1);
+    const selectedFoods = veryLight.length > 0 ? veryLight : dinnerFoods;
+
+    const meal = [];
+    const reasons = [];
+
+    // Select 1 very light main
+    const mainFood = selectedFoods[Math.floor(Math.random() * selectedFoods.length)];
+    meal.push(mainFood.food_name || mainFood.name);
+    reasons.push(`Very light main (digestibility score ${mainFood.digestibility_score || 1})`);
+
+    // Optional side if available (optional, not required)
+    if (selectedFoods.length > 1 && Math.random() > 0.5) {
+      const sideFood = selectedFoods[Math.floor(Math.random() * selectedFoods.length)];
+      if (sideFood.food_name !== meal[0]) {
+        meal.push(sideFood.food_name || sideFood.name);
+        reasons.push('Light accompaniment');
+      }
+    }
+
+    // Validation
+    if (meal.length < 1) throw new Error('Failed to generate dinner');
+    if (meal.length > 2) throw new Error('Dinner exceeds 2 items');
+
+    return { meal, reason: reasons };
+  };
+
+  // Generate all three meals
+  const breakfast = generateStrictBreakfast();
+  const lunch = generateStrictLunch();
+  const dinner = generateStrictDinner();
+
+  // VALIDATION STEP
+  console.log('✅ Validating meal plan against strict rules...');
+  
+  // Validate: No fruit + cooked combination
+  const hasInvalidFruitCombo = (meal) => {
+    const hasFruit = meal.some(name => allFoods.find(f => (f.food_name === name || f.name === name) && f.category === 'fruit'));
+    const hasCooked = meal.some(name => allFoods.find(f => (f.food_name === name || f.name === name) && f.role !== 'beverage'));
+    return hasFruit && hasCooked;
+  };
+
+  if (hasInvalidFruitCombo(breakfast.meal)) throw new Error('INVALID: Breakfast has fruit + cooked combination');
+  if (hasInvalidFruitCombo(lunch.meal)) throw new Error('INVALID: Lunch has fruit + cooked combination');
+  if (hasInvalidFruitCombo(dinner.meal)) throw new Error('INVALID: Dinner has fruit + cooked combination');
+
+  // Validate: No duplicate carbs in lunch
+  const lunchGrains = lunch.meal.filter(name => allFoods.find(f => (f.food_name === name || f.name === name) && f.category === 'grain'));
+  if (lunchGrains.length > 1) throw new Error('INVALID: Lunch has duplicate grains');
+
+  // Validate: Max items per meal
+  if (breakfast.meal.length > 3) throw new Error('INVALID: Breakfast exceeds 3 items');
+  if (lunch.meal.length > 4) throw new Error('INVALID: Lunch exceeds 4 items');
+  if (dinner.meal.length > 2) throw new Error('INVALID: Dinner exceeds 2 items');
+
+  console.log('✅ All validations passed!');
+
+  return {
+    breakfast,
+    lunch,
+    dinner,
+    doshaProfile: { vata, pitta, kapha },
+    dominantDosha
+  };
+};
+
+/**
  * Generate complete 7-day meal plan
  * 
  * @param {Object} assessmentResult - Ayurveda assessment results
@@ -418,5 +693,6 @@ const generateReasoning = (assessmentResult, categorizedFoods) => {
 
 module.exports = {
   generateWeeklyPlan,
-  generateReasoning
+  generateReasoning,
+  generateStrictDailyMealPlan
 };

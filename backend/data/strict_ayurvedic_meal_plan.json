@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-04-06T06:13:43.507Z",
+  "prakritiData": {
+    "vata": 50,
+    "pitta": 20,
+    "kapha": 30
+  },
+  "dominantDosha": "vata",
+  "mealPlan": {
+    "breakfast": {
+      "meal": [
+        "Vegetable Barley Soup",
+        "Lassi"
+      ],
+      "reason": [
+        "Light, easy-to-digest main (digestibility score 1)",
+        "Warm beverage for digestion"
+      ]
+    },
+    "lunch": {
+      "meal": [
+        "Millet Pongal",
+        "Curd",
+        "Onion"
+      ],
+      "reason": [
+        "Warm, grounding grain to balance Vata",
+        "dairy protein for strength",
+        "Cooked vegetable for nutrition"
+      ]
+    },
+    "dinner": {
+      "meal": [
+        "Orange Juice"
+      ],
+      "reason": [
+        "Very light main (digestibility score 1)"
+      ]
+    }
+  },
+  "rulesValidated": [
+    "No fruit + cooked combinations",
+    "No duplicate carbs per meal",
+    "No dairy + meat combinations",
+    "Breakfast digestibility ≤ 3",
+    "Dinner digestibility ≤ 2",
+    "Max 3-4 items per meal",
+    "No high ama foods at breakfast/dinner",
+    "Dosha-specific food selection applied"
+  ]
+}

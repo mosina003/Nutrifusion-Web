@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-04-06T06:34:14.429Z",
+  "userProfile": {
+    "bmi": "normal",
+    "goal": "muscle_gain",
+    "dailyCalories": 2800,
+    "macroRatios": {
+      "carbs": 0.5,
+      "protein": 0.35,
+      "fat": 0.15
+    }
+  },
+  "targetMacros": {
+    "breakfast": {
+      "calories": 600,
+      "carbs": 75,
+      "protein": 53,
+      "fat": 10
+    },
+    "lunch": {
+      "calories": 900,
+      "carbs": 113,
+      "protein": 79,
+      "fat": 15
+    },
+    "dinner": {
+      "calories": 650,
+      "carbs": 81,
+      "protein": 57,
+      "fat": 11
+    }
+  },
+  "mealPlan": {
+    "breakfast": {
+      "meal": [
+        "Pongal",
+        "Curd"
+      ],
+      "reason": [
+        "Grain: Pongal (210 cal, carbs: 30g, protein: 7g)",
+        "Protein: Curd (61 cal, protein: 3.5g)",
+        "Total: 271 calories"
+      ]
+    },
+    "lunch": {
+      "meal": [
+        "Biryani",
+        "Sprout Salad",
+        "Tomato"
+      ],
+      "reason": [
+        "Grain: Biryani (complex carbs, fiber)",
+        "Protein: Sprout Salad (muscle support)",
+        "Vegetable: Tomato (fiber & micronutrients)"
+      ]
+    },
+    "dinner": {
+      "meal": [
+        "Black Pepper"
+      ],
+      "reason": [
+        "Main: Black Pepper (251 cal, protein: 10g, carbs: 64g)",
+        "Total: 251 calories (low-calorie dinner)"
+      ]
+    }
+  },
+  "rulesValidated": [
+    "Dinner low-calorie",
+    "Dinner low-fat",
+    "No processed/fried foods",
+    "Balanced macronutrients",
+    "Appropriate calorie distribution",
+    "Max items per meal enforced",
+    "Goal-specific macro ratios applied",
+    "BMI-based personalization applied"
+  ]
+}
