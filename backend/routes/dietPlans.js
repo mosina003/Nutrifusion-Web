@@ -639,11 +639,10 @@ router.post(
         success: true,
         message: 'Unani diet plan generated successfully',
         data: {
-          dietPlan,
-          weeklyPlan: dietPlanData.weeklyPlan,
-          reasoning: dietPlanData.reasoning,
-          topRecommendations: dietPlanData.topRecommendations,
-          avoidFoods: dietPlanData.avoidFoods
+          weeklyPlan: dietPlanData['7_day_plan'],
+          reasoning: dietPlanData.reasoning_summary,
+          topRecommendations: dietPlanData.food_rankings?.highly_suitable || [],
+          avoidFoods: dietPlanData.avoidFoods || []
         }
       });
     } catch (error) {
@@ -997,7 +996,12 @@ router.post(
       res.status(200).json({
         success: true,
         message: 'TCM diet plan generated successfully',
-        data: dietPlan
+        data: {
+          weeklyPlan: dietPlan['7_day_plan'],
+          reasoning: dietPlan.reasoning_summary,
+          topRecommendations: dietPlan.food_rankings?.highly_recommended || [],
+          avoidFoods: dietPlan.avoidFoods || []
+        }
       });
     } catch (error) {
       console.error('TCM diet plan generation error:', error);
