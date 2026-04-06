@@ -561,40 +561,45 @@ const generateWeeklyPlan = (rankedFoods, userAssessment) => {
   const userType = userAssessment?.primary_mizaj || 'damvi';
 
   for (let day = 1; day <= 7; day++) {
-    // Generate daily plan - pass userType string, not full assessment object
-    const dailyPlan = generateStrictDailyMealPlan(userType);
-    
-    // Reformat to match Ayurveda weekly plan structure
-    if (dailyPlan && dailyPlan.mealPlan) {
-      const dayPlan = {
-        day: day,
-        day_name: dayNames[(day - 1) % 7],
-        meals: [
-          {
-            meal_type: 'Breakfast',
-            foods: dailyPlan.mealPlan.breakfast.meal,
-            timing: 'Morning (7-9 AM)'
-          },
-          {
-            meal_type: 'Lunch',
-            foods: dailyPlan.mealPlan.lunch.meal,
-            timing: 'Midday (12-1 PM)'
-          },
-          {
-            meal_type: 'Dinner',
-            foods: dailyPlan.mealPlan.dinner.meal,
-            timing: 'Evening (6-7 PM)'
-          }
-        ],
-        guidelines: [
-          'Balance Unani humors through food selection',
-          'Respect temperament compatibility',
-          'Avoid excess heat or cold',
-          'Support digestive balance',
-          'Follow proper meal timing'
-        ]
-      };
-      weeklyPlan.push(dayPlan);
+    try {
+      // Generate daily plan - pass userType string, not full assessment object
+      const dailyPlan = generateStrictDailyMealPlan(userType);
+      
+      // Reformat to match Ayurveda weekly plan structure
+      if (dailyPlan && dailyPlan.mealPlan) {
+        const dayPlan = {
+          day: day,
+          day_name: dayNames[(day - 1) % 7],
+          meals: [
+            {
+              meal_type: 'Breakfast',
+              foods: dailyPlan.mealPlan.breakfast.meal,
+              timing: 'Morning (7-9 AM)'
+            },
+            {
+              meal_type: 'Lunch',
+              foods: dailyPlan.mealPlan.lunch.meal,
+              timing: 'Midday (12-1 PM)'
+            },
+            {
+              meal_type: 'Dinner',
+              foods: dailyPlan.mealPlan.dinner.meal,
+              timing: 'Evening (6-7 PM)'
+            }
+          ],
+          guidelines: [
+            'Balance Unani humors through food selection',
+            'Respect temperament compatibility',
+            'Avoid excess heat or cold',
+            'Support digestive balance',
+            'Follow proper meal timing'
+          ]
+        };
+        weeklyPlan.push(dayPlan);
+      }
+    } catch (error) {
+      console.error(`⚠️ Error generating meal for day ${day}:`, error.message);
+      // Continue to next day instead of crashing
     }
   }
 
