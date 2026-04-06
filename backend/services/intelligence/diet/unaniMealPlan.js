@@ -253,8 +253,7 @@ function generateStrictBreakfast(allFoods, userType) {
     console.warn('⚠️ No breakfast foods found with strict filters. Relaxing filter...');
     breakfastFoods = allFoods.filter(f => 
       f && 
-      f.meal_type?.map(m => m?.toLowerCase()).includes('breakfast') &&
-      (!f.added_heat || f.added_heat === false)
+      f.meal_type?.map(m => m?.toLowerCase()).includes('breakfast')
     );
   }
 
@@ -309,8 +308,7 @@ function generateStrictLunch(allFoods, userType) {
     console.warn('⚠️ Not enough lunch foods found with strict filters. Relaxing filter...');
     lunchFoods = allFoods.filter(f => 
       f && 
-      f.meal_type?.map(m => m?.toLowerCase()).includes('lunch') &&
-      (!f.added_heat || f.added_heat === false)
+      f.meal_type?.map(m => m?.toLowerCase()).includes('lunch')
     );
   }
 
@@ -377,8 +375,7 @@ function generateStrictDinner(allFoods, userType) {
     console.warn('⚠️ No dinner foods found with strict filters. Relaxing filter...');
     dinnerFoods = allFoods.filter(f => 
       f && 
-      f.meal_type?.map(m => m?.toLowerCase()).includes('dinner') &&
-      (!f.added_heat || f.added_heat === false)
+      f.meal_type?.map(m => m?.toLowerCase()).includes('dinner')
     );
   }
 
