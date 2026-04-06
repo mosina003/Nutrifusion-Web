@@ -1,33 +1,33 @@
 {
-  "timestamp": "2026-04-06T15:44:12.572Z",
+  "timestamp": "2026-04-06T15:46:55.284Z",
   "userProfile": {
-    "bmi": "obese",
-    "goal": "weight_loss",
-    "dailyCalories": 1800,
+    "bmi": "normal",
+    "goal": "maintenance",
+    "dailyCalories": 2200,
     "macroRatios": {
-      "carbs": 0.4,
-      "protein": 0.4,
+      "carbs": 0.5,
+      "protein": 0.3,
       "fat": 0.2
     }
   },
   "targetMacros": {
     "breakfast": {
-      "calories": 350,
-      "carbs": 35,
-      "protein": 35,
-      "fat": 8
+      "calories": 450,
+      "carbs": 56,
+      "protein": 34,
+      "fat": 10
     },
     "lunch": {
-      "calories": 600,
-      "carbs": 60,
-      "protein": 60,
-      "fat": 13
+      "calories": 750,
+      "carbs": 94,
+      "protein": 56,
+      "fat": 17
     },
     "dinner": {
-      "calories": 450,
-      "carbs": 45,
-      "protein": 45,
-      "fat": 10
+      "calories": 550,
+      "carbs": 69,
+      "protein": 41,
+      "fat": 12
     }
   },
   "mealPlan": {
@@ -44,23 +44,23 @@
     },
     "lunch": {
       "meal": [
-        "Sushi Rice",
-        "Tofu",
+        "Idli",
+        "Chole",
         "Carrot"
       ],
       "reason": [
-        "Grain: Sushi Rice (complex carbs, fiber)",
-        "Protein: Tofu (muscle support)",
+        "Grain: Idli (complex carbs, fiber)",
+        "Protein: Chole (muscle support)",
         "Vegetable: Carrot (fiber & micronutrients)"
       ]
     },
     "dinner": {
       "meal": [
-        "Pongal"
+        "Chapati"
       ],
       "reason": [
-        "Main: Pongal (210 cal, protein: 7g, carbs: 30g)",
-        "Total: 210 calories (low-calorie dinner)"
+        "Main: Chapati (297 cal, protein: 9g, carbs: 55g)",
+        "Total: 297 calories (low-calorie dinner)"
       ]
     }
   },

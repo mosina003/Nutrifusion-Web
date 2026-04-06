@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-06T15:43:47.706Z",
+  "timestamp": "2026-04-06T15:46:32.245Z",
   "condition": {
     "yin": 50,
     "yang": 50,
@@ -15,32 +15,30 @@
   "mealPlan": {
     "breakfast": {
       "meal": [
-        "Quinoa Khichdi"
+        "Dal Khichdi (No Ghee)"
       ],
       "reason": [
-        "Main dish: neutral nature (Protein-rich, supports Qi and Blood)"
+        "Main dish: neutral nature (Light detox-friendly meal)"
       ]
     },
     "lunch": {
       "meal": [
-        "Vegetable Pulao",
-        "Chole",
-        "Sprout Salad"
+        "Chapati",
+        "Fish Curry with Red Rice",
+        "Potato"
       ],
       "reason": [
-        "Grain: Vegetable Pulao (middle jiao strengthening)",
-        "Protein: Chole (Qi support)",
-        "Vegetable: Sprout Salad (digestive support)"
+        "Grain: Chapati (middle jiao strengthening)",
+        "Protein: Fish Curry with Red Rice (Qi support)",
+        "Vegetable: Potato (digestive support)"
       ]
     },
     "dinner": {
       "meal": [
-        "Lentil Soup with Whole Wheat Bread",
-        "Sevai"
+        "Millet Khichdi"
       ],
       "reason": [
-        "Main: Lentil Soup with Whole Wheat Bread (neutral, easily digested for sleep)",
-        "Light side: Sevai"
+        "Main: Millet Khichdi (neutral, easily digested for sleep)"
       ]
     }
   },

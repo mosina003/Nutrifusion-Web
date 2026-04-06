@@ -1,45 +1,45 @@
 {
-  "timestamp": "2026-04-06T15:43:56.605Z",
+  "timestamp": "2026-04-06T15:46:43.991Z",
   "userTemperament": {
-    "type": "damvi",
-    "label": "Damvi (Hot + Moist)",
+    "type": "safravi",
+    "label": "Safravi (Hot + Dry)",
     "qualities": {
       "hot": true,
       "cold": false,
-      "dry": false,
-      "moist": true,
-      "label": "Damvi (Hot + Moist)"
+      "dry": true,
+      "moist": false,
+      "label": "Safravi (Hot + Dry)"
     }
   },
   "mealPlan": {
     "breakfast": {
       "meal": [
-        "Vegetable Dal Khichdi (No Ghee)"
+        "Vegetable Dalia"
       ],
       "reason": [
-        "Light main: Vegetable Dal Khichdi (No Ghee) (Balanced detox-friendly meal)"
+        "Light main: Vegetable Dalia (Light and strengthening)"
       ]
     },
     "lunch": {
       "meal": [
-        "Dal Khichdi with Ghee",
-        "Chicken Khichdi",
-        "Sprout Salad"
+        "Vegetable Sambar with Rice",
+        "Chicken Stew with Red Rice",
+        "Tomato"
       ],
       "reason": [
-        "Grain: Dal Khichdi with Ghee (primary nourishment)",
-        "Protein: Chicken Khichdi (strength and tissue building)",
-        "Vegetable: Sprout Salad (digestive aid and vitality)"
+        "Grain: Vegetable Sambar with Rice (primary nourishment)",
+        "Protein: Chicken Stew with Red Rice (strength and tissue building)",
+        "Vegetable: Tomato (digestive aid and vitality)"
       ]
     },
     "dinner": {
       "meal": [
-        "Vegetable Rice Noodles",
-        "Moong Dal Khichdi"
+        "Vegetable Steamed Rice Cakes",
+        "Coconut Water"
       ],
       "reason": [
-        "Main: Vegetable Rice Noodles (Light, cooling and easy to digest)",
-        "Light support: Moong Dal Khichdi"
+        "Main: Vegetable Steamed Rice Cakes (Soft, moist and easy digestion)",
+        "Light support: Coconut Water"
       ]
     }
   },
