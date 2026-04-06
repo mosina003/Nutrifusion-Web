@@ -242,13 +242,19 @@ function generateStrictBreakfast(allFoods, condition) {
 
 /**
  * Select foods for lunch (main meal)
- * Structure: Grain + Protein + Vegetable
+ * STRICT: EXACTLY 3 items (grain + protein + vegetable)
+ * NO duplicate categories, NO heavy fried foods
  */
 function generateStrictLunch(allFoods, condition) {
   console.log('  🍽️  Generating lunch (Balanced & Moderate)...');
 
   const { yinDeficiency, yangDeficiency, excessHeat, excessCold } = condition;
-  const lunchFoods = allFoods.filter(f => canUseInLunch(f, condition));
+  
+  // Filter: NO fried, NO very-heavy
+  const lunchFoods = allFoods.filter(f => 
+    canUseInLunch(f, condition) &&
+    !(f.guna && (f.guna.includes('fried') || f.guna.includes('very-heavy')))
+  );
 
   if (lunchFoods.length < 3) {
     throw new Error('INVALID: Not enough lunch foods found');
@@ -257,7 +263,7 @@ function generateStrictLunch(allFoods, condition) {
   const meal = [];
   const reason = [];
 
-  // Select grain
+  // Select EXACTLY 1 grain
   let grains = lunchFoods.filter(f => f.category?.toLowerCase() === 'grain');
   if (yangDeficiency) {
     grains = grains.filter(f => f.thermal_nature?.toLowerCase() === 'warm');
@@ -270,7 +276,7 @@ function generateStrictLunch(allFoods, condition) {
     reason.push(`Grain: ${grain.food_name} (middle jiao strengthening)`);
   }
 
-  // Select protein
+  // Select EXACTLY 1 protein
   let proteins = lunchFoods.filter(f =>
     f.category?.toLowerCase() === 'legume' || f.category?.toLowerCase() === 'dairy' ||
     f.category?.toLowerCase() === 'meat'
@@ -291,7 +297,7 @@ function generateStrictLunch(allFoods, condition) {
     reason.push(`Protein: ${protein.food_name} (Qi support)`);
   }
 
-  // Select vegetable
+  // Select EXACTLY 1 vegetable (NO multiple vegetables)
   let vegetables = lunchFoods.filter(f =>
     f.category?.toLowerCase() === 'vegetable' && !isIncompatibleCombination(grain, f) &&
     (protein ? !isIncompatibleCombination(protein, f) : true)
@@ -307,18 +313,29 @@ function generateStrictLunch(allFoods, condition) {
     reason.push(`Vegetable: ${vegetable.food_name} (digestive support)`);
   }
 
+  // VALIDATION: Lunch MUST be exactly 3 items
+  if (meal.length !== 3) {
+    console.warn('⚠️ Lunch should have exactly 3 items (grain/protein/veg), got:', meal.length);
+  }
+
   return { meal, reason };
 }
 
 /**
  * Select foods for dinner (very light & calming)
- * Rules: Warm/Neutral only, easily digestible, NO heavy/greasy
+ * STRICT: MAX 2 items (NO overload)
+ * Rules: Warm/Neutral only, easily digestible, NO heavy/greasy/fried
  */
 function generateStrictDinner(allFoods, condition) {
   console.log('  🌙 Generating dinner (Light & Warm)...');
 
   const { yinDeficiency, yangDeficiency } = condition;
-  const dinnerFoods = allFoods.filter(f => canUseInDinner(f, condition));
+  
+  // Filter: VERY STRICT - NO heavy/fried/oily
+  const dinnerFoods = allFoods.filter(f => 
+    canUseInDinner(f, condition) &&
+    !(f.guna && (f.guna.includes('fried') || f.guna.includes('heavy') || f.guna.includes('oily') || f.guna.includes('very-heavy')))
+  );
 
   if (dinnerFoods.length === 0) {
     throw new Error('INVALID: No suitable dinner foods found');
@@ -326,6 +343,7 @@ function generateStrictDinner(allFoods, condition) {
 
   // Prefer warm for dinner to support digestion
   let mainDish = null;
+  let sideDish = null;
 
   if (yangDeficiency) {
     // Yang deficiency → warming foods for deeper nourishment
@@ -341,14 +359,16 @@ function generateStrictDinner(allFoods, condition) {
     mainDish = dinnerFoods[0];
   }
 
-  // Select optional light side
-  let sideDish = null;
-  const sides = dinnerFoods.filter(f =>
-    f.food_name !== mainDish.food_name && !isIncompatibleCombination(mainDish, f)
-  );
-
-  if (sides.length > 0 && Math.random() > 0.5) {
-    sideDish = sides[Math.floor(Math.random() * sides.length)];
+  // Select light side (OPTIONAL, not guaranteed - max 1)
+  // Only add sideDish if we have a good match and random chance favors it
+  if (Math.random() > 0.6) {
+    const sides = dinnerFoods.filter(f =>
+      f.food_name !== mainDish.food_name && !isIncompatibleCombination(mainDish, f)
+    );
+    
+    if (sides.length > 0) {
+      sideDish = sides[Math.floor(Math.random() * sides.length)];
+    }
   }
 
   const meal = [mainDish, sideDish].filter(Boolean).map(f => f.food_name);
@@ -359,6 +379,12 @@ function generateStrictDinner(allFoods, condition) {
   }
   if (sideDish) {
     reason.push(`Light side: ${sideDish.food_name}`);
+  }
+
+  // VALIDATION: Dinner MUST be max 2 items
+  if (meal.length > 2) {
+    console.warn('⚠️ CRITICAL: Dinner exceeds 2 items (' + meal.length + ')! Trimming...');
+    meal.length = 2;
   }
 
   return { meal, reason };

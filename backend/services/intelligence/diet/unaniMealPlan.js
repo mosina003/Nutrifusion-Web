@@ -276,7 +276,8 @@ function generateStrictBreakfast(allFoods, userType) {
 
 /**
  * Select foods for lunch (main meal)
- * Structure: Grain + Protein + Vegetable with temperament balance
+ * STRICT: EXACTLY 3 items (grain + protein + vegetable)
+ * NO duplicate categories, balanced temperament
  */
 function generateStrictLunch(allFoods, userType) {
   console.log('  🍽️  Generating lunch (Balanced & Main Meal)...');
@@ -290,7 +291,7 @@ function generateStrictLunch(allFoods, userType) {
   const meal = [];
   const reason = [];
 
-  // Select grain
+  // Select EXACTLY 1 grain
   let grains = lunchFoods.filter(f => f.category?.toLowerCase() === 'grain');
   if (grains.length === 0) throw new Error('INVALID: No grains found for lunch');
 
@@ -298,7 +299,7 @@ function generateStrictLunch(allFoods, userType) {
   meal.push(grain.food_name);
   reason.push(`Grain: ${grain.food_name} (primary nourishment)`);
 
-  // Select protein (preferably opposite temperament to grain)
+  // Select EXACTLY 1 protein (preferably opposite temperament to grain)
   let proteins = lunchFoods.filter(f =>
     f.category?.toLowerCase() === 'legume' || f.category?.toLowerCase() === 'dairy' ||
     f.category?.toLowerCase() === 'meat'
@@ -314,7 +315,7 @@ function generateStrictLunch(allFoods, userType) {
     reason.push(`Protein: ${protein.food_name} (strength and tissue building)`);
   }
 
-  // Select vegetable
+  // Select EXACTLY 1 vegetable (NO multiple vegetables)
   let vegetables = lunchFoods.filter(f => f.category?.toLowerCase() === 'vegetable');
 
   if (vegetables.length > 0) {
@@ -323,11 +324,17 @@ function generateStrictLunch(allFoods, userType) {
     reason.push(`Vegetable: ${veg.food_name} (digestive aid and vitality)`);
   }
 
+  // VALIDATION: Lunch MUST be exactly 3 items
+  if (meal.length !== 3) {
+    console.warn('⚠️ Lunch should have exactly 3 items (grain/protein/veg), got:', meal.length);
+  }
+
   return { meal, reason };
 }
 
 /**
  * Select foods for dinner (very light)
+ * STRICT: MAX 2 items (NO overload)
  * Rules: Light, digestible, balanced temperament, NO heavy/oily
  */
 function generateStrictDinner(allFoods, userType) {
@@ -351,14 +358,17 @@ function generateStrictDinner(allFoods, userType) {
     mainDish = dinnerFoods[0];
   }
 
+  // Select optional light side (max 1, not guaranteed)
   let sideDish = null;
-  const sides = dinnerFoods.filter(f =>
-    f.food_name !== mainDish.food_name && 
-    getDigestibilityScore(f.digestion_ease) <= 1
-  );
+  if (Math.random() > 0.6) {
+    const sides = dinnerFoods.filter(f =>
+      f.food_name !== mainDish.food_name && 
+      getDigestibilityScore(f.digestion_ease) <= 1
+    );
 
-  if (sides.length > 0 && Math.random() > 0.5) {
-    sideDish = sides[Math.floor(Math.random() * sides.length)];
+    if (sides.length > 0) {
+      sideDish = sides[Math.floor(Math.random() * sides.length)];
+    }
   }
 
   const meal = [mainDish, sideDish].filter(Boolean).map(f => f.food_name);
@@ -369,6 +379,12 @@ function generateStrictDinner(allFoods, userType) {
   }
   if (sideDish) {
     reason.push(`Light support: ${sideDish.food_name}`);
+  }
+
+  // VALIDATION: Dinner MUST be max 2 items
+  if (meal.length > 2) {
+    console.warn('⚠️ CRITICAL: Dinner exceeds 2 items (' + meal.length + ')! Trimming...');
+    meal.length = 2;
   }
 
   return { meal, reason };

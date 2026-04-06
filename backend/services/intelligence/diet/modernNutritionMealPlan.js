@@ -264,7 +264,8 @@ function generateStrictBreakfast(allFoods, userProfile, targets) {
 
 /**
  * Select foods for lunch (main meal)
- * Structure: Grain + Protein + Vegetable with balanced macros
+ * STRICT: EXACTLY 3 items (grain + protein + vegetable)
+ * NO duplicate categories, balanced macronutrients
  */
 function generateStrictLunch(allFoods, userProfile, targets) {
   console.log('  🍽️  Generating lunch (Balanced & Nutritious)...');
@@ -278,7 +279,7 @@ function generateStrictLunch(allFoods, userProfile, targets) {
   const meal = [];
   const reason = [];
 
-  // Select grain
+  // Select EXACTLY 1 grain
   let grains = lunchFoods.filter(f => f.category?.toLowerCase() === 'grain');
   if (grains.length === 0) throw new Error('INVALID: No grains found for lunch');
 
@@ -286,7 +287,7 @@ function generateStrictLunch(allFoods, userProfile, targets) {
   meal.push(grain.food_name);
   reason.push(`Grain: ${grain.food_name} (complex carbs, fiber)`);
 
-  // Select protein
+  // Select EXACTLY 1 protein
   let proteins = lunchFoods.filter(f =>
     f.category?.toLowerCase() === 'legume' || f.category?.toLowerCase() === 'dairy' ||
     f.category?.toLowerCase() === 'meat'
@@ -298,7 +299,7 @@ function generateStrictLunch(allFoods, userProfile, targets) {
     reason.push(`Protein: ${protein.food_name} (muscle support)`);
   }
 
-  // Select vegetable
+  // Select EXACTLY 1 vegetable (NO multiple vegetables)
   let vegetables = lunchFoods.filter(f => f.category?.toLowerCase() === 'vegetable');
 
   if (vegetables.length > 0) {
@@ -307,11 +308,17 @@ function generateStrictLunch(allFoods, userProfile, targets) {
     reason.push(`Vegetable: ${veg.food_name} (fiber & micronutrients)`);
   }
 
+  // VALIDATION: Lunch MUST be exactly 3 items
+  if (meal.length !== 3) {
+    console.warn('⚠️ Lunch should have exactly 3 items (grain/protein/veg), got:', meal.length);
+  }
+
   return { meal, reason };
 }
 
 /**
  * Select foods for dinner (very light, high protein, low carb)
+ * STRICT: MAX 2 items (NO overload)
  * Rules: Low calorie, digestible, high protein ratio
  */
 function generateStrictDinner(allFoods, userProfile, targets) {
@@ -333,14 +340,16 @@ function generateStrictDinner(allFoods, userProfile, targets) {
     mainDish = dinnerFoods[0];
   }
 
-  // Light side dish
+  // Light side dish (OPTIONAL, max 1, not guaranteed)
   let sideDish = null;
-  const sides = dinnerFoods.filter(f =>
-    f.food_name !== mainDish.food_name && f.calories <= 150
-  );
+  if (Math.random() > 0.6) {
+    const sides = dinnerFoods.filter(f =>
+      f.food_name !== mainDish.food_name && f.calories <= 150
+    );
 
-  if (sides.length > 0 && Math.random() > 0.5) {
-    sideDish = sides[Math.floor(Math.random() * sides.length)];
+    if (sides.length > 0) {
+      sideDish = sides[Math.floor(Math.random() * sides.length)];
+    }
   }
 
   const meal = [mainDish, sideDish].filter(Boolean).map(f => f.food_name);
@@ -355,6 +364,12 @@ function generateStrictDinner(allFoods, userProfile, targets) {
 
   const totalCals = [mainDish, sideDish].filter(Boolean).reduce((sum, f) => sum + f.calories, 0);
   reason.push(`Total: ${totalCals} calories (low-calorie dinner)`);
+
+  // VALIDATION: Dinner MUST be max 2 items
+  if (meal.length > 2) {
+    console.warn('⚠️ CRITICAL: Dinner exceeds 2 items (' + meal.length + ')! Trimming...');
+    meal.length = 2;
+  }
 
   return { meal, reason };
 }
