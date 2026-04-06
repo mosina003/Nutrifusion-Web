@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-06T16:05:08.933Z",
+  "timestamp": "2026-04-06T16:17:41.030Z",
   "userTemperament": {
     "type": "safravi",
     "label": "Safravi (Hot + Dry)",
@@ -14,32 +14,30 @@
   "mealPlan": {
     "breakfast": {
       "meal": [
-        "Moong Dal Khichdi"
+        "Vegetable Rice Noodles"
       ],
       "reason": [
-        "Light main: Moong Dal Khichdi (Detoxifying and gut healing)"
+        "Light main: Vegetable Rice Noodles (Light, cooling and easy to digest)"
       ]
     },
     "lunch": {
       "meal": [
-        "Ragi Dosa",
-        "Steamed Fish with Rice",
-        "Tomato"
+        "Vegetable Rice Noodles",
+        "Grilled Chicken Salad Bowl",
+        "Carrot"
       ],
       "reason": [
-        "Grain: Ragi Dosa (primary nourishment)",
-        "Protein: Steamed Fish with Rice (strength and tissue building)",
-        "Vegetable: Tomato (digestive aid and vitality)"
+        "Grain: Vegetable Rice Noodles (primary nourishment)",
+        "Protein: Grilled Chicken Salad Bowl (strength and tissue building)",
+        "Vegetable: Carrot (digestive aid and vitality)"
       ]
     },
     "dinner": {
       "meal": [
-        "Sushi Rice",
-        "Lassi"
+        "Sushi Rice"
       ],
       "reason": [
-        "Main: Sushi Rice (Cooling, easily digestible)",
-        "Light support: Lassi"
+        "Main: Sushi Rice (Cooling, easily digestible)"
       ]
     }
   },

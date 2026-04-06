@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-06T16:05:19.023Z",
+  "timestamp": "2026-04-06T16:17:51.290Z",
   "userProfile": {
     "bmi": "normal",
     "goal": "maintenance",
@@ -33,36 +33,36 @@
   "mealPlan": {
     "breakfast": {
       "meal": [
-        "Dosa",
-        "Milk"
+        "Poha",
+        "Paneer Butter Masala"
       ],
       "reason": [
-        "Grain: Dosa (184 cal, carbs: 30g, protein: 5g)",
-        "Protein: Milk (42 cal, protein: 3.4g)",
-        "Total: 226 calories"
+        "Grain: Poha (180 cal, carbs: 38g, protein: 4g)",
+        "Protein: Paneer Butter Masala (265 cal, protein: 10g)",
+        "Total: 445 calories"
       ]
     },
     "lunch": {
       "meal": [
-        "Dosa",
-        "Sprout Salad",
-        "Onion"
+        "Sushi Rice",
+        "Ghee",
+        "Tomato"
       ],
       "reason": [
-        "Grain: Dosa (complex carbs, fiber)",
-        "Protein: Sprout Salad (muscle support)",
-        "Vegetable: Onion (fiber & micronutrients)"
+        "Grain: Sushi Rice (complex carbs, fiber)",
+        "Protein: Ghee (muscle support)",
+        "Vegetable: Tomato (fiber & micronutrients)"
       ]
     },
     "dinner": {
       "meal": [
-        "Tofu",
-        "Milk"
+        "Chapati",
+        "Spinach"
       ],
       "reason": [
-        "Main: Tofu (76 cal, protein: 8g, carbs: 1.9g)",
-        "Side: Milk (42 cal)",
-        "Total: 118 calories (low-calorie dinner)"
+        "Main: Chapati (297 cal, protein: 9g, carbs: 55g)",
+        "Side: Spinach (23 cal)",
+        "Total: 320 calories (low-calorie dinner)"
       ]
     }
   },
