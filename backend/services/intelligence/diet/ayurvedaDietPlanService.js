@@ -177,16 +177,20 @@ const generateDietPlan = async (assessmentResult, preferences = {}) => {
     });
     
     // Step 6: Return complete plan in expected format
+    const avoidFoodsList = categorizedFoods.avoid.slice(0, 15).map(f => 
+      f.food?.name || f.food_name || f.name || 'Unknown'
+    );
+
     return {
       '7_day_plan': transformedWeeklyPlan,
       top_ranked_foods: categorizedFoods.highly_recommended.slice(0, 20).map(f => ({
-        food_name: f.food.name,
-        score: f.score
+        food_name: f.food?.name || f.food_name || f.name || 'Unknown',
+        score: f.score || 0
       })),
-      reasoning_summary: reasoning.constitution_summary || '',
+      reasoning_summary: reasoning.constitution_summary || 'Ayurveda diet plan generated',
+      avoidFoods: avoidFoodsList,
       reasoning: reasoning,
       topRecommendations: categorizedFoods.highly_recommended.slice(0, 20),
-      avoidFoods: categorizedFoods.avoid.slice(0, 15),
       summary: {
         total_foods_scored: 
           categorizedFoods.highly_recommended.length + 

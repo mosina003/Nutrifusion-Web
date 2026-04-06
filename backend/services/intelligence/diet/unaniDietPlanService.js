@@ -48,10 +48,13 @@ class UnaniDietPlanService {
       // Return complete response in format matching Ayurveda (for consistency)
       return {
         '7_day_plan': sevenDayPlanObject,
-        top_ranked_foods: mealPlan.top_ranked_foods,
+        top_ranked_foods: rankedFoods.highly_suitable?.slice(0, 20).map(f => ({
+          food_name: f.food_name || f.name || 'Unknown',
+          score: f.score || 0
+        })) || [],
         reasoning_summary: typeof mealPlan.reasoning_summary === 'object'
-          ? `Unani Analysis: Primary Mizaj - ${mealPlan.reasoning_summary.primary_mizaj}, Secondary Mizaj - ${mealPlan.reasoning_summary.secondary_mizaj}, Digestive Strength - ${mealPlan.reasoning_summary.digestive_strength}. Key Principles: ${mealPlan.reasoning_summary.key_principles?.join(', ')}`
-          : mealPlan.reasoning_summary,
+          ? `Unani Analysis: Primary Mizaj - ${mealPlan.reasoning_summary?.primary_mizaj || 'Unknown'}, Secondary Mizaj - ${mealPlan.reasoning_summary?.secondary_mizaj || 'Unknown'}, Digestive Strength - ${mealPlan.reasoning_summary?.digestive_strength || 'Unknown'}. Key Principles: ${mealPlan.reasoning_summary?.key_principles?.join(', ') || 'None specified'}`
+          : (mealPlan.reasoning_summary || 'Unani diet plan generated'),
         user_profile: {
           primary_mizaj: userAssessment.primary_mizaj,
           secondary_mizaj: userAssessment.secondary_mizaj,

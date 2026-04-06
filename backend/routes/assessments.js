@@ -769,6 +769,24 @@ router.get('/diet-plan/current', protect, async (req, res) => {
       avoidFoods: dietPlan.rulesApplied[0]?.details?.avoidFoods || []
     };
 
+    // VALIDATE: Response completeness CRITICAL
+    if (!response['7_day_plan'] || Object.keys(response['7_day_plan']).length !== 7) {
+      console.error('🚨 CRITICAL: 7_day_plan structure invalid:', Object.keys(response['7_day_plan'] || {}));
+      throw new Error('CRITICAL: 7_day_plan incomplete or malformed');
+    }
+
+    if (!response.top_ranked_foods || response.top_ranked_foods.length === 0) {
+      console.warn('⚠️ WARNING: top_ranked_foods is empty - food recommendations missing');
+    }
+
+    if (!response.reasoning_summary || response.reasoning_summary === 'Auto-generated plan') {
+      console.warn('⚠️ WARNING: reasoning_summary is generic or missing - personalized guidance unavailable');
+    }
+
+    if (!response.avoidFoods || response.avoidFoods.length === 0) {
+      console.warn('⚠️ WARNING: avoidFoods is empty - contraindication list missing');
+    }
+
     // Build health profile based on framework
     let healthProfile = {};
     if (framework === 'ayurveda') {
@@ -1071,12 +1089,14 @@ function convertSevenDayPlanToMeals(sevenDayPlan) {
 
 /**
  * Helper function: Convert meals array back to 7_day_plan format for dashboard
+ * CRITICAL: Validates completeness and throws errors instead of silently failing
  */
 function convertMealsToSevenDayPlan(meals) {
   const sevenDayPlan = {};
   
   if (!meals || meals.length === 0) {
-    return sevenDayPlan;
+    console.error('🚨 CRITICAL: convertMealsToSevenDayPlan received empty/null meals array');
+    throw new Error('CRITICAL: No meals found in diet plan. Generation may have failed.');
   }
 
   // Initialize all 7 days
@@ -1097,6 +1117,24 @@ function convertMealsToSevenDayPlan(meals) {
       sevenDayPlan[dayKey][mealType] = meal.foods;
     }
   });
+
+  // VALIDATE: Check all 7 days are populated
+  const populatedDays = Object.keys(sevenDayPlan).filter(day => 
+    sevenDayPlan[day].breakfast.length > 0 || 
+    sevenDayPlan[day].lunch.length > 0 || 
+    sevenDayPlan[day].dinner.length > 0
+  ).length;
+
+  if (populatedDays < 7) {
+    console.error('🚨 CRITICAL: Only', populatedDays, 'days populated, need 7. Meals count:', meals.length);
+    throw new Error(`CRITICAL: Incomplete diet plan - only ${populatedDays} of 7 days have meals.`);
+  }
+
+  // VALIDATE: Check minimum meal count (21 = 7 days × 3 meals)
+  if (meals.length < 21) {
+    console.error('🚨 CRITICAL: Expected 21+ meals, got', meals.length);
+    throw new Error(`CRITICAL: Incomplete meal data - ${meals.length} meals instead of 21.`);
+  }
 
   return sevenDayPlan;
 }
