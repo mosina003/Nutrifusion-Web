@@ -56,6 +56,20 @@ const INCOMPATIBLE_COMBINATIONS = [
 ];
 
 /**
+ * Compound food indicators - foods that contain hidden grains/carbs
+ * These should NOT be combined with actual grains
+ */
+const COMPOUND_FOOD_KEYWORDS = ['Khichdi', 'Rice Bowl', 'Dal Rice', 'Pongal', 'Porridge', 'Upma'];
+
+/**
+ * Check if food name contains hidden carbs (is a compound food)
+ */
+const hasHiddenCarbs = (foodName) => {
+  if (!foodName) return false;
+  return COMPOUND_FOOD_KEYWORDS.some(keyword => foodName.includes(keyword));
+};
+
+/**
  * Check if two foods are incompatible
  */
 const areIncompatible = (food1, food2) => {
@@ -197,25 +211,45 @@ const generateBreakfast = (categorizedFoods, calorieTarget, usedIngredients, day
     usedIngredients.grains.add(grain.food.name);
   }
   
-  // 3. Fruit (for micronutrients and fiber)
-  const fruits = allFoods.filter(f => 
-    f.food.meal_type?.includes('breakfast') &&
-    f.food.category === 'Fruit' &&
-    !usedIngredients.fruits.has(f.food.name) &&
-    currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
+  // 3. Fruit (for micronutrients and fiber) - ONLY if no cooked foods (Grain/Dairy)
+  const hasCookedFood = meal.foods.some(f => 
+    f.food.category === 'Grain' || f.food.category === 'Dairy'
   );
   
-  if (fruits.length > 0) {
-    const shuffledFruits = shuffleArray(fruits, randomOffset + dayNumber * 3);
-    const fruit = shuffledFruits[0];
-    meal.foods.push({
-      food: fruit.food,
-      portion: '1 serving',
-      preparation: 'Fresh or lightly processed',
-      calories_estimated: fruit.modern_data.calories
-    });
-    currentCalories += fruit.modern_data.calories || 0;
-    usedIngredients.fruits.add(fruit.food.name);
+  if (!hasCookedFood) {
+    const fruits = allFoods.filter(f => 
+      f.food.meal_type?.includes('breakfast') &&
+      f.food.category === 'Fruit' &&
+      !usedIngredients.fruits.has(f.food.name) &&
+      currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
+    );
+    
+    if (fruits.length > 0) {
+      const shuffledFruits = shuffleArray(fruits, randomOffset + dayNumber * 3);
+      const fruit = shuffledFruits[0];
+      meal.foods.push({
+        food: fruit.food,
+        portion: '1 serving',
+        preparation: 'Fresh or lightly processed',
+        calories_estimated: fruit.modern_data.calories
+      });
+      currentCalories += fruit.modern_data.calories || 0;
+      usedIngredients.fruits.add(fruit.food.name);
+    }
+  }
+  
+  // VALIDATION: Breakfast must be max 3 items
+  if (meal.foods.length > 3) {
+    console.warn('⚠️ CRITICAL: Breakfast exceeds 3 items (' + meal.foods.length + ')! Trimming...');
+    meal.foods = meal.foods.slice(0, 3);
+  }
+  
+  // CRITICAL VALIDATION: Prevent fruit + cooked food mix
+  const finalHasFruit = meal.foods.some(f => f.food.is_fruit);
+  const finalHasCooked = meal.foods.some(f => f.food.category === 'Grain' || f.food.category === 'Dairy');
+  if (finalHasFruit && finalHasCooked) {
+    console.warn('⚠️ CRITICAL: Breakfast has fruit + cooked mix! Removing fruit...');
+    meal.foods = meal.foods.filter(f => !f.food.is_fruit);
   }
   
   meal.total_calories_estimated = currentCalories;
@@ -261,11 +295,12 @@ const generateLunch = (categorizedFoods, calorieTarget, usedIngredients, dayNumb
     usedIngredients.proteins.add(protein.food.name);
   }
   
-  // 2. Complex carb (Grain, Legume, or Starchy Vegetable)
+  // 2. Complex carb (Grain, Legume, or Starchy Vegetable) - EXACTLY 1 (NO compound foods if protein already selected)
   const carbs = allFoods.filter(f => 
     f.food.meal_type?.includes('lunch') &&
     ['Grain', 'Legume', 'Potato', 'Sweet Potato'].includes(f.food.category) &&
     !usedIngredients.grains.has(f.food.name) &&
+    (proteins.length === 0 ? true : !hasHiddenCarbs(f.food.food_name)) && // CRITICAL: Skip compound foods if protein selected
     currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
   );
   
@@ -282,44 +317,38 @@ const generateLunch = (categorizedFoods, calorieTarget, usedIngredients, dayNumb
     usedIngredients.grains.add(carb.food.name);
   }
   
-  // 3. Vegetables (2 types)
+  // 3. Vegetables (EXACTLY 1 only - NOT multiple)
   const vegetables = allFoods.filter(f => 
+    f.food.meal_type?.includes('lunch') &&
     f.food.category === 'Vegetable' &&
     !usedIngredients.vegetables.has(f.food.name) &&
-    currentCalories + (f.modern_data.calories || 0) * 2 <= calorieTarget * 1.1
+    currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
   );
   
   if (vegetables.length > 0) {
     const shuffledVegs = shuffleArray(vegetables, randomOffset + dayNumber * 6);
-    const selectedVegs = shuffledVegs.slice(0, 2);
-    selectedVegs.forEach(veg => {
-      meal.foods.push({
-        food: veg.food,
-        portion: 'Medium (100g)',
-        preparation: 'Steamed, roasted, or sautéed',
-        calories_estimated: veg.modern_data.calories
-      });
-      currentCalories += veg.modern_data.calories || 0;
-      usedIngredients.vegetables.add(veg.food.name);
+    const veg = shuffledVegs[0];
+    meal.foods.push({
+      food: veg.food,
+      portion: 'Medium (100g)',
+      preparation: 'Steamed, roasted, or sautéed',
+      calories_estimated: veg.modern_data.calories
     });
+    currentCalories += veg.modern_data.calories || 0;
+    usedIngredients.vegetables.add(veg.food.name);
   }
   
-  // 4. Healthy fat (Oil, Avocado, Nuts)
-  const fats = allFoods.filter(f => 
-    ['Oil', 'Avocado', 'Nut'].includes(f.food.category) &&
-    currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
-  );
+  // VALIDATION: Lunch MUST be exactly 3 items (grain + protein + veg)
+  if (meal.foods.length !== 3) {
+    console.warn('⚠️ Lunch should have exactly 3 items (grain/protein/veg), got:', meal.foods.length);
+  }
   
-  if (fats.length > 0) {
-    const shuffledFats = shuffleArray(fats, randomOffset + dayNumber * 7);
-    const fat = shuffledFats[0];
-    meal.foods.push({
-      food: fat.food,
-      portion: 'Small (1 tbsp or 15g)',
-      preparation: 'Added to cooking or as dressing',
-      calories_estimated: Math.round((fat.modern_data.calories || 0) * 0.15)
-    });
-    currentCalories += Math.round((fat.modern_data.calories || 0) * 0.15);
+  // CRITICAL VALIDATION: Check for duplicate carb sources (grain + compound food with grain)
+  const hasVisibleGrain = meal.foods.some(f => f.food.category === 'Grain');
+  const hasHiddenGrainFood = meal.foods.some(f => hasHiddenCarbs(f.food.food_name));
+  if (hasVisibleGrain && hasHiddenGrainFood) {
+    console.warn('⚠️ CRITICAL: Lunch has visible grain + compound food with hidden carbs! Removing compound food...');
+    meal.foods = meal.foods.filter(f => !hasHiddenCarbs(f.food.food_name));
   }
   
   meal.total_calories_estimated = currentCalories;
@@ -365,38 +394,38 @@ const generateDinner = (categorizedFoods, calorieTarget, usedIngredients, dayNum
     usedIngredients.proteins.add(protein.food.name);
   }
   
-  // 2. Vegetables (emphasis on non-starchy)
+  // 2. Vegetables (emphasis on non-starchy) - ONLY 1 vegetable
   const vegetables = allFoods.filter(f => 
     f.food.meal_type?.includes('dinner') &&
     f.food.category === 'Vegetable' &&
     !usedIngredients.vegetables.has(f.food.name) &&
-    currentCalories + (f.modern_data.calories || 0) * 2 <= calorieTarget * 1.1
+    currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
   );
   
   if (vegetables.length > 0) {
     const shuffledVegs = shuffleArray(vegetables, randomOffset + dayNumber * 9);
-    const selectedVegs = shuffledVegs.slice(0, 2);
-    selectedVegs.forEach(veg => {
-      meal.foods.push({
-        food: veg.food,
-        portion: 'Medium (100g)',
-        preparation: 'Steamed, roasted, or raw salad',
-        calories_estimated: veg.modern_data.calories
-      });
-      currentCalories += veg.modern_data.calories || 0;
-      usedIngredients.vegetables.add(veg.food.name);
+    const veg = shuffledVegs[0];
+    meal.foods.push({
+      food: veg.food,
+      portion: 'Medium (100g)',
+      preparation: 'Steamed, roasted, or raw salad',
+      calories_estimated: veg.modern_data.calories
     });
+    currentCalories += veg.modern_data.calories || 0;
+    usedIngredients.vegetables.add(veg.food.name);
   }
   
-  // 3. Light grain (optional, smaller portion)
+  // 3. Light grain (OPTIONAL, smaller portion) - CRITICAL: Filter out compound foods
   const grains = allFoods.filter(f => 
     f.food.meal_type?.includes('dinner') &&
     ['Grain', 'Bread'].includes(f.food.category) &&
     !usedIngredients.grains.has(f.food.name) &&
+    !hasHiddenCarbs(f.food.food_name) && // CRITICAL: Skip compound foods
     currentCalories + (f.modern_data.calories || 0) * 0.5 <= calorieTarget * 1.1
   );
   
-  if (grains.length > 0) {
+  if (grains.length > 0 && Math.random() > 0.5) {
+    // Optional: Only add grain 50% of the time to keep dinner lighter
     const shuffledGrains = shuffleArray(grains, randomOffset + dayNumber * 10);
     const grain = shuffledGrains[0];
     meal.foods.push({
@@ -407,6 +436,33 @@ const generateDinner = (categorizedFoods, calorieTarget, usedIngredients, dayNum
     });
     currentCalories += Math.round((grain.modern_data.calories || 0) * 0.5);
     usedIngredients.grains.add(grain.food.name);
+  }
+  
+  // VALIDATION: Dinner MUST be 1-2 items (NOT more)
+  if (meal.foods.length === 0) {
+    console.warn('⚠️ Warning: Dinner has no items');
+  }
+  if (meal.foods.length > 2) {
+    console.warn('⚠️ CRITICAL: Dinner exceeds 2 items (' + meal.foods.length + ')! Trimming...');
+    meal.foods = meal.foods.slice(0, 2);
+  }
+  
+  // CRITICAL VALIDATION: Check for duplicate carb sources (grain + compound food with grain)
+  const dinnerGrainCount = meal.foods.filter(f => 
+    f.food.category === 'Grain' || hasHiddenCarbs(f.food.food_name)
+  ).length;
+  if (dinnerGrainCount > 1) {
+    console.warn('⚠️ CRITICAL: Dinner has multiple carb sources! Keeping only first carb...');
+    const carbs = [];
+    const nonCarbs = [];
+    meal.foods.forEach(f => {
+      if (f.food.category === 'Grain' || hasHiddenCarbs(f.food.food_name)) {
+        if (carbs.length === 0) carbs.push(f);
+      } else {
+        nonCarbs.push(f);
+      }
+    });
+    meal.foods = [...carbs, ...nonCarbs];
   }
   
   meal.total_calories_estimated = currentCalories;
