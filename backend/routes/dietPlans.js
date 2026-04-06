@@ -83,10 +83,17 @@ const calculateDoshaBalance = async (meals) => {
 const transformWeeklyPlanToMeals = (weeklyPlanData) => {
   const meals = [];
   
-  if (!weeklyPlanData) return meals;
+  if (!weeklyPlanData) {
+    console.warn('⚠️ transformWeeklyPlanToMeals received null/undefined data');
+    return meals;
+  }
+
+  console.log('🔄 transformWeeklyPlanToMeals input type:', Array.isArray(weeklyPlanData) ? 'array' : typeof weeklyPlanData);
+  console.log('🔄 Input data keys/length:', Array.isArray(weeklyPlanData) ? `array length: ${weeklyPlanData.length}` : `object keys: ${Object.keys(weeklyPlanData).length}`);
 
   // Check if it's object format (Ayurveda/Unani style: { day_1: {...}, day_2: {...} })
   if (typeof weeklyPlanData === 'object' && !Array.isArray(weeklyPlanData)) {
+    console.log('📝 Processing object format (day_1, day_2, ...)');
     Object.entries(weeklyPlanData).forEach(([dayKey, dayData]) => {
       // Extract day number from "day_1", "day_2", etc.
       const dayMatch = dayKey.match(/day_(\d+)/);
@@ -113,11 +120,14 @@ const transformWeeklyPlanToMeals = (weeklyPlanData) => {
   }
   // Check if it's array format (TCM style newer: array of day objects)
   else if (Array.isArray(weeklyPlanData)) {
+    console.log('📝 Processing array format (day objects)');
     weeklyPlanData.forEach((dayPlan, index) => {
       const dayNumber = dayPlan.day || (index + 1);
+      console.log(`  📅 Day ${dayNumber}: has meals array?`, !!dayPlan.meals, 'meals count:', dayPlan.meals?.length || 0);
       
       if (dayPlan.meals && Array.isArray(dayPlan.meals)) {
         dayPlan.meals.forEach(mealObj => {
+          console.log(`    🍽️ Adding ${mealObj.meal_type}: ${mealObj.foods?.length || 0} foods`);
           meals.push({
             day: dayNumber,
             mealType: mealObj.meal_type || mealObj.mealType || 'Meal',
@@ -128,6 +138,9 @@ const transformWeeklyPlanToMeals = (weeklyPlanData) => {
       }
     });
   }
+  
+  console.log('✅ transformWeeklyPlanToMeals result: created', meals.length, 'total meals');
+  console.log('📊 Meals by day:', meals.reduce((acc, m) => { acc[m.day] = (acc[m.day] || 0) + 1; return acc; }, {}));
   
   return meals;
 };

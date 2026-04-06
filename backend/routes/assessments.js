@@ -738,10 +738,10 @@ router.get('/diet-plan/current', protect, async (req, res) => {
       });
     }
 
-    // Find active diet plan from DietPlan collection
+    // Find diet plan from DietPlan collection (accept both Draft and Active)
     const dietPlan = await DietPlan.findOne({
       userId,
-      status: 'Active',
+      status: { $in: ['Active', 'Draft'] },  // Accept both Active (approved) and Draft (generated)
       planType: framework,
       validFrom: { $lte: new Date() },
       validTo: { $gte: new Date() }
@@ -756,10 +756,11 @@ router.get('/diet-plan/current', protect, async (req, res) => {
 
     // Convert DietPlan format back to 7_day_plan format for dashboard compatibility
     const sevenDayPlan = convertMealsToSevenDayPlan(dietPlan.meals);
-    // console.log('✅ Converted diet plan meals to 7-day format');
-    // console.log('📅 Available days:', Object.keys(sevenDayPlan));
-    // console.log('📊 Day 1 sample:', JSON.stringify(sevenDayPlan['day_1']));
-    // console.log('🍽️ Total meals in database:', dietPlan.meals?.length || 0);
+    console.log('✅ Converted diet plan meals to 7-day format');
+    console.log('📅 Available days:', Object.keys(sevenDayPlan));
+    console.log('📊 Day 1 sample:', JSON.stringify(sevenDayPlan['day_1']));
+    console.log('🍽️ Total meals in database:', dietPlan.meals?.length || 0);
+    console.log('📋 First 3 meals structure:', dietPlan.meals?.slice(0, 3).map(m => ({ day: m.day, mealType: m.mealType, foodsCount: m.foods?.length })));
     
     const response = {
       '7_day_plan': sevenDayPlan,
