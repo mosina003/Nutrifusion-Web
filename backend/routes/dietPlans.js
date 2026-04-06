@@ -631,11 +631,13 @@ router.post(
           {
             framework: 'unani',
             details: {
+              reasoning: dietPlanData.reasoning_summary,  // ← USE reasoning_summary not reasoning
               primary_mizaj: assessmentResult.primary_mizaj,
               dominant_humor: assessmentResult.dominant_humor,
               severity: assessmentResult.severity,
               digestive_strength: assessmentResult.digestive_strength,
-              reasoning: dietPlanData.reasoning
+              topFoods: dietPlanData.top_ranked_foods || [],  // ← ADD TOP FOODS
+              avoidFoods: dietPlanData.avoidFoods || []  // ← ADD AVOID FOODS
             }
           }
         ],
@@ -813,12 +815,14 @@ router.post(
           {
             framework: 'ayurveda',
             details: {
+              reasoning: dietPlanData.reasoning_summary || dietPlanData.reasoning,
               dominant_dosha: assessmentResult.dominant_dosha,
               agni: assessmentResult.agni,
               severity: assessmentResult.severity,
               prakriti: assessmentResult.prakriti,
               vikriti: assessmentResult.vikriti,
-              reasoning: dietPlanData.reasoning
+              topFoods: dietPlanData.top_ranked_foods || [],  // ← ADD TOP FOODS
+              avoidFoods: dietPlanData.avoidFoods || []  // ← ADD AVOID FOODS
             }
           }
         ],
@@ -988,10 +992,13 @@ router.post(
             {
               framework: 'tcm',
               details: {
+                reasoning: dietPlan.reasoning_summary,  // ← SAVE THE REASONING!
                 primary_pattern: assessmentResult.primary_pattern,
                 secondary_pattern: assessmentResult.secondary_pattern,
                 cold_heat: assessmentResult.cold_heat,
-                severity: assessmentResult.severity
+                severity: assessmentResult.severity,
+                topFoods: dietPlan.top_ranked_foods || [],  // ← SAVE TOP FOODS
+                avoidFoods: dietPlan.avoidFoods || []  // ← SAVE AVOID FOODS
               }
             }
           ],

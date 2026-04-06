@@ -762,10 +762,28 @@ router.get('/diet-plan/current', protect, async (req, res) => {
     console.log('🍽️ Total meals in database:', dietPlan.meals?.length || 0);
     console.log('📋 First 3 meals structure:', dietPlan.meals?.slice(0, 3).map(m => ({ day: m.day, mealType: m.mealType, foodsCount: m.foods?.length })));
     
+    // Get reasoning summary and CONVERT if it's an object (for backwards compatibility with TCM/Unani stored as objects)
+    let reasoningSummary = dietPlan.rulesApplied[0]?.details?.reasoning || 'Auto-generated plan';
+    
+    if (typeof reasoningSummary === 'object' && reasoningSummary !== null) {
+      // Convert stored object format to string
+      if (reasoningSummary.thermal_pattern || reasoningSummary.primary_mizaj) {
+        // TCM format
+        reasoningSummary = `TCM Analysis: Thermal Pattern - ${reasoningSummary.thermal_pattern || 'Unknown'}, Digestive Strength - ${reasoningSummary.digestive_strength || 'Unknown'}. Key Principles: ${reasoningSummary.key_principles?.join(', ') || 'None specified'}`;
+      } else if (reasoningSummary.primary_mizaj || reasoningSummary.secondary_mizaj) {
+        // Unani format
+        reasoningSummary = `Unani Analysis: Primary Mizaj - ${reasoningSummary.primary_mizaj || 'Unknown'}, Secondary Mizaj - ${reasoningSummary.secondary_mizaj || 'Unknown'}, Digestive Strength - ${reasoningSummary.digestive_strength || 'Unknown'}. Key Principles: ${reasoningSummary.key_principles?.join(', ') || 'None specified'}`;
+      } else {
+        // Fallback
+        reasoningSummary = JSON.stringify(reasoningSummary);
+      }
+      console.log('🔄 Converted reasoning_summary from object to string');
+    }
+    
     const response = {
       '7_day_plan': sevenDayPlan,
       top_ranked_foods: dietPlan.rulesApplied[0]?.details?.topFoods || [],
-      reasoning_summary: dietPlan.rulesApplied[0]?.details?.reasoning || 'Auto-generated plan',
+      reasoning_summary: reasoningSummary,
       avoidFoods: dietPlan.rulesApplied[0]?.details?.avoidFoods || []
     };
 
