@@ -24,6 +24,7 @@ function loadUnaniFoods() {
 /**
  * Determine user temperament type from input
  * Types: 'damvi' (hot+moist), 'safravi' (hot+dry), 'balghami' (cold+moist), 'saudavi' (cold+dry)
+ * Can accept either a string or an object with primary_mizaj field
  */
 function analyzeTemperament(type = 'damvi') {
   const temperamentMap = {
@@ -33,7 +34,16 @@ function analyzeTemperament(type = 'damvi') {
     'saudavi': { hot: false, cold: true, dry: true, moist: false, label: 'Saudavi (Cold + Dry)' }
   };
   
-  return temperamentMap[type?.toLowerCase()] || temperamentMap['damvi'];
+  // CRITICAL FIX: Handle case where type is an object (e.g., userAssessment object)
+  let typeString = 'damvi';
+  if (typeof type === 'string') {
+    typeString = type;
+  } else if (type && typeof type === 'object' && type.primary_mizaj) {
+    // Extract primary_mizaj from assessment object
+    typeString = type.primary_mizaj || 'damvi';
+  }
+  
+  return temperamentMap[typeString?.toLowerCase()] || temperamentMap['damvi'];
 }
 
 /**
@@ -520,9 +530,12 @@ const generateWeeklyPlan = (rankedFoods, userAssessment) => {
   const weeklyPlan = [];
   const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+  // Extract userType string from userAssessment object
+  const userType = userAssessment?.primary_mizaj || 'damvi';
+
   for (let day = 1; day <= 7; day++) {
-    // Generate daily plan
-    const dailyPlan = generateStrictDailyMealPlan(userAssessment);
+    // Generate daily plan - pass userType string, not full assessment object
+    const dailyPlan = generateStrictDailyMealPlan(userType);
     
     // Reformat to match Ayurveda weekly plan structure
     if (dailyPlan && dailyPlan.mealPlan) {

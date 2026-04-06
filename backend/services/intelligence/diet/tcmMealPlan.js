@@ -76,7 +76,7 @@ function canUseInBreakfast(food, condition) {
     return false;
   }
 
-  // Check meal_type
+  // Check meal_type: If specified, must include breakfast. If empty, allow it (fallback)
   if (mealType.length > 0 && !mealType.includes('breakfast')) {
     return false;
   }
@@ -100,7 +100,7 @@ function canUseInLunch(food, condition) {
   if (thermalNature === 'hot' && condition.excessHeat) return false;
   if (thermalNature === 'cold' && condition.excessCold) return false;
 
-  // Check meal_type if specified
+  // Check meal_type if specified: If has items, must include lunch. If empty, allow (fallback)
   if (mealType.length > 0 && !mealType.includes('lunch')) {
     return false;
   }
@@ -184,10 +184,20 @@ function generateStrictBreakfast(allFoods, condition) {
   const { yinDeficiency, yangDeficiency, excessHeat, excessCold } = condition;
 
   // Filter suitable breakfast foods
-  const breakfastFoods = allFoods.filter(f => canUseInBreakfast(f, condition));
+  let breakfastFoods = allFoods.filter(f => canUseInBreakfast(f, condition));
 
+  // FALLBACK: If no suitable foods found, relax thermal_nature filter
   if (breakfastFoods.length === 0) {
-    throw new Error('INVALID: No suitable breakfast foods found');
+    console.warn('⚠️ No breakfast foods found with strict thermal filters. Relaxing filter...');
+    breakfastFoods = allFoods.filter(f => 
+      f && 
+      f.meal_type?.map(m => m?.toLowerCase()).includes('breakfast') &&
+      !(f.thermal_nature?.toLowerCase() === 'cold')
+    );
+  }
+  
+  if (breakfastFoods.length === 0) {
+    throw new Error('INVALID: No suitable breakfast foods found after all filters');
   }
 
   // Select main dish (grain/vegetable)
