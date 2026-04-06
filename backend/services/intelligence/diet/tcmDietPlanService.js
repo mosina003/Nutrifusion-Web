@@ -42,9 +42,22 @@ class TCMDietPlanService {
 
       // console.log('✅ Generated 7-day TCM meal plan');
 
+      // Convert array format to object format (day_1, day_2, etc) to match Ayurveda
+      const sevenDayPlanObject = {};
+      if (Array.isArray(mealPlan['7_day_plan'])) {
+        mealPlan['7_day_plan'].forEach((dayPlan, index) => {
+          const dayNum = index + 1;
+          sevenDayPlanObject[`day_${dayNum}`] = {
+            breakfast: dayPlan.meals?.find(m => m.meal_type === 'Breakfast')?.foods || [],
+            lunch: dayPlan.meals?.find(m => m.meal_type === 'Lunch')?.foods || [],
+            dinner: dayPlan.meals?.find(m => m.meal_type === 'Dinner')?.foods || []
+          };
+        });
+      }
+
       // Return complete response in format matching Ayurveda (for consistency)
       return {
-        '7_day_plan': mealPlan['7_day_plan'],
+        '7_day_plan': sevenDayPlanObject,
         top_ranked_foods: mealPlan.top_ranked_foods,
         reasoning_summary: mealPlan.reasoning_summary,
         user_profile: {
