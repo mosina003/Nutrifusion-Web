@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-06T06:13:43.507Z",
+  "timestamp": "2026-04-06T15:42:37.197Z",
   "prakritiData": {
     "vata": 50,
     "pitta": 20,
@@ -9,29 +9,29 @@
   "mealPlan": {
     "breakfast": {
       "meal": [
-        "Vegetable Barley Soup",
-        "Lassi"
+        "Millet Upma with Nuts",
+        "Tea"
       ],
       "reason": [
-        "Light, easy-to-digest main (digestibility score 1)",
+        "Light, easy-to-digest main (digestibility score 2)",
         "Warm beverage for digestion"
       ]
     },
     "lunch": {
       "meal": [
-        "Millet Pongal",
-        "Curd",
-        "Onion"
+        "Vegetable Sevai",
+        "Chole",
+        "Spinach"
       ],
       "reason": [
         "Warm, grounding grain to balance Vata",
-        "dairy protein for strength",
+        "legume protein for strength",
         "Cooked vegetable for nutrition"
       ]
     },
     "dinner": {
       "meal": [
-        "Orange Juice"
+        "Vegetable Soup with Toast"
       ],
       "reason": [
         "Very light main (digestibility score 1)"

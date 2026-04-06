@@ -1,45 +1,45 @@
 {
-  "timestamp": "2026-04-06T06:26:06.237Z",
+  "timestamp": "2026-04-06T15:43:56.605Z",
   "userTemperament": {
-    "type": "balghami",
-    "label": "Balghami (Cold + Moist)",
+    "type": "damvi",
+    "label": "Damvi (Hot + Moist)",
     "qualities": {
-      "hot": false,
-      "cold": true,
+      "hot": true,
+      "cold": false,
       "dry": false,
       "moist": true,
-      "label": "Balghami (Cold + Moist)"
+      "label": "Damvi (Hot + Moist)"
     }
   },
   "mealPlan": {
     "breakfast": {
       "meal": [
-        "Dal Khichdi with Ghee"
+        "Vegetable Dal Khichdi (No Ghee)"
       ],
       "reason": [
-        "Light main: Dal Khichdi with Ghee (Lubricates intestines and aids digestion)"
+        "Light main: Vegetable Dal Khichdi (No Ghee) (Balanced detox-friendly meal)"
       ]
     },
     "lunch": {
       "meal": [
-        "Vegetable Dal Khichdi (No Ghee)",
-        "Vegetable Lentil Stew",
-        "Tomato"
+        "Dal Khichdi with Ghee",
+        "Chicken Khichdi",
+        "Sprout Salad"
       ],
       "reason": [
-        "Grain: Vegetable Dal Khichdi (No Ghee) (primary nourishment)",
-        "Protein: Vegetable Lentil Stew (strength and tissue building)",
-        "Vegetable: Tomato (digestive aid and vitality)"
+        "Grain: Dal Khichdi with Ghee (primary nourishment)",
+        "Protein: Chicken Khichdi (strength and tissue building)",
+        "Vegetable: Sprout Salad (digestive aid and vitality)"
       ]
     },
     "dinner": {
       "meal": [
-        "Lemon Rice",
-        "Vegetable Khichdi"
+        "Vegetable Rice Noodles",
+        "Moong Dal Khichdi"
       ],
       "reason": [
-        "Main: Lemon Rice (Stimulates digestion and reduces phlegm)",
-        "Light support: Vegetable Khichdi"
+        "Main: Vegetable Rice Noodles (Light, cooling and easy to digest)",
+        "Light support: Moong Dal Khichdi"
       ]
     }
   },

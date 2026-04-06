@@ -54,10 +54,6 @@ const seedRecipes = async () => {
       { name: 'Mustard Seeds', category: 'Spice', modernNutrition: { calories: 508, protein: 26, carbs: 28, fat: 36, fiber: 12 } },
       { name: 'Pepper', category: 'Spice', modernNutrition: { calories: 251, protein: 10, carbs: 64, fat: 3.3, fiber: 25 } },
       
-      // Oils
-      { name: 'Coconut Oil', category: 'Oil', modernNutrition: { calories: 900, protein: 0, carbs: 0, fat: 100, fiber: 0 } },
-      { name: 'Oil', category: 'Oil', modernNutrition: { calories: 900, protein: 0, carbs: 0, fat: 100, fiber: 0 } },
-      
       // Fruits & Others
       { name: 'Coconut (grated)', category: 'Nut', modernNutrition: { calories: 354, protein: 3.3, carbs: 15, fat: 33, fiber: 9 } },
       { name: 'Jaggery', category: 'Grain', modernNutrition: { calories: 383, protein: 0.4, carbs: 98, fat: 0.1, fiber: 0 } },
@@ -336,7 +332,6 @@ const seedRecipes = async () => {
         ingredients: [
           { foodId: foodMap['mixed vegetables'], quantity: 100, unit: 'g' },
           { foodId: foodMap['coconut (grated)'], quantity: 20, unit: 'g' },
-          { foodId: foodMap['coconut oil'], quantity: 5, unit: 'g' },
           { foodId: foodMap['mustard seeds'], quantity: 1, unit: 'g' }
         ],
         cookingMethod: {

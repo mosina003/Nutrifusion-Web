@@ -1,66 +1,66 @@
 {
-  "timestamp": "2026-04-06T06:34:14.429Z",
+  "timestamp": "2026-04-06T15:44:12.572Z",
   "userProfile": {
-    "bmi": "normal",
-    "goal": "muscle_gain",
-    "dailyCalories": 2800,
+    "bmi": "obese",
+    "goal": "weight_loss",
+    "dailyCalories": 1800,
     "macroRatios": {
-      "carbs": 0.5,
-      "protein": 0.35,
-      "fat": 0.15
+      "carbs": 0.4,
+      "protein": 0.4,
+      "fat": 0.2
     }
   },
   "targetMacros": {
     "breakfast": {
-      "calories": 600,
-      "carbs": 75,
-      "protein": 53,
-      "fat": 10
+      "calories": 350,
+      "carbs": 35,
+      "protein": 35,
+      "fat": 8
     },
     "lunch": {
-      "calories": 900,
-      "carbs": 113,
-      "protein": 79,
-      "fat": 15
+      "calories": 600,
+      "carbs": 60,
+      "protein": 60,
+      "fat": 13
     },
     "dinner": {
-      "calories": 650,
-      "carbs": 81,
-      "protein": 57,
-      "fat": 11
+      "calories": 450,
+      "carbs": 45,
+      "protein": 45,
+      "fat": 10
     }
   },
   "mealPlan": {
     "breakfast": {
       "meal": [
-        "Pongal",
-        "Curd"
+        "Paratha",
+        "Dal Tadka"
       ],
       "reason": [
-        "Grain: Pongal (210 cal, carbs: 30g, protein: 7g)",
-        "Protein: Curd (61 cal, protein: 3.5g)",
-        "Total: 271 calories"
+        "Grain: Paratha (320 cal, carbs: 45g, protein: 7g)",
+        "Protein: Dal Tadka (150 cal, protein: 9g)",
+        "Total: 470 calories"
       ]
     },
     "lunch": {
       "meal": [
-        "Biryani",
-        "Sprout Salad",
-        "Tomato"
+        "Sushi Rice",
+        "Tofu",
+        "Carrot"
       ],
       "reason": [
-        "Grain: Biryani (complex carbs, fiber)",
-        "Protein: Sprout Salad (muscle support)",
-        "Vegetable: Tomato (fiber & micronutrients)"
+        "Grain: Sushi Rice (complex carbs, fiber)",
+        "Protein: Tofu (muscle support)",
+        "Vegetable: Carrot (fiber & micronutrients)"
       ]
     },
     "dinner": {
       "meal": [
-        "Black Pepper"
+        "Pongal"
       ],
       "reason": [
-        "Main: Black Pepper (251 cal, protein: 10g, carbs: 64g)",
-        "Total: 251 calories (low-calorie dinner)"
+        "Main: Pongal (210 cal, protein: 7g, carbs: 30g)",
+        "Total: 210 calories (low-calorie dinner)"
       ]
     }
   },

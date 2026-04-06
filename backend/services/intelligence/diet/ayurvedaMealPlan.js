@@ -43,6 +43,7 @@ const shuffleArray = (array, seed = 0) => {
 /**
  * Incompatible food combinations (Viruddha Ahara)
  * These should NOT be combined in the same meal
+ * CRITICAL RULE: Fruit should NEVER be combined with cooked foods
  */
 const INCOMPATIBLE_COMBINATIONS = [
   { food1: 'Dairy', food2: 'Fruit', reason: 'Milk and fruits create toxins (ama)' },
@@ -53,9 +54,46 @@ const INCOMPATIBLE_COMBINATIONS = [
 ];
 
 /**
+ * Categories that are considered COOKED/PREPARED foods
+ */
+const COOKED_CATEGORIES = ['Grain', 'Legume', 'Meat', 'Vegetable', 'Spice'];
+
+/**
+ * Categories that should be filtered out from meal suggestions (pure ingredients)
+ */
+const INGREDIENT_ONLY_CATEGORIES = ['Oil', 'Spice', 'Condiment'];
+
+/**
+ * Check if food is raw/fresh (fruit, fresh vegetables)
+ */
+const isRawFood = (category) => {
+  return ['Fruit', 'Beverage', 'Dairy'].includes(category);
+};
+
+/**
+ * Check if food is cooked/prepared
+ */
+const isCookedFood = (category) => {
+  return COOKED_CATEGORIES.includes(category);
+};
+
+/**
+ * Check if food is meant as ingredient only (not a meal item)
+ */
+const isIngredientOnly = (category) => {
+  return INGREDIENT_ONLY_CATEGORIES.includes(category);
+};
+
+/**
  * Check if two food categories are incompatible
  */
 const areIncompatible = (category1, category2) => {
+  // CRITICAL RULE: Fruit + Cooked food combination is forbidden
+  if ((category1 === 'Fruit' && isCookedFood(category2)) ||
+      (category2 === 'Fruit' && isCookedFood(category1))) {
+    return true;
+  }
+
   return INCOMPATIBLE_COMBINATIONS.some(combo =>
     (combo.food1 === category1 && combo.food2 === category2) ||
     (combo.food1 === category2 && combo.food2 === category1)
@@ -67,6 +105,7 @@ const areIncompatible = (category1, category2) => {
  * - Light, easy to digest
  * - Warm, cooked foods preferred
  * - Avoid heavy proteins
+ * - NO fruit + cooked food mixing
  */
 const generateBreakfast = (categorizedFoods, agni, usedIngredients, dayNumber, randomOffset = 0) => {
   const { highly_recommended, moderate } = categorizedFoods;
@@ -74,18 +113,20 @@ const generateBreakfast = (categorizedFoods, agni, usedIngredients, dayNumber, r
   // Use both highly_recommended and moderate for more variety
   const allBreakfastFoods = [...highly_recommended, ...moderate];
   
-  // Breakfast categories: Grain, Fruit, Dairy, Beverage
+  // Breakfast categories: Grain, Fruit, Dairy, Beverage (filter out ingredients)
   const breakfastCategories = ['Grain', 'Fruit', 'Dairy', 'Beverage'];
   
   const breakfastFoods = allBreakfastFoods.filter(f => 
     breakfastCategories.includes(f.food.category) &&
+    !isIngredientOnly(f.food.category) &&
     (!f.ayurveda_data.guna || !f.ayurveda_data.guna.includes('Heavy'))
   );
   
   const meal = {
     meal_type: 'Breakfast',
     timing: 'After sunrise (7-8 AM)',
-    foods: []
+    foods: [],
+    validation: { hasFruit: false, hasCookedFood: false }
   };
   
   // Select 2-3 light foods with shuffling for true variety
@@ -110,16 +151,20 @@ const generateBreakfast = (categorizedFoods, agni, usedIngredients, dayNumber, r
       portion: agni === 'Slow' ? 'Small' : 'Medium',
       preparation: 'Cooked, warm'
     });
+    meal.validation.hasCookedFood = true;
     usedIngredients.grains.add(grain.food.name);
   }
   
-  // Avoid fruit if dairy is present (Viruddha Ahara)
-  if (fruit && !meal.foods.some(f => f.food.category === 'Dairy')) {
+  // CRITICAL RULE: Avoid fruit if cooked food is present
+  // Fruit should be taken separately, not combined with cooked meals
+  if (fruit && !meal.validation.hasCookedFood && !meal.foods.some(f => f.food.category === 'Dairy')) {
     meal.foods.push({
       food: fruit.food,
       portion: 'Small',
-      preparation: 'Fresh, room temperature'
+      preparation: 'Fresh, room temperature',
+      note: 'Fruit served separately from cooked foods'
     });
+    meal.validation.hasFruit = true;
   }
   
   if (beverage) {
@@ -138,16 +183,20 @@ const generateBreakfast = (categorizedFoods, agni, usedIngredients, dayNumber, r
  * - Main meal of the day (Agni strongest at noon)
  * - Include grain, protein, vegetables
  * - Can be heavier and more substantial
+ * - NO fruit in lunch (fruits should be separate meals)
+ * - NO pure ingredients (oils, spices alone)
  */
 const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumber, randomOffset = 0) => {
   const { highly_recommended, moderate } = categorizedFoods;
   
-  const allFoods = [...highly_recommended, ...moderate];
+  const allFoods = [...highly_recommended, ...moderate]
+    .filter(f => !isIngredientOnly(f.food.category)); // Filter out pure ingredients
   
   const meal = {
     meal_type: 'Lunch',
     timing: 'Midday (12-1 PM) - Main meal',
-    foods: []
+    foods: [],
+    validation: { hasFruit: false, hasCookedFood: false }
   };
   
   // 1. Grain base - select from shuffled grains for variety
@@ -182,7 +231,7 @@ const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumb
   const shuffledProteins = shuffleArray(availableProteins, randomOffset + dayNumber * 4);
   const protein = shuffledProteins[0];
   
-  // 3. Vegetables (2 types) - shuffle for variety, guaranteed different
+  // 3. Vegetables (1-2 types) - shuffle for variety, guaranteed different
   const availableVegetables = allFoods.filter(f => 
     f.food.category === 'Vegetable' &&
     !usedIngredients.vegetables.has(f.food.name)
@@ -191,17 +240,14 @@ const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumb
   const shuffledVegetables = shuffleArray(availableVegetables, randomOffset + dayNumber * 5);
   const vegetables = shuffledVegetables.slice(0, 2);
   
-  // 4. Oil/Spice for cooking
-  const oil = allFoods.find(f => f.food.category === 'Oil');
-  const spice = allFoods.find(f => f.food.category === 'Spice');
-  
-  // Add to meal
+  // Add to meal (NO oils/spices as separate items!)
   if (grain) {
     meal.foods.push({
       food: grain.food,
       portion: 'Large',
       preparation: 'Cooked, warm'
     });
+    meal.validation.hasCookedFood = true;
     usedIngredients.grains.add(grain.food.name);
   }
   
@@ -209,8 +255,10 @@ const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumb
     meal.foods.push({
       food: protein.food,
       portion: 'Medium',
-      preparation: protein.food.category === 'Legume' ? 'Well-cooked, spiced' : 'Cooked, warm'
+      preparation: protein.food.category === 'Legume' ? 'Well-cooked, spiced' : 'Cooked, warm',
+      note: protein.food.category === 'Legume' ? 'Add cumin to aid digestion' : undefined
     });
+    meal.validation.hasCookedFood = true;
     usedIngredients.proteins.add(protein.food.name);
   }
   
@@ -218,27 +266,12 @@ const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumb
     meal.foods.push({
       food: veg.food,
       portion: 'Medium',
-      preparation: dominantDosha === 'vata' ? 'Cooked, oiled' : 'Lightly cooked'
+      preparation: dominantDosha === 'vata' ? 'Cooked with ghee' : 'Lightly cooked'
     });
+    meal.validation.hasCookedFood = true;
     usedIngredients.vegetables.add(veg.food.name);
   });
-  
-  if (oil) {
-    meal.foods.push({
-      food: oil.food,
-      portion: dominantDosha === 'kapha' ? 'Small' : 'Medium',
-      preparation: 'For cooking'
-    });
-  }
-  
-  if (spice) {
-    meal.foods.push({
-      food: spice.food,
-      portion: 'Small',
-      preparation: 'Added during cooking'
-    });
-  }
-  
+
   return meal;
 };
 
@@ -248,22 +281,25 @@ const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumb
  * - Eaten early (before sunset ideally)
  * - Warm, cooked foods
  * - Avoid heavy proteins and raw foods
+ * - NO fruits, NO pure ingredients
  */
 const generateDinner = (categorizedFoods, dominantDosha, agni, usedIngredients, dayNumber, randomOffset = 0) => {
   const { highly_recommended, moderate } = categorizedFoods;
   
-  // Use both tiers for more variety
-  const allLightFoods = [...highly_recommended, ...moderate];
+  // Use both tiers for more variety, filter out ingredients
+  const allLightFoods = [...highly_recommended, ...moderate]
+    .filter(f => !isIngredientOnly(f.food.category) && f.food.category !== 'Fruit');
   
   const meal = {
     meal_type: 'Dinner',
     timing: 'Early evening (6-7 PM) - Light meal',
-    foods: []
+    foods: [],
+    validation: { hasFruit: false, hasCookedFood: false }
   };
   
-  // Light dinner: Soup, cooked vegetables, light grain
+  // Light dinner: Cooked vegetables and light grain (soup preferred)
   const lightFoods = allLightFoods.filter(f => 
-    ['Vegetable', 'Grain', 'Spice'].includes(f.food.category) &&
+    ['Vegetable', 'Grain', 'Beverage'].includes(f.food.category) &&
     (!f.ayurveda_data.guna || !f.ayurveda_data.guna.includes('Heavy'))
   );
   
@@ -284,12 +320,19 @@ const generateDinner = (categorizedFoods, dominantDosha, agni, usedIngredients, 
   const shuffledVegetables = shuffleArray(availableVegetables, randomOffset + dayNumber * 7);
   const vegetables = shuffledVegetables.slice(0, 2);
   
+  // Beverage for warmth/digestion
+  const availableBeverages = lightFoods.filter(f => f.food.category === 'Beverage');
+  const shuffledBeverages = shuffleArray(availableBeverages, randomOffset + dayNumber * 8);
+  const beverage = shuffledBeverages[0];
+  
   if (grain && agni !== 'Slow') {
     meal.foods.push({
       food: grain.food,
       portion: 'Small',
-      preparation: 'Cooked, warm'
+      preparation: 'Cooked, warm',
+      note: 'Light grain portion for easy digestion'
     });
+    meal.validation.hasCookedFood = true;
     usedIngredients.grains.add(grain.food.name);
   }
   
@@ -297,18 +340,19 @@ const generateDinner = (categorizedFoods, dominantDosha, agni, usedIngredients, 
     meal.foods.push({
       food: veg.food,
       portion: 'Medium',
-      preparation: 'Well-cooked, warm, soup or steamed'
+      preparation: 'Well-cooked, warm, in soup or steamed',
+      note: 'Easy to digest vegetables'
     });
+    meal.validation.hasCookedFood = true;
     usedIngredients.vegetables.add(veg.food.name);
   });
   
-  // Add digestive spices
-  const spice = lightFoods.find(f => f.food.category === 'Spice');
-  if (spice) {
+  if (beverage) {
     meal.foods.push({
-      food: spice.food,
-      portion: 'Small',
-      preparation: 'For digestion'
+      food: beverage.food,
+      portion: '1 cup',
+      preparation: 'Warm',
+      note: 'Aids digestion before sleep'
     });
   }
   
