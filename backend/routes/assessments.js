@@ -103,6 +103,47 @@ function transformModernScoresToClinicalProfile(scores, responses) {
 }
 
 /**
+ * Extract numeric sleep hours from sleep_duration response
+ * @param {string} sleepDurationStr - e.g., '<5', '5-6', '7-8', '>9'
+ * @returns {number} - midpoint of range
+ */
+function parseSleepDuration(sleepDurationStr) {
+  if (!sleepDurationStr) return 7; // default
+  if (sleepDurationStr === '<5') return 4;
+  if (sleepDurationStr === '5-6') return 5.5;
+  if (sleepDurationStr === '6-7') return 6.5;
+  if (sleepDurationStr === '7-8') return 7.5;
+  if (sleepDurationStr === '8-9') return 8.5;
+  if (sleepDurationStr === '>9') return 9.5;
+  return parseFloat(sleepDurationStr) || 7;
+}
+
+/**
+ * Extract activity level - modern uses different format than other frameworks
+ * @param {string} framework - 'modern', 'ayurveda', etc
+ * @param {object} responses - response object
+ * @returns {string} - standardized activity level
+ */
+function extractActivityLevel(framework, responses) {
+  const getResponse = (key) => responses[key]?.value;
+  
+  if (framework === 'modern') {
+    const level = getResponse('activity_level');
+    // Map modern values: sedentary, lightly_active, moderately_active, very_active, extremely_active
+    const map = {
+      'sedentary': 'Sedentary',
+      'lightly_active': 'Moderate',
+      'moderately_active': 'Moderate',
+      'very_active': 'Active',
+      'extremely_active': 'Active'
+    };
+    return map[level] || 'Moderate';
+  }
+  // For other frameworks, look for activity_level or activityLevel
+  return getResponse('activity_level') || getResponse('activityLevel') || 'Moderate';
+}
+
+/**
  * Sync assessment data to User and HealthProfile models
  * @param {string} userId - User ID
  * @param {Object} responses - Raw assessment responses
@@ -113,24 +154,41 @@ async function syncAssessmentDataToProfile(userId, responses, result, framework)
   try {
     const HealthProfile = require('../models/HealthProfile');
     
-    // Extract common response keys for all frameworks
-    const getResponse = (key) => responses[key]?.value;
+    // Extract response values
+    const getResponse = (key) => responses[key]?.value || responses[key];
     
-    // 1. Prepare User data
+    // 1. Prepare User data (basic info)
     const userData = {};
     
-    // Extract basic info
-    if (getResponse('name')) userData.name = getResponse('name');
+    // Extract basic info - these should be available in all frameworks
     if (getResponse('age')) userData.age = parseInt(getResponse('age'));
     if (getResponse('gender')) userData.gender = getResponse('gender');
     if (getResponse('height')) userData.height = parseFloat(getResponse('height'));
     if (getResponse('weight')) userData.weight = parseFloat(getResponse('weight'));
     
     // Extract dietary preferences
-    if (getResponse('dietary_preference')) userData.dietaryPreference = getResponse('dietary_preference');
-    if (getResponse('food_allergies')) {
-      userData.allergies = Array.isArray(getResponse('food_allergies')) 
-        ? getResponse('food_allergies').filter(a => a && a !== 'none')
+    const dietPref = getResponse('dietary_preference');
+    if (dietPref) {
+      // Map to standard values
+      const dietMap = {
+        'balanced': 'Vegetarian',
+        'vegetarian': 'Vegetarian',
+        'vegan': 'Vegan',
+        'pescatarian': 'Vegetarian',
+        'keto': 'Vegetarian',
+        'low_carb': 'Vegetarian',
+        'high_protein': 'Vegetarian',
+        'mediterranean': 'Vegetarian',
+        'paleo': 'Vegetarian'
+      };
+      userData.dietaryPreference = dietMap[dietPref] || 'Vegetarian';
+    }
+    
+    // Extract allergies - KEY NAME VARIES BY FRAMEWORK
+    const allergies = getResponse('allergies') || getResponse('food_allergies');
+    if (allergies) {
+      userData.allergies = Array.isArray(allergies)
+        ? allergies.filter(a => a && a !== 'none')
         : [];
     }
     
@@ -138,15 +196,37 @@ async function syncAssessmentDataToProfile(userId, responses, result, framework)
     const healthProfileData = {
       userId,
       lifestyle: {
-        activityLevel: getResponse('activity_level') || getResponse('activityLevel') || 'Moderate',
-        sleepHours: parseFloat(getResponse('sleep_hours')) || parseFloat(getResponse('sleepHours')) || 7,
-        stressLevel: getResponse('stress_level') || getResponse('stressLevel') || 'Medium'
+        activityLevel: extractActivityLevel(framework, responses),
+        sleepHours: parseSleepDuration(getResponse('sleep_duration') || getResponse('sleep_hours')),
+        stressLevel: (() => {
+          const stress = getResponse('stress_level');
+          if (!stress) return 'Medium';
+          // Normalize different formats
+          if (stress.includes('very_low') || stress === 'Low') return 'Low';
+          if (stress.includes('low')) return 'Low';
+          if (stress.includes('very_high')) return 'High';
+          if (stress.includes('high')) return 'High';
+          return 'Medium';
+        })()
       },
       digestionIndicators: {
+        // appetite is in ayurveda/unani/tcm, not in modern
         appetite: getResponse('appetite') || 'Normal',
-        bowelRegularity: getResponse('bowel_regularity') || getResponse('bowelRegularity') || 'Regular',
-        bloating: getResponse('bloating') === true || getResponse('bloating') === 'yes' || false,
-        acidReflux: getResponse('acid_reflux') === true || getResponse('acid_reflux') === 'yes' || false
+        // bowel_regularity is in ayurveda, called bowel_regularity in responses
+        bowelRegularity: getResponse('bowel_regularity') || 'Regular',
+        // bloating and acidReflux come from digestive_issues in modern
+        bloating: (() => {
+          const issues = getResponse('digestive_issues');
+          if (!issues) return false;
+          if (Array.isArray(issues)) return issues.includes('bloating');
+          return issues.includes ? issues.includes('bloating') : false;
+        })(),
+        acidReflux: (() => {
+          const issues = getResponse('digestive_issues');
+          if (!issues) return false;
+          if (Array.isArray(issues)) return issues.includes('heartburn');
+          return issues.includes ? issues.includes('heartburn') : false;
+        })()
       },
       metabolicMarkers: {
         bloodPressure: getResponse('blood_pressure') || null,
@@ -158,27 +238,27 @@ async function syncAssessmentDataToProfile(userId, responses, result, framework)
       }
     };
 
-    // 3. Framework-specific data extraction
-    if (framework === 'ayurveda') {
-      // Ayurveda specific: extract from scores
+    // 3. Framework-specific data extraction and enrichment
+    if (framework === 'ayurveda' && result.scores) {
       if (result.scores?.agni?.type) {
         healthProfileData.digestionIndicators.digestiveCapacity = result.scores.agni.type;
       }
-    } else if (framework === 'unani') {
-      // Unani specific: extract from scores
+    } else if (framework === 'unani' && result.scores) {
       if (result.scores?.thermal_tendency) {
         healthProfileData.metabolicMarkers.thermalTendency = result.scores.thermal_tendency;
       }
-    } else if (framework === 'tcm') {
-      // TCM specific: extract from scores
+    } else if (framework === 'tcm' && result.scores) {
       if (result.scores?.cold_heat) {
         healthProfileData.metabolicMarkers.coldHeatPattern = result.scores.cold_heat;
       }
-    } else if (framework === 'modern') {
-      // Modern specific: ensure metric values are set
+    } else if (framework === 'modern' && result.scores) {
+      // Modern has explicit BMI, BMR, TDEE from calculations
       if (result.scores?.bmi) healthProfileData.bmi = result.scores.bmi;
       if (result.scores?.bmr) healthProfileData.bmr = result.scores.bmr;
       if (result.scores?.tdee) healthProfileData.tdee = result.scores.tdee;
+      if (result.scores?.metabolic_risk_level) {
+        healthProfileData.metabolicRiskLevel = result.scores.metabolic_risk_level;
+      }
     }
 
     // 4. Update User with extracted data
@@ -193,17 +273,18 @@ async function syncAssessmentDataToProfile(userId, responses, result, framework)
     if (existingHealthProfile && new Date() - new Date(existingHealthProfile.recordedAt) < 24 * 60 * 60 * 1000) {
       // Update existing if created within last 24 hours
       await HealthProfile.findByIdAndUpdate(existingHealthProfile._id, healthProfileData, { new: true });
-      console.log('✅ HealthProfile updated for user:', userId);
+      console.log('✅ HealthProfile updated with assessment framework:', framework);
     } else {
       // Create new HealthProfile record
       healthProfileData.recordedAt = new Date();
       const newHealthProfile = new HealthProfile(healthProfileData);
       await newHealthProfile.save();
-      console.log('✅ New HealthProfile created for user:', userId);
+      console.log('✅ New HealthProfile created with assessment framework:', framework);
     }
 
   } catch (error) {
     console.error('⚠️  Error syncing assessment data to profile:', error.message);
+    console.error('Stack:', error.stack);
     // Non-critical error - don't fail assessment submission
   }
 }

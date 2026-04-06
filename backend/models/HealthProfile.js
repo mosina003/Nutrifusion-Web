@@ -10,6 +10,19 @@ const healthProfileSchema = new mongoose.Schema({
     type: Number,
     min: 0
   },
+  bmr: {
+    type: Number,
+    min: 0
+  },
+  tdee: {
+    type: Number,
+    min: 0
+  },
+  metabolicRiskLevel: {
+    type: String,
+    enum: ['Low', 'Moderate', 'High'],
+    default: 'Moderate'
+  },
   chronicConditions: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'MedicalCondition'
