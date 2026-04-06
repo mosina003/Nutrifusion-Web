@@ -2,701 +2,2631 @@
   {
     "food_name": "Idli",
     "category": "grain",
-    "preparation_methods": ["steamed", "fermented"],
-    "rasa": ["sour", "sweet"],
+    "preparation_methods": [
+      "steamed",
+      "fermented"
+    ],
+    "rasa": [
+      "sour",
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["light", "soft"],
+    "guna": [
+      "light",
+      "soft"
+    ],
     "vata_effect": 0,
     "pitta_effect": 0,
     "kapha_effect": 1,
     "digestibility_score": 2,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Dosa",
     "category": "grain",
-    "preparation_methods": ["fermented", "pan_fried"],
-    "rasa": ["sour"],
+    "preparation_methods": [
+      "fermented",
+      "pan_fried"
+    ],
+    "rasa": [
+      "sour"
+    ],
     "virya": "heating",
     "vipaka": "sour",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": 1,
     "kapha_effect": 0,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Upma",
     "category": "grain",
-    "preparation_methods": ["sauteed", "boiled"],
-    "rasa": ["salty"],
+    "preparation_methods": [
+      "sauteed",
+      "boiled"
+    ],
+    "rasa": [
+      "salty"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Poha",
     "category": "grain",
-    "preparation_methods": ["soaked", "sauteed"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "soaked",
+      "sauteed"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": 0,
     "pitta_effect": -1,
     "kapha_effect": 0,
     "digestibility_score": 2,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Paratha",
     "category": "grain",
-    "preparation_methods": ["kneaded", "pan_fried"],
-    "rasa": ["sweet", "salty"],
+    "preparation_methods": [
+      "kneaded",
+      "pan_fried"
+    ],
+    "rasa": [
+      "sweet",
+      "salty"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Pongal",
     "category": "grain",
-    "preparation_methods": ["boiled", "tempered"],
-    "rasa": ["sweet", "salty"],
+    "preparation_methods": [
+      "boiled",
+      "tempered"
+    ],
+    "rasa": [
+      "sweet",
+      "salty"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily", "soft"],
+    "guna": [
+      "heavy",
+      "oily",
+      "soft"
+    ],
     "vata_effect": -1,
     "pitta_effect": 0,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Biryani",
     "category": "grain",
-    "preparation_methods": ["layered", "dum_cooked"],
-    "rasa": ["salty", "pungent"],
+    "preparation_methods": [
+      "layered",
+      "dum_cooked"
+    ],
+    "rasa": [
+      "salty",
+      "pungent"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Fried Rice",
     "category": "grain",
-    "preparation_methods": ["stir_fried"],
-    "rasa": ["salty"],
+    "preparation_methods": [
+      "stir_fried"
+    ],
+    "rasa": [
+      "salty"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": 0,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Oatmeal",
     "category": "grain",
-    "preparation_methods": ["boiled"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "soft"],
+    "guna": [
+      "heavy",
+      "soft"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Bread Toast",
     "category": "grain",
-    "preparation_methods": ["toasted"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "toasted"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["dry", "light"],
+    "guna": [
+      "dry",
+      "light"
+    ],
     "vata_effect": 1,
     "pitta_effect": 0,
     "kapha_effect": 0,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Chapati",
     "category": "grain",
-    "preparation_methods": ["kneaded", "roasted"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "kneaded",
+      "roasted"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["dry", "light"],
+    "guna": [
+      "dry",
+      "light"
+    ],
     "vata_effect": 1,
     "pitta_effect": 0,
     "kapha_effect": 0,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Cornflakes",
     "category": "grain",
-    "preparation_methods": ["processed"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "processed"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["dry", "light"],
+    "guna": [
+      "dry",
+      "light"
+    ],
     "vata_effect": 1,
     "pitta_effect": 0,
     "kapha_effect": 0,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Dal Tadka",
     "category": "legume",
-    "preparation_methods": ["boiled", "tempered"],
-    "rasa": ["astringent"],
+    "preparation_methods": [
+      "boiled",
+      "tempered"
+    ],
+    "rasa": [
+      "astringent"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": 0,
     "kapha_effect": -1,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Chole",
     "category": "legume",
-    "preparation_methods": ["boiled", "sauteed"],
-    "rasa": ["astringent"],
+    "preparation_methods": [
+      "boiled",
+      "sauteed"
+    ],
+    "rasa": [
+      "astringent"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["heavy", "dry"],
+    "guna": [
+      "heavy",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": 0,
     "kapha_effect": -1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Rajma",
     "category": "legume",
-    "preparation_methods": ["boiled", "simmered"],
-    "rasa": ["astringent"],
+    "preparation_methods": [
+      "boiled",
+      "simmered"
+    ],
+    "rasa": [
+      "astringent"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["heavy", "dry"],
+    "guna": [
+      "heavy",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": 0,
     "kapha_effect": -1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Hummus",
     "category": "legume",
-    "preparation_methods": ["blended"],
-    "rasa": ["sweet", "astringent"],
+    "preparation_methods": [
+      "blended"
+    ],
+    "rasa": [
+      "sweet",
+      "astringent"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Sprout Salad",
     "category": "legume",
-    "preparation_methods": ["soaked", "raw"],
-    "rasa": ["astringent"],
+    "preparation_methods": [
+      "soaked",
+      "raw"
+    ],
+    "rasa": [
+      "astringent"
+    ],
     "virya": "cooling",
     "vipaka": "pungent",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": -1,
     "kapha_effect": -1,
     "digestibility_score": 2,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Paneer Butter Masala",
     "category": "dairy",
-    "preparation_methods": ["sauteed", "simmered"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "sauteed",
+      "simmered"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily", "soft"],
+    "guna": [
+      "heavy",
+      "oily",
+      "soft"
+    ],
     "vata_effect": -1,
     "pitta_effect": 0,
     "kapha_effect": 1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Curd",
     "category": "dairy",
-    "preparation_methods": ["fermented"],
-    "rasa": ["sour"],
+    "preparation_methods": [
+      "fermented"
+    ],
+    "rasa": [
+      "sour"
+    ],
     "virya": "heating",
     "vipaka": "sour",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Cheese Sandwich",
     "category": "dairy",
-    "preparation_methods": ["assembled", "toasted"],
-    "rasa": ["sweet", "salty"],
+    "preparation_methods": [
+      "assembled",
+      "toasted"
+    ],
+    "rasa": [
+      "sweet",
+      "salty"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Chicken Curry",
     "category": "meat",
-    "preparation_methods": ["sauteed", "simmered"],
-    "rasa": ["salty"],
+    "preparation_methods": [
+      "sauteed",
+      "simmered"
+    ],
+    "rasa": [
+      "salty"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Fish Fry",
     "category": "meat",
-    "preparation_methods": ["marinated", "deep_fried"],
-    "rasa": ["salty"],
+    "preparation_methods": [
+      "marinated",
+      "deep_fried"
+    ],
+    "rasa": [
+      "salty"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Egg Omelette",
     "category": "meat",
-    "preparation_methods": ["whisked", "pan_fried"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "whisked",
+      "pan_fried"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily", "soft"],
+    "guna": [
+      "heavy",
+      "oily",
+      "soft"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Grilled Chicken",
     "category": "meat",
-    "preparation_methods": ["marinated", "grilled"],
-    "rasa": ["salty"],
+    "preparation_methods": [
+      "marinated",
+      "grilled"
+    ],
+    "rasa": [
+      "salty"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "dry"],
+    "guna": [
+      "heavy",
+      "dry"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 0,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Apple",
     "category": "fruit",
-    "preparation_methods": ["raw"],
-    "rasa": ["sweet", "astringent"],
+    "preparation_methods": [
+      "raw"
+    ],
+    "rasa": [
+      "sweet",
+      "astringent"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": -1,
     "kapha_effect": -1,
     "digestibility_score": 1,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Mango",
     "category": "fruit",
-    "preparation_methods": ["raw"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "raw"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Banana",
     "category": "fruit",
-    "preparation_methods": ["raw"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "raw"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "soft"],
+    "guna": [
+      "heavy",
+      "soft"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Orange Juice",
     "category": "beverage",
-    "preparation_methods": ["juiced"],
-    "rasa": ["sour"],
+    "preparation_methods": [
+      "juiced"
+    ],
+    "rasa": [
+      "sour"
+    ],
     "virya": "cooling",
     "vipaka": "sour",
-    "guna": ["light"],
+    "guna": [
+      "light"
+    ],
     "vata_effect": 1,
     "pitta_effect": 0,
     "kapha_effect": -1,
     "digestibility_score": 1,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Tea",
     "category": "beverage",
-    "preparation_methods": ["boiled", "brewed"],
-    "rasa": ["bitter", "astringent"],
+    "preparation_methods": [
+      "boiled",
+      "brewed"
+    ],
+    "rasa": [
+      "bitter",
+      "astringent"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": 1,
     "kapha_effect": -1,
     "digestibility_score": 1,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Coffee",
     "category": "beverage",
-    "preparation_methods": ["brewed"],
-    "rasa": ["bitter"],
+    "preparation_methods": [
+      "brewed"
+    ],
+    "rasa": [
+      "bitter"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["light", "dry", "sharp"],
+    "guna": [
+      "light",
+      "dry",
+      "sharp"
+    ],
     "vata_effect": 1,
     "pitta_effect": 1,
     "kapha_effect": -1,
     "digestibility_score": 1,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Lassi",
     "category": "beverage",
-    "preparation_methods": ["blended"],
-    "rasa": ["sweet", "sour"],
+    "preparation_methods": [
+      "blended"
+    ],
+    "rasa": [
+      "sweet",
+      "sour"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Coconut Water",
     "category": "beverage",
-    "preparation_methods": ["raw"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "raw"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["light"],
+    "guna": [
+      "light"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 0,
     "digestibility_score": 1,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Carrot",
     "category": "vegetable",
-    "preparation_methods": ["raw", "boiled"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "raw",
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": 0,
     "kapha_effect": -1,
     "digestibility_score": 2,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Spinach",
     "category": "vegetable",
-    "preparation_methods": ["sauteed", "boiled"],
-    "rasa": ["bitter", "astringent"],
+    "preparation_methods": [
+      "sauteed",
+      "boiled"
+    ],
+    "rasa": [
+      "bitter",
+      "astringent"
+    ],
     "virya": "cooling",
     "vipaka": "pungent",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": 1,
     "pitta_effect": -1,
     "kapha_effect": -1,
     "digestibility_score": 2,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Potato",
     "category": "vegetable",
-    "preparation_methods": ["boiled", "fried"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "boiled",
+      "fried"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "soft"],
+    "guna": [
+      "heavy",
+      "soft"
+    ],
     "vata_effect": 1,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Tomato",
     "category": "vegetable",
-    "preparation_methods": ["raw", "sauteed"],
-    "rasa": ["sour"],
+    "preparation_methods": [
+      "raw",
+      "sauteed"
+    ],
+    "rasa": [
+      "sour"
+    ],
     "virya": "heating",
     "vipaka": "sour",
-    "guna": ["light"],
+    "guna": [
+      "light"
+    ],
     "vata_effect": 1,
     "pitta_effect": 1,
     "kapha_effect": -1,
     "digestibility_score": 2,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Onion",
     "category": "vegetable",
-    "preparation_methods": ["raw", "sauteed"],
-    "rasa": ["pungent", "sweet"],
+    "preparation_methods": [
+      "raw",
+      "sauteed"
+    ],
+    "rasa": [
+      "pungent",
+      "sweet"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Cumin",
     "category": "spice",
-    "preparation_methods": ["roasted", "ground"],
-    "rasa": ["pungent", "bitter"],
+    "preparation_methods": [
+      "roasted",
+      "ground"
+    ],
+    "rasa": [
+      "pungent",
+      "bitter"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["light", "dry", "sharp"],
+    "guna": [
+      "light",
+      "dry",
+      "sharp"
+    ],
     "vata_effect": -1,
     "pitta_effect": 0,
     "kapha_effect": -1,
     "digestibility_score": 1,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Turmeric",
     "category": "spice",
-    "preparation_methods": ["dried", "ground"],
-    "rasa": ["bitter", "pungent"],
+    "preparation_methods": [
+      "dried",
+      "ground"
+    ],
+    "rasa": [
+      "bitter",
+      "pungent"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["light", "dry"],
+    "guna": [
+      "light",
+      "dry"
+    ],
     "vata_effect": -1,
     "pitta_effect": 0,
     "kapha_effect": -1,
     "digestibility_score": 1,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Black Pepper",
     "category": "spice",
-    "preparation_methods": ["ground"],
-    "rasa": ["pungent"],
+    "preparation_methods": [
+      "ground"
+    ],
+    "rasa": [
+      "pungent"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["light", "sharp", "dry"],
+    "guna": [
+      "light",
+      "sharp",
+      "dry"
+    ],
     "vata_effect": -1,
     "pitta_effect": 1,
     "kapha_effect": -1,
     "digestibility_score": 1,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Olive Oil",
     "category": "oil",
-    "preparation_methods": ["pressed"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "pressed"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "heating",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": 0,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Coconut Oil",
     "category": "oil",
-    "preparation_methods": ["pressed"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "pressed"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Butter",
     "category": "dairy",
-    "preparation_methods": ["churned"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "churned"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily", "soft"],
+    "guna": [
+      "heavy",
+      "oily",
+      "soft"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Ghee",
     "category": "dairy",
-    "preparation_methods": ["clarified"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "clarified"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["light", "oily", "soft"],
+    "guna": [
+      "light",
+      "oily",
+      "soft"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 0,
     "digestibility_score": 2,
-    "ama_forming_potential": "low"
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Milk",
     "category": "dairy",
-    "preparation_methods": ["boiled"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "oily", "soft"],
+    "guna": [
+      "heavy",
+      "oily",
+      "soft"
+    ],
     "vata_effect": -1,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Tofu",
     "category": "legume",
-    "preparation_methods": ["pressed", "sauteed"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "pressed",
+      "sauteed"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "soft"],
+    "guna": [
+      "heavy",
+      "soft"
+    ],
     "vata_effect": 0,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Falafel",
     "category": "legume",
-    "preparation_methods": ["ground", "deep_fried"],
-    "rasa": ["astringent"],
+    "preparation_methods": [
+      "ground",
+      "deep_fried"
+    ],
+    "rasa": [
+      "astringent"
+    ],
     "virya": "heating",
     "vipaka": "pungent",
-    "guna": ["heavy", "oily"],
+    "guna": [
+      "heavy",
+      "oily"
+    ],
     "vata_effect": 0,
     "pitta_effect": 1,
     "kapha_effect": 1,
     "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "high",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Pasta",
     "category": "grain",
-    "preparation_methods": ["boiled"],
-    "rasa": ["sweet"],
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "soft"],
+    "guna": [
+      "heavy",
+      "soft"
+    ],
     "vata_effect": 0,
     "pitta_effect": -1,
     "kapha_effect": 1,
     "digestibility_score": 4,
-    "ama_forming_potential": "medium"
-  },
-  {
-    "food_name": "Pizza",
-    "category": "grain",
-    "preparation_methods": ["baked"],
-    "rasa": ["sweet", "salty"],
-    "virya": "heating",
-    "vipaka": "sweet",
-    "guna": ["heavy", "oily"],
-    "vata_effect": -1,
-    "pitta_effect": 1,
-    "kapha_effect": 1,
-    "digestibility_score": 5,
-    "ama_forming_potential": "high"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Sushi Rice",
     "category": "grain",
-    "preparation_methods": ["boiled", "seasoned"],
-    "rasa": ["sweet", "sour"],
+    "preparation_methods": [
+      "boiled",
+      "seasoned"
+    ],
+    "rasa": [
+      "sweet",
+      "sour"
+    ],
     "virya": "cooling",
     "vipaka": "sweet",
-    "guna": ["heavy", "soft"],
+    "guna": [
+      "heavy",
+      "soft"
+    ],
     "vata_effect": 0,
     "pitta_effect": 0,
     "kapha_effect": 1,
     "digestibility_score": 3,
-    "ama_forming_potential": "medium"
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Chicken Stew with Red Rice",
+    "category": "meat",
+    "preparation_methods": [
+      "boiled",
+      "simmered"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "soft",
+      "heavy"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Grilled Fish with Millet",
+    "category": "meat",
+    "preparation_methods": [
+      "marinated",
+      "grilled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "light",
+      "dry"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Egg Curry with Brown Rice",
+    "category": "meat",
+    "preparation_methods": [
+      "boiled",
+      "simmered"
+    ],
+    "rasa": [
+      "salty",
+      "pungent"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "soft",
+      "heavy"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Steamed Fish with Rice",
+    "category": "meat",
+    "preparation_methods": [
+      "steamed"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "light",
+      "soft"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": -1,
+    "kapha_effect": 0,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Chicken Khichdi",
+    "category": "meat",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Lentil Soup with Whole Wheat Bread",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "astringent"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 0,
+    "kapha_effect": -1,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Paneer Tikka with Roti",
+    "category": "dairy",
+    "preparation_methods": [
+      "marinated",
+      "grilled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy",
+      "dry"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Dal Khichdi with Ghee",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "soft",
+      "oily"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": -1,
+    "kapha_effect": 0,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Oats and Egg Breakfast Bowl",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet",
+      "salty"
+    ],
+    "virya": "warming",
+    "vipaka": "sweet",
+    "guna": [
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Millet Upma with Nuts",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "boiled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Rice and Rasam",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sour",
+      "pungent"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": -1,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Grilled Chicken Salad Bowl",
+    "category": "meat",
+    "preparation_methods": [
+      "grilled",
+      "assembled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Fish Curry with Red Rice",
+    "category": "meat",
+    "preparation_methods": [
+      "simmered"
+    ],
+    "rasa": [
+      "sour",
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "soft",
+      "oily"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Chicken Soup with Barley",
+    "category": "meat",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "light",
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": -1,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Egg Bhurji with Chapati",
+    "category": "meat",
+    "preparation_methods": [
+      "sauteed"
+    ],
+    "rasa": [
+      "salty",
+      "pungent"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "soft",
+      "oily"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Vegetable Millet Khichdi",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": -1,
+    "kapha_effect": 0,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Barley Soup",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": -1,
+    "kapha_effect": -1,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Stew with Appam",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "fermented"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": -1,
+    "kapha_effect": 1,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Idli Upma",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed",
+      "sauteed"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Sevai",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed",
+      "sauteed"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Rice Noodles",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "stir_fried"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Lentil Stew",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "astringent"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": -1,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Vegetable Dal Khichdi (No Ghee)",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": -1,
+    "kapha_effect": 0,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Brown Rice Pulao",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Whole Wheat Pasta",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": -1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Stuffed Chapati",
+    "category": "grain",
+    "preparation_methods": [
+      "kneaded",
+      "roasted"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Lentil Pancake",
+    "category": "legume",
+    "preparation_methods": [
+      "ground",
+      "pan_fried"
+    ],
+    "rasa": [
+      "astringent"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": -1,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Vegetable Stuffed Dosa",
+    "category": "grain",
+    "preparation_methods": [
+      "fermented",
+      "pan_fried"
+    ],
+    "rasa": [
+      "sour",
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sour",
+    "guna": [
+      "heavy"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Steamed Rice Cakes",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "light",
+      "soft"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": -1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Lentil Rice Bowl",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet",
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Khichdi",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "tempered"
+    ],
+    "rasa": [
+      "sweet",
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "light",
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Moong Dal Khichdi",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "light",
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": -1,
+    "kapha_effect": 0,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Upma",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "boiled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "heavy",
+      "oily"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Ragi Porridge",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy",
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": -1,
+    "kapha_effect": 1,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Ragi Dosa",
+    "category": "grain",
+    "preparation_methods": [
+      "fermented",
+      "pan_fried"
+    ],
+    "rasa": [
+      "sour"
+    ],
+    "virya": "heating",
+    "vipaka": "sour",
+    "guna": [
+      "light",
+      "dry"
+    ],
+    "vata_effect": 1,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Millet Pongal",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "tempered"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "soft",
+      "oily"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": 1,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Oats Upma",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "sauteed"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "soft",
+      "heavy"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": 1,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Quinoa Khichdi",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": -1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Dalia",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet",
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy",
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": 1,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Masala Oats",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "pungent",
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Sambar with Rice",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "tempered"
+    ],
+    "rasa": [
+      "sour",
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": -1,
+    "digestibility_score": 3,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Curd Rice",
+    "category": "grain",
+    "preparation_methods": [
+      "mixed"
+    ],
+    "rasa": [
+      "sour"
+    ],
+    "virya": "cooling",
+    "vipaka": "sour",
+    "guna": [
+      "heavy",
+      "soft"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": -1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Lemon Rice",
+    "category": "grain",
+    "preparation_methods": [
+      "tempered"
+    ],
+    "rasa": [
+      "sour"
+    ],
+    "virya": "heating",
+    "vipaka": "sour",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Pulao",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "boiled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Brown Rice with Dal",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": -1,
+    "kapha_effect": 1,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Chapati Roll",
+    "category": "grain",
+    "preparation_methods": [
+      "roasted",
+      "assembled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": 1,
+    "pitta_effect": 0,
+    "kapha_effect": 0,
+    "digestibility_score": 3,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Paneer Bhurji with Chapati",
+    "category": "dairy",
+    "preparation_methods": [
+      "sauteed"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "sweet",
+    "guna": [
+      "heavy",
+      "oily"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Vegetable Soup with Toast",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "rasa": [
+      "salty"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "light"
+    ],
+    "vata_effect": -1,
+    "pitta_effect": 0,
+    "kapha_effect": -1,
+    "digestibility_score": 1,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
+  },
+  {
+    "food_name": "Vegetable Idiyappam",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed"
+    ],
+    "rasa": [
+      "sweet"
+    ],
+    "virya": "cooling",
+    "vipaka": "sweet",
+    "guna": [
+      "light",
+      "soft"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": -1,
+    "kapha_effect": 0,
+    "digestibility_score": 2,
+    "ama_forming_potential": "low",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Adai Dosa",
+    "category": "grain",
+    "preparation_methods": [
+      "ground",
+      "pan_fried"
+    ],
+    "rasa": [
+      "astringent"
+    ],
+    "virya": "heating",
+    "vipaka": "pungent",
+    "guna": [
+      "heavy"
+    ],
+    "vata_effect": 1,
+    "pitta_effect": 1,
+    "kapha_effect": 0,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Uttapam",
+    "category": "grain",
+    "preparation_methods": [
+      "fermented",
+      "pan_fried"
+    ],
+    "rasa": [
+      "sour"
+    ],
+    "virya": "heating",
+    "vipaka": "sour",
+    "guna": [
+      "heavy"
+    ],
+    "vata_effect": 0,
+    "pitta_effect": 1,
+    "kapha_effect": 1,
+    "digestibility_score": 4,
+    "ama_forming_potential": "medium",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   }
 ]

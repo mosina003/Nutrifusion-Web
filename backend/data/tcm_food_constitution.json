@@ -3,650 +3,3354 @@
     "food_name": "Idli",
     "category": "grain",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "neutral",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Spleen Qi, easy to digest"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Spleen Qi, easy to digest",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Dosa",
     "category": "grain",
     "thermal_nature": "warm",
-    "flavor": ["sour", "sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sour",
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi, moves Qi, resolves dampness"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi, moves Qi, resolves dampness",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Upma",
     "category": "grain",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Warms middle jiao, strengthens Spleen"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Warms middle jiao, strengthens Spleen",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Poha",
     "category": "grain",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "neutral",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi, gentle and nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi, gentle and nourishing",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Paratha",
     "category": "grain",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Warms Yang, strengthens body, nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Warms Yang, strengthens body, nourishing",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Pongal",
     "category": "grain",
     "thermal_nature": "warm",
-    "flavor": ["sweet", "salty"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi and Yin, nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi and Yin, nourishing",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Biryani",
     "category": "grain",
     "thermal_nature": "warm",
-    "flavor": ["pungent", "salty"],
-    "meridian": ["Spleen", "Stomach", "Liver"],
+    "flavor": [
+      "pungent",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach",
+      "Liver"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "moves",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Warms Yang, moves Qi, strengthening"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Warms Yang, moves Qi, strengthening",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Fried Rice",
     "category": "grain",
     "thermal_nature": "warm",
-    "flavor": ["sweet", "salty"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi, moves Qi, warming"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi, moves Qi, warming",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Oatmeal",
     "category": "grain",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach", "Lung"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach",
+      "Lung"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi and Yin, moistens Lung"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi and Yin, moistens Lung",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Bread Toast",
     "category": "grain",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Warms Yang, tonifies Spleen"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Warms Yang, tonifies Spleen",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Chapati",
     "category": "grain",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "neutral",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Spleen Qi, balanced"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Spleen Qi, balanced",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Cornflakes",
     "category": "grain",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "neutral",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi, resolves dampness"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi, resolves dampness",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Dal Tadka",
     "category": "legume",
     "thermal_nature": "warm",
-    "flavor": ["sweet", "pungent"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet",
+      "pungent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi, warms Yang, moves Qi"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi, warms Yang, moves Qi",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Chole",
     "category": "legume",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach", "Large Intestine"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach",
+      "Large Intestine"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Strengthens Spleen, warms Yang"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Strengthens Spleen, warms Yang",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Rajma",
     "category": "legume",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Kidney", "Spleen"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Kidney",
+      "Spleen"
+    ],
     "element_affinity": "Water",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Kidney, strengthens Spleen"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Kidney, strengthens Spleen",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Hummus",
     "category": "legume",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi and Yin, nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi and Yin, nourishing",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Sprout Salad",
     "category": "vegetable",
     "thermal_nature": "cool",
-    "flavor": ["sweet", "bland"],
-    "meridian": ["Spleen", "Liver"],
+    "flavor": [
+      "sweet",
+      "bland"
+    ],
+    "meridian": [
+      "Spleen",
+      "Liver"
+    ],
     "element_affinity": "Wood",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, resolves dampness, nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, resolves dampness, nourishing",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Paneer Butter Masala",
     "category": "dairy",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi and Yin, very nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi and Yin, very nourishing",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Curd",
     "category": "dairy",
     "thermal_nature": "warm",
-    "flavor": ["sour"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sour"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Spleen, probiotic benefits"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Spleen, probiotic benefits",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Cheese Sandwich",
     "category": "dairy",
     "thermal_nature": "warm",
-    "flavor": ["sweet", "salty"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi and Yin, nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi and Yin, nourishing",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Chicken Curry",
     "category": "meat",
     "thermal_nature": "warm",
-    "flavor": ["sweet", "pungent"],
-    "meridian": ["Spleen", "Kidney"],
+    "flavor": [
+      "sweet",
+      "pungent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Kidney"
+    ],
     "element_affinity": "Water",
     "qi_effect": "tonifies",
     "blood_effect": "tonifies",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi and essence, warms Yang"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi and essence, warms Yang",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Fish Fry",
     "category": "meat",
     "thermal_nature": "warm",
-    "flavor": ["salty"],
-    "meridian": ["Kidney", "Liver"],
+    "flavor": [
+      "salty"
+    ],
+    "meridian": [
+      "Kidney",
+      "Liver"
+    ],
     "element_affinity": "Water",
     "qi_effect": "tonifies",
     "blood_effect": "tonifies",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Kidney and Liver, nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Kidney and Liver, nourishing",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Egg Omelette",
     "category": "meat",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Heart", "Kidney"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Heart",
+      "Kidney"
+    ],
     "element_affinity": "Water",
     "qi_effect": "tonifies",
     "blood_effect": "tonifies",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Nourishes Yin and Blood, calms Heart"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Nourishes Yin and Blood, calms Heart",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Grilled Chicken",
     "category": "meat",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Kidney"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Kidney"
+    ],
     "element_affinity": "Water",
     "qi_effect": "tonifies",
     "blood_effect": "tonifies",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi and Yang, strengthening"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi and Yang, strengthening",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Apple",
     "category": "fruit",
     "thermal_nature": "cool",
-    "flavor": ["sweet", "sour"],
-    "meridian": ["Lung", "Stomach"],
+    "flavor": [
+      "sweet",
+      "sour"
+    ],
+    "meridian": [
+      "Lung",
+      "Stomach"
+    ],
     "element_affinity": "Metal",
     "qi_effect": "neutral",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, moistens Lung, generates fluids"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, moistens Lung, generates fluids",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Mango",
     "category": "fruit",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Spleen, sweet and nourishing"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Spleen, sweet and nourishing",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Banana",
     "category": "fruit",
     "thermal_nature": "cool",
-    "flavor": ["sweet"],
-    "meridian": ["Stomach", "Large Intestine"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Stomach",
+      "Large Intestine"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": -1, "cold": 0},
-    "therapeutic_use": "Moistens intestines, clears heat, lubricates"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Moistens intestines, clears heat, lubricates",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Orange Juice",
     "category": "beverage",
     "thermal_nature": "cool",
-    "flavor": ["sweet", "sour"],
-    "meridian": ["Lung", "Stomach"],
+    "flavor": [
+      "sweet",
+      "sour"
+    ],
+    "meridian": [
+      "Lung",
+      "Stomach"
+    ],
     "element_affinity": "Metal",
     "qi_effect": "neutral",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": -1, "blood_stasis": 0, "dampness": 0, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, generates fluids, moves Qi"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, generates fluids, moves Qi",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Tea",
     "category": "beverage",
     "thermal_nature": "cool",
-    "flavor": ["bitter"],
-    "meridian": ["Heart", "Lung"],
+    "flavor": [
+      "bitter"
+    ],
+    "meridian": [
+      "Heart",
+      "Lung"
+    ],
     "element_affinity": "Fire",
     "qi_effect": "neutral",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, calms Shen, resolves dampness"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, calms Shen, resolves dampness",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Coffee",
     "category": "beverage",
     "thermal_nature": "warm",
-    "flavor": ["bitter"],
-    "meridian": ["Heart", "Liver"],
+    "flavor": [
+      "bitter"
+    ],
+    "meridian": [
+      "Heart",
+      "Liver"
+    ],
     "element_affinity": "Fire",
     "qi_effect": "neutral",
     "blood_effect": "moves",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Warms Yang, moves Qi, stimulates mind"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Warms Yang, moves Qi, stimulates mind",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Lassi",
     "category": "beverage",
     "thermal_nature": "cool",
-    "flavor": ["sweet", "sour"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet",
+      "sour"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, nourishes Yin, cooling"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, nourishes Yin, cooling",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Coconut Water",
     "category": "beverage",
     "thermal_nature": "cool",
-    "flavor": ["sweet", "bland"],
-    "meridian": ["Stomach", "Bladder"],
+    "flavor": [
+      "sweet",
+      "bland"
+    ],
+    "meridian": [
+      "Stomach",
+      "Bladder"
+    ],
     "element_affinity": "Water",
     "qi_effect": "neutral",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, generates fluids, diuretic"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, generates fluids, diuretic",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "beverage"
   },
   {
     "food_name": "Carrot",
     "category": "vegetable",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Liver", "Spleen"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Liver",
+      "Spleen"
+    ],
     "element_affinity": "Wood",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Liver and Spleen, benefits eyes"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Liver and Spleen, benefits eyes",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Spinach",
     "category": "vegetable",
     "thermal_nature": "cool",
-    "flavor": ["sweet"],
-    "meridian": ["Liver", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Liver",
+      "Stomach"
+    ],
     "element_affinity": "Wood",
     "qi_effect": "neutral",
     "blood_effect": "tonifies",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 1, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": -1, "cold": 0},
-    "therapeutic_use": "Nourishes Blood and Yin, clears heat"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 1,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Nourishes Blood and Yin, clears heat",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Potato",
     "category": "vegetable",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "neutral",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Spleen Qi, harmonizes Stomach"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Spleen Qi, harmonizes Stomach",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Tomato",
     "category": "vegetable",
     "thermal_nature": "cool",
-    "flavor": ["sweet", "sour"],
-    "meridian": ["Liver", "Stomach"],
+    "flavor": [
+      "sweet",
+      "sour"
+    ],
+    "meridian": [
+      "Liver",
+      "Stomach"
+    ],
     "element_affinity": "Wood",
     "qi_effect": "neutral",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, generates fluids, aids digestion"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, generates fluids, aids digestion",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Onion",
     "category": "vegetable",
     "thermal_nature": "warm",
-    "flavor": ["pungent"],
-    "meridian": ["Lung", "Stomach"],
+    "flavor": [
+      "pungent"
+    ],
+    "meridian": [
+      "Lung",
+      "Stomach"
+    ],
     "element_affinity": "Metal",
     "qi_effect": "neutral",
     "blood_effect": "moves",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Warms Yang, moves Qi, expels cold"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Warms Yang, moves Qi, expels cold",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "side"
   },
   {
     "food_name": "Cumin",
     "category": "spice",
     "thermal_nature": "warm",
-    "flavor": ["pungent"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "pungent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "moves",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Warms middle jiao, moves Qi, aromatic"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Warms middle jiao, moves Qi, aromatic",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Turmeric",
     "category": "spice",
     "thermal_nature": "warm",
-    "flavor": ["pungent", "bitter"],
-    "meridian": ["Liver", "Spleen"],
+    "flavor": [
+      "pungent",
+      "bitter"
+    ],
+    "meridian": [
+      "Liver",
+      "Spleen"
+    ],
     "element_affinity": "Wood",
     "qi_effect": "moves",
     "blood_effect": "moves",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": -1, "dampness": -1, "heat": -1, "cold": 0},
-    "therapeutic_use": "Moves Qi and Blood, clears heat, anti-inflammatory"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": -1,
+      "dampness": -1,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Moves Qi and Blood, clears heat, anti-inflammatory",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Black Pepper",
     "category": "spice",
     "thermal_nature": "hot",
-    "flavor": ["pungent"],
-    "meridian": ["Lung", "Stomach"],
+    "flavor": [
+      "pungent"
+    ],
+    "meridian": [
+      "Lung",
+      "Stomach"
+    ],
     "element_affinity": "Metal",
     "qi_effect": "moves",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": -1},
-    "therapeutic_use": "Warms interior, expels cold, moves Qi"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Warms interior, expels cold, moves Qi",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Olive Oil",
     "category": "oil",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Liver", "Large Intestine"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Liver",
+      "Large Intestine"
+    ],
     "element_affinity": "Wood",
     "qi_effect": "neutral",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": -1, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Moistens intestines, moves Qi, lubricates"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Moistens intestines, moves Qi, lubricates",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Coconut Oil",
     "category": "oil",
     "thermal_nature": "cool",
-    "flavor": ["sweet"],
-    "meridian": ["Stomach", "Large Intestine"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Stomach",
+      "Large Intestine"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "neutral",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 0, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, moistens, nourishes skin"
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, moistens, nourishes skin",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Butter",
     "category": "dairy",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Lung"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Lung"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi and Yin, nourishes Lung"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Qi and Yin, nourishes Lung",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Ghee",
     "category": "dairy",
     "thermal_nature": "warm",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Liver"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Liver"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "balanced",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies essence, nourishes tissues, lubricates"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies essence, nourishes tissues, lubricates",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Milk",
     "category": "dairy",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Lung", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Lung",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Nourishes Yin and fluids, moistens Lung"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Nourishes Yin and fluids, moistens Lung",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "digestive"
   },
   {
     "food_name": "Tofu",
     "category": "legume",
     "thermal_nature": "cool",
-    "flavor": ["sweet", "bland"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet",
+      "bland"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "nourishes_yin",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 1, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": -1, "cold": 0},
-    "therapeutic_use": "Clears heat, tonifies Qi, resolves dampness"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears heat, tonifies Qi, resolves dampness",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Falafel",
     "category": "legume",
     "thermal_nature": "warm",
-    "flavor": ["sweet", "pungent"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet",
+      "pungent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": -1, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Spleen, warms Yang, aromatic"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Spleen, warms Yang, aromatic",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   },
   {
     "food_name": "Pasta",
     "category": "grain",
     "thermal_nature": "neutral",
-    "flavor": ["sweet"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "neutral",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Spleen Qi, nourishing"
-  },
-  {
-    "food_name": "Pizza",
-    "category": "grain",
-    "thermal_nature": "warm",
-    "flavor": ["sweet", "salty"],
-    "meridian": ["Spleen", "Stomach"],
-    "element_affinity": "Earth",
-    "qi_effect": "tonifies",
-    "blood_effect": "neutral",
-    "yin_yang_balance": "warms_yang",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 1, "qi_stagnation": 0, "blood_stasis": 0, "dampness": -1, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Qi, warms Yang, heavy"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Spleen Qi, nourishing",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
   },
   {
     "food_name": "Sushi Rice",
     "category": "grain",
     "thermal_nature": "neutral",
-    "flavor": ["sweet", "sour"],
-    "meridian": ["Spleen", "Stomach"],
+    "flavor": [
+      "sweet",
+      "sour"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
     "element_affinity": "Earth",
     "qi_effect": "tonifies",
     "blood_effect": "neutral",
     "yin_yang_balance": "neutral",
-    "pattern_effects": {"qi_deficiency": 1, "blood_deficiency": 0, "yin_deficiency": 0, "yang_deficiency": 0, "qi_stagnation": 0, "blood_stasis": 0, "dampness": 0, "heat": 0, "cold": 0},
-    "therapeutic_use": "Tonifies Spleen Qi, easy to digest"
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Tonifies Spleen Qi, easy to digest",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Chicken Stew with Red Rice",
+    "category": "meat",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach",
+      "Kidney"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Strengthens Qi and Blood, supports digestion and recovery",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Grilled Fish with Millet",
+    "category": "meat",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Kidney"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Supports Qi, strengthens muscles, easy digestion",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Egg Curry with Brown Rice",
+    "category": "meat",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Heart",
+      "Kidney",
+      "Spleen"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "strongly_nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Nourishes Blood and Yin, supports vitality",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Steamed Fish with Rice",
+    "category": "meat",
+    "thermal_nature": "cool",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Kidney"
+    ],
+    "element_affinity": "Water",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "yin_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Light nourishment, clears mild heat, easy to digest",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Chicken Khichdi",
+    "category": "meat",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "strongly_tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 2,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Highly restorative meal, boosts digestion and immunity",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Grilled Chicken Salad Bowl",
+    "category": "meat",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet",
+      "bitter"
+    ],
+    "meridian": [
+      "Liver",
+      "Spleen"
+    ],
+    "element_affinity": "Wood",
+    "qi_effect": "regulates",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Supports liver Qi flow and light nourishment",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Fish Curry with Red Rice",
+    "category": "meat",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sour",
+      "salty"
+    ],
+    "meridian": [
+      "Liver",
+      "Kidney"
+    ],
+    "element_affinity": "Water",
+    "qi_effect": "moves",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Improves circulation, stimulates appetite",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Chicken Soup with Barley",
+    "category": "meat",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Lung"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Strengthens digestion, clears dampness",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Egg Bhurji with Chapati",
+    "category": "meat",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "pungent"
+    ],
+    "meridian": [
+      "Heart",
+      "Kidney"
+    ],
+    "element_affinity": "Fire",
+    "qi_effect": "tonifies",
+    "blood_effect": "strongly_nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 2,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Boosts energy, supports blood nourishment",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Lentil Soup with Whole Wheat Bread",
+    "category": "legume",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet",
+      "astringent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Strengthens digestion and provides steady energy",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Paneer Tikka with Roti",
+    "category": "dairy",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Lung",
+      "Spleen"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "yin_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 1,
+      "cold": 0
+    },
+    "therapeutic_use": "Builds strength but may increase dampness if excess",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
+  },
+  {
+    "food_name": "Dal Khichdi with Ghee",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "strongly_tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 2,
+      "blood_deficiency": 1,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Best for recovery, gut healing and energy",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Oats and Egg Breakfast Bowl",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Kidney"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Balanced meal for sustained energy",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Millet Upma with Nuts",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Kidney"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Warming, strengthens digestion and energy",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Rice and Rasam",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sour",
+      "pungent"
+    ],
+    "meridian": [
+      "Stomach",
+      "Lung"
+    ],
+    "element_affinity": "Fire",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Improves digestion, clears congestion",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Millet Khichdi",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Supports digestion and light nourishment",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Barley Soup",
+    "category": "grain",
+    "thermal_nature": "cool",
+    "flavor": [
+      "sweet",
+      "bland"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach",
+      "Lung"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "neutral",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yin_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -2,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Clears dampness and mild heat",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Stew with Appam",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Gentle nourishment, good for recovery",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Idli Upma",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Warming and easy to digest",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Sevai",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed",
+      "sauteed"
+    ],
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "neutral",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Light energy source, easy digestion",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Rice Noodles",
+    "category": "grain",
+    "thermal_nature": "cool",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Stomach",
+      "Spleen"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "neutral",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yin_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Cooling and light meal option",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Dal Khichdi (No Ghee)",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Light detox-friendly meal",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Brown Rice Pulao",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Provides sustained energy and nourishment",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Whole Wheat Pasta",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Supports Qi and provides steady energy",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Stuffed Chapati",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Warming and filling meal",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Stuffed Dosa",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sour",
+      "salty"
+    ],
+    "meridian": [
+      "Stomach",
+      "Spleen"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Stimulates digestion but may increase heat",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Steamed Rice Cakes",
+    "category": "grain",
+    "thermal_nature": "cool",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "neutral",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yin_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Light and cooling meal",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Lentil Rice Bowl",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet",
+      "astringent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Balanced protein-rich meal",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Simple Khichdi",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "strongly_tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 2,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Best for gut healing and recovery",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Moong Dal Khichdi",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach",
+      "Liver"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "strongly_tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 2,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Detoxifying, easy to digest and balances doshas",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Savory Upma",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Warming, supports digestion and energy",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Ragi Porridge",
+    "category": "grain",
+    "thermal_nature": "cool",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Stomach",
+      "Kidney"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "nourishes",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "yin_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 1,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Cooling nourishment, supports bones and fluids",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Ragi Dosa",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet",
+      "sour"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Provides energy, mildly stimulates digestion",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Millet Pongal",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "strongly_tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 2,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Strengthens digestion and provides warmth",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Oats Upma",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Balanced meal for steady energy",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Quinoa Khichdi",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach",
+      "Kidney"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Protein-rich, supports Qi and Blood",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Broken Wheat Porridge",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Strengthens digestion and provides sustained energy",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Masala Oats",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "pungent",
+      "salty"
+    ],
+    "meridian": [
+      "Stomach",
+      "Lung"
+    ],
+    "element_affinity": "Fire",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Stimulates digestion and clears mild dampness",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Sambar with Rice",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sour",
+      "salty"
+    ],
+    "meridian": [
+      "Stomach",
+      "Spleen"
+    ],
+    "element_affinity": "Fire",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Improves appetite and digestion",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Curd Rice",
+    "category": "dairy",
+    "thermal_nature": "cool",
+    "flavor": [
+      "sour",
+      "sweet"
+    ],
+    "meridian": [
+      "Stomach",
+      "Spleen"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yin_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 2,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Cooling and soothing but may increase dampness",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "digestive"
+  },
+  {
+    "food_name": "Lemon Rice",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sour"
+    ],
+    "meridian": [
+      "Liver",
+      "Stomach"
+    ],
+    "element_affinity": "Wood",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Regulates Liver Qi and improves digestion",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Vegetable Pulao",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Nourishing but moderately heavy meal",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Brown Rice with Dal",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "strongly_tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 2,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Staple meal for energy and digestion",
+    "meal_type": [
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Chapati Roll",
+    "category": "grain",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "sweet",
+      "salty"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Portable balanced meal",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Paneer Bhurji with Chapati",
+    "category": "dairy",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sweet",
+      "pungent"
+    ],
+    "meridian": [
+      "Lung",
+      "Spleen"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "nourishes",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 1,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Builds strength but may increase heat",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "digestive"
+  },
+  {
+    "food_name": "Soup with Toast",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "salty"
+    ],
+    "meridian": [
+      "Lung",
+      "Stomach"
+    ],
+    "element_affinity": "Metal",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 0,
+      "cold": -1
+    },
+    "therapeutic_use": "Light, warming and easy to digest",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Idiyappam",
+    "category": "grain",
+    "thermal_nature": "cool",
+    "flavor": [
+      "sweet"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "neutral",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yin_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 1,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": -1,
+      "cold": 0
+    },
+    "therapeutic_use": "Light and cooling staple",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Adai Dosa",
+    "category": "legume",
+    "thermal_nature": "warm",
+    "flavor": [
+      "astringent",
+      "pungent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Liver"
+    ],
+    "element_affinity": "Wood",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Protein-rich, stimulates digestion",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Uttapam",
+    "category": "grain",
+    "thermal_nature": "warm",
+    "flavor": [
+      "sour",
+      "sweet"
+    ],
+    "meridian": [
+      "Stomach",
+      "Spleen"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": 1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Stimulates appetite but slightly heavy",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "main"
+  },
+  {
+    "food_name": "Lentil Stew",
+    "category": "legume",
+    "thermal_nature": "neutral",
+    "flavor": [
+      "astringent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Stomach"
+    ],
+    "element_affinity": "Earth",
+    "qi_effect": "tonifies",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "balanced",
+    "pattern_effects": {
+      "qi_deficiency": 1,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 0,
+      "qi_stagnation": 0,
+      "blood_stasis": 0,
+      "dampness": 0,
+      "heat": 0,
+      "cold": 0
+    },
+    "therapeutic_use": "Protein-rich and grounding meal",
+    "meal_type": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "role": "protein"
+  },
+  {
+    "food_name": "Lentil Pancake",
+    "category": "legume",
+    "thermal_nature": "warm",
+    "flavor": [
+      "astringent",
+      "pungent"
+    ],
+    "meridian": [
+      "Spleen",
+      "Liver"
+    ],
+    "element_affinity": "Wood",
+    "qi_effect": "moves",
+    "blood_effect": "neutral",
+    "yin_yang_balance": "yang_supportive",
+    "pattern_effects": {
+      "qi_deficiency": 0,
+      "blood_deficiency": 0,
+      "yin_deficiency": 0,
+      "yang_deficiency": 1,
+      "qi_stagnation": -1,
+      "blood_stasis": 0,
+      "dampness": -1,
+      "heat": 1,
+      "cold": -1
+    },
+    "therapeutic_use": "Improves digestion and reduces stagnation",
+    "meal_type": [
+      "lunch"
+    ],
+    "role": "protein"
   }
 ]
