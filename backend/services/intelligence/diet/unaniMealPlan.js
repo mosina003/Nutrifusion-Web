@@ -511,7 +511,73 @@ function generateStrictDailyMealPlan(userType = 'damvi') {
   return output;
 }
 
+/**
+ * Generate 7-day Unani meal plan
+ * Wrapper function to provide consistent interface with Ayurveda
+ */
+const generateWeeklyPlan = (rankedFoods, userAssessment) => {
+  // Generate 7-day plan by repeating daily meal plan
+  const weeklyPlan = [];
+  const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+  for (let day = 1; day <= 7; day++) {
+    // Generate daily plan
+    const dailyPlan = generateStrictDailyMealPlan(userAssessment);
+    
+    // Reformat to match Ayurveda weekly plan structure
+    if (dailyPlan && dailyPlan.mealPlan) {
+      const dayPlan = {
+        day: day,
+        day_name: dayNames[(day - 1) % 7],
+        meals: [
+          {
+            meal_type: 'Breakfast',
+            foods: dailyPlan.mealPlan.breakfast.meal,
+            timing: 'Morning (7-9 AM)'
+          },
+          {
+            meal_type: 'Lunch',
+            foods: dailyPlan.mealPlan.lunch.meal,
+            timing: 'Midday (12-1 PM)'
+          },
+          {
+            meal_type: 'Dinner',
+            foods: dailyPlan.mealPlan.dinner.meal,
+            timing: 'Evening (6-7 PM)'
+          }
+        ],
+        guidelines: [
+          'Balance Unani humors through food selection',
+          'Respect temperament compatibility',
+          'Avoid excess heat or cold',
+          'Support digestive balance',
+          'Follow proper meal timing'
+        ]
+      };
+      weeklyPlan.push(dayPlan);
+    }
+  }
+
+  return {
+    '7_day_plan': weeklyPlan,
+    top_ranked_foods: rankedFoods.highly_suitable || [],
+    reasoning_summary: {
+      primary_mizaj: userAssessment.primary_mizaj || 'Balanced',
+      secondary_mizaj: userAssessment.secondary_mizaj || 'Neutral',
+      digestive_strength: userAssessment.digestive_strength || 'Moderate',
+      key_principles: [
+        'Balance the four humors (dam, safra, balgham, sauda)',
+        'Respect temperament-specific needs',
+        'Avoid foods that aggravate dominant humor',
+        'Support digestive balance',
+        'Maintain proper meal timing and composition'
+      ]
+    }
+  };
+};
+
 module.exports = {
+  generateWeeklyPlan,
   generateStrictDailyMealPlan,
   analyzeTemperament,
   getDigestibilityScore

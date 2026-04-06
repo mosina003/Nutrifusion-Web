@@ -513,7 +513,80 @@ function generateStrictDailyMealPlan(condition) {
   return output;
 }
 
+/**
+ * Generate 7-day TCM meal plan
+ * Wrapper function to provide consistent interface with Ayurveda
+ */
+const generateWeeklyPlan = (rankedFoods, userAssessment) => {
+  // Build condition from user assessment
+  const condition = {
+    yin: userAssessment.yin_yang_ratio?.[0] || 50,
+    yang: userAssessment.yin_yang_ratio?.[1] || 50,
+    heat: userAssessment.hot_cold_score || 25,
+    cold: (100 - userAssessment.hot_cold_score) || 75
+  };
+
+  // Generate 7-day plan by repeating daily meal plan
+  const weeklyPlan = [];
+  const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+  for (let day = 1; day <= 7; day++) {
+    // Generate daily plan
+    const dailyPlan = generateStrictDailyMealPlan(condition);
+    
+    // Reformat to match Ayurveda weekly plan structure
+    if (dailyPlan && dailyPlan.mealPlan) {
+      const dayPlan = {
+        day: day,
+        day_name: dayNames[(day - 1) % 7],
+        meals: [
+          {
+            meal_type: 'Breakfast',
+            foods: dailyPlan.mealPlan.breakfast.meal,
+            timing: 'Morning (7-9 AM)'
+          },
+          {
+            meal_type: 'Lunch',
+            foods: dailyPlan.mealPlan.lunch.meal,
+            timing: 'Midday (12-1 PM)'
+          },
+          {
+            meal_type: 'Dinner',
+            foods: dailyPlan.mealPlan.dinner.meal,
+            timing: 'Evening (6-7 PM)'
+          }
+        ],
+        guidelines: [
+          'Maintain warm foods throughout the day',
+          'Avoid cold/raw foods',
+          'Balance thermal natures',
+          'Yin/Yang balance consideration',
+          'Respect digestive capacity'
+        ]
+      };
+      weeklyPlan.push(dayPlan);
+    }
+  }
+
+  return {
+    '7_day_plan': weeklyPlan,
+    top_ranked_foods: rankedFoods.top_ranked_foods || [],
+    reasoning_summary: {
+      thermal_pattern: userAssessment.thermal_tendency || 'Neutral',
+      digestive_strength: userAssessment.digestive_strength || 'Moderate',
+      key_principles: [
+        'Warm foods for proper digestion',
+        'Balance Yin and Yang through food selection',
+        'Respect thermal nature compatibility',
+        'Avoid excessive heat or cold',
+        'Support digestive fire (chi)'
+      ]
+    }
+  };
+};
+
 module.exports = {
+  generateWeeklyPlan,
   generateStrictDailyMealPlan,
   analyzeCondition,
   getThermalDigestibility
