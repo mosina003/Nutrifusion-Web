@@ -211,14 +211,14 @@ function generateStrictBreakfast(allFoods, condition) {
   } else if (yinDeficiency && excessHeat) {
     // Yin deficiency + heat → cooling foods
     const coolingFoods = breakfastFoods.filter(f =>
-      (f.thermal_nature?.toLowerCase() === 'cool' || f.thermal_nature?.toLowerCase() === 'neutral') &&
+      (f.tcm_properties?.thermal_nature?.toLowerCase() === 'cool' || f.tcm_properties?.thermal_nature?.toLowerCase() === 'neutral') &&
       f.category?.toLowerCase() === 'grain'
     );
     mainDish = coolingFoods[Math.floor(Math.random() * coolingFoods.length)];
   } else {
     // Neutral balance → prefer neutral/warm grains
     const neutralFoods = breakfastFoods.filter(f =>
-      (f.thermal_nature?.toLowerCase() === 'neutral' || f.thermal_nature?.toLowerCase() === 'warm') &&
+      (f.tcm_properties?.thermal_nature?.toLowerCase() === 'neutral' || f.tcm_properties?.thermal_nature?.toLowerCase() === 'warm') &&
       f.category?.toLowerCase() === 'grain'
     );
     mainDish = neutralFoods[Math.floor(Math.random() * neutralFoods.length)];
@@ -286,7 +286,7 @@ function generateStrictLunch(allFoods, condition) {
   // Select EXACTLY 1 grain
   let grains = lunchFoods.filter(f => f.category?.toLowerCase() === 'grain');
   if (yangDeficiency) {
-    grains = grains.filter(f => f.thermal_nature?.toLowerCase() === 'warm');
+    grains = grains.filter(f => f.tcm_properties?.thermal_nature?.toLowerCase() === 'warm');
   }
   if (grains.length === 0) grains = lunchFoods.filter(f => f.category?.toLowerCase() === 'grain');
 
@@ -377,11 +377,11 @@ function generateStrictDinner(allFoods, condition) {
 
   if (yangDeficiency) {
     // Yang deficiency → warming foods for deeper nourishment
-    const warmingFoods = dinnerFoods.filter(f => f.thermal_nature?.toLowerCase() === 'warm');
+    const warmingFoods = dinnerFoods.filter(f => f.tcm_properties?.thermal_nature?.toLowerCase() === 'warm');
     mainDish = warmingFoods[Math.floor(Math.random() * warmingFoods.length)];
   } else {
     // Neutral balance → prefer neutral for calm digestion
-    const neutralFoods = dinnerFoods.filter(f => f.thermal_nature?.toLowerCase() === 'neutral');
+    const neutralFoods = dinnerFoods.filter(f => f.tcm_properties?.thermal_nature?.toLowerCase() === 'neutral');
     mainDish = neutralFoods.length > 0 ? neutralFoods[Math.floor(Math.random() * neutralFoods.length)] : dinnerFoods[0];
   }
 
@@ -463,7 +463,7 @@ function generateStrictDailyMealPlan(condition) {
 
   const hasInvalidColdCombo = (meal) => {
     return meal.some(name => allFoods.find(f => (f.food_name === name || f.name === name) &&
-      f.thermal_nature?.toLowerCase() === 'cold'));
+      f.tcm_properties?.thermal_nature?.toLowerCase() === 'cold'));
   };
 
   if (hasInvalidColdCombo(breakfast.meal)) {
@@ -476,7 +476,7 @@ function generateStrictDailyMealPlan(condition) {
   // Check for excessive hot mixing
   const countHotFoods = (meal) => {
     return meal.filter(name => allFoods.find(f => (f.food_name === name || f.name === name) &&
-      f.thermal_nature?.toLowerCase() === 'hot')).length;
+      f.tcm_properties?.thermal_nature?.toLowerCase() === 'hot')).length;
   };
 
   if (countHotFoods(breakfast.meal) > 2 || countHotFoods(lunch.meal) > 2 || countHotFoods(dinner.meal) > 1) {
