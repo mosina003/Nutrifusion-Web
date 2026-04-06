@@ -103,6 +103,112 @@ function transformModernScoresToClinicalProfile(scores, responses) {
 }
 
 /**
+ * Sync assessment data to User and HealthProfile models
+ * @param {string} userId - User ID
+ * @param {Object} responses - Raw assessment responses
+ * @param {Object} result - Processed assessment result
+ * @param {string} framework - Assessment framework
+ */
+async function syncAssessmentDataToProfile(userId, responses, result, framework) {
+  try {
+    const HealthProfile = require('../models/HealthProfile');
+    
+    // Extract common response keys for all frameworks
+    const getResponse = (key) => responses[key]?.value;
+    
+    // 1. Prepare User data
+    const userData = {};
+    
+    // Extract basic info
+    if (getResponse('name')) userData.name = getResponse('name');
+    if (getResponse('age')) userData.age = parseInt(getResponse('age'));
+    if (getResponse('gender')) userData.gender = getResponse('gender');
+    if (getResponse('height')) userData.height = parseFloat(getResponse('height'));
+    if (getResponse('weight')) userData.weight = parseFloat(getResponse('weight'));
+    
+    // Extract dietary preferences
+    if (getResponse('dietary_preference')) userData.dietaryPreference = getResponse('dietary_preference');
+    if (getResponse('food_allergies')) {
+      userData.allergies = Array.isArray(getResponse('food_allergies')) 
+        ? getResponse('food_allergies').filter(a => a && a !== 'none')
+        : [];
+    }
+    
+    // 2. Prepare HealthProfile data
+    const healthProfileData = {
+      userId,
+      lifestyle: {
+        activityLevel: getResponse('activity_level') || getResponse('activityLevel') || 'Moderate',
+        sleepHours: parseFloat(getResponse('sleep_hours')) || parseFloat(getResponse('sleepHours')) || 7,
+        stressLevel: getResponse('stress_level') || getResponse('stressLevel') || 'Medium'
+      },
+      digestionIndicators: {
+        appetite: getResponse('appetite') || 'Normal',
+        bowelRegularity: getResponse('bowel_regularity') || getResponse('bowelRegularity') || 'Regular',
+        bloating: getResponse('bloating') === true || getResponse('bloating') === 'yes' || false,
+        acidReflux: getResponse('acid_reflux') === true || getResponse('acid_reflux') === 'yes' || false
+      },
+      metabolicMarkers: {
+        bloodPressure: getResponse('blood_pressure') || null,
+        bloodSugar: getResponse('blood_sugar') || null,
+        cholesterol: getResponse('cholesterol') || null
+      },
+      anthropometric: {
+        waist: getResponse('waist_circumference') ? parseFloat(getResponse('waist_circumference')) : null
+      }
+    };
+
+    // 3. Framework-specific data extraction
+    if (framework === 'ayurveda') {
+      // Ayurveda specific: extract from scores
+      if (result.scores?.agni?.type) {
+        healthProfileData.digestionIndicators.digestiveCapacity = result.scores.agni.type;
+      }
+    } else if (framework === 'unani') {
+      // Unani specific: extract from scores
+      if (result.scores?.thermal_tendency) {
+        healthProfileData.metabolicMarkers.thermalTendency = result.scores.thermal_tendency;
+      }
+    } else if (framework === 'tcm') {
+      // TCM specific: extract from scores
+      if (result.scores?.cold_heat) {
+        healthProfileData.metabolicMarkers.coldHeatPattern = result.scores.cold_heat;
+      }
+    } else if (framework === 'modern') {
+      // Modern specific: ensure metric values are set
+      if (result.scores?.bmi) healthProfileData.bmi = result.scores.bmi;
+      if (result.scores?.bmr) healthProfileData.bmr = result.scores.bmr;
+      if (result.scores?.tdee) healthProfileData.tdee = result.scores.tdee;
+    }
+
+    // 4. Update User with extracted data
+    if (Object.keys(userData).length > 0) {
+      await User.findByIdAndUpdate(userId, userData, { new: true });
+      console.log('✅ User profile updated with assessment data:', Object.keys(userData));
+    }
+
+    // 5. Create or update HealthProfile
+    const existingHealthProfile = await HealthProfile.findOne({ userId }).sort({ recordedAt: -1 });
+    
+    if (existingHealthProfile && new Date() - new Date(existingHealthProfile.recordedAt) < 24 * 60 * 60 * 1000) {
+      // Update existing if created within last 24 hours
+      await HealthProfile.findByIdAndUpdate(existingHealthProfile._id, healthProfileData, { new: true });
+      console.log('✅ HealthProfile updated for user:', userId);
+    } else {
+      // Create new HealthProfile record
+      healthProfileData.recordedAt = new Date();
+      const newHealthProfile = new HealthProfile(healthProfileData);
+      await newHealthProfile.save();
+      console.log('✅ New HealthProfile created for user:', userId);
+    }
+
+  } catch (error) {
+    console.error('⚠️  Error syncing assessment data to profile:', error.message);
+    // Non-critical error - don't fail assessment submission
+  }
+}
+
+/**
  * @route   GET /api/assessments/frameworks
  * @desc    Get list of available assessment frameworks
  * @access  Public
@@ -234,6 +340,9 @@ router.post('/submit', protect, async (req, res) => {
       });
 
       await assessment.save();
+
+      // 🔄 Sync assessment data to User and HealthProfile models
+      await syncAssessmentDataToProfile(userId, responses, result, framework);
 
       // Generate and save diet plan to DietPlan collection
       let dietPlanId = null;
