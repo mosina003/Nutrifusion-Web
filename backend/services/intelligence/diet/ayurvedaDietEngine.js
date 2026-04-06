@@ -56,6 +56,8 @@ const transformJSONFood = (jsonFood) => {
     _id: jsonFood.food_name,
     name: jsonFood.food_name,
     category: capitalize(jsonFood.category),
+    meal_type: jsonFood.meal_type || [], // CRITICAL: Preserve meal_type for filtering
+    digestibility_score: jsonFood.digestibility_score || 2, // CRITICAL: Preserve digestibility for dinner filtering
     ayurveda: {
       rasa: jsonFood.rasa ? jsonFood.rasa.map(capitalize) : [],
       guna: jsonFood.guna ? jsonFood.guna.map(capitalize) : [],
@@ -160,7 +162,9 @@ const scoreFood = (assessmentResult, food) => {
     food: {
       _id: food._id,
       name: food.name,
-      category: food.category
+      category: food.category,
+      meal_type: food.meal_type, // CRITICAL: Preserve for meal generation filtering
+      digestibility_score: food.digestibility_score // CRITICAL: Preserve for dinner selection
     },
     score: totalScore,
     breakdown,

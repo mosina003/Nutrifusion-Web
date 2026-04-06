@@ -113,9 +113,11 @@ const generateBreakfast = (categorizedFoods, agni, usedIngredients, dayNumber, r
   const { highly_recommended, moderate } = categorizedFoods;
   
   // Filter: NO heavy/fried, NO high ama, NO ingredients
+  // CRITICAL: Also filter by meal_type to get only breakfast-suitable items
   const allBreakfastFoods = [...highly_recommended, ...moderate]
     .filter(f => 
       !isIngredientOnly(f.food.category) &&
+      f.food.meal_type && f.food.meal_type.includes('breakfast') && // CRITICAL FIX: Check meal_type
       !(f.ayurveda_data.guna && (f.ayurveda_data.guna.includes('fried') || f.ayurveda_data.guna.includes('very-heavy'))) &&
       (f.ayurveda_data.ama_forming_potential || 'low') !== 'high'
     );
@@ -231,10 +233,12 @@ const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumb
   const { highly_recommended, moderate } = categorizedFoods;
   
   // Filter: NO ingredients, NO fruits, NO heavy/fried foods
+  // CRITICAL: Also filter by meal_type to get only lunch-suitable items
   const allFoods = [...highly_recommended, ...moderate]
     .filter(f => 
       !isIngredientOnly(f.food.category) && // Remove pure ingredients
       f.food.category !== 'Fruit' && // Remove fruits
+      f.food.meal_type && f.food.meal_type.includes('lunch') && // CRITICAL FIX: Check meal_type
       !(f.ayurveda_data.guna && (f.ayurveda_data.guna.includes('fried') || f.ayurveda_data.guna.includes('very-heavy')))
     );
   
@@ -346,7 +350,7 @@ const generateDinner = (categorizedFoods, dominantDosha, agni, usedIngredients, 
       !isIngredientOnly(f.food.category) && 
       f.food.category !== 'Fruit' &&
       !(f.ayurveda_data.guna && (f.ayurveda_data.guna.includes('fried') || f.ayurveda_data.guna.includes('heavy') || f.ayurveda_data.guna.includes('oily'))) &&
-      (f.ayurveda_data.digestibility_score || 3) <= 2
+      (f.food.digestibility_score || 3) <= 2 // CRITICAL FIX: Use f.food.digestibility_score not f.ayurveda_data
     );
   
   const meal = {

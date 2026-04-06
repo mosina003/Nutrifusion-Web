@@ -49,6 +49,7 @@ const transformJSONFood = (jsonFood) => {
     _id: jsonFood.food_name,
     name: jsonFood.food_name,
     category: category,
+    meal_type: jsonFood.meal_type || [], // CRITICAL: Preserve meal_type for filtering
     modernNutrition: {
       perUnit: '100g',
       calories: jsonFood.calories || 0,
@@ -142,7 +143,8 @@ const scoreFood = (clinicalProfile, food) => {
     food: {
       _id: food._id,
       name: food.name,
-      category: food.category
+      category: food.category,
+      meal_type: food.meal_type // CRITICAL: Preserve for meal generation filtering
     },
     score: Math.round(totalScore * 10) / 10,
     breakdown,
