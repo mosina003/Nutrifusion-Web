@@ -2,3459 +2,737 @@
   {
     "food_name": "Idli",
     "category": "grain",
-    "preparation_methods": [
-      "steamed",
-      "fermented"
-    ],
+    "preparation_methods": ["steamed", "fermented"],
     "calories": 130,
     "protein": 4,
     "carbs": 28,
     "fat": 1,
     "fiber": 2,
     "glycemic_index": 70,
-    "micronutrients": {
-      "iron": 1.2,
-      "calcium": 10,
-      "sodium": 120,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1.2, "calcium": 10, "sodium": 120, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": -1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Fermented, easily digestible, probiotic benefits",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
+    "therapeutic_use": "Fermented, easily digestible, probiotic benefits"
   },
   {
     "food_name": "Dosa",
     "category": "grain",
-    "preparation_methods": [
-      "fermented",
-      "pan_fried"
-    ],
+    "preparation_methods": ["fermented", "pan_fried"],
     "calories": 184,
     "protein": 5,
     "carbs": 30,
     "fat": 6,
     "fiber": 2,
     "glycemic_index": 77,
-    "micronutrients": {
-      "iron": 1.5,
-      "calcium": 15,
-      "sodium": 150,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1.5, "calcium": 15, "sodium": 150, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": -1, "hypertension": -1, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Fermented, provides energy, moderate fat",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "main"
+    "therapeutic_use": "Fermented, provides energy, moderate fat"
   },
   {
     "food_name": "Upma",
     "category": "grain",
-    "preparation_methods": [
-      "sauteed",
-      "boiled"
-    ],
+    "preparation_methods": ["sauteed", "boiled"],
     "calories": 220,
     "protein": 6,
     "carbs": 35,
     "fat": 7,
     "fiber": 3,
     "glycemic_index": 66,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 20,
-      "sodium": 300,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -2,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 2, "calcium": 20, "sodium": 300, "vitamin_c": 2, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": -2, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Nutrient-rich breakfast, moderate fiber",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
+    "therapeutic_use": "Nutrient-rich breakfast, moderate fiber"
   },
   {
     "food_name": "Poha",
     "category": "grain",
-    "preparation_methods": [
-      "soaked",
-      "sauteed"
-    ],
+    "preparation_methods": ["soaked", "sauteed"],
     "calories": 180,
     "protein": 4,
     "carbs": 38,
     "fat": 3,
     "fiber": 2,
     "glycemic_index": 69,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 18,
-      "sodium": 250,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1.8, "calcium": 18, "sodium": 250, "vitamin_c": 6, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": -1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Light, easy to digest, iron-rich",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
+    "therapeutic_use": "Light, easy to digest, iron-rich"
   },
   {
     "food_name": "Paratha",
     "category": "grain",
-    "preparation_methods": [
-      "kneaded",
-      "pan_fried"
-    ],
+    "preparation_methods": ["kneaded", "pan_fried"],
     "calories": 320,
     "protein": 7,
     "carbs": 45,
     "fat": 12,
     "fiber": 4,
     "glycemic_index": 62,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 20,
-      "sodium": 350,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 2.5, "calcium": 20, "sodium": 350, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": -1, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "contains_gluten",
-    "therapeutic_use": "High energy, high fat, best for active individuals",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
+    "therapeutic_use": "High energy, high fat, best for active individuals"
   },
   {
     "food_name": "Pongal",
     "category": "grain",
-    "preparation_methods": [
-      "boiled",
-      "tempered"
-    ],
+    "preparation_methods": ["boiled", "tempered"],
     "calories": 210,
     "protein": 7,
     "carbs": 30,
     "fat": 8,
     "fiber": 3,
     "glycemic_index": 65,
-    "micronutrients": {
-      "iron": 1.6,
-      "calcium": 25,
-      "sodium": 280,
-      "vitamin_c": 1,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1.6, "calcium": 25, "sodium": 280, "vitamin_c": 1, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": -1, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Comfort food, balanced nutrition",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
+    "therapeutic_use": "Comfort food, balanced nutrition"
   },
   {
     "food_name": "Biryani",
     "category": "grain",
-    "preparation_methods": [
-      "layered",
-      "dum_cooked"
-    ],
+    "preparation_methods": ["layered", "dum_cooked"],
     "calories": 290,
     "protein": 10,
     "carbs": 40,
     "fat": 10,
     "fiber": 2,
     "glycemic_index": 58,
-    "micronutrients": {
-      "iron": 2.2,
-      "calcium": 20,
-      "sodium": 450,
-      "vitamin_c": 2,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": -1
-    },
+    "micronutrients": {"iron": 2.2, "calcium": 20, "sodium": 450, "vitamin_c": 2, "vitamin_b12": 0.4},
+    "health_conditions": {"diabetes": 0, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": -1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Complete meal, high protein, festive dish",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
+    "therapeutic_use": "Complete meal, high protein, festive dish"
   },
   {
     "food_name": "Fried Rice",
     "category": "grain",
-    "preparation_methods": [
-      "stir_fried"
-    ],
+    "preparation_methods": ["stir_fried"],
     "calories": 250,
     "protein": 6,
     "carbs": 35,
     "fat": 9,
     "fiber": 2,
     "glycemic_index": 68,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 18,
-      "sodium": 500,
-      "vitamin_c": 3,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1.8, "calcium": 18, "sodium": 500, "vitamin_c": 3, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": -1, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Quick energy, high sodium",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
+    "therapeutic_use": "Quick energy, high sodium"
   },
   {
     "food_name": "Oatmeal",
     "category": "grain",
-    "preparation_methods": [
-      "boiled"
-    ],
+    "preparation_methods": ["boiled"],
     "calories": 68,
     "protein": 2.4,
     "carbs": 12,
     "fat": 1.4,
     "fiber": 1.7,
     "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 0.9,
-      "calcium": 8,
-      "sodium": 2,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0.9, "calcium": 8, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 1, "heart_disease": 2, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Heart-healthy, lowers cholesterol, high fiber",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "main"
+    "therapeutic_use": "Heart-healthy, lowers cholesterol, high fiber"
   },
   {
     "food_name": "Bread Toast",
     "category": "grain",
-    "preparation_methods": [
-      "toasted"
-    ],
+    "preparation_methods": ["toasted"],
     "calories": 265,
     "protein": 9,
     "carbs": 49,
     "fat": 3.2,
     "fiber": 2.7,
     "glycemic_index": 75,
-    "micronutrients": {
-      "iron": 3.6,
-      "calcium": 100,
-      "sodium": 490,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -2,
-      "heart_disease": 0,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 3.6, "calcium": 100, "sodium": 490, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": -1, "hypertension": -2, "heart_disease": 0, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "contains_gluten",
-    "therapeutic_use": "Quick breakfast, fortified with vitamins",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "main"
+    "therapeutic_use": "Quick breakfast, fortified with vitamins"
   },
   {
     "food_name": "Chapati",
     "category": "grain",
-    "preparation_methods": [
-      "kneaded",
-      "roasted"
-    ],
+    "preparation_methods": ["kneaded", "roasted"],
     "calories": 297,
     "protein": 9,
     "carbs": 55,
     "fat": 3,
     "fiber": 7,
     "glycemic_index": 62,
-    "micronutrients": {
-      "iron": 3.5,
-      "calcium": 34,
-      "sodium": 5,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 2,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 3.5, "calcium": 34, "sodium": 5, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 1, "hypertension": 2, "heart_disease": 1, "digestive_issues": 2, "inflammation": 0},
     "allergen_info": "contains_gluten",
-    "therapeutic_use": "High fiber, whole grain, low sodium",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
+    "therapeutic_use": "High fiber, whole grain, low sodium"
   },
   {
     "food_name": "Cornflakes",
     "category": "grain",
-    "preparation_methods": [
-      "processed"
-    ],
+    "preparation_methods": ["processed"],
     "calories": 357,
     "protein": 7,
     "carbs": 84,
     "fat": 0.4,
     "fiber": 3,
     "glycemic_index": 81,
-    "micronutrients": {
-      "iron": 8,
-      "calcium": 10,
-      "sodium": 729,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -2,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 8, "calcium": 10, "sodium": 729, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": -2, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Fortified with iron, high sugar, processed",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
+    "therapeutic_use": "Fortified with iron, high sugar, processed"
   },
   {
     "food_name": "Dal Tadka",
     "category": "legume",
-    "preparation_methods": [
-      "boiled",
-      "tempered"
-    ],
+    "preparation_methods": ["boiled", "tempered"],
     "calories": 150,
     "protein": 9,
     "carbs": 20,
     "fat": 4,
     "fiber": 6,
     "glycemic_index": 30,
-    "micronutrients": {
-      "iron": 2.7,
-      "calcium": 40,
-      "sodium": 350,
-      "vitamin_c": 3,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 0,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 2.7, "calcium": 40, "sodium": 350, "vitamin_c": 3, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 0, "heart_disease": 2, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "High protein, high fiber, blood sugar control",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "protein"
+    "therapeutic_use": "High protein, high fiber, blood sugar control"
   },
   {
     "food_name": "Chole",
     "category": "legume",
-    "preparation_methods": [
-      "boiled",
-      "sauteed"
-    ],
+    "preparation_methods": ["boiled", "sauteed"],
     "calories": 164,
     "protein": 9,
     "carbs": 27,
     "fat": 3,
     "fiber": 8,
     "glycemic_index": 28,
-    "micronutrients": {
-      "iron": 2.9,
-      "calcium": 49,
-      "sodium": 300,
-      "vitamin_c": 4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 0,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 2.9, "calcium": 49, "sodium": 300, "vitamin_c": 4, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 0, "heart_disease": 2, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "High protein, high fiber, weight management",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "protein"
+    "therapeutic_use": "High protein, high fiber, weight management"
   },
   {
     "food_name": "Rajma",
     "category": "legume",
-    "preparation_methods": [
-      "boiled",
-      "simmered"
-    ],
+    "preparation_methods": ["boiled", "simmered"],
     "calories": 140,
     "protein": 9,
     "carbs": 25,
     "fat": 1,
     "fiber": 7,
     "glycemic_index": 29,
-    "micronutrients": {
-      "iron": 2.9,
-      "calcium": 28,
-      "sodium": 5,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 2.9, "calcium": 28, "sodium": 5, "vitamin_c": 2, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Kidney beans, low fat, high protein, heart-healthy",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "protein"
+    "therapeutic_use": "Kidney beans, low fat, high protein, heart-healthy"
   },
   {
     "food_name": "Hummus",
     "category": "legume",
-    "preparation_methods": [
-      "blended"
-    ],
+    "preparation_methods": ["blended"],
     "calories": 166,
     "protein": 8,
     "carbs": 14,
     "fat": 9,
     "fiber": 6,
     "glycemic_index": 6,
-    "micronutrients": {
-      "iron": 2.4,
-      "calcium": 49,
-      "sodium": 240,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 2.4, "calcium": 49, "sodium": 240, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 1, "heart_disease": 2, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Very low GI, healthy fats, Mediterranean diet",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "protein"
+    "therapeutic_use": "Very low GI, healthy fats, Mediterranean diet"
   },
   {
     "food_name": "Sprout Salad",
     "category": "legume",
-    "preparation_methods": [
-      "soaked",
-      "raw"
-    ],
+    "preparation_methods": ["soaked", "raw"],
     "calories": 105,
     "protein": 7,
     "carbs": 19,
     "fat": 0.5,
     "fiber": 4,
     "glycemic_index": 25,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 30,
-      "sodium": 6,
-      "vitamin_c": 13,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 2, "calcium": 30, "sodium": 6, "vitamin_c": 13, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Raw, enzyme-rich, vitamin C, detoxifying",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "protein"
+    "therapeutic_use": "Raw, enzyme-rich, vitamin C, detoxifying"
   },
   {
     "food_name": "Paneer Butter Masala",
     "category": "dairy",
-    "preparation_methods": [
-      "sauteed",
-      "simmered"
-    ],
+    "preparation_methods": ["sauteed", "simmered"],
     "calories": 265,
     "protein": 10,
     "carbs": 8,
     "fat": 22,
     "fiber": 1,
     "glycemic_index": 35,
-    "micronutrients": {
-      "iron": 0.5,
-      "calcium": 208,
-      "sodium": 450,
-      "vitamin_c": 3,
-      "vitamin_b12": 1.2
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": -1
-    },
+    "micronutrients": {"iron": 0.5, "calcium": 208, "sodium": 450, "vitamin_c": 3, "vitamin_b12": 1.2},
+    "health_conditions": {"diabetes": 0, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": -1},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "High calcium, high fat, rich and creamy",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "protein"
+    "therapeutic_use": "High calcium, high fat, rich and creamy"
   },
   {
     "food_name": "Curd",
     "category": "dairy",
-    "preparation_methods": [
-      "fermented"
-    ],
+    "preparation_methods": ["fermented"],
     "calories": 61,
     "protein": 3.5,
     "carbs": 4.7,
     "fat": 3.3,
     "fiber": 0,
     "glycemic_index": 35,
-    "micronutrients": {
-      "iron": 0.1,
-      "calcium": 121,
-      "sodium": 46,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.5
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0.1, "calcium": 121, "sodium": 46, "vitamin_c": 0, "vitamin_b12": 0.5},
+    "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Probiotic, gut health, calcium source",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Probiotic, gut health, calcium source"
   },
   {
     "food_name": "Cheese Sandwich",
     "category": "dairy",
-    "preparation_methods": [
-      "assembled",
-      "toasted"
-    ],
+    "preparation_methods": ["assembled", "toasted"],
     "calories": 300,
     "protein": 12,
     "carbs": 30,
     "fat": 15,
     "fiber": 2,
     "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 250,
-      "sodium": 600,
-      "vitamin_c": 1,
-      "vitamin_b12": 1.1
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 2.5, "calcium": 250, "sodium": 600, "vitamin_c": 1, "vitamin_b12": 1.1},
+    "health_conditions": {"diabetes": -1, "hypertension": -2, "heart_disease": -1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "contains_dairy_gluten",
-    "therapeutic_use": "High calcium, high protein, processed",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "protein"
+    "therapeutic_use": "High calcium, high protein, processed"
   },
   {
     "food_name": "Chicken Curry",
     "category": "meat",
-    "preparation_methods": [
-      "sauteed",
-      "simmered"
-    ],
+    "preparation_methods": ["sauteed", "simmered"],
     "calories": 239,
     "protein": 27,
     "carbs": 6,
     "fat": 12,
     "fiber": 1,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 1.3,
-      "calcium": 20,
-      "sodium": 350,
-      "vitamin_c": 3,
-      "vitamin_b12": 0.6
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1.3, "calcium": 20, "sodium": 350, "vitamin_c": 3, "vitamin_b12": 0.6},
+    "health_conditions": {"diabetes": 1, "hypertension": -1, "heart_disease": 0, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "High protein, muscle building, B vitamins",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "protein"
+    "therapeutic_use": "High protein, muscle building, B vitamins"
   },
   {
     "food_name": "Fish Fry",
     "category": "meat",
-    "preparation_methods": [
-      "marinated",
-      "deep_fried"
-    ],
+    "preparation_methods": ["marinated", "deep_fried"],
     "calories": 280,
     "protein": 22,
     "carbs": 5,
     "fat": 20,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 1,
-      "calcium": 15,
-      "sodium": 400,
-      "vitamin_c": 2,
-      "vitamin_b12": 2.5
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": -1,
-      "inflammation": -1
-    },
+    "micronutrients": {"iron": 1, "calcium": 15, "sodium": 400, "vitamin_c": 2, "vitamin_b12": 2.5},
+    "health_conditions": {"diabetes": 0, "hypertension": -2, "heart_disease": -1, "digestive_issues": -1, "inflammation": -1},
     "allergen_info": "fish",
-    "therapeutic_use": "Omega-3 fatty acids, but deep fried (high fat)",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "protein"
+    "therapeutic_use": "Omega-3 fatty acids, but deep fried (high fat)"
   },
   {
     "food_name": "Egg Omelette",
     "category": "meat",
-    "preparation_methods": [
-      "whisked",
-      "pan_fried"
-    ],
+    "preparation_methods": ["whisked", "pan_fried"],
     "calories": 154,
     "protein": 11,
     "carbs": 1,
     "fat": 12,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 50,
-      "sodium": 155,
-      "vitamin_c": 0,
-      "vitamin_b12": 1.1
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 0,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1.8, "calcium": 50, "sodium": 155, "vitamin_c": 0, "vitamin_b12": 1.1},
+    "health_conditions": {"diabetes": 1, "hypertension": 0, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "eggs",
-    "therapeutic_use": "Complete protein, choline, vitamin B12",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "protein"
+    "therapeutic_use": "Complete protein, choline, vitamin B12"
   },
   {
     "food_name": "Grilled Chicken",
     "category": "meat",
-    "preparation_methods": [
-      "marinated",
-      "grilled"
-    ],
+    "preparation_methods": ["marinated", "grilled"],
     "calories": 165,
     "protein": 31,
     "carbs": 0,
     "fat": 3.6,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 1,
-      "calcium": 15,
-      "sodium": 74,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.3
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1, "calcium": 15, "sodium": 74, "vitamin_c": 0, "vitamin_b12": 0.3},
+    "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "Very high protein, low fat, muscle building",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "protein"
+    "therapeutic_use": "Very high protein, low fat, muscle building"
   },
   {
     "food_name": "Apple",
     "category": "fruit",
-    "preparation_methods": [
-      "raw"
-    ],
+    "preparation_methods": ["raw"],
     "calories": 52,
     "protein": 0.3,
     "carbs": 14,
     "fat": 0.2,
     "fiber": 2.4,
     "glycemic_index": 36,
-    "micronutrients": {
-      "iron": 0.1,
-      "calcium": 6,
-      "sodium": 1,
-      "vitamin_c": 4.6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0.1, "calcium": 6, "sodium": 1, "vitamin_c": 4.6, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 2, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "Fiber-rich, antioxidants, pectin for gut health",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
+    "therapeutic_use": "Fiber-rich, antioxidants, pectin for gut health"
   },
   {
     "food_name": "Mango",
     "category": "fruit",
-    "preparation_methods": [
-      "raw"
-    ],
+    "preparation_methods": ["raw"],
     "calories": 60,
     "protein": 0.8,
     "carbs": 15,
     "fat": 0.4,
     "fiber": 1.6,
     "glycemic_index": 51,
-    "micronutrients": {
-      "iron": 0.2,
-      "calcium": 11,
-      "sodium": 1,
-      "vitamin_c": 36,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0.2, "calcium": 11, "sodium": 1, "vitamin_c": 36, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": 1, "heart_disease": 1, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "High vitamin C, vitamin A, antioxidants",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "side"
+    "therapeutic_use": "High vitamin C, vitamin A, antioxidants"
   },
   {
     "food_name": "Banana",
     "category": "fruit",
-    "preparation_methods": [
-      "raw"
-    ],
+    "preparation_methods": ["raw"],
     "calories": 89,
     "protein": 1.1,
     "carbs": 23,
     "fat": 0.3,
     "fiber": 2.6,
     "glycemic_index": 51,
-    "micronutrients": {
-      "iron": 0.3,
-      "calcium": 5,
-      "sodium": 1,
-      "vitamin_c": 8.7,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 2,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 0.3, "calcium": 5, "sodium": 1, "vitamin_c": 8.7, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": 2, "heart_disease": 1, "digestive_issues": 2, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "Potassium-rich, energy boost, digestive health",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
+    "therapeutic_use": "Potassium-rich, energy boost, digestive health"
   },
   {
     "food_name": "Orange Juice",
     "category": "beverage",
-    "preparation_methods": [
-      "juiced"
-    ],
+    "preparation_methods": ["juiced"],
     "calories": 45,
     "protein": 0.7,
     "carbs": 10,
     "fat": 0.2,
     "fiber": 0.2,
     "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 0.2,
-      "calcium": 11,
-      "sodium": 1,
-      "vitamin_c": 50,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 0,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0.2, "calcium": 11, "sodium": 1, "vitamin_c": 50, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": -1, "hypertension": 1, "heart_disease": 1, "digestive_issues": 0, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "Very high vitamin C, immune support, fresh juice",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "beverage"
+    "therapeutic_use": "Very high vitamin C, immune support, fresh juice"
   },
   {
     "food_name": "Tea",
     "category": "beverage",
-    "preparation_methods": [
-      "boiled",
-      "brewed"
-    ],
+    "preparation_methods": ["boiled", "brewed"],
     "calories": 1,
     "protein": 0,
     "carbs": 0,
     "fat": 0,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 3,
-      "sodium": 1,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 0,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 0, "calcium": 3, "sodium": 1, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 2, "digestive_issues": 0, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Antioxidants, polyphenols, catechins, heart-healthy",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "beverage"
+    "therapeutic_use": "Antioxidants, polyphenols, catechins, heart-healthy"
   },
   {
     "food_name": "Coffee",
     "category": "beverage",
-    "preparation_methods": [
-      "brewed"
-    ],
+    "preparation_methods": ["brewed"],
     "calories": 2,
     "protein": 0.3,
     "carbs": 0,
     "fat": 0,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 2,
-      "sodium": 2,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": -1,
-      "heart_disease": 1,
-      "digestive_issues": -1,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0, "calcium": 2, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 1, "hypertension": -1, "heart_disease": 1, "digestive_issues": -1, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "Antioxidants, caffeine, mental alertness",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "beverage"
+    "therapeutic_use": "Antioxidants, caffeine, mental alertness"
   },
   {
     "food_name": "Lassi",
     "category": "beverage",
-    "preparation_methods": [
-      "blended"
-    ],
+    "preparation_methods": ["blended"],
     "calories": 120,
     "protein": 4,
     "carbs": 15,
     "fat": 4,
     "fiber": 0,
     "glycemic_index": 45,
-    "micronutrients": {
-      "iron": 0.1,
-      "calcium": 150,
-      "sodium": 50,
-      "vitamin_c": 1,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0.1, "calcium": 150, "sodium": 50, "vitamin_c": 1, "vitamin_b12": 0.4},
+    "health_conditions": {"diabetes": 0, "hypertension": 1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Probiotic beverage, calcium, cooling",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "beverage"
+    "therapeutic_use": "Probiotic beverage, calcium, cooling"
   },
   {
     "food_name": "Coconut Water",
     "category": "beverage",
-    "preparation_methods": [
-      "raw"
-    ],
+    "preparation_methods": ["raw"],
     "calories": 19,
     "protein": 0.7,
     "carbs": 4,
     "fat": 0.2,
     "fiber": 1.1,
     "glycemic_index": 54,
-    "micronutrients": {
-      "iron": 0.3,
-      "calcium": 24,
-      "sodium": 105,
-      "vitamin_c": 2.4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 2,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0.3, "calcium": 24, "sodium": 105, "vitamin_c": 2.4, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 1, "hypertension": 2, "heart_disease": 1, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "Natural electrolytes, potassium-rich, hydration",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "beverage"
+    "therapeutic_use": "Natural electrolytes, potassium-rich, hydration"
   },
   {
     "food_name": "Carrot",
     "category": "vegetable",
-    "preparation_methods": [
-      "raw",
-      "boiled"
-    ],
+    "preparation_methods": ["raw", "boiled"],
     "calories": 41,
     "protein": 0.9,
     "carbs": 10,
     "fat": 0.2,
     "fiber": 2.8,
     "glycemic_index": 39,
-    "micronutrients": {
-      "iron": 0.3,
-      "calcium": 33,
-      "sodium": 69,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 0.3, "calcium": 33, "sodium": 69, "vitamin_c": 6, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 2, "digestive_issues": 2, "inflammation": 1},
     "allergen_info": "none",
-    "therapeutic_use": "High beta-carotene, vitamin A, eye health",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
+    "therapeutic_use": "High beta-carotene, vitamin A, eye health"
   },
   {
     "food_name": "Spinach",
     "category": "vegetable",
-    "preparation_methods": [
-      "sauteed",
-      "boiled"
-    ],
+    "preparation_methods": ["sauteed", "boiled"],
     "calories": 23,
     "protein": 2.9,
     "carbs": 3.6,
     "fat": 0.4,
     "fiber": 2.2,
     "glycemic_index": 15,
-    "micronutrients": {
-      "iron": 2.7,
-      "calcium": 99,
-      "sodium": 79,
-      "vitamin_c": 28,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 2.7, "calcium": 99, "sodium": 79, "vitamin_c": 28, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Very high iron, vitamin K, folate, antioxidants",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
+    "therapeutic_use": "Very high iron, vitamin K, folate, antioxidants"
   },
   {
     "food_name": "Potato",
     "category": "vegetable",
-    "preparation_methods": [
-      "boiled",
-      "fried"
-    ],
+    "preparation_methods": ["boiled", "fried"],
     "calories": 77,
     "protein": 2,
     "carbs": 17,
     "fat": 0.1,
     "fiber": 2.2,
     "glycemic_index": 78,
-    "micronutrients": {
-      "iron": 0.8,
-      "calcium": 12,
-      "sodium": 6,
-      "vitamin_c": 19,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 1,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 0.8, "calcium": 12, "sodium": 6, "vitamin_c": 19, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": -1, "hypertension": 1, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "Potassium-rich, vitamin C, energy source",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "side"
+    "therapeutic_use": "Potassium-rich, vitamin C, energy source"
   },
   {
     "food_name": "Tomato",
     "category": "vegetable",
-    "preparation_methods": [
-      "raw",
-      "sauteed"
-    ],
+    "preparation_methods": ["raw", "sauteed"],
     "calories": 18,
     "protein": 0.9,
     "carbs": 3.9,
     "fat": 0.2,
     "fiber": 1.2,
     "glycemic_index": 15,
-    "micronutrients": {
-      "iron": 0.3,
-      "calcium": 10,
-      "sodium": 5,
-      "vitamin_c": 14,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 0.3, "calcium": 10, "sodium": 5, "vitamin_c": 14, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Lycopene, antioxidants, heart health",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "side"
+    "therapeutic_use": "Lycopene, antioxidants, heart health"
   },
   {
     "food_name": "Onion",
     "category": "vegetable",
-    "preparation_methods": [
-      "raw",
-      "sauteed"
-    ],
+    "preparation_methods": ["raw", "sauteed"],
     "calories": 40,
     "protein": 1.1,
     "carbs": 9.3,
     "fat": 0.1,
     "fiber": 1.7,
     "glycemic_index": 10,
-    "micronutrients": {
-      "iron": 0.2,
-      "calcium": 23,
-      "sodium": 4,
-      "vitamin_c": 7.4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 0.2, "calcium": 23, "sodium": 4, "vitamin_c": 7.4, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Quercetin, anti-inflammatory, blood sugar control",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "side"
+    "therapeutic_use": "Quercetin, anti-inflammatory, blood sugar control"
   },
   {
     "food_name": "Cumin",
     "category": "spice",
-    "preparation_methods": [
-      "roasted",
-      "ground"
-    ],
+    "preparation_methods": ["roasted", "ground"],
     "calories": 375,
     "protein": 18,
     "carbs": 44,
     "fat": 22,
     "fiber": 11,
     "glycemic_index": 5,
-    "micronutrients": {
-      "iron": 66,
-      "calcium": 931,
-      "sodium": 168,
-      "vitamin_c": 7.7,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 66, "calcium": 931, "sodium": 168, "vitamin_c": 7.7, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Extremely high iron, digestive aid, metabolism boost",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Extremely high iron, digestive aid, metabolism boost"
   },
   {
     "food_name": "Turmeric",
     "category": "spice",
-    "preparation_methods": [
-      "dried",
-      "ground"
-    ],
+    "preparation_methods": ["dried", "ground"],
     "calories": 354,
     "protein": 8,
     "carbs": 65,
     "fat": 10,
     "fiber": 21,
     "glycemic_index": 5,
-    "micronutrients": {
-      "iron": 41,
-      "calcium": 183,
-      "sodium": 38,
-      "vitamin_c": 0.7,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 41, "calcium": 183, "sodium": 38, "vitamin_c": 0.7, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 1, "heart_disease": 2, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Curcumin, powerful anti-inflammatory, antioxidant",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Curcumin, powerful anti-inflammatory, antioxidant"
   },
   {
     "food_name": "Black Pepper",
     "category": "spice",
-    "preparation_methods": [
-      "ground"
-    ],
+    "preparation_methods": ["ground"],
     "calories": 251,
     "protein": 10,
     "carbs": 64,
     "fat": 3,
     "fiber": 25,
     "glycemic_index": 5,
-    "micronutrients": {
-      "iron": 9.7,
-      "calcium": 443,
-      "sodium": 20,
-      "vitamin_c": 21,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 9.7, "calcium": 443, "sodium": 20, "vitamin_c": 21, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 1, "digestive_issues": 2, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Piperine, enhances nutrient absorption, metabolism",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Piperine, enhances nutrient absorption, metabolism"
   },
   {
     "food_name": "Olive Oil",
     "category": "oil",
-    "preparation_methods": [
-      "pressed"
-    ],
+    "preparation_methods": ["pressed"],
     "calories": 884,
     "protein": 0,
     "carbs": 0,
     "fat": 100,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0.6,
-      "calcium": 1,
-      "sodium": 2,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 0,
-      "inflammation": 2
-    },
+    "micronutrients": {"iron": 0.6, "calcium": 1, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 1, "hypertension": 2, "heart_disease": 2, "digestive_issues": 0, "inflammation": 2},
     "allergen_info": "none",
-    "therapeutic_use": "Monounsaturated fats, heart-healthy, Mediterranean diet",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Monounsaturated fats, heart-healthy, Mediterranean diet"
   },
   {
     "food_name": "Coconut Oil",
     "category": "oil",
-    "preparation_methods": [
-      "pressed"
-    ],
+    "preparation_methods": ["pressed"],
     "calories": 892,
     "protein": 0,
     "carbs": 0,
     "fat": 100,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 0,
-      "sodium": 0,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 0,
-      "heart_disease": -1,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 0, "calcium": 0, "sodium": 0, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": 0, "heart_disease": -1, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "none",
-    "therapeutic_use": "Medium-chain triglycerides, antimicrobial",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Medium-chain triglycerides, antimicrobial"
   },
   {
     "food_name": "Butter",
     "category": "dairy",
-    "preparation_methods": [
-      "churned"
-    ],
+    "preparation_methods": ["churned"],
     "calories": 717,
     "protein": 0.9,
     "carbs": 0.1,
     "fat": 81,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 24,
-      "sodium": 11,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.17
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 0,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": -1
-    },
+    "micronutrients": {"iron": 0, "calcium": 24, "sodium": 11, "vitamin_c": 0, "vitamin_b12": 0.17},
+    "health_conditions": {"diabetes": 0, "hypertension": 0, "heart_disease": -1, "digestive_issues": 0, "inflammation": -1},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Saturated fat, vitamin A, use in moderation",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Saturated fat, vitamin A, use in moderation"
   },
   {
     "food_name": "Ghee",
     "category": "dairy",
-    "preparation_methods": [
-      "clarified"
-    ],
+    "preparation_methods": ["clarified"],
     "calories": 900,
     "protein": 0,
     "carbs": 0,
     "fat": 100,
     "fiber": 0,
     "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 4,
-      "sodium": 2,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 0,
-      "heart_disease": -1,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 0, "calcium": 4, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0.4},
+    "health_conditions": {"diabetes": 0, "hypertension": 0, "heart_disease": -1, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Clarified butter, butyric acid, high smoke point",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Clarified butter, butyric acid, high smoke point"
   },
   {
     "food_name": "Milk",
     "category": "dairy",
-    "preparation_methods": [
-      "boiled"
-    ],
+    "preparation_methods": ["boiled"],
     "calories": 42,
     "protein": 3.4,
     "carbs": 5,
     "fat": 1,
     "fiber": 0,
     "glycemic_index": 31,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 125,
-      "sodium": 44,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 0, "calcium": 125, "sodium": 44, "vitamin_c": 0, "vitamin_b12": 0.4},
+    "health_conditions": {"diabetes": 1, "hypertension": 1, "heart_disease": 1, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "contains_dairy",
-    "therapeutic_use": "Complete protein, calcium, vitamin D, bone health",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "digestive"
+    "therapeutic_use": "Complete protein, calcium, vitamin D, bone health"
   },
   {
     "food_name": "Tofu",
     "category": "legume",
-    "preparation_methods": [
-      "pressed",
-      "sauteed"
-    ],
+    "preparation_methods": ["pressed", "sauteed"],
     "calories": 76,
     "protein": 8,
     "carbs": 1.9,
     "fat": 4.8,
     "fiber": 0.3,
     "glycemic_index": 15,
-    "micronutrients": {
-      "iron": 5.4,
-      "calcium": 350,
-      "sodium": 7,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
+    "micronutrients": {"iron": 5.4, "calcium": 350, "sodium": 7, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 2, "hypertension": 2, "heart_disease": 2, "digestive_issues": 1, "inflammation": 1},
     "allergen_info": "soy",
-    "therapeutic_use": "Plant protein, very high calcium, isoflavones",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "protein"
+    "therapeutic_use": "Plant protein, very high calcium, isoflavones"
   },
   {
     "food_name": "Falafel",
     "category": "legume",
-    "preparation_methods": [
-      "ground",
-      "deep_fried"
-    ],
+    "preparation_methods": ["ground", "deep_fried"],
     "calories": 333,
     "protein": 13,
     "carbs": 32,
     "fat": 17,
     "fiber": 4,
     "glycemic_index": 35,
-    "micronutrients": {
-      "iron": 3.4,
-      "calcium": 90,
-      "sodium": 294,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 3.4, "calcium": 90, "sodium": 294, "vitamin_c": 2, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": -1, "heart_disease": 0, "digestive_issues": 0, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Plant protein, but deep fried (high fat)",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "protein"
+    "therapeutic_use": "Plant protein, but deep fried (high fat)"
   },
   {
     "food_name": "Pasta",
     "category": "grain",
-    "preparation_methods": [
-      "boiled"
-    ],
+    "preparation_methods": ["boiled"],
     "calories": 131,
     "protein": 5,
     "carbs": 25,
     "fat": 1.1,
     "fiber": 1.3,
     "glycemic_index": 49,
-    "micronutrients": {
-      "iron": 1.3,
-      "calcium": 7,
-      "sodium": 6,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 2,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 1.3, "calcium": 7, "sodium": 6, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": 0, "hypertension": 2, "heart_disease": 1, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "contains_gluten",
-    "therapeutic_use": "Moderate GI, energy source, choose whole grain",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "main"
+    "therapeutic_use": "Moderate GI, energy source, choose whole grain"
   },
+
   {
     "food_name": "Sushi Rice",
     "category": "grain",
-    "preparation_methods": [
-      "boiled",
-      "seasoned"
-    ],
+    "preparation_methods": ["boiled", "seasoned"],
     "calories": 130,
     "protein": 2.4,
     "carbs": 29,
     "fat": 0.2,
     "fiber": 0.4,
     "glycemic_index": 73,
-    "micronutrients": {
-      "iron": 0.2,
-      "calcium": 3,
-      "sodium": 2,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 2,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
+    "micronutrients": {"iron": 0.2, "calcium": 3, "sodium": 2, "vitamin_c": 0, "vitamin_b12": 0},
+    "health_conditions": {"diabetes": -1, "hypertension": 2, "heart_disease": 0, "digestive_issues": 1, "inflammation": 0},
     "allergen_info": "gluten_free",
-    "therapeutic_use": "Refined rice, quick energy, low fiber",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Chicken Stew with Red Rice",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled",
-      "simmered"
-    ],
-    "calories": 320,
-    "protein": 22,
-    "carbs": 35,
-    "fat": 10,
-    "fiber": 3,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 40,
-      "sodium": 300,
-      "vitamin_c": 4,
-      "vitamin_b12": 0.6
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 0,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": -1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "High protein, balanced meal for recovery",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Grilled Fish with Millet",
-    "category": "meal",
-    "preparation_methods": [
-      "grilled"
-    ],
-    "calories": 280,
-    "protein": 24,
-    "carbs": 28,
-    "fat": 8,
-    "fiber": 4,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 35,
-      "sodium": 200,
-      "vitamin_c": 2,
-      "vitamin_b12": 2
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 2
-    },
-    "allergen_info": "fish",
-    "therapeutic_use": "Omega-3 rich, heart healthy",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Egg Curry with Brown Rice",
-    "category": "meal",
-    "preparation_methods": [
-      "simmered"
-    ],
-    "calories": 350,
-    "protein": 18,
-    "carbs": 40,
-    "fat": 14,
-    "fiber": 4,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2.2,
-      "calcium": 50,
-      "sodium": 350,
-      "vitamin_c": 3,
-      "vitamin_b12": 1.1
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 0,
-      "inflammation": -1
-    },
-    "allergen_info": "egg",
-    "therapeutic_use": "Protein rich but moderate fat",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Steamed Fish with Rice",
-    "category": "meal",
-    "preparation_methods": [
-      "steamed"
-    ],
-    "calories": 260,
-    "protein": 23,
-    "carbs": 30,
-    "fat": 5,
-    "fiber": 1,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 1.5,
-      "calcium": 30,
-      "sodium": 150,
-      "vitamin_c": 1,
-      "vitamin_b12": 2
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "fish",
-    "therapeutic_use": "Light, easy digestion, high protein",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Chicken Khichdi",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 300,
-    "protein": 20,
-    "carbs": 35,
-    "fat": 8,
-    "fiber": 3,
-    "glycemic_index": 58,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 40,
-      "sodium": 250,
-      "vitamin_c": 2,
-      "vitamin_b12": 0.5
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Gut-friendly recovery meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Grilled Chicken Salad Bowl",
-    "category": "meal",
-    "preparation_methods": [
-      "grilled",
-      "raw"
-    ],
-    "calories": 220,
-    "protein": 26,
-    "carbs": 12,
-    "fat": 7,
-    "fiber": 4,
-    "glycemic_index": 35,
-    "micronutrients": {
-      "iron": 1.7,
-      "calcium": 60,
-      "sodium": 180,
-      "vitamin_c": 10,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Low calorie, high protein weight-loss meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Fish Curry with Red Rice",
-    "category": "meal",
-    "preparation_methods": [
-      "simmered"
-    ],
-    "calories": 340,
-    "protein": 22,
-    "carbs": 38,
-    "fat": 12,
-    "fiber": 3,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 45,
-      "sodium": 400,
-      "vitamin_c": 5,
-      "vitamin_b12": 2
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": -1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "fish",
-    "therapeutic_use": "Balanced meal with healthy fats",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Chicken Soup with Barley",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 200,
-    "protein": 18,
-    "carbs": 20,
-    "fat": 5,
-    "fiber": 3,
-    "glycemic_index": 45,
-    "micronutrients": {
-      "iron": 1.5,
-      "calcium": 30,
-      "sodium": 220,
-      "vitamin_c": 3,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Low GI, good for gut and immunity",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Egg Bhurji with Chapati",
-    "category": "meal",
-    "preparation_methods": [
-      "sauteed"
-    ],
-    "calories": 330,
-    "protein": 17,
-    "carbs": 30,
-    "fat": 15,
-    "fiber": 3,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 45,
-      "sodium": 320,
-      "vitamin_c": 4,
-      "vitamin_b12": 1
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 0,
-      "inflammation": -1
-    },
-    "allergen_info": "egg",
-    "therapeutic_use": "High protein breakfast",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Lentil Soup with Whole Wheat Bread",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 280,
-    "protein": 14,
-    "carbs": 40,
-    "fat": 4,
-    "fiber": 8,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 3,
-      "calcium": 50,
-      "sodium": 280,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "High fiber gut health meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Paneer Tikka with Roti",
-    "category": "meal",
-    "preparation_methods": [
-      "grilled"
-    ],
-    "calories": 360,
-    "protein": 18,
-    "carbs": 28,
-    "fat": 20,
-    "fiber": 3,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 200,
-      "sodium": 400,
-      "vitamin_c": 3,
-      "vitamin_b12": 0.6
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": -1,
-      "digestive_issues": -1,
-      "inflammation": -1
-    },
-    "allergen_info": "dairy",
-    "therapeutic_use": "High calcium but heavy",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Dal Khichdi with Ghee",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 320,
-    "protein": 12,
-    "carbs": 45,
-    "fat": 10,
-    "fiber": 5,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 40,
-      "sodium": 250,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Gut healing and nourishing",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Oats and Egg Breakfast Bowl",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 290,
-    "protein": 16,
-    "carbs": 30,
-    "fat": 10,
-    "fiber": 5,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 60,
-      "sodium": 220,
-      "vitamin_c": 1,
-      "vitamin_b12": 0.8
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 2
-    },
-    "allergen_info": "egg",
-    "therapeutic_use": "Balanced macro meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Millet Upma with Nuts",
-    "category": "meal",
-    "preparation_methods": [
-      "sauteed"
-    ],
-    "calories": 310,
-    "protein": 9,
-    "carbs": 40,
-    "fat": 12,
-    "fiber": 5,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 30,
-      "sodium": 250,
-      "vitamin_c": 3,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "nuts",
-    "therapeutic_use": "Sustained energy, fiber rich",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Rice and Rasam",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 220,
-    "protein": 6,
-    "carbs": 40,
-    "fat": 3,
-    "fiber": 2,
-    "glycemic_index": 65,
-    "micronutrients": {
-      "iron": 1.2,
-      "calcium": 20,
-      "sodium": 300,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 0,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Light digestive meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Millet Khichdi",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 270,
-    "protein": 10,
-    "carbs": 38,
-    "fat": 6,
-    "fiber": 6,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2.2,
-      "calcium": 35,
-      "sodium": 200,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "High fiber detox meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Barley Soup",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 180,
-    "protein": 6,
-    "carbs": 30,
-    "fat": 2,
-    "fiber": 5,
-    "glycemic_index": 45,
-    "micronutrients": {
-      "iron": 1.5,
-      "calcium": 25,
-      "sodium": 200,
-      "vitamin_c": 8,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Low calorie, anti-inflammatory",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Stew with Appam",
-    "category": "meal",
-    "preparation_methods": [
-      "simmered"
-    ],
-    "calories": 300,
-    "protein": 8,
-    "carbs": 40,
-    "fat": 10,
-    "fiber": 3,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 40,
-      "sodium": 300,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 0,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Comfort meal with moderate energy",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Idli Upma",
-    "category": "meal",
-    "preparation_methods": [
-      "sauteed"
-    ],
-    "calories": 260,
-    "protein": 7,
-    "carbs": 38,
-    "fat": 8,
-    "fiber": 3,
-    "glycemic_index": 65,
-    "micronutrients": {
-      "iron": 1.5,
-      "calcium": 25,
-      "sodium": 280,
-      "vitamin_c": 4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 0,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Quick energy meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Sevai",
-    "category": "meal",
-    "preparation_methods": [
-      "sauteed"
-    ],
-    "calories": 250,
-    "protein": 6,
-    "carbs": 42,
-    "fat": 6,
-    "fiber": 2,
-    "glycemic_index": 68,
-    "micronutrients": {
-      "iron": 1.2,
-      "calcium": 20,
-      "sodium": 250,
-      "vitamin_c": 3,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 0,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Light but high GI meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Rice Noodles",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled",
-      "sauteed"
-    ],
-    "calories": 240,
-    "protein": 6,
-    "carbs": 45,
-    "fat": 4,
-    "fiber": 2,
-    "glycemic_index": 65,
-    "micronutrients": {
-      "iron": 1.2,
-      "calcium": 20,
-      "sodium": 220,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 1,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Light meal, quick energy",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Dal Khichdi (No Ghee)",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 260,
-    "protein": 11,
-    "carbs": 40,
-    "fat": 4,
-    "fiber": 6,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 35,
-      "sodium": 200,
-      "vitamin_c": 4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Low fat, gut-friendly detox meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Brown Rice Pulao",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled",
-      "sauteed"
-    ],
-    "calories": 300,
-    "protein": 8,
-    "carbs": 45,
-    "fat": 8,
-    "fiber": 5,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 30,
-      "sodium": 250,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Fiber-rich sustained energy meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Whole Wheat Pasta",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 320,
-    "protein": 10,
-    "carbs": 50,
-    "fat": 7,
-    "fiber": 6,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 35,
-      "sodium": 300,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 0,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Complex carbs, moderate protein",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Stuffed Chapati",
-    "category": "meal",
-    "preparation_methods": [
-      "roasted"
-    ],
-    "calories": 280,
-    "protein": 8,
-    "carbs": 42,
-    "fat": 7,
-    "fiber": 5,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 30,
-      "sodium": 220,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Balanced fiber-rich meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Stuffed Dosa",
-    "category": "meal",
-    "preparation_methods": [
-      "fermented",
-      "pan_fried"
-    ],
-    "calories": 330,
-    "protein": 9,
-    "carbs": 50,
-    "fat": 10,
-    "fiber": 4,
-    "glycemic_index": 65,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 30,
-      "sodium": 300,
-      "vitamin_c": 4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 0,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Energy dense meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Steamed Rice Cakes",
-    "category": "meal",
-    "preparation_methods": [
-      "steamed"
-    ],
-    "calories": 220,
-    "protein": 6,
-    "carbs": 40,
-    "fat": 3,
-    "fiber": 3,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 1.3,
-      "calcium": 25,
-      "sodium": 200,
-      "vitamin_c": 3,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Soft and easy to digest",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Lentil Rice Bowl",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 310,
-    "protein": 12,
-    "carbs": 45,
-    "fat": 6,
-    "fiber": 7,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 3,
-      "calcium": 40,
-      "sodium": 250,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "High protein vegetarian meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Khichdi",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 250,
-    "protein": 9,
-    "carbs": 38,
-    "fat": 5,
-    "fiber": 5,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 30,
-      "sodium": 200,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Ideal gut healing meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Moong Dal Khichdi",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 240,
-    "protein": 10,
-    "carbs": 36,
-    "fat": 4,
-    "fiber": 6,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2.2,
-      "calcium": 35,
-      "sodium": 180,
-      "vitamin_c": 4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Light detox meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Upma",
-    "category": "meal",
-    "preparation_methods": [
-      "sauteed"
-    ],
-    "calories": 270,
-    "protein": 7,
-    "carbs": 42,
-    "fat": 8,
-    "fiber": 4,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 30,
-      "sodium": 250,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Moderate energy breakfast",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Ragi Porridge",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 180,
-    "protein": 5,
-    "carbs": 30,
-    "fat": 2,
-    "fiber": 4,
-    "glycemic_index": 45,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 120,
-      "sodium": 100,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "High calcium, low GI",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Ragi Dosa",
-    "category": "meal",
-    "preparation_methods": [
-      "fermented",
-      "pan_fried"
-    ],
-    "calories": 260,
-    "protein": 6,
-    "carbs": 40,
-    "fat": 7,
-    "fiber": 4,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 80,
-      "sodium": 200,
-      "vitamin_c": 1,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Bone strengthening meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Millet Pongal",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 280,
-    "protein": 9,
-    "carbs": 38,
-    "fat": 9,
-    "fiber": 4,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 35,
-      "sodium": 220,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Balanced comfort food",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Oats Upma",
-    "category": "meal",
-    "preparation_methods": [
-      "sauteed"
-    ],
-    "calories": 260,
-    "protein": 8,
-    "carbs": 35,
-    "fat": 7,
-    "fiber": 6,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 40,
-      "sodium": 220,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Heart healthy fiber meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Quinoa Khichdi",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 290,
-    "protein": 11,
-    "carbs": 38,
-    "fat": 7,
-    "fiber": 5,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 40,
-      "sodium": 200,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "High protein superfood meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Dalia",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 240,
-    "protein": 7,
-    "carbs": 38,
-    "fat": 4,
-    "fiber": 5,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 30,
-      "sodium": 200,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Light and fiber-rich meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Masala Oats",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 250,
-    "protein": 8,
-    "carbs": 35,
-    "fat": 7,
-    "fiber": 6,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 40,
-      "sodium": 250,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Heart-friendly and filling",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Sambar with Rice",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 280,
-    "protein": 9,
-    "carbs": 42,
-    "fat": 6,
-    "fiber": 5,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 35,
-      "sodium": 300,
-      "vitamin_c": 8,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 0,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Gut-friendly and nutritious",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Curd Rice",
-    "category": "meal",
-    "preparation_methods": [
-      "mixed"
-    ],
-    "calories": 300,
-    "protein": 8,
-    "carbs": 45,
-    "fat": 9,
-    "fiber": 2,
-    "glycemic_index": 65,
-    "micronutrients": {
-      "iron": 1.2,
-      "calcium": 120,
-      "sodium": 280,
-      "vitamin_c": 2,
-      "vitamin_b12": 0.5
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 0,
-      "heart_disease": 0,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "dairy",
-    "therapeutic_use": "Cooling probiotic meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Lemon Rice",
-    "category": "meal",
-    "preparation_methods": [
-      "sauteed"
-    ],
-    "calories": 280,
-    "protein": 6,
-    "carbs": 45,
-    "fat": 8,
-    "fiber": 3,
-    "glycemic_index": 65,
-    "micronutrients": {
-      "iron": 1.5,
-      "calcium": 25,
-      "sodium": 300,
-      "vitamin_c": 10,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 0,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Quick energy with mild digestive support",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Pulao",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled",
-      "sauteed"
-    ],
-    "calories": 320,
-    "protein": 7,
-    "carbs": 48,
-    "fat": 10,
-    "fiber": 4,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 30,
-      "sodium": 320,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Energy-rich mixed meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Brown Rice with Dal",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 310,
-    "protein": 11,
-    "carbs": 48,
-    "fat": 5,
-    "fiber": 6,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 40,
-      "sodium": 250,
-      "vitamin_c": 3,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Balanced protein-carb staple meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Chapati Roll",
-    "category": "meal",
-    "preparation_methods": [
-      "roasted",
-      "assembled"
-    ],
-    "calories": 290,
-    "protein": 8,
-    "carbs": 42,
-    "fat": 8,
-    "fiber": 5,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 35,
-      "sodium": 260,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Portable balanced meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Paneer Bhurji with Chapati",
-    "category": "meal",
-    "preparation_methods": [
-      "sauteed"
-    ],
-    "calories": 360,
-    "protein": 18,
-    "carbs": 30,
-    "fat": 20,
-    "fiber": 3,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 220,
-      "sodium": 400,
-      "vitamin_c": 5,
-      "vitamin_b12": 0.6
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": -1,
-      "digestive_issues": -1,
-      "inflammation": -1
-    },
-    "allergen_info": "dairy",
-    "therapeutic_use": "High protein but heavy meal",
-    "meal_type": [
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Soup with Toast",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled",
-      "toasted"
-    ],
-    "calories": 180,
-    "protein": 6,
-    "carbs": 28,
-    "fat": 4,
-    "fiber": 4,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 1.5,
-      "calcium": 30,
-      "sodium": 220,
-      "vitamin_c": 10,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten",
-    "therapeutic_use": "Light detox and recovery meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Idiyappam",
-    "category": "meal",
-    "preparation_methods": [
-      "steamed"
-    ],
-    "calories": 220,
-    "protein": 5,
-    "carbs": 42,
-    "fat": 2,
-    "fiber": 2,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 1.2,
-      "calcium": 20,
-      "sodium": 180,
-      "vitamin_c": 4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Light and easily digestible",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Adai Dosa",
-    "category": "meal",
-    "preparation_methods": [
-      "pan_fried"
-    ],
-    "calories": 300,
-    "protein": 10,
-    "carbs": 38,
-    "fat": 10,
-    "fiber": 5,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 40,
-      "sodium": 250,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "High protein traditional meal",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Uttapam",
-    "category": "meal",
-    "preparation_methods": [
-      "fermented",
-      "pan_fried"
-    ],
-    "calories": 280,
-    "protein": 8,
-    "carbs": 42,
-    "fat": 8,
-    "fiber": 4,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 35,
-      "sodium": 280,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 0,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Balanced fermented meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Lentil Stew",
-    "category": "meal",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 230,
-    "protein": 11,
-    "carbs": 30,
-    "fat": 5,
-    "fiber": 7,
-    "glycemic_index": 45,
-    "micronutrients": {
-      "iron": 3,
-      "calcium": 45,
-      "sodium": 220,
-      "vitamin_c": 8,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Protein-rich, anti-inflammatory meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Vegetable Lentil Pancake",
-    "category": "meal",
-    "preparation_methods": [
-      "pan_fried"
-    ],
-    "calories": 260,
-    "protein": 10,
-    "carbs": 35,
-    "fat": 8,
-    "fiber": 5,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 40,
-      "sodium": 250,
-      "vitamin_c": 5,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "High protein vegetarian meal",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
+    "therapeutic_use": "Refined rice, quick energy, low fiber"
   }
 ]
