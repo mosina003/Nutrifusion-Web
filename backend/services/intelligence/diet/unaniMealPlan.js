@@ -497,21 +497,40 @@ function generateStrictDailyMealPlan(userType = 'damvi') {
 
   console.log('✅ All Unani validations passed!\n');
 
+  // CRITICAL: Clean up meal arrays - ensure no undefined/null values
+  const breakfast_cleaned = {
+    meal: breakfast.meal.filter(f => f && typeof f === 'string' && f.trim().length > 0),
+    reason: breakfast.reason
+  };
+  const lunch_cleaned = {
+    meal: lunch.meal.filter(f => f && typeof f === 'string' && f.trim().length > 0),
+    reason: lunch.reason
+  };
+  const dinner_cleaned = {
+    meal: dinner.meal.filter(f => f && typeof f === 'string' && f.trim().length > 0),
+    reason: dinner.reason
+  };
+
+  console.log('✅ Cleaned meal arrays - removed any undefined values');
+  console.log(`   Breakfast: ${breakfast.meal.length} → ${breakfast_cleaned.meal.length}`);
+  console.log(`   Lunch: ${lunch.meal.length} → ${lunch_cleaned.meal.length}`);
+  console.log(`   Dinner: ${dinner.meal.length} → ${dinner_cleaned.meal.length}\n`);
+
   // Output
   console.log('🌅 BREAKFAST (Light & Digestible):\n');
-  console.log(`   Foods: ${breakfast.meal.join(' + ')}`);
+  console.log(`   Foods: ${breakfast_cleaned.meal.join(' + ')}`);
   console.log('   Reasons:');
-  breakfast.reason.forEach(r => console.log(`     • ${r}`));
+  breakfast_cleaned.reason.forEach(r => console.log(`     • ${r}`));
 
   console.log('\n🍽️  LUNCH (Main Meal - Balanced):\n');
-  console.log(`   Foods: ${lunch.meal.join(' + ')}`);
+  console.log(`   Foods: ${lunch_cleaned.meal.join(' + ')}`);
   console.log('   Reasons:');
-  lunch.reason.forEach(r => console.log(`     • ${r}`));
+  lunch_cleaned.reason.forEach(r => console.log(`     • ${r}`));
 
   console.log('\n🌙 DINNER (Light & Soothing):\n');
-  console.log(`   Foods: ${dinner.meal.join(' + ')}`);
+  console.log(`   Foods: ${dinner_cleaned.meal.join(' + ')}`);
   console.log('   Reasons:');
-  dinner.reason.forEach(r => console.log(`     • ${r}`));
+  dinner_cleaned.reason.forEach(r => console.log(`     • ${r}`));
 
   console.log('\n═══════════════════════════════════════════════════════════════');
   console.log('✅ UNANI VALIDATION COMPLETE - All rules satisfied!\n');
@@ -525,9 +544,9 @@ function generateStrictDailyMealPlan(userType = 'damvi') {
       qualities: temperament
     },
     mealPlan: {
-      breakfast: breakfast,
-      lunch: lunch,
-      dinner: dinner
+      breakfast: breakfast_cleaned,
+      lunch: lunch_cleaned,
+      dinner: dinner_cleaned
     },
     rulesValidated: [
       'No heavy dinner (digestibility ≤ 2)',
