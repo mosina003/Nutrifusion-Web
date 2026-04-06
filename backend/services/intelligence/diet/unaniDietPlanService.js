@@ -32,17 +32,34 @@ class UnaniDietPlanService {
 
       console.log('✅ Generated 7-day meal plan');
 
+      // DEBUG: Log the actual structure
+      console.log('🔍 Unani mealPlan type:', typeof mealPlan, 'is object:', typeof mealPlan === 'object');
+      console.log('🔍 Unani mealPlan["7_day_plan"] type:', typeof mealPlan['7_day_plan']);
+      console.log('🔍 Is array?', Array.isArray(mealPlan['7_day_plan']));
+      console.log('🔍 7_day_plan length:', mealPlan['7_day_plan']?.length);
+      console.log('🔍 7_day_plan first item:', JSON.stringify(mealPlan['7_day_plan']?.[0], null, 2));
+
       // Convert array format to object format (day_1, day_2, etc) to match Ayurveda
       const sevenDayPlanObject = {};
       if (Array.isArray(mealPlan['7_day_plan'])) {
+        console.log('✅ Converting', mealPlan['7_day_plan'].length, 'days from array to object format');
         mealPlan['7_day_plan'].forEach((dayPlan, index) => {
           const dayNum = index + 1;
+          const breakfast = dayPlan.meals?.find(m => m.meal_type === 'Breakfast');
+          const lunch = dayPlan.meals?.find(m => m.meal_type === 'Lunch');
+          const dinner = dayPlan.meals?.find(m => m.meal_type === 'Dinner');
+          
+          console.log(`  📅 Day ${dayNum}: B=${breakfast?.foods?.length || 0}, L=${lunch?.foods?.length || 0}, D=${dinner?.foods?.length || 0}`);
+          
           sevenDayPlanObject[`day_${dayNum}`] = {
-            breakfast: dayPlan.meals?.find(m => m.meal_type === 'Breakfast')?.foods || [],
-            lunch: dayPlan.meals?.find(m => m.meal_type === 'Lunch')?.foods || [],
-            dinner: dayPlan.meals?.find(m => m.meal_type === 'Dinner')?.foods || []
+            breakfast: breakfast?.foods || [],
+            lunch: lunch?.foods || [],
+            dinner: dinner?.foods || []
           };
         });
+        console.log('✅ Converted to object:', Object.keys(sevenDayPlanObject));
+      } else {
+        console.error('🚨 CRITICAL: mealPlan["7_day_plan"] is NOT an array! Type:', typeof mealPlan['7_day_plan'], 'Value:', JSON.stringify(mealPlan['7_day_plan'], null, 2).substring(0, 200));
       }
 
       // Return complete response in format matching Ayurveda (for consistency)
