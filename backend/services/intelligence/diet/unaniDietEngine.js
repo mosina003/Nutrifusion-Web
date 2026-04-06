@@ -36,29 +36,44 @@ const loadUnaniFoods = () => {
  * Transform JSON food format to engine format
  */
 const transformJSONFood = (jsonFood) => {
+  // Extract qualities from unani_properties
+  const qualities = jsonFood.unani_properties?.qualities || {};
+  const humorEffect = jsonFood.unani_properties?.humor_effect || {};
+  
   return {
     _id: jsonFood.food_name,
     name: jsonFood.food_name,
+    food_name: jsonFood.food_name,
     category: jsonFood.category,
+    meal_type: jsonFood.meal_type || [],
+    role: jsonFood.role || 'main',
+    digestion_ease: jsonFood.digestibility_score === 1 ? 'easy' : 
+                    jsonFood.digestibility_score === 2 ? 'easy' :
+                    jsonFood.digestibility_score <= 3 ? 'moderate' : 'hard',
+    temperament: {
+      hot_level: qualities.hot || 0,
+      cold_level: qualities.cold || 0,
+      moist_level: qualities.moist || 0,
+      dry_level: qualities.dry || 0
+    },
+    dominant_humor: jsonFood.unani_properties?.mizaj?.temperament || 'balanced',
+    therapeutic_use: jsonFood.metabolic_effect || 'general nutrition',
     unani: {
-      temperament: jsonFood.temperament || {
-        hot_level: 0,
-        cold_level: 0,
-        dry_level: 0,
-        moist_level: 0
+      temperament: {
+        hot_level: qualities.hot || 0,
+        cold_level: qualities.cold || 0,
+        moist_level: qualities.moist || 0,
+        dry_level: qualities.dry || 0
       },
-      humorEffects: jsonFood.humor_effects || {
-        dam: 0,
-        safra: 0,
-        balgham: 0,
-        sauda: 0
+      humorEffects: {
+        dam: humorEffect.dam_blood || 0,
+        safra: humorEffect.safra_yellow_bile || 0,
+        balgham: humorEffect.balgham_phlegm || 0,
+        sauda: humorEffect.sauda_black_bile || 0
       },
-      dominant_humor: jsonFood.dominant_humor || 'dam',
-      organ_affinity: jsonFood.organ_affinity || [],
-      digestibility_level: jsonFood.digestion_ease === 'easy' ? 2 : 
-                          jsonFood.digestion_ease === 'moderate' ? 3 : 4,
-      flatulence_potential: 'low',
-      therapeutic_use: jsonFood.therapeutic_use || ''
+      digestibility_level: jsonFood.digestibility_score || 3,
+      flatulence_potential: jsonFood.flatulence_potential || 'low',
+      therapeutic_use: jsonFood.metabolic_effect || 'general'
     },
     verified: true
   };
