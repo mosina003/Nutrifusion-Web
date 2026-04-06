@@ -64,6 +64,20 @@ const COOKED_CATEGORIES = ['Grain', 'Legume', 'Meat', 'Vegetable', 'Spice'];
 const INGREDIENT_ONLY_CATEGORIES = ['Oil', 'Spice', 'Condiment'];
 
 /**
+ * Compound food indicators - foods that contain hidden grains/carbs
+ * These should NOT be combined with actual grains
+ */
+const COMPOUND_FOOD_KEYWORDS = ['Khichdi', 'Rice Bowl', 'Dal Rice', 'Pongal', 'Porridge'];
+
+/**
+ * Check if food name contains hidden carbs (is a compound food)
+ */
+const hasHiddenCarbs = (foodName) => {
+  if (!foodName) return false;
+  return COMPOUND_FOOD_KEYWORDS.some(keyword => foodName.includes(keyword));
+};
+
+/**
  * Check if food is raw/fresh (fruit, fresh vegetables)
  */
 const isRawFood = (category) => {
@@ -218,6 +232,15 @@ const generateBreakfast = (categorizedFoods, agni, usedIngredients, dayNumber, r
     meal.foods = meal.foods.slice(0, 3);
   }
   
+  // CRITICAL VALIDATION: Prevent fruit + cooked food mix
+  const hasFruit = meal.foods.some(f => f.food.is_fruit);
+  const hasCooked = meal.foods.some(f => f.food.category === 'Grain' || f.food.category === 'Dairy');
+  if (hasFruit && hasCooked) {
+    console.warn('⚠️ CRITICAL: Breakfast has fruit + cooked mix! Removing fruit...');
+    meal.foods = meal.foods.filter(f => !f.food.is_fruit);
+    meal.validation.hasFruit = false;
+  }
+  
   return meal;
 };
 
@@ -258,21 +281,25 @@ const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumb
   const grain = shuffledGrains[0];
   
   // STRICT RULE: Exactly 1 protein (NO duplicate proteins)
+  // CRITICAL: Exclude compound foods if grain already selected (to prevent hidden carbs)
   let availableProteins = [];
   if (dominantDosha === 'pitta') {
     availableProteins = allFoods.filter(f => 
       (f.food.category === 'Legume' || f.food.category === 'Dairy') &&
-      !usedIngredients.proteins.has(f.food.name)
+      !usedIngredients.proteins.has(f.food.name) &&
+      (grain ? !hasHiddenCarbs(f.food.food_name) : true) // CRITICAL: Skip compound foods if grain exists
     );
   } else if (dominantDosha === 'kapha') {
     availableProteins = allFoods.filter(f => 
       f.food.category === 'Legume' &&
-      !usedIngredients.proteins.has(f.food.name)
+      !usedIngredients.proteins.has(f.food.name) &&
+      (grain ? !hasHiddenCarbs(f.food.food_name) : true) // CRITICAL: Skip compound foods if grain exists
     );
   } else {
     availableProteins = allFoods.filter(f => 
       ['Legume', 'Dairy', 'Meat', 'Nut'].includes(f.food.category) &&
-      !usedIngredients.proteins.has(f.food.name)
+      !usedIngredients.proteins.has(f.food.name) &&
+      (grain ? !hasHiddenCarbs(f.food.food_name) : true) // CRITICAL: Skip compound foods if grain exists
     );
   }
   const shuffledProteins = shuffleArray(availableProteins, randomOffset + dayNumber * 4);
@@ -324,6 +351,14 @@ const generateLunch = (categorizedFoods, dominantDosha, usedIngredients, dayNumb
   if (meal.foods.length !== 3) {
     console.warn('⚠️ Lunch should have exactly 3 items (grain/protein/veg), got:', meal.foods.length);
   }
+  
+  // CRITICAL VALIDATION: Check for duplicate carb sources (grain + compound food with grain)
+  const hasVisibleGrain = meal.foods.some(f => f.food.category === 'Grain');
+  const hasHiddenGrainFood = meal.foods.some(f => hasHiddenCarbs(f.food.food_name));
+  if (hasVisibleGrain && hasHiddenGrainFood) {
+    console.warn('⚠️ CRITICAL: Lunch has visible grain + compound food with hidden carbs! Removing compound food...');
+    meal.foods = meal.foods.filter(f => !hasHiddenCarbs(f.food.food_name));
+  }
 
   return meal;
 };
@@ -345,10 +380,12 @@ const generateDinner = (categorizedFoods, dominantDosha, agni, usedIngredients, 
   // - NO fruits
   // - NO heavy/fried/oily foods
   // - Only digestibility_score ≤ 2
+  // - CRITICAL: Also filter by meal_type to get only dinner-suitable items
   const allLightFoods = [...highly_recommended, ...moderate]
     .filter(f => 
       !isIngredientOnly(f.food.category) && 
       f.food.category !== 'Fruit' &&
+      f.food.meal_type && f.food.meal_type.includes('dinner') && // CRITICAL FIX: Check meal_type
       !(f.ayurveda_data.guna && (f.ayurveda_data.guna.includes('fried') || f.ayurveda_data.guna.includes('heavy') || f.ayurveda_data.guna.includes('oily'))) &&
       (f.food.digestibility_score || 3) <= 2 // CRITICAL FIX: Use f.food.digestibility_score not f.ayurveda_data
     );
@@ -383,14 +420,26 @@ const generateDinner = (categorizedFoods, dominantDosha, agni, usedIngredients, 
       return [soup];
     } else if (lightGrains.length > 0 && lightVegetables.length > 0) {
       // Option B: Light grain + light veg (2 items max)
-      const shuffledGrains = shuffleArray(lightGrains, randomOffset + dayNumber * 9);
-      const shuffledVegetables = shuffleArray(lightVegetables, randomOffset + dayNumber * 10);
-      return [shuffledGrains[0], shuffledVegetables[0]];
-    } else if (lightGrains.length > 0) {
+      // CRITICAL: Exclude compound foods from grain selection to avoid double carbs
+      const safeGrains = lightGrains.filter(f => !hasHiddenCarbs(f.food.food_name));
+      if (safeGrains.length > 0) {
+        const shuffledGrains = shuffleArray(safeGrains, randomOffset + dayNumber * 9);
+        const shuffledVegetables = shuffleArray(lightVegetables, randomOffset + dayNumber * 10);
+        return [shuffledGrains[0], shuffledVegetables[0]];
+      }
+    }
+    if (lightGrains.length > 0) {
       // Fallback: Just grain
-      const shuffledGrains = shuffleArray(lightGrains, randomOffset + dayNumber * 11);
-      return [shuffledGrains[0]];
-    } else if (lightVegetables.length > 0) {
+      const safeGrains = lightGrains.filter(f => !hasHiddenCarbs(f.food.food_name));
+      if (safeGrains.length > 0) {
+        const shuffledGrains = shuffleArray(safeGrains, randomOffset + dayNumber * 11);
+        return [shuffledGrains[0]];
+      } else {
+        const shuffledGrains = shuffleArray(lightGrains, randomOffset + dayNumber * 11);
+        return [shuffledGrains[0]];
+      }
+    }
+    if (lightVegetables.length > 0) {
       // Fallback: Just vegetable
       const shuffledVegetables = shuffleArray(lightVegetables, randomOffset + dayNumber * 12);
       return [shuffledVegetables[0]];
@@ -428,6 +477,24 @@ const generateDinner = (categorizedFoods, dominantDosha, agni, usedIngredients, 
   if (meal.foods.length > 2) {
     console.warn('⚠️ CRITICAL: Dinner exceeds 2 items (' + meal.foods.length + ')! Trimming...');
     meal.foods = meal.foods.slice(0, 2);
+  }
+  
+  // CRITICAL VALIDATION: Check for duplicate carb sources (grain + compound food with grain)
+  const dinnerGrainCount = meal.foods.filter(f => 
+    f.food.category === 'Grain' || hasHiddenCarbs(f.food.food_name)
+  ).length;
+  if (dinnerGrainCount > 1) {
+    console.warn('⚠️ CRITICAL: Dinner has multiple carb sources! Keeping only first carb...');
+    const carbs = [];
+    const nonCarbs = [];
+    meal.foods.forEach(f => {
+      if (f.food.category === 'Grain' || hasHiddenCarbs(f.food.food_name)) {
+        if (carbs.length === 0) carbs.push(f);
+      } else {
+        nonCarbs.push(f);
+      }
+    });
+    meal.foods = [...carbs, ...nonCarbs];
   }
 
   return meal;
