@@ -6,1535 +6,7475 @@
       "steamed",
       "fermented"
     ],
-    "calories": 130,
-    "protein": 4,
-    "carbs": 28,
-    "fat": 1,
-    "fiber": 2,
-    "glycemic_index": 70,
-    "micronutrients": {
-      "iron": 1.2,
-      "calcium": 10,
-      "sodium": 120,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
+    "nutrition": {
+      "calories": 95,
+      "protein": 2.5,
+      "carbs": 21,
+      "fat": 0.5,
+      "fiber": 0.5
     },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 0
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Fermented, easily digestible, probiotic benefits",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Dosa",
-    "category": "grain",
-    "preparation_methods": [
-      "fermented",
-      "pan_fried"
-    ],
-    "calories": 184,
-    "protein": 5,
-    "carbs": 30,
-    "fat": 6,
-    "fiber": 2,
-    "glycemic_index": 77,
     "micronutrients": {
-      "iron": 1.5,
+      "iron": 0.5,
       "calcium": 15,
       "sodium": 150,
       "vitamin_c": 0,
       "vitamin_b12": 0
     },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 2,
+      "inflammation": 2
     },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Fermented, provides energy, moderate fat",
-    "meal_type": [
-      "breakfast",
-      "lunch"
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
     ],
-    "role": "main"
-  },
-  {
-    "food_name": "Upma",
-    "category": "grain",
-    "preparation_methods": [
-      "sauteed",
-      "boiled"
-    ],
-    "calories": 220,
-    "protein": 6,
-    "carbs": 35,
-    "fat": 7,
-    "fiber": 3,
-    "glycemic_index": 66,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 20,
-      "sodium": 300,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -2,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Nutrient-rich breakfast, moderate fiber",
     "meal_type": [
       "breakfast"
     ],
-    "role": "main"
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "sambar",
+      "chutney",
+      "rasam"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Idli",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed",
+      "fermented"
+    ],
+    "nutrition": {
+      "calories": 110,
+      "protein": 3.5,
+      "carbs": 22,
+      "fat": 0.5,
+      "fiber": 1.5
+    },
+    "micronutrients": {
+      "iron": 1.2,
+      "calcium": 25,
+      "sodium": 160,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "sambar",
+      "chutney"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
   },
   {
     "food_name": "Poha",
     "category": "grain",
     "preparation_methods": [
-      "soaked",
-      "sauteed"
+      "sauteed",
+      "light oil"
     ],
-    "calories": 180,
-    "protein": 4,
-    "carbs": 38,
-    "fat": 3,
-    "fiber": 2,
-    "glycemic_index": 69,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 18,
-      "sodium": 250,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
+    "nutrition": {
+      "calories": 130,
+      "protein": 2,
+      "carbs": 28,
+      "fat": 1.5,
+      "fiber": 1
     },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 0
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Light, easy to digest, iron-rich",
-    "meal_type": [
-      "breakfast"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Paratha",
-    "category": "grain",
-    "preparation_methods": [
-      "kneaded",
-      "pan_fried"
-    ],
-    "calories": 320,
-    "protein": 7,
-    "carbs": 45,
-    "fat": 12,
-    "fiber": 4,
-    "glycemic_index": 62,
     "micronutrients": {
-      "iron": 2.5,
-      "calcium": 20,
-      "sodium": 350,
+      "iron": 0.8,
+      "calcium": 10,
+      "sodium": 200,
       "vitamin_c": 0,
       "vitamin_b12": 0
     },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": 0
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 2,
+      "inflammation": 2
     },
-    "allergen_info": "contains_gluten",
-    "therapeutic_use": "High energy, high fat, best for active individuals",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
     ],
-    "role": "main"
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "peanuts",
+      "vegetables"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
   },
   {
-    "food_name": "Pongal",
+    "food_name": "Vegetable Poha",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "light oil"
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein": 3,
+      "carbs": 30,
+      "fat": 2,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 20,
+      "sodium": 220,
+      "vitamin_c": 8,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "peanuts",
+      "peas"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Upma (light oil, semolina)",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "light oil"
+    ],
+    "nutrition": {
+      "calories": 140,
+      "protein": 3,
+      "carbs": 27,
+      "fat": 2,
+      "fiber": 0.5
+    },
+    "micronutrients": {
+      "iron": 0.9,
+      "calcium": 12,
+      "sodium": 210,
+      "vitamin_c": 0,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 2,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "vegetables",
+      "cashews"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Millet Upma",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "light oil"
+    ],
+    "nutrition": {
+      "calories": 135,
+      "protein": 3.5,
+      "carbs": 26,
+      "fat": 2,
+      "fiber": 2.5
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 15,
+      "sodium": 200,
+      "vitamin_c": 0,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "vegetables",
+      "coconut"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Oats Porridge",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein": 5,
+      "carbs": 27,
+      "fat": 3,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 40,
+      "sodium": 80,
+      "vitamin_c": 0,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 5,
+      "digestive_issues": 4,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "milk",
+      "honey"
+    ],
+    "avoid_with": [
+      "heavy meals"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Vegetable Oats",
     "category": "grain",
     "preparation_methods": [
       "boiled",
-      "tempered"
+      "sauteed"
     ],
-    "calories": 210,
-    "protein": 7,
-    "carbs": 30,
-    "fat": 8,
-    "fiber": 3,
-    "glycemic_index": 65,
+    "nutrition": {
+      "calories": 170,
+      "protein": 6,
+      "carbs": 29,
+      "fat": 3.5,
+      "fiber": 5
+    },
     "micronutrients": {
-      "iron": 1.6,
-      "calcium": 25,
-      "sodium": 280,
-      "vitamin_c": 1,
+      "iron": 2.5,
+      "calcium": 45,
+      "sodium": 150,
+      "vitamin_c": 10,
       "vitamin_b12": 0
     },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 5,
+      "digestive_issues": 4,
+      "inflammation": 1
     },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Comfort food, balanced nutrition",
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
     "meal_type": [
-      "breakfast",
-      "lunch",
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "vegetables",
+      "turmeric"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Ragi Porridge",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 130,
+      "protein": 3.5,
+      "carbs": 26,
+      "fat": 1,
+      "fiber": 3
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 80,
+      "sodium": 70,
+      "vitamin_c": 0,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 5,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "jaggery",
+      "milk"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Moong Dal Khichdi",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "sauteed"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 8,
+      "carbs": 28,
+      "fat": 2,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 30,
+      "sodium": 140,
+      "vitamin_c": 0,
+      "vitamin_b12": 0.1
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 2,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "legume-grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "ghee",
+      "turmeric"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Khichdi",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 9,
+      "carbs": 30,
+      "fat": 2.5,
+      "fiber": 5
+    },
+    "micronutrients": {
+      "iron": 2.5,
+      "calcium": 40,
+      "sodium": 160,
+      "vitamin_c": 12,
+      "vitamin_b12": 0.1
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "legume-grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "ghee",
+      "vegetables"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Rice and Rasam",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 110,
+      "protein": 2.5,
+      "carbs": 24,
+      "fat": 0.5,
+      "fiber": 0.5
+    },
+    "micronutrients": {
+      "iron": 0.8,
+      "calcium": 20,
+      "sodium": 180,
+      "vitamin_c": 2,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 2,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "rice",
+      "spices"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Stew with Idiyappam",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed",
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 1.5,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 1.2,
+      "calcium": 35,
+      "sodium": 170,
+      "vitamin_c": 10,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "vegetables",
+      "coconut"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Idiyappam",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed"
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein": 2.5,
+      "carbs": 26,
+      "fat": 0.5,
+      "fiber": 1.5
+    },
+    "micronutrients": {
+      "iron": 0.8,
+      "calcium": 25,
+      "sodium": 150,
+      "vitamin_c": 8,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "curry",
+      "sambar"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Sevai",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed",
+      "sauteed"
+    ],
+    "nutrition": {
+      "calories": 130,
+      "protein": 2.5,
+      "carbs": 27,
+      "fat": 1,
+      "fiber": 1.5
+    },
+    "micronutrients": {
+      "iron": 0.9,
+      "calcium": 28,
+      "sodium": 160,
+      "vitamin_c": 9,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "curry",
+      "coconut"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Oats and Egg Breakfast Bowl",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "scrambled"
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 12,
+      "carbs": 28,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2.5,
+      "calcium": 50,
+      "sodium": 120,
+      "vitamin_c": 0.5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-protein",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "milk"
+    ],
+    "avoid_with": [
+      "heavy meals"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Boiled Eggs with Toast",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "toasted"
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 11,
+      "carbs": 22,
+      "fat": 7,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 35,
+      "sodium": 250,
+      "vitamin_c": 0,
+      "vitamin_b12": 0.9
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 2,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "protein-grain",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "butter"
+    ],
+    "avoid_with": [
+      "dairy"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Egg Omelette (low oil, vegetables)",
+    "category": "protein",
+    "preparation_methods": [
+      "sauteed",
+      "low oil"
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein": 13,
+      "carbs": 5,
+      "fat": 14,
+      "fiber": 1
+    },
+    "micronutrients": {
+      "iron": 2.5,
+      "calcium": 40,
+      "sodium": 280,
+      "vitamin_c": 8,
+      "vitamin_b12": 1
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 2,
+      "heart_disease": 2,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "vegetables",
+      "onions"
+    ],
+    "avoid_with": [
+      "dairy"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Paneer Bhurji (light)",
+    "category": "dairy",
+    "preparation_methods": [
+      "sauteed",
+      "light oil"
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein": 16,
+      "carbs": 3,
+      "fat": 18,
+      "fiber": 0.5
+    },
+    "micronutrients": {
+      "iron": 0.8,
+      "calcium": 180,
+      "sodium": 300,
+      "vitamin_c": 2,
+      "vitamin_b12": 0.3
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 2,
+      "heart_disease": 2,
+      "digestive_issues": 2,
+      "inflammation": 2
+    },
+    "allergen_info": [
+      "dairy"
+    ],
+    "diet_type": [
+      "vegetarian"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "dairy",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "vegetables",
+      "spices"
+    ],
+    "avoid_with": [
+      "meat"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Tofu Scramble",
+    "category": "protein",
+    "preparation_methods": [
+      "sauteed",
+      "light oil"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 15,
+      "carbs": 8,
+      "fat": 10,
+      "fiber": 1
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 120,
+      "sodium": 250,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [
+      "soy"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "vegetables",
+      "turmeric"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Sprout Salad (morning only)",
+    "category": "vegetable",
+    "preparation_methods": [
+      "raw"
+    ],
+    "nutrition": {
+      "calories": 50,
+      "protein": 3,
+      "carbs": 8,
+      "fat": 1,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 30,
+      "sodium": 40,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 5,
+      "hypertension": 5,
+      "heart_disease": 5,
+      "digestive_issues": 2,
+      "inflammation": 4
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "supporting",
+    "food_group": "vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": true,
+    "priority": "occasional",
+    "compatible_with": [
+      "lemon",
+      "salt"
+    ],
+    "avoid_with": [
+      "weak digestion"
+    ],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Lentil Pancake (Adai - light oil)",
+    "category": "legume",
+    "preparation_methods": [
+      "sauteed",
+      "light oil"
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 9,
+      "carbs": 26,
+      "fat": 6,
+      "fiber": 3
+    },
+    "micronutrients": {
+      "iron": 2.5,
+      "calcium": 50,
+      "sodium": 180,
+      "vitamin_c": 0,
+      "vitamin_b12": 0.05
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "chutney",
+      "curry"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Dal Dosa",
+    "category": "legume",
+    "preparation_methods": [
+      "sauteed",
+      "fermented"
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein": 8,
+      "carbs": 28,
+      "fat": 7,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 45,
+      "sodium": 200,
+      "vitamin_c": 0,
+      "vitamin_b12": 0.05
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "legume-grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "sambar",
+      "chutney"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Ragi Dosa",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "fermented"
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein": 5,
+      "carbs": 32,
+      "fat": 4,
+      "fiber": 2.5
+    },
+    "micronutrients": {
+      "iron": 3,
+      "calcium": 60,
+      "sodium": 180,
+      "vitamin_c": 0,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "sambar",
+      "chutney"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Uttapam (light oil)",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "light oil",
+      "fermented"
+    ],
+    "nutrition": {
+      "calories": 160,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 3,
+      "fiber": 1.5
+    },
+    "micronutrients": {
+      "iron": 1.2,
+      "calcium": 40,
+      "sodium": 190,
+      "vitamin_c": 10,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "chutney",
+      "sambar"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Overnight Oats",
+    "category": "grain",
+    "preparation_methods": [
+      "soaked"
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 6,
+      "fiber": 5
+    },
+    "micronutrients": {
+      "iron": 2.5,
+      "calcium": 120,
+      "sodium": 100,
+      "vitamin_c": 0.5,
+      "vitamin_b12": 0.2
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 5,
+      "digestive_issues": 4,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "occasional",
+    "compatible_with": [
+      "milk",
+      "nuts"
+    ],
+    "avoid_with": [
+      "heavy meals"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Smoothie Bowl (fruit-only)",
+    "category": "beverage",
+    "preparation_methods": [
+      "blended"
+    ],
+    "nutrition": {
+      "calories": 160,
+      "protein": 3,
+      "carbs": 38,
+      "fat": 1,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 1,
+      "calcium": 25,
+      "sodium": 30,
+      "vitamin_c": 45,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 2,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "beverage-fruit",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": true,
+    "priority": "occasional",
+    "compatible_with": [
+      "standalone"
+    ],
+    "avoid_with": [
+      "cooked foods",
+      "grains"
+    ],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Greek Yogurt with Nuts",
+    "category": "dairy",
+    "preparation_methods": [
+      "raw"
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 15,
+      "carbs": 18,
+      "fat": 10,
+      "fiber": 3
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 200,
+      "sodium": 60,
+      "vitamin_c": 1,
+      "vitamin_b12": 0.5
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 3,
+      "digestive_issues": 4,
+      "inflammation": 2
+    },
+    "allergen_info": [
+      "dairy",
+      "nuts"
+    ],
+    "diet_type": [
+      "vegetarian"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "dairy",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": true,
+    "priority": "recommended",
+    "compatible_with": [
+      "nuts",
+      "honey"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Peanut Butter Toast (minimal)",
+    "category": "grain",
+    "preparation_methods": [
+      "toasted"
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 11,
+      "carbs": 28,
+      "fat": 14,
+      "fiber": 3
+    },
+    "micronutrients": {
+      "iron": 1.8,
+      "calcium": 35,
+      "sodium": 280,
+      "vitamin_c": 0,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 2,
+      "heart_disease": 2,
+      "digestive_issues": 2,
+      "inflammation": 2
+    },
+    "allergen_info": [
+      "peanuts"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-nut",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "occasional",
+    "compatible_with": [
+      "honey"
+    ],
+    "avoid_with": [
+      "heavy meals"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Avocado Toast",
+    "category": "grain",
+    "preparation_methods": [
+      "toasted"
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein": 8,
+      "carbs": 28,
+      "fat": 13,
+      "fiber": 5
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 40,
+      "sodium": 320,
+      "vitamin_c": 8,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-fruit",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "occasional",
+    "compatible_with": [
+      "lemon",
+      "salt"
+    ],
+    "avoid_with": [
+      "cooked meals"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Whole Grain Toast + Eggs",
+    "category": "grain",
+    "preparation_methods": [
+      "toasted",
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein": 13,
+      "carbs": 26,
+      "fat": 8,
+      "fiber": 3
+    },
+    "micronutrients": {
+      "iron": 2.5,
+      "calcium": 50,
+      "sodium": 280,
+      "vitamin_c": 0.5,
+      "vitamin_b12": 0.9
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-protein",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "butter"
+    ],
+    "avoid_with": [
+      "dairy"
+    ],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Quinoa Breakfast Bowl",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 7,
+      "carbs": 28,
+      "fat": 5,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 50,
+      "sodium": 80,
+      "vitamin_c": 2,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "vegetables",
+      "nuts"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Chia Seed Pudding",
+    "category": "grain",
+    "preparation_methods": [
+      "soaked"
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 6,
+      "carbs": 16,
+      "fat": 12,
+      "fiber": 9
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 180,
+      "sodium": 70,
+      "vitamin_c": 0.5,
+      "vitamin_b12": 0.1
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 5,
+      "digestive_issues": 4,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "occasional",
+    "compatible_with": [
+      "milk",
+      "honey"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Fruit + Nut Bowl (standalone meal)",
+    "category": "fruit",
+    "preparation_methods": [
+      "raw"
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 6,
+      "carbs": 28,
+      "fat": 8,
+      "fiber": 5
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 60,
+      "sodium": 20,
+      "vitamin_c": 30,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 5,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "tree nuts"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "fruit-nut",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": true,
+    "priority": "occasional",
+    "compatible_with": [
+      "standalone",
+      "honey"
+    ],
+    "avoid_with": [
+      "cooked foods"
+    ],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Protein Smoothie (light)",
+    "category": "beverage",
+    "preparation_methods": [
+      "blended"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 18,
+      "carbs": 16,
+      "fat": 4,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 1,
+      "calcium": 150,
+      "sodium": 90,
+      "vitamin_c": 10,
+      "vitamin_b12": 0.3
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "beverage-protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": true,
+    "priority": "recommended",
+    "compatible_with": [
+      "standalone"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Pongal (light ghee)",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 7,
+      "fiber": 3
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 200,
+      "vitamin_c": 2,
+      "vitamin_b12": 0.05
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-legume",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "ghee",
+      "vegetables"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Lemon Rice (light)",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "sauteed"
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein": 2.5,
+      "carbs": 30,
+      "fat": 2,
+      "fiber": 0.5
+    },
+    "micronutrients": {
+      "iron": 0.9,
+      "calcium": 25,
+      "sodium": 200,
+      "vitamin_c": 8,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "vegetables",
+      "spices"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Curd Rice (only for certain conditions)",
+    "category": "grain",
+    "preparation_methods": [
+      "mixed"
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein": 6,
+      "carbs": 28,
+      "fat": 3,
+      "fiber": 0.5
+    },
+    "micronutrients": {
+      "iron": 0.8,
+      "calcium": 120,
+      "sodium": 180,
+      "vitamin_c": 0,
+      "vitamin_b12": 0.2
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 4,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "dairy"
+    ],
+    "diet_type": [
+      "vegetarian"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-dairy",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "occasional",
+    "compatible_with": [
+      "spices"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Vegetable Chapati Roll (light stuffing)",
+    "category": "grain",
+    "preparation_methods": [
+      "roasted",
+      "stuffed"
+    ],
+    "nutrition": {
+      "calories": 160,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 3,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 1,
+      "calcium": 35,
+      "sodium": 200,
+      "vitamin_c": 8,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "curry",
+      "vegetables"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Plain Chapati + Vegetable Curry (light)",
+    "category": "grain",
+    "preparation_methods": [
+      "roasted",
+      "sauteed"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 4,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 1.2,
+      "calcium": 40,
+      "sodium": 220,
+      "vitamin_c": 10,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "ghee",
+      "spices"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Dalia",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "sauteed"
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein": 4,
+      "carbs": 30,
+      "fat": 3,
+      "fiber": 3
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 35,
+      "sodium": 210,
+      "vitamin_c": 10,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "ghee",
+      "spices"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Broken Wheat Upma",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "light oil"
+    ],
+    "nutrition": {
+      "calories": 155,
+      "protein": 5,
+      "carbs": 28,
+      "fat": 2.5,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 30,
+      "sodium": 200,
+      "vitamin_c": 0,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "cashews",
+      "vegetables"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Sambar + Idli",
+    "category": "grain",
+    "preparation_methods": [
+      "steamed",
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 1.5,
+      "fiber": 1.5
+    },
+    "micronutrients": {
+      "iron": 1.2,
+      "calcium": 35,
+      "sodium": 300,
+      "vitamin_c": 12,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable-spice",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "sambar"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Vegetable Sambar + Dosa",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein": 4,
+      "carbs": 30,
+      "fat": 3,
+      "fiber": 1.5
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 40,
+      "sodium": 320,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 1
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-vegetable-spice",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "sambar"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Millet Pongal",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 6,
+      "fiber": 3.5
+    },
+    "micronutrients": {
+      "iron": 2.5,
+      "calcium": 70,
+      "sodium": 210,
+      "vitamin_c": 2,
+      "vitamin_b12": 0.05
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 3,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-legume",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "ghee",
+      "vegetables"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 3
+  },
+  {
+    "food_name": "Vegetable Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 60,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 1,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 0.8,
+      "calcium": 30,
+      "sodium": 400,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 5,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 4,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "beverage-vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "vegetables",
+      "spices"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Barley Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 80,
+      "protein": 2,
+      "carbs": 16,
+      "fat": 0.5,
+      "fiber": 3
+    },
+    "micronutrients": {
+      "iron": 1,
+      "calcium": 20,
+      "sodium": 100,
+      "vitamin_c": 0,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 5,
+      "hypertension": 5,
+      "heart_disease": 5,
+      "digestive_issues": 4,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "grain-beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "spices"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Warm Lemon Water + Honey (starter)",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 40,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0,
+      "fiber": 0
+    },
+    "micronutrients": {
+      "iron": 0,
+      "calcium": 10,
+      "sodium": 20,
+      "vitamin_c": 8,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 5,
+      "hypertension": 5,
+      "heart_disease": 5,
+      "digestive_issues": 4,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "digestive",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "essential",
+    "compatible_with": [
+      "honey",
+      "lemon"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Coconut Water (empty stomach)",
+    "category": "beverage",
+    "preparation_methods": [
+      "raw"
+    ],
+    "nutrition": {
+      "calories": 45,
+      "protein": 0.5,
+      "carbs": 9,
+      "fat": 0.3,
+      "fiber": 0
+    },
+    "micronutrients": {
+      "iron": 0.3,
+      "calcium": 25,
+      "sodium": 110,
+      "vitamin_c": 3,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 5,
+      "heart_disease": 5,
+      "digestive_issues": 4,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": true,
+    "priority": "recommended",
+    "compatible_with": [
+      "empty stomach"
+    ],
+    "avoid_with": [
+      "food mixing"
+    ],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Herbal Tea + Nuts",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled"
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein": 4,
+      "carbs": 12,
+      "fat": 9,
+      "fiber": 2
+    },
+    "micronutrients": {
+      "iron": 1.5,
+      "calcium": 50,
+      "sodium": 50,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 4,
+      "hypertension": 4,
+      "heart_disease": 4,
+      "digestive_issues": 4,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "tree nuts"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "breakfast"
+    ],
+    "time_preference": [
+      "morning"
+    ],
+    "role": "digestive",
+    "food_group": "beverage-nut",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "priority": "recommended",
+    "compatible_with": [
+      "nuts",
+      "honey"
+    ],
+    "avoid_with": [],
+    "digestibility_score": 2
+  },
+  {
+    "food_name": "Brown Rice with Dal",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Chapati with Vegetable Curry",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Sambar with Rice",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Rice and Rasam",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Oats Upma",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Millet Upma with Nuts",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Dalia",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Pulao",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Lemon Rice",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Curd Rice",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Chicken Curry with Rice",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Grilled Chicken with Vegetables",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Chicken Stew with Red Rice",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Egg Curry with Brown Rice",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Egg Bhurji with Chapati",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Paneer Tikka with Roti",
+    "category": "dairy",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "dairy",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Paneer Bhurji with Chapati",
+    "category": "dairy",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "dairy",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Tofu Stir Fry with Rice",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Lentil Pancake with Vegetables",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Sprout Salad Bowl",
+    "category": "vegetable",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Grilled Chicken Salad Bowl",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Quinoa Salad with Vegetables",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Whole Wheat Pasta with Vegetables",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Rice Noodles",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Stir-Fried Tofu with Veggies",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Khichdi",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
       "dinner"
     ],
-    "role": "main"
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Moong Dal Khichdi",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Lentil Soup with Whole Wheat Bread",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Stew with Appam",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Barley Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Dal Khichdi (No Ghee)",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Quinoa Khichdi",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Millet Khichdi",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Steamed Fish with Rice",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Sushi Rice with Vegetables",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Wrap",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Chickpea Salad Bowl",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Hummus with Whole Wheat Bread",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Fish Curry with Rice",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 8,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
   },
   {
     "food_name": "Biryani",
     "category": "grain",
     "preparation_methods": [
-      "layered",
-      "dum_cooked"
+      "boiled",
+      "cooked"
     ],
-    "calories": 290,
-    "protein": 10,
-    "carbs": 40,
-    "fat": 10,
-    "fiber": 2,
-    "glycemic_index": 58,
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
     "micronutrients": {
-      "iron": 2.2,
-      "calcium": 20,
+      "iron": 2,
+      "calcium": 60,
       "sodium": 450,
-      "vitamin_c": 2,
-      "vitamin_b12": 0.4
+      "vitamin_c": 5,
+      "vitamin_b12": 0
     },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": -1
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 2,
+      "digestive_issues": 3,
+      "inflammation": 3
     },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Complete meal, high protein, festive dish",
-    "meal_type": [
-      "lunch",
-      "dinner"
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
     ],
-    "role": "main"
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "grain",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
+  },
+  {
+    "food_name": "Vegetable Biryani",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 2,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "grain",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
   },
   {
     "food_name": "Fried Rice",
     "category": "grain",
     "preparation_methods": [
-      "stir_fried"
-    ],
-    "calories": 250,
-    "protein": 6,
-    "carbs": 35,
-    "fat": 9,
-    "fiber": 2,
-    "glycemic_index": 68,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 18,
-      "sodium": 500,
-      "vitamin_c": 3,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Quick energy, high sodium",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Oatmeal",
-    "category": "grain",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 68,
-    "protein": 2.4,
-    "carbs": 12,
-    "fat": 1.4,
-    "fiber": 1.7,
-    "glycemic_index": 55,
-    "micronutrients": {
-      "iron": 0.9,
-      "calcium": 8,
-      "sodium": 2,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Heart-healthy, lowers cholesterol, high fiber",
-    "meal_type": [
-      "breakfast"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Bread Toast",
-    "category": "grain",
-    "preparation_methods": [
-      "toasted"
-    ],
-    "calories": 265,
-    "protein": 9,
-    "carbs": 49,
-    "fat": 3.2,
-    "fiber": 2.7,
-    "glycemic_index": 75,
-    "micronutrients": {
-      "iron": 3.6,
-      "calcium": 100,
-      "sodium": 490,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -2,
-      "heart_disease": 0,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
-    "allergen_info": "contains_gluten",
-    "therapeutic_use": "Quick breakfast, fortified with vitamins",
-    "meal_type": [
-      "breakfast"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Chapati",
-    "category": "grain",
-    "preparation_methods": [
-      "kneaded",
-      "roasted"
-    ],
-    "calories": 297,
-    "protein": 9,
-    "carbs": 55,
-    "fat": 3,
-    "fiber": 7,
-    "glycemic_index": 62,
-    "micronutrients": {
-      "iron": 3.5,
-      "calcium": 34,
-      "sodium": 5,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 2,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 0
-    },
-    "allergen_info": "contains_gluten",
-    "therapeutic_use": "High fiber, whole grain, low sodium",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Cornflakes",
-    "category": "grain",
-    "preparation_methods": [
-      "processed"
-    ],
-    "calories": 357,
-    "protein": 7,
-    "carbs": 84,
-    "fat": 0.4,
-    "fiber": 3,
-    "glycemic_index": 81,
-    "micronutrients": {
-      "iron": 8,
-      "calcium": 10,
-      "sodium": 729,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -2,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Fortified with iron, high sugar, processed",
-    "meal_type": [
-      "breakfast"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Dal Tadka",
-    "category": "legume",
-    "preparation_methods": [
-      "boiled",
-      "tempered"
-    ],
-    "calories": 150,
-    "protein": 9,
-    "carbs": 20,
-    "fat": 4,
-    "fiber": 6,
-    "glycemic_index": 30,
-    "micronutrients": {
-      "iron": 2.7,
-      "calcium": 40,
-      "sodium": 350,
-      "vitamin_c": 3,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 0,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "High protein, high fiber, blood sugar control",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Chole",
-    "category": "legume",
-    "preparation_methods": [
-      "boiled",
-      "sauteed"
-    ],
-    "calories": 164,
-    "protein": 9,
-    "carbs": 27,
-    "fat": 3,
-    "fiber": 8,
-    "glycemic_index": 28,
-    "micronutrients": {
-      "iron": 2.9,
-      "calcium": 49,
-      "sodium": 300,
-      "vitamin_c": 4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 0,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "High protein, high fiber, weight management",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Rajma",
-    "category": "legume",
-    "preparation_methods": [
-      "boiled",
-      "simmered"
-    ],
-    "calories": 140,
-    "protein": 9,
-    "carbs": 25,
-    "fat": 1,
-    "fiber": 7,
-    "glycemic_index": 29,
-    "micronutrients": {
-      "iron": 2.9,
-      "calcium": 28,
-      "sodium": 5,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Kidney beans, low fat, high protein, heart-healthy",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Hummus",
-    "category": "legume",
-    "preparation_methods": [
-      "blended"
-    ],
-    "calories": 166,
-    "protein": 8,
-    "carbs": 14,
-    "fat": 9,
-    "fiber": 6,
-    "glycemic_index": 6,
-    "micronutrients": {
-      "iron": 2.4,
-      "calcium": 49,
-      "sodium": 240,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Very low GI, healthy fats, Mediterranean diet",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Sprout Salad",
-    "category": "legume",
-    "preparation_methods": [
-      "soaked",
-      "raw"
-    ],
-    "calories": 105,
-    "protein": 7,
-    "carbs": 19,
-    "fat": 0.5,
-    "fiber": 4,
-    "glycemic_index": 25,
-    "micronutrients": {
-      "iron": 2,
-      "calcium": 30,
-      "sodium": 6,
-      "vitamin_c": 13,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Raw, enzyme-rich, vitamin C, detoxifying",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Paneer Butter Masala",
-    "category": "dairy",
-    "preparation_methods": [
       "sauteed",
-      "simmered"
-    ],
-    "calories": 265,
-    "protein": 10,
-    "carbs": 8,
-    "fat": 22,
-    "fiber": 1,
-    "glycemic_index": 35,
-    "micronutrients": {
-      "iron": 0.5,
-      "calcium": 208,
-      "sodium": 450,
-      "vitamin_c": 3,
-      "vitamin_b12": 1.2
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": -1
-    },
-    "allergen_info": "contains_dairy",
-    "therapeutic_use": "High calcium, high fat, rich and creamy",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Curd",
-    "category": "dairy",
-    "preparation_methods": [
-      "fermented"
-    ],
-    "calories": 61,
-    "protein": 3.5,
-    "carbs": 4.7,
-    "fat": 3.3,
-    "fiber": 0,
-    "glycemic_index": 35,
-    "micronutrients": {
-      "iron": 0.1,
-      "calcium": 121,
-      "sodium": 46,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.5
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "contains_dairy",
-    "therapeutic_use": "Probiotic, gut health, calcium source",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Cheese Sandwich",
-    "category": "dairy",
-    "preparation_methods": [
-      "assembled",
-      "toasted"
-    ],
-    "calories": 300,
-    "protein": 12,
-    "carbs": 30,
-    "fat": 15,
-    "fiber": 2,
-    "glycemic_index": 60,
-    "micronutrients": {
-      "iron": 2.5,
-      "calcium": 250,
-      "sodium": 600,
-      "vitamin_c": 1,
-      "vitamin_b12": 1.1
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
-    "allergen_info": "contains_dairy_gluten",
-    "therapeutic_use": "High calcium, high protein, processed",
-    "meal_type": [
-      "breakfast",
-      "lunch"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Chicken Curry",
-    "category": "meat",
-    "preparation_methods": [
-      "sauteed",
-      "simmered"
-    ],
-    "calories": 239,
-    "protein": 27,
-    "carbs": 6,
-    "fat": 12,
-    "fiber": 1,
-    "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 1.3,
-      "calcium": 20,
-      "sodium": 350,
-      "vitamin_c": 3,
-      "vitamin_b12": 0.6
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "High protein, muscle building, B vitamins",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Fish Fry",
-    "category": "meat",
-    "preparation_methods": [
-      "marinated",
-      "deep_fried"
-    ],
-    "calories": 280,
-    "protein": 22,
-    "carbs": 5,
-    "fat": 20,
-    "fiber": 0,
-    "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 1,
-      "calcium": 15,
-      "sodium": 400,
-      "vitamin_c": 2,
-      "vitamin_b12": 2.5
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -2,
-      "heart_disease": -1,
-      "digestive_issues": -1,
-      "inflammation": -1
-    },
-    "allergen_info": "fish",
-    "therapeutic_use": "Omega-3 fatty acids, but deep fried (high fat)",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Egg Omelette",
-    "category": "meat",
-    "preparation_methods": [
-      "whisked",
-      "pan_fried"
-    ],
-    "calories": 154,
-    "protein": 11,
-    "carbs": 1,
-    "fat": 12,
-    "fiber": 0,
-    "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 1.8,
-      "calcium": 50,
-      "sodium": 155,
-      "vitamin_c": 0,
-      "vitamin_b12": 1.1
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 0,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "eggs",
-    "therapeutic_use": "Complete protein, choline, vitamin B12",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Grilled Chicken",
-    "category": "meat",
-    "preparation_methods": [
-      "marinated",
-      "grilled"
-    ],
-    "calories": 165,
-    "protein": 31,
-    "carbs": 0,
-    "fat": 3.6,
-    "fiber": 0,
-    "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 1,
-      "calcium": 15,
-      "sodium": 74,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.3
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Very high protein, low fat, muscle building",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Apple",
-    "category": "fruit",
-    "preparation_methods": [
-      "raw"
-    ],
-    "calories": 52,
-    "protein": 0.3,
-    "carbs": 14,
-    "fat": 0.2,
-    "fiber": 2.4,
-    "glycemic_index": 36,
-    "micronutrients": {
-      "iron": 0.1,
-      "calcium": 6,
-      "sodium": 1,
-      "vitamin_c": 4.6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Fiber-rich, antioxidants, pectin for gut health",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Mango",
-    "category": "fruit",
-    "preparation_methods": [
-      "raw"
-    ],
-    "calories": 60,
-    "protein": 0.8,
-    "carbs": 15,
-    "fat": 0.4,
-    "fiber": 1.6,
-    "glycemic_index": 51,
-    "micronutrients": {
-      "iron": 0.2,
-      "calcium": 11,
-      "sodium": 1,
-      "vitamin_c": 36,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "High vitamin C, vitamin A, antioxidants",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Banana",
-    "category": "fruit",
-    "preparation_methods": [
-      "raw"
-    ],
-    "calories": 89,
-    "protein": 1.1,
-    "carbs": 23,
-    "fat": 0.3,
-    "fiber": 2.6,
-    "glycemic_index": 51,
-    "micronutrients": {
-      "iron": 0.3,
-      "calcium": 5,
-      "sodium": 1,
-      "vitamin_c": 8.7,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 2,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 0
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Potassium-rich, energy boost, digestive health",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Orange Juice",
-    "category": "beverage",
-    "preparation_methods": [
-      "juiced"
-    ],
-    "calories": 45,
-    "protein": 0.7,
-    "carbs": 10,
-    "fat": 0.2,
-    "fiber": 0.2,
-    "glycemic_index": 50,
-    "micronutrients": {
-      "iron": 0.2,
-      "calcium": 11,
-      "sodium": 1,
-      "vitamin_c": 50,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 0,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Very high vitamin C, immune support, fresh juice",
-    "meal_type": [
-      "breakfast"
-    ],
-    "role": "beverage"
-  },
-  {
-    "food_name": "Tea",
-    "category": "beverage",
-    "preparation_methods": [
-      "boiled",
-      "brewed"
-    ],
-    "calories": 1,
-    "protein": 0,
-    "carbs": 0,
-    "fat": 0,
-    "fiber": 0,
-    "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 3,
-      "sodium": 1,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 0,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Antioxidants, polyphenols, catechins, heart-healthy",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "beverage"
-  },
-  {
-    "food_name": "Coffee",
-    "category": "beverage",
-    "preparation_methods": [
-      "brewed"
-    ],
-    "calories": 2,
-    "protein": 0.3,
-    "carbs": 0,
-    "fat": 0,
-    "fiber": 0,
-    "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 2,
-      "sodium": 2,
-      "vitamin_c": 0,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": -1,
-      "heart_disease": 1,
-      "digestive_issues": -1,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Antioxidants, caffeine, mental alertness",
-    "meal_type": [
-      "breakfast"
-    ],
-    "role": "beverage"
-  },
-  {
-    "food_name": "Lassi",
-    "category": "beverage",
-    "preparation_methods": [
-      "blended"
-    ],
-    "calories": 120,
-    "protein": 4,
-    "carbs": 15,
-    "fat": 4,
-    "fiber": 0,
-    "glycemic_index": 45,
-    "micronutrients": {
-      "iron": 0.1,
-      "calcium": 150,
-      "sodium": 50,
-      "vitamin_c": 1,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "contains_dairy",
-    "therapeutic_use": "Probiotic beverage, calcium, cooling",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "beverage"
-  },
-  {
-    "food_name": "Coconut Water",
-    "category": "beverage",
-    "preparation_methods": [
-      "raw"
-    ],
-    "calories": 19,
-    "protein": 0.7,
-    "carbs": 4,
-    "fat": 0.2,
-    "fiber": 1.1,
-    "glycemic_index": 54,
-    "micronutrients": {
-      "iron": 0.3,
-      "calcium": 24,
-      "sodium": 105,
-      "vitamin_c": 2.4,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 2,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Natural electrolytes, potassium-rich, hydration",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "beverage"
-  },
-  {
-    "food_name": "Carrot",
-    "category": "vegetable",
-    "preparation_methods": [
-      "raw",
-      "boiled"
-    ],
-    "calories": 41,
-    "protein": 0.9,
-    "carbs": 10,
-    "fat": 0.2,
-    "fiber": 2.8,
-    "glycemic_index": 39,
-    "micronutrients": {
-      "iron": 0.3,
-      "calcium": 33,
-      "sodium": 69,
-      "vitamin_c": 6,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 1
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "High beta-carotene, vitamin A, eye health",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Spinach",
-    "category": "vegetable",
-    "preparation_methods": [
-      "sauteed",
-      "boiled"
-    ],
-    "calories": 23,
-    "protein": 2.9,
-    "carbs": 3.6,
-    "fat": 0.4,
-    "fiber": 2.2,
-    "glycemic_index": 15,
-    "micronutrients": {
-      "iron": 2.7,
-      "calcium": 99,
-      "sodium": 79,
-      "vitamin_c": 28,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 2,
-      "hypertension": 2,
-      "heart_disease": 2,
-      "digestive_issues": 2,
-      "inflammation": 2
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Very high iron, vitamin K, folate, antioxidants",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Potato",
-    "category": "vegetable",
-    "preparation_methods": [
-      "boiled",
       "fried"
     ],
-    "calories": 77,
-    "protein": 2,
-    "carbs": 17,
-    "fat": 0.1,
-    "fiber": 2.2,
-    "glycemic_index": 78,
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
     "micronutrients": {
-      "iron": 0.8,
-      "calcium": 12,
-      "sodium": 6,
-      "vitamin_c": 19,
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
       "vitamin_b12": 0
     },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 1,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "none",
-    "therapeutic_use": "Potassium-rich, vitamin C, energy source",
-    "meal_type": [
-      "lunch",
-      "dinner"
-    ],
-    "role": "side"
-  },
-  {
-    "food_name": "Tomato",
-    "category": "vegetable",
-    "preparation_methods": [
-      "raw",
-      "sauteed"
-    ],
-    "calories": 18,
-    "protein": 0.9,
-    "carbs": 3.9,
-    "fat": 0.2,
-    "fiber": 1.2,
-    "glycemic_index": 15,
-    "micronutrients": {
-      "iron": 0.3,
-      "calcium": 10,
-      "sodium": 5,
-      "vitamin_c": 14,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
+    "health_score": {
       "diabetes": 2,
-      "hypertension": 2,
+      "hypertension": 3,
       "heart_disease": 2,
-      "digestive_issues": 1,
+      "digestive_issues": 2,
       "inflammation": 2
     },
-    "allergen_info": "none",
-    "therapeutic_use": "Lycopene, antioxidants, heart health",
-    "meal_type": [
-      "lunch",
-      "dinner"
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
     ],
-    "role": "side"
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "grain",
+    "is_heavy": true,
+    "is_fried": true,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
   },
   {
-    "food_name": "Onion",
-    "category": "vegetable",
+    "food_name": "Paneer Butter Masala with Naan",
+    "category": "dairy",
     "preparation_methods": [
-      "raw",
-      "sauteed"
+      "boiled",
+      "cooked"
     ],
-    "calories": 40,
-    "protein": 1.1,
-    "carbs": 9.3,
-    "fat": 0.1,
-    "fiber": 1.7,
-    "glycemic_index": 10,
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
     "micronutrients": {
-      "iron": 0.2,
-      "calcium": 23,
-      "sodium": 4,
-      "vitamin_c": 7.4,
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 2,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "dairy",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
+  },
+  {
+    "food_name": "Chole with Bhature",
+    "category": "legume",
+    "preparation_methods": [
+      "sauteed",
+      "fried"
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
       "vitamin_b12": 0
     },
-    "health_conditions": {
+    "health_score": {
       "diabetes": 2,
-      "hypertension": 2,
+      "hypertension": 3,
       "heart_disease": 2,
-      "digestive_issues": 1,
+      "digestive_issues": 2,
       "inflammation": 2
     },
-    "allergen_info": "none",
-    "therapeutic_use": "Quercetin, anti-inflammatory, blood sugar control",
-    "meal_type": [
-      "lunch",
-      "dinner"
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
     ],
-    "role": "side"
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "legume",
+    "is_heavy": true,
+    "is_fried": true,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
   },
   {
-    "food_name": "Butter",
-    "category": "dairy",
-    "preparation_methods": [
-      "churned"
-    ],
-    "calories": 717,
-    "protein": 0.9,
-    "carbs": 0.1,
-    "fat": 81,
-    "fiber": 0,
-    "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 24,
-      "sodium": 11,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.17
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 0,
-      "heart_disease": -1,
-      "digestive_issues": 0,
-      "inflammation": -1
-    },
-    "allergen_info": "contains_dairy",
-    "therapeutic_use": "Saturated fat, vitamin A, use in moderation",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "cooking_aid"
-  },
-  {
-    "food_name": "Ghee",
-    "category": "dairy",
-    "preparation_methods": [
-      "clarified"
-    ],
-    "calories": 900,
-    "protein": 0,
-    "carbs": 0,
-    "fat": 100,
-    "fiber": 0,
-    "glycemic_index": 0,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 4,
-      "sodium": 2,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 0,
-      "heart_disease": -1,
-      "digestive_issues": 1,
-      "inflammation": 0
-    },
-    "allergen_info": "contains_dairy",
-    "therapeutic_use": "Clarified butter, butyric acid, high smoke point",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "cooking_aid"
-  },
-  {
-    "food_name": "Milk",
-    "category": "dairy",
-    "preparation_methods": [
-      "boiled"
-    ],
-    "calories": 42,
-    "protein": 3.4,
-    "carbs": 5,
-    "fat": 1,
-    "fiber": 0,
-    "glycemic_index": 31,
-    "micronutrients": {
-      "iron": 0,
-      "calcium": 125,
-      "sodium": 44,
-      "vitamin_c": 0,
-      "vitamin_b12": 0.4
-    },
-    "health_conditions": {
-      "diabetes": 1,
-      "hypertension": 1,
-      "heart_disease": 1,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
-    "allergen_info": "contains_dairy",
-    "therapeutic_use": "Complete protein, calcium, vitamin D, bone health",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "beverage"
-  },
-  {
-    "food_name": "Tofu",
+    "food_name": "Rajma with Rice",
     "category": "legume",
     "preparation_methods": [
-      "pressed",
-      "sauteed"
+      "boiled",
+      "cooked"
     ],
-    "calories": 76,
-    "protein": 8,
-    "carbs": 1.9,
-    "fat": 4.8,
-    "fiber": 0.3,
-    "glycemic_index": 15,
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
     "micronutrients": {
-      "iron": 5.4,
-      "calcium": 350,
-      "sodium": 7,
-      "vitamin_c": 0,
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
       "vitamin_b12": 0
     },
-    "health_conditions": {
+    "health_score": {
       "diabetes": 2,
-      "hypertension": 2,
+      "hypertension": 3,
       "heart_disease": 2,
-      "digestive_issues": 1,
-      "inflammation": 1
+      "digestive_issues": 3,
+      "inflammation": 3
     },
-    "allergen_info": "soy",
-    "therapeutic_use": "Plant protein, very high calcium, isoflavones",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
     ],
-    "role": "main"
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "legume",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
   },
   {
-    "food_name": "Falafel",
-    "category": "legume",
-    "preparation_methods": [
-      "ground",
-      "deep_fried"
-    ],
-    "calories": 333,
-    "protein": 13,
-    "carbs": 32,
-    "fat": 17,
-    "fiber": 4,
-    "glycemic_index": 35,
-    "micronutrients": {
-      "iron": 3.4,
-      "calcium": 90,
-      "sodium": 294,
-      "vitamin_c": 2,
-      "vitamin_b12": 0
-    },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": -1,
-      "heart_disease": 0,
-      "digestive_issues": 0,
-      "inflammation": 0
-    },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Plant protein, but deep fried (high fat)",
-    "meal_type": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "role": "main"
-  },
-  {
-    "food_name": "Pasta",
+    "food_name": "Paratha with Curd",
     "category": "grain",
     "preparation_methods": [
-      "boiled"
+      "sauteed",
+      "fried"
     ],
-    "calories": 131,
-    "protein": 5,
-    "carbs": 25,
-    "fat": 1.1,
-    "fiber": 1.3,
-    "glycemic_index": 49,
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
     "micronutrients": {
-      "iron": 1.3,
-      "calcium": 7,
-      "sodium": 6,
-      "vitamin_c": 0,
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
       "vitamin_b12": 0
     },
-    "health_conditions": {
-      "diabetes": 0,
-      "hypertension": 2,
-      "heart_disease": 1,
-      "digestive_issues": 1,
-      "inflammation": 0
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 2,
+      "digestive_issues": 2,
+      "inflammation": 2
     },
-    "allergen_info": "contains_gluten",
-    "therapeutic_use": "Moderate GI, energy source, choose whole grain",
-    "meal_type": [
-      "lunch",
-      "dinner"
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
     ],
-    "role": "main"
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "grain",
+    "is_heavy": true,
+    "is_fried": true,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
   },
   {
-    "food_name": "Sushi Rice",
+    "food_name": "Butter Chicken with Naan",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 25,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 180,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0.8
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 2,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [
+      "eggs"
+    ],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "protein",
+    "is_heavy": true,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
+  },
+  {
+    "food_name": "Falafel with Pita",
+    "category": "legume",
+    "preparation_methods": [
+      "sauteed",
+      "fried"
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 2,
+      "digestive_issues": 2,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "legume",
+    "is_heavy": true,
+    "is_fried": true,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
+  },
+  {
+    "food_name": "Vegetable Stuffed Chapati",
+    "category": "grain",
+    "preparation_methods": [
+      "sauteed",
+      "fried"
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 18,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 60,
+      "sodium": 450,
+      "vitamin_c": 5,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 2,
+      "hypertension": 3,
+      "heart_disease": 2,
+      "digestive_issues": 2,
+      "inflammation": 2
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "supporting",
+    "food_group": "grain",
+    "is_heavy": true,
+    "is_fried": true,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "occasional",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": [
+      "excess consumption"
+    ]
+  },
+  {
+    "food_name": "Red Rice with Vegetable Sambar",
     "category": "grain",
     "preparation_methods": [
       "boiled",
-      "seasoned"
+      "cooked"
     ],
-    "calories": 130,
-    "protein": 2.4,
-    "carbs": 29,
-    "fat": 0.2,
-    "fiber": 0.4,
-    "glycemic_index": 73,
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
     "micronutrients": {
-      "iron": 0.2,
-      "calcium": 3,
-      "sodium": 2,
-      "vitamin_c": 0,
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
       "vitamin_b12": 0
     },
-    "health_conditions": {
-      "diabetes": -1,
-      "hypertension": 2,
-      "heart_disease": 0,
-      "digestive_issues": 1,
-      "inflammation": 0
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
     },
-    "allergen_info": "gluten_free",
-    "therapeutic_use": "Refined rice, quick energy, low fiber",
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
     "meal_type": [
-      "lunch",
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Brown Rice with Vegetable Kootu",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Millet Rice with Dal and Spinach",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Quinoa Vegetable Pulao",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Broken Wheat Khichdi",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Chapati with Mixed Vegetable Sabzi",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Chapati with Moong Dal and Carrot Stir Fry",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Curd Millet Bowl",
+    "category": "dairy",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "dairy",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Tofu Curry with Brown Rice",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Chickpea Curry with Rice",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Lentil Rice Bowl",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Barley Pulao",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Ragi Mudde with Sambar",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Steamed Rice with Vegetable Avial",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Green Gram Curry with Rice",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "lunch"
+    ],
+    "time_preference": [
+      "afternoon"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 3,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Clear Vegetable Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
       "dinner"
     ],
-    "role": "main"
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Spinach Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Carrot Ginger Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Tomato Clear Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Bottle Gourd (Lauki) Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Pumpkin Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Mixed Vegetable Broth",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Moong Dal Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Lentil Clear Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Coriander Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Dalia (light version)",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Oats Porridge",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Moong Dal Chilla (light oil)",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Steamed Vegetable Bowl",
+    "category": "vegetable",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "vegetable",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Idiyappam",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Plain Idli with Light Sambar",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Steamed Rice Cakes",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Thin Vegetable Upma (light oil)",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Soft Phulka with Light Vegetable Curry",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Vegetable Millet Porridge",
+    "category": "grain",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "grain",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Grilled Fish with Steamed Vegetables",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Light Egg Drop Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Tofu Vegetable Soup",
+    "category": "beverage",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "beverage",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Steamed Chicken with Vegetable Broth",
+    "category": "protein",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "protein",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
+  },
+  {
+    "food_name": "Lentil Vegetable Stew",
+    "category": "legume",
+    "preparation_methods": [
+      "boiled",
+      "cooked"
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 6,
+      "fiber": 4
+    },
+    "micronutrients": {
+      "iron": 2,
+      "calcium": 80,
+      "sodium": 300,
+      "vitamin_c": 15,
+      "vitamin_b12": 0
+    },
+    "health_score": {
+      "diabetes": 3,
+      "hypertension": 3,
+      "heart_disease": 3,
+      "digestive_issues": 3,
+      "inflammation": 3
+    },
+    "allergen_info": [],
+    "diet_type": [
+      "vegetarian",
+      "vegan"
+    ],
+    "meal_type": [
+      "dinner"
+    ],
+    "time_preference": [
+      "evening"
+    ],
+    "role": "main",
+    "food_group": "legume",
+    "is_heavy": false,
+    "is_fried": false,
+    "is_processed": false,
+    "is_raw": false,
+    "digestibility_score": 2,
+    "priority": "recommended",
+    "compatible_with": [
+      "olive oil",
+      "herbs"
+    ],
+    "avoid_with": []
   }
 ]

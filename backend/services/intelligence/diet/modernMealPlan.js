@@ -157,6 +157,7 @@ const generateBreakfast = (categorizedFoods, calorieTarget, usedIngredients, day
   
   // 1. Protein source (Dairy, Legume for breakfast)
   const proteins = allFoods.filter(f => 
+    f.food.meal_type?.includes('breakfast') &&
     ['Dairy', 'Legume'].includes(f.food.category) &&
     !usedIngredients.proteins.has(f.food.name) &&
     currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
@@ -177,6 +178,7 @@ const generateBreakfast = (categorizedFoods, calorieTarget, usedIngredients, day
   
   // 2. Whole grain (Grain category)
   const grains = allFoods.filter(f => 
+    f.food.meal_type?.includes('breakfast') &&
     f.food.category === 'Grain' &&
     !usedIngredients.grains.has(f.food.name) &&
     currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
@@ -197,6 +199,7 @@ const generateBreakfast = (categorizedFoods, calorieTarget, usedIngredients, day
   
   // 3. Fruit (for micronutrients and fiber)
   const fruits = allFoods.filter(f => 
+    f.food.meal_type?.includes('breakfast') &&
     f.food.category === 'Fruit' &&
     !usedIngredients.fruits.has(f.food.name) &&
     currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
@@ -239,6 +242,7 @@ const generateLunch = (categorizedFoods, calorieTarget, usedIngredients, dayNumb
   
   // 1. Main protein (Meat or Legume)
   const proteins = allFoods.filter(f => 
+    f.food.meal_type?.includes('lunch') &&
     ['Meat', 'Legume'].includes(f.food.category) &&
     !usedIngredients.proteins.has(f.food.name) &&
     currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
@@ -259,6 +263,7 @@ const generateLunch = (categorizedFoods, calorieTarget, usedIngredients, dayNumb
   
   // 2. Complex carb (Grain, Legume, or Starchy Vegetable)
   const carbs = allFoods.filter(f => 
+    f.food.meal_type?.includes('lunch') &&
     ['Grain', 'Legume', 'Potato', 'Sweet Potato'].includes(f.food.category) &&
     !usedIngredients.grains.has(f.food.name) &&
     currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
@@ -341,6 +346,7 @@ const generateDinner = (categorizedFoods, calorieTarget, usedIngredients, dayNum
   
   // 1. Lean protein (Legume or Meat - lighter for dinner)
   const proteins = allFoods.filter(f => 
+    f.food.meal_type?.includes('dinner') &&
     ['Legume', 'Meat'].includes(f.food.category) &&
     !usedIngredients.proteins.has(f.food.name) &&
     currentCalories + (f.modern_data.calories || 0) <= calorieTarget * 1.1
@@ -361,6 +367,7 @@ const generateDinner = (categorizedFoods, calorieTarget, usedIngredients, dayNum
   
   // 2. Vegetables (emphasis on non-starchy)
   const vegetables = allFoods.filter(f => 
+    f.food.meal_type?.includes('dinner') &&
     f.food.category === 'Vegetable' &&
     !usedIngredients.vegetables.has(f.food.name) &&
     currentCalories + (f.modern_data.calories || 0) * 2 <= calorieTarget * 1.1
@@ -383,6 +390,7 @@ const generateDinner = (categorizedFoods, calorieTarget, usedIngredients, dayNum
   
   // 3. Light grain (optional, smaller portion)
   const grains = allFoods.filter(f => 
+    f.food.meal_type?.includes('dinner') &&
     ['Grain', 'Bread'].includes(f.food.category) &&
     !usedIngredients.grains.has(f.food.name) &&
     currentCalories + (f.modern_data.calories || 0) * 0.5 <= calorieTarget * 1.1

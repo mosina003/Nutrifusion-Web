@@ -464,6 +464,10 @@ const generateStrictDailyMealPlan = (prakritiData, allFoods) => {
    */
   const canUseInBreakfast = (food) => {
     if (!food) return false;
+    
+    // CRITICAL: Filter by meal_type from JSON
+    if (!food.meal_type || !food.meal_type.includes('breakfast')) return false;
+    
     const digestibility = food.digestibility_score || 3;
     const ama = food.ama_forming_potential || 'low';
     
@@ -483,6 +487,10 @@ const generateStrictDailyMealPlan = (prakritiData, allFoods) => {
 
   const canUseInDinner = (food) => {
     if (!food) return false;
+    
+    // CRITICAL: Filter by meal_type from JSON
+    if (!food.meal_type || !food.meal_type.includes('dinner')) return false;
+    
     const digestibility = food.digestibility_score || 3;
     const ama = food.ama_forming_potential || 'low';
     
@@ -501,6 +509,10 @@ const generateStrictDailyMealPlan = (prakritiData, allFoods) => {
 
   const canUseInLunch = (food) => {
     if (!food) return false;
+    
+    // CRITICAL: Filter by meal_type from JSON
+    if (!food.meal_type || !food.meal_type.includes('lunch')) return false;
+    
     // Lunch can include moderate foods, less strict
     return true;
   };
